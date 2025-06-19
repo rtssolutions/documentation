@@ -1,0 +1,58 @@
+# 📌 Notes de version
+
+## ✅ Nouveautés fonctionnelles
+
+### 📚 Gestion des formations et actions de formation
+- **Refus possible d'une formation, unité de formation ou action de formation** : possibilité de refuser explicitement une demande.
+- **Approbation de masse** : possibilité de valider ou refuser plusieurs demandes en une seule opération pour les formations, unités de formation et actions de formation.
+- **Critères avancés pour l’approbation de masse** : filtrage plus précis des éléments à approuver.
+
+### 👥 Gestion des apprenants
+- **Renommage métier** : le terme « Jeune » est remplacé par « Apprenant ».
+- **Visibilité renforcée** : gestion fine de qui peut voir quels apprenants selon les droits et les organisations.
+- **Amélioration de l’autocomplétion** : complétion automatique plus intuitive pour le nom de naissance.
+
+### 🔑 Gestion des utilisateurs, groupes et rôles
+- **Amélioration de l’interface des groupes et utilisateur** : affichage et filtres plus clairs.
+- **Protection des groupes et rôles non assignables** : des protections ont été ajouté afin d'améliorer la gestion des droits d'accès.
+- **Meilleure gestion des erreurs lors de la modification des rôles et groupes**.
+
+### 🔄 Fluidité et ergonomie
+- **Amélioration générale des pages de chargement et boutons** pour un retour visuel plus clair lors des actions.
+- **Redirection automatique** vers la première page disponible selon les droits.
+- **Corrections et harmonisation de l’interface (UI)** : formulaires, tags, dialogues de périmètre, etc.
+
+---
+
+## 🛠️ Correctifs et fiabilisation
+
+- Divers correctifs sur l’affichage et le comportement des formulaires.
+- Meilleure gestion des erreurs.
+- Résolution des problèmes de cohérence de certaines données (SMC, CC, RNCP).
+- Sécurisation des workflows de création et migration de données sensibles.
+
+---
+
+## ⚙️ Améliorations techniques (pour administrateurs)
+
+- **Mise en place d’OpenTelemetry** pour la traçabilité et la surveillance technique.
+- **Ajout de métriques système** via Actuator.
+- **Optimisations de performance**, notamment sur la sérialisation des données.
+- **Sécurisation lors des arrêts applicatifs** pour éviter de nouvelles requêtes pendant la fermeture.
+- **Amélioration du workflow CI/CD et correctifs liés à Auth0 pour l’authentification**.
+
+---
+
+## 📂 Référentiel de données
+
+- **Correction des employeurs** lorsque nous avons des entreprise à personne physique.
+
+---
+
+## 📅 Versions concernées
+
+| Application | Version précédente | Version actuelle |
+| --- | --- | --- |
+| **Front** | `v0.147.2` | `v0.156.0` |
+| **Back** | `v0.195.1` | `v0.218.4` |
+| **Référentiel** | `v0.16.9` | `v0.16.10` |
