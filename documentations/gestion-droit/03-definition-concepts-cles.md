@@ -32,8 +32,6 @@ Chaque entité est connectée selon les règles suivantes :
 - Un **groupe** est associé à un ou plusieurs **rôles**.
 - Un **rôle** donne accès à un ensemble de **permissions** sur un périmètre donné.
 
-> 📌 Un schéma visuel peut être inséré ici si besoin (au format image ou Mermaid).
-
 <img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/diagramme-concept.png" alt="Concept clés" height="200" />
 
 
@@ -53,11 +51,11 @@ Les relations entre entités sont les suivantes :
 - Les rôles peuvent être attribués :
   - directement à un utilisateur,
   - ou indirectement via un groupe.
-- Un périmètre peut être **national, régional, ou limité** à une structure spécifique.
+- Un périmètre est un ensemble d'organisations
 
 ## Gestion des permissions
 
-Les permissions sont centralisées et prédéfinies par les administrateurs fonctionnels.  
+Les permissions sont centralisées et prédéfinies par lea plateforme Papaours.  
 Elles sont regroupées par modules ou fonctionnalités (ex. : gestion des apprenants, contrats, sessions de formation, etc.).
 
 ### Liste des permissions
@@ -68,17 +66,15 @@ Chaque permission est identifiée par :
 
 ### Consultation des permissions
 
-Les utilisateurs ne voient que les permissions **qui leur sont attribuées via leurs rôles**.
-
 Les administrateurs ont une interface dédiée leur permettant de :
 - visualiser l’ensemble des permissions existantes,
 - rechercher une permission par mot-clé ou code,
-- visualiser les rôles ou groupes utilisant une permission donnée.
+- visualiser les permissions d'un rôle.
 
 ### Non modifiable par l’utilisateur
 
-Les permissions sont gérées par l’éditeur ou par les administrateurs habilités.  
-Un utilisateur ne peut pas modifier ses propres permissions ni celles des autres utilisateurs.
+Les permissions sont gérées par l’éditeur de la plateforme Papaours
+Un utilisateur ne peut pas modifier ses propres permissions.
 
 
 ## Sommaire
