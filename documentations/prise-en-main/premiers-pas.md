@@ -1,11 +1,11 @@
 ---
-title: "Prise en main"
+title: "Premiers pas"
 description: "Premiers pas sur Papaours : navigation, connexion et personnalisation"
 date: "2025-07-29"
 version: "1"
 ---
 
-# Prise en main
+# Premiers pas
 
 Bienvenue dans la section **Prise en main** de Papaours.  
 Elle vous guide à travers les premières étapes essentielles pour commencer à utiliser la plateforme efficacement.
