@@ -1,6 +1,6 @@
 ---
-title: "Bienvenue dans la documentation Papaours"
-description: "Vous êtes actuellement dans le **module de documentation** de Papaours. Cet espace a été conçu pour vous accompagner pas à pas dans la découverte, la prise en main et l'utilisation optimale de la plateforme."
+title: "Bienvenue"
+description: "Cet espace a été conçu pour vous accompagner pas à pas dans la découverte, la prise en main et l'utilisation optimale de la plateforme."
 date: "2025-07-29"
 version: "1"
 ---
