@@ -23,4 +23,4 @@ Ce document est destiné aux administrateurs, gestionnaires de sécurité, respo
 ## Sommaire
 
 1. [Accueil](../accueil)
-2. [Prise en main du système](02-prise-en-main)
+2. [Prise en main du système](02-prise-en-main-systeme)
