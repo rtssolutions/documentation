@@ -15,6 +15,9 @@ Elle vous guide à travers les premières étapes essentielles pour commencer à
 en html bb
 <img src="https://papaours.s3.fr-par.scw.cloud/logo.png" alt="Logo papaours" height="100" />
 
+video de Carlos : 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y0RKzCdOx8A?si=OcYP95AxClml19Tg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Étapes à suivre
 
 1. [Connexion à Papaours](./connexion.md)  
