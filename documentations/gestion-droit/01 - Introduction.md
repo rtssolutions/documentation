@@ -5,8 +5,6 @@ date: "2025-07-29"
 version: "1"
 ---
 
-# 01 - Introduction
-
 ## Objectifs de l’application
 
 ette application de gestion des identités et des accès (IAM) a pour objectif de centraliser et sécuriser la gestion des droits d’accès aux ressources de votre plateforme Papaours. Elle permet de créer des utilisateurs, de les regrouper en groupes, de leur attribuer des rôles définis par un ensemble de permissions, et d’appliquer ces rôles sur des périmètres organisationnels définis.
@@ -24,5 +22,5 @@ Ce document est destiné aux administrateurs, gestionnaires de sécurité, respo
 
 ## Sommaire
 
-1. [Accueil](accueil)
+1. [Accueil](../accueil)
 2. [Prise en main du système](02-prise-en-main)
