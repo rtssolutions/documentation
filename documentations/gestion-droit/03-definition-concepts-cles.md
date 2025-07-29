@@ -77,7 +77,7 @@ Les permissions sont gérées par l’éditeur de la plateforme Papaours
 Un utilisateur ne peut pas modifier ses propres permissions.
 
 
-## Sommaire
-
-1. [Accueil](../accueil)
-2. [Accéder à la gestion des droits](04-acceder-gestion-droits)
+### Pour aller plus loin
+1. [Accéder à la gestion des droits](04-acceder-gestion-droits)
+   
+[Retour à l'Accueil](../accueil)
