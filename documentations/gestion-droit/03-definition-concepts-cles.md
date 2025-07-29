@@ -55,7 +55,7 @@ Les relations entre entités sont les suivantes :
 
 ## Gestion des permissions
 
-Les permissions sont centralisées et prédéfinies par lea plateforme Papaours.  
+Les permissions sont centralisées et prédéfinies par la plateforme Papaours.  
 Elles sont regroupées par modules ou fonctionnalités (ex. : gestion des apprenants, contrats, sessions de formation, etc.).
 
 ### Liste des permissions
