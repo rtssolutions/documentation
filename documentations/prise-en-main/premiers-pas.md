@@ -13,7 +13,7 @@ Bienvenue dans la section **Prise en main** de Papaours.
 Elle vous guide à travers les premières étapes essentielles pour commencer à utiliser la plateforme efficacement.
 
 en html bb
-<img src="https://papaours.s3.fr-par.scw.cloud/logo.png" alt="Logo papaours" height="300" />
+<img src="https://papaours.s3.fr-par.scw.cloud/logo.png" alt="Logo papaours" height="100" />
 
 ## Étapes à suivre
 
