@@ -1,15 +1,11 @@
 ---
-title: "Documentation Papaours"
-description: "Présentation de la documentation sur papaours"
-date: "2025-07-09"
+title: "Bienvenue dans la documentation Papaours"
+description: "Vous êtes actuellement dans le **module de documentation** de Papaours. Cet espace a été conçu pour vous accompagner pas à pas dans la découverte, la prise en main et l'utilisation optimale de la plateforme."
+date: "2025-07-29"
 version: "1"
 ---
 
-# Bienvenue dans la documentation Papaours
-
-Vous êtes actuellement dans le **module de documentation** de Papaours. Cet espace a été conçu pour vous accompagner pas à pas dans la découverte, la prise en main et l'utilisation optimale de la plateforme.
-
-Papaours est une solution dédiée à la gestion des parcours en apprentissage, pensée pour évoluer avec ses utilisateurs, de l’ourson débutant à l’ours expert. Cette documentation centralise l’ensemble des informations nécessaires pour comprendre les fonctionnalités, les bonnes pratiques et les cas d’usage courants.
+Papaours est une solution dédiée à la gestion des parcours de formation professionnelle, pensée pour évoluer avec ses utilisateurs, de l’ourson débutant à l’ours expert. Cette documentation centralise l’ensemble des informations nécessaires pour comprendre les fonctionnalités, les bonnes pratiques et les cas d’usage courants.
 
 ## Ce que vous trouverez ici
 
