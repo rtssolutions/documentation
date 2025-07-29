@@ -78,6 +78,6 @@ Un utilisateur ne peut pas modifier ses propres permissions.
 
 
 ### Pour aller plus loin
-1. [Accéder à la gestion des droits](04-acceder-gestion-droits)
+-> [Accéder à la gestion des droits](04-acceder-gestion-droits)
    
 [Retour à l'Accueil](../accueil)
