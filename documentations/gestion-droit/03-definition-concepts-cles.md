@@ -14,7 +14,6 @@ version: "1"
 6. [Consultation des permissions](#consultation-des-permissions)  
 7. [Non modifiable par l’utilisateur](#non-modifiable-par-lutilisateur)
 
-
 ## Diagramme conceptuel
 
 Le diagramme conceptuel permet de visualiser les relations principales entre les entités utilisées dans la gestion des droits.  
@@ -33,7 +32,6 @@ Chaque entité est connectée selon les règles suivantes :
 - Un **rôle** donne accès à un ensemble de **permissions** sur un périmètre donné.
 
 <img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/diagramme-concept.png" alt="Concept clés" height="200" />
-
 
 ## Définitions
 

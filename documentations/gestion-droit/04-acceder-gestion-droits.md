@@ -4,7 +4,6 @@ description: ""
 date: "2025-07-29"
 version: "1"
 ---
-
 ### Tables des matières
 
 1. [Où trouver la gestion des droits ?](#où-trouver-la-gestion-des-droits)  
@@ -18,17 +17,15 @@ version: "1"
 
 ## Où trouver la gestion des droits ?
 
-Le module **Gestion des droits** est accessible depuis le menu principal de la plateforme Papaours, généralement réservé aux administrateurs et référents organisationnels.  
-Il est identifiable par une icône spécifique (ex. : cadenas ou bouclier) et se trouve dans la section "Paramètres" ou "Administration" selon la configuration de votre instance.
+Le module **Gestion des droits** est accessible depuis le menu principal de la plateforme Papaours, via le menu Gestion des droits
 
 ## Conditions d’accès
 
 Seuls les utilisateurs ayant un **rôle autorisant explicitement l’accès à la gestion des droits** peuvent voir et utiliser ce module.
 
 Par défaut, les profils suivants peuvent accéder à ce menu :
-- Super-administrateur
-- Référent sécurité
-- Administrateur fonctionnel (si la permission lui est attribuée)
+- Administrateur Centre de formation
+- Administrateur Papaours
 
 Les utilisateurs sans les permissions adéquates n’ont pas ce menu visible dans leur interface.
 
@@ -52,9 +49,7 @@ L’interface s’adapte au périmètre de l’utilisateur :
 
 ### Visibilité des rôles
 
-L’utilisateur voit :
-- les rôles qu’il peut attribuer selon ses propres droits,
-- les rôles créés ou exposés dans son périmètre.
+L’utilisateur voit la bibliothéque complète des rôles définis au sein de sa plateforme Papaours
 
 Certains rôles sont réservés et non modifiables.
 
@@ -69,20 +64,23 @@ Un utilisateur ne peut pas consulter ou modifier les groupes hors de son périm�
 ### Visibilité des utilisateurs
 
 Selon les droits de l’utilisateur :
-- Il peut consulter uniquement les utilisateurs qu’il est autorisé à gérer.
-- Certains utilisateurs peuvent être anonymisés ou partiellement masqués.
+- Il peut consulter uniquement les utilisateurs qu’il est autorisé à gérer. 
+
+Un utilisateur ne peut pas consulter ou modifier les utilisateurs hors de son périmètre.
+
 
 ## Sécurité et traçabilité
 
 Chaque action effectuée dans le module "Gestion des droits" est tracée :
 - Historique de création, modification et suppression
-- Archivage des changements de rôle, de groupe ou de périmètre
 - Journalisation technique (logs) et horodatage précis
 
-Cela permet d’assurer un haut niveau de conformité RGPD et de suivi en cas d’audit interne ou externe.
+Retrouvez dans la section [Historique](../accueil), comment rechercher l'historique des actions sur ces informations
 
-## Sommaire
 
-1. [Accueil](../accueil)
-2. [Création des entités](05-creation-entites)
+### Pour aller plus loin
+-> [05 - Créer des rôles, groupes et utilisateurs](05-creation-des-entites)
+   
+[Retour à l'Accueil](../accueil)
+
 

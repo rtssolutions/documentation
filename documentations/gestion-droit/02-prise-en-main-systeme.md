@@ -4,12 +4,10 @@ description: ""
 date: "2025-07-29"
 version: "1"
 ---
-
 ## Accès à l’application
 
 L'accès à l'application de gestion des droits se fait via l'interface web sécurisée de la plateforme Papaours.  
 Les utilisateurs doivent disposer d’un identifiant valide (adresse e-mail) ainsi qu’un mot de passe conforme aux règles de sécurité en vigueur.
-
 
 ## Première connexion
 
@@ -30,7 +28,7 @@ Une fois le mot de passe défini et validé, l'utilisateur est automatiquement r
 4. Une fois validé, il accède à la plateforme Papaours, à la page d’accueil.
 5. Les permissions visibles à ce stade dépendent du rôle qui lui a été attribué.
 
-## Sommaire
-
-1. [Accueil](../accueil)
-2. [Définition des concepts clés](03-definition-concepts-cles)
+### Pour aller plus loin
+-> [03 - Définition des concepts clés](03-definition-concepts-cles)
+   
+[Retour à l'Accueil](../accueil)
