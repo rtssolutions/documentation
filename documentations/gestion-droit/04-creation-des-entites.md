@@ -35,6 +35,11 @@ Pour créer un nouveau rôle :
 
 <img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/acces-creer-un-role.png" alt="Ajouter un role" height="200" />
 
+<figure style="text-align: center;">
+  <img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/ajouter-un-role.png" alt="Schéma de l'application" width="500" />
+  <figcaption style="font-style: italic;">Figure – Vue d'ensemble de l'application</figcaption>
+</figure>
+
   ### Informations à renseigner pour un rôle
 
 La création d’un rôle nécessite les éléments suivants :
