@@ -19,4 +19,4 @@ Cette approche, basée sur les rôles et les groupes, simplifie la gestion des d
 Ce document est destiné aux administrateurs, gestionnaires de sécurité, responsables d’organisation, ou toute personne ayant la responsabilité de configurer et gérer les droits d’accès dans l’application. Il contient les informations essentielles pour comprendre le fonctionnement du système et l’utiliser de manière optimale.
 
 ### Pour aller plus loin
--> [02 - Définitions des concepts clés](02-definition-concept-cles)
+-> [02 - Définitions des concepts clés](02-definition-concepts-cles)
