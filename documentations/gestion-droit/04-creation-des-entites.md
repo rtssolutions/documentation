@@ -97,16 +97,14 @@ Pour créer un utilisateur, les champs suivants doivent être renseignés :
 * **Numéro de téléphone** *(optionnel)*  
   * Un champ dédié permet de saisir le numéro.
   * Un sélecteur d’indicatif international (liste déroulante) permet de choisir le bon indicatif (ex. : \+33 pour la France).
-<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/utilisateur/creer-utilisateur.png
-" height="200" />
+<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/utilisateur/creer-utilisateur.png" height="200" />
 
 ### Association à un ou plusieurs groupes
 Une fois les informations de base renseignées, l’utilisateur peut être ajouté à un ou plusieurs groupes existants.
 
 * Cette étape est facultative, mais recommandée pour faciliter la gestion collective des rôles.  
 * L’ajout à un groupe permet à l’utilisateur d’hériter automatiquement des rôles et périmètres attribués à ce groupe.
-<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/utilisateur/liste-groupe-creer-utilisateur.png
-" height="200" />
+<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/utilisateur/liste-groupe-creer-utilisateur.png" height="200" />
 
 ### Attribution de rôles personnels
 Il est également possible d’associer directement des rôles à l’utilisateur en tant que rôles personnels (en complément ou indépendamment des groupes).
