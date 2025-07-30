@@ -4,12 +4,6 @@ description: ""
 date: "2025-07-29"
 version: "1"
 ---
-
-<video width="640" height="360" controls>
-  <source src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/gestion-droits.mov" type="video/mov">
-  Votre navigateur ne supporte pas la lecture vidéo.
-</video>
-
 ## Objectifs de l’application
 
 Cette application de gestion des identités et des accès (IAM) a pour objectif de centraliser et sécuriser la gestion des droits d’accès aux ressources de votre plateforme Papaours. Elle permet de créer des utilisateurs, de les regrouper en groupes, de leur attribuer des rôles définis par un ensemble de permissions, et d’appliquer ces rôles sur des périmètres organisationnels définis.
