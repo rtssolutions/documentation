@@ -18,7 +18,7 @@ version: "1"
 11. [Enregistrement de l’utilisateur](#enregistrement-de-lutilisateur)  
 12. [Cumul de rôle(s) et groupe(s) pour un utilisateur](#cumul-de-rôles-et-groupes-pour-un-utilisateur)  
 13. [Attribuer un périmètre](#attribuer-un-périmètre)
-
+---
 ## Créer un rôle
 Les rôles sont des regroupements de permissions permettant de structurer les droits d’accès des utilisateurs et des groupes dans votre plateforme **Papaours**. Chaque rôle correspond à un ensemble d’actions autorisées dans le système.
 
@@ -47,7 +47,6 @@ La création d’un rôle nécessite les éléments suivants :
 
 > Les permissions disponibles sont définies et maintenues par la plateforme Papaours. Elles ne peuvent pas être modifiées par les utilisateurs.
 
-
 ### Finaliser la création
 Une fois le rôle configuré :
 
@@ -57,6 +56,7 @@ Une fois le rôle configuré :
 
 <img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/role/nouveau-role-cree.png" alt="Nouveau rôle créé" height="200" />
 
+---
 
 ## Créer un groupe d’utilisateurs
 Afin de faciliter la gestion des accès et des permissions au sein de notre système, il est possible de structurer les utilisateurs en groupes distincts. La création de ces groupes permet d'attribuer des rôles et des droits spécifiques à un ensemble d'utilisateurs de manière efficace et centralisée.
@@ -77,7 +77,9 @@ Vous devez disposez de la permission gestion des groupes / Écriture pour accéd
   5. **Validation et Sauvegarde:** Vérifiez attentivement les informations et les configurations du groupe, puis validez et sauvegardez les modifications via l’action Créer le groupe. Le nouveau groupe sera alors créé et les utilisateurs ajoutés hériteront des permissions définies.
 
 <img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/groupe/nouveau-groupe.png" height="200" />
-  
+
+---
+
 ## Créer un utilisateur
 La création d’un utilisateur dans Papaours permet d’enregistrer une personne habilitée à se connecter à la plateforme et à bénéficier de droits d’accès selon ses rôles. Cette étape est essentielle pour intégrer un collaborateur, un formateur ou un gestionnaire au système.
 
@@ -144,6 +146,7 @@ Il est de la forme suivante :
 
 * L’utilisateur peut définir lui-même son mot de passe en cliquant sur **Définir mon mot de passe**
 
+---
 
 ## Attribuer un périmètre
 L'attribution d'un périmètre définit les limites et l'étendue des accès pour un utilisateur ou un groupe au sein du système. Cette étape est cruciale pour garantir la sécurité, l'efficacité et la clarté dans la gestion des droits.
@@ -154,5 +157,7 @@ L'attribution d'un périmètre définit les limites et l'étendue des accès pou
 
 ### Pour aller plus loin
 -> [05 - Attribution des droits](05-attribution-des-droits)
-   
+
+---
+
 [Retour à l'Accueil](../accueil)
