@@ -17,7 +17,6 @@ version: "1"
 
 ## Objectif et bénéfices
 L’objectif de cette fonctionnalité est de **conserver la mémoire des actions** liées à chaque entité. Elle permet :
-
 - Aux utilisateurs habilités de **comprendre l’état actuel d’une entité**
 - D’assurer une **traçabilité métier forte**
 
@@ -25,19 +24,17 @@ L’objectif de cette fonctionnalité est de **conserver la mémoire des actions
 ## Présentation générale
 Le module **Historique des actions** permet de consulter toutes les actions réalisées par les utilisateurs sur les différentes entités manipulées dans la plateforme Papaours.  
 Par entité, on entend tout objet métier structurant comme un **apprenant**, **contrat**, **dossier**, **formation**, etc.
+
 Chaque action est historisée avec ses métadonnées (date, auteur, type d'action), permettant ainsi un suivi précis, utile à la fois pour la traçabilité, l'audit, et la compréhension métier.
 
 ---
 
 ## Accès à l'historique
 L’utilisateur accède au module de recherche dédié à l’historique des actions via le menu **Historique** présent dans le menu contextuel.
-
 Vous devez disposer de la permissions Gestion de l'historique / Historique / Lecture
 <img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/historique/permissions-historique.png" height="200" />
 
-
 Le module de recherche d'historique permet de rechercher en appliquant des filtres : 
-
 - **Entité concernée** (ex. : Apprenant, Formation, Contrat, etc.)
 - **Code de l’entité** (ex. : A2025-000123)  
   → Il s’agit d’un code fonctionnel, pas d’un identifiant technique.
@@ -49,7 +46,6 @@ Le module de recherche d'historique permet de rechercher en appliquant des filtr
 ## Visibilité et périmètre
 Seules les **entités visibles par l’utilisateur** sont affichées dans les résultats.  
 La visibilité est déterminée par :
-
 - Le **périmètre organisationnel** de l'utilisateur
 - L’existence d’un droit d’accès à l’entité concernée
 
@@ -71,7 +67,6 @@ Les résultats sont présentés dans un **tableau trié par date décroissante**
 
 ## Comportement en absence de résultat
 Si **aucune action** ne correspond aux critères OU n’est **visible** pour l’utilisateur :
-
 - Le tableau est **masqué**
 - Le message suivant est affiché :
 
