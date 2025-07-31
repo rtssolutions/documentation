@@ -21,8 +21,12 @@ version: "1"
 13. [Attribuer un périmètre](#attribuer-un-périmètre)
 
 ---
+ <video controls width="250">
+    <source src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/gestion-des-droits.mp4" type="video/mp4" />
 
-<video src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/gestion-des-droits.mp4" />
+    Téléchargez la vidéo :
+    <a href="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/gestion-des-droits.mp4">MP4</a>
+  </video>
 
 ## Créer un rôle
 Les rôles sont des regroupements de permissions permettant de structurer les droits d’accès des utilisateurs et des groupes dans votre plateforme **Papaours**. Chaque rôle correspond à un ensemble d’actions autorisées dans le système.
