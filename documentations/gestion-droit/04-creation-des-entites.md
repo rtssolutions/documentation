@@ -22,11 +22,14 @@ version: "1"
 ## Créer un rôle
 Les rôles sont des regroupements de permissions permettant de structurer les droits d’accès des utilisateurs et des groupes dans votre plateforme **Papaours**. Chaque rôle correspond à un ensemble d’actions autorisées dans le système.
 
+---
 ### 🎥 Tutoriel vidéo
 
 <video controls>
   <source src="https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/role/creer-role.mov" type="video/mp4" />
 </video>
+
+---
 
 ### Accéder à la création de rôle
 La gestion des rôles se fait depuis la section **"Gestion des droits"**, dans le **sous-menu "Rôles"**.
