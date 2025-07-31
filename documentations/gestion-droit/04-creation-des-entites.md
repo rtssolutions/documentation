@@ -30,7 +30,8 @@ Pour créer un nouveau rôle :
 * Cliquez sur le **sous-menu "Rôles"** : Vous devez disposez de la permission rôle / Lecture pour accéder à ce sous-menu.  
 * Cliquez sur le bouton **"Ajouter un rôle"** : Vous devez disposez de la permission rôle / Écriture pour accéder à ce bouton.
 
-<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/role/acces-creer-un-role.png" height="200" />
+![Menu d'accès à la création d'un rôle](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/role/acces-creer-un-role.png)
+
 
   ### Informations à renseigner pour un rôle
 La création d’un rôle nécessite les éléments suivants :
@@ -43,7 +44,7 @@ La création d’un rôle nécessite les éléments suivants :
    Une liste complète des permissions disponibles est affichée sous forme de cases à cocher.  
    Il suffit de cocher les permissions souhaitées pour composer le rôle.
 
-<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/role/ajouter-un-role.png" alt="renseigner les informations du rôle" height="200" />
+![Renseigner les informations du rôle](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/role/ajouter-un-role.png)
 
 > Les permissions disponibles sont définies et maintenues par la plateforme Papaours. Elles ne peuvent pas être modifiées par les utilisateurs.
 
@@ -54,7 +55,7 @@ Une fois le rôle configuré :
 * Le rôle est alors enregistré et devient disponible pour l’attribution à des utilisateurs ou groupes.  
 * Il est visible dans la liste des rôles existants, avec ses permissions listées dans le détail.
 
-<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/role/nouveau-role-cree.png" alt="Nouveau rôle créé" height="200" />
+![nouveau rôle créé](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/role/nouveau-role-cree.png)
 
 ---
 
@@ -64,7 +65,7 @@ Afin de faciliter la gestion des accès et des permissions au sein de notre syst
 Voici les étapes à suivre pour créer un nouveau groupe d'utilisateurs :
 
 * **Navigation vers la Section Groupes**: Accédez à la section “Groupes”  dédiée à la gestion des groupes d'utilisateurs.  
-<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/groupe/acces-nouveau-groupe.png" height="200" />
+![Menu d'accès à l'ajout d'un groupe](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/groupe/acces-nouveau-groupe.png)
 
 * **Création d'un Nouveau Groupe:** Cliquez sur le bouton "Ajouter un Groupe"  
 Vous devez disposez de la permission gestion des groupes / Écriture pour accéder à ce bouton.
@@ -76,7 +77,7 @@ Vous devez disposez de la permission gestion des groupes / Écriture pour accéd
   4. **Ajout des Utilisateurs au Groupe:** Associez les utilisateurs concernés au groupe nouvellement créé. Vous pouvez ajouter des utilisateurs en les sélectionnant dans la liste Ajouter un membre au groupe ou en utilisant la barre de recherche  
   5. **Validation et Sauvegarde:** Vérifiez attentivement les informations et les configurations du groupe, puis validez et sauvegardez les modifications via l’action Créer le groupe. Le nouveau groupe sera alors créé et les utilisateurs ajoutés hériteront des permissions définies.
 
-<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/groupe/nouveau-groupe.png" height="200" />
+![Création d'un nouveau groupe](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/groupe/nouveau-groupe.png)
 
 ---
 
@@ -87,7 +88,7 @@ Pour créer un nouveau membre :
 
 * Cliquez sur le **sous-menu "Utilisateurs"** puis 
 * Cliquez sur le bouton **"Ajouter un Membre"** : Vous devez disposez de la permission gestion des utilisateurs / Écriture pour accéder à ce bouton.
-<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/utilisateur/acces-nouvel-utilisateur.png" height="200" />
+![Menu d'accès à l'ajout d'un utilisateur](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/utilisateur/acces-nouvel-utilisateur.png)
 
 ### Informations à renseigner pour un utilisateur
 Pour créer un utilisateur, les champs suivants doivent être renseignés :
@@ -99,14 +100,14 @@ Pour créer un utilisateur, les champs suivants doivent être renseignés :
 * **Numéro de téléphone** *(optionnel)*  
   * Un champ dédié permet de saisir le numéro.
   * Un sélecteur d’indicatif international (liste déroulante) permet de choisir le bon indicatif (ex. : \+33 pour la France).
-<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/utilisateur/creer-utilisateur.png" height="200" />
+![creation d'un utilisateur](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits//utilisateur/creer-utilisateur.png)
 
 ### Association à un ou plusieurs groupes
 Une fois les informations de base renseignées, l’utilisateur peut être ajouté à un ou plusieurs groupes existants.
 
 * Cette étape est facultative, mais recommandée pour faciliter la gestion collective des rôles.  
 * L’ajout à un groupe permet à l’utilisateur d’hériter automatiquement des rôles et périmètres attribués à ce groupe.
-<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/utilisateur/liste-groupe-creer-utilisateur.png" height="200" />
+![liste des groupes associables à un utilisateur(https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/utilisateur/liste-groupe-creer-utilisateur.png)
 
 ### Attribution de rôles personnels
 Il est également possible d’associer directement des rôles à l’utilisateur en tant que rôles personnels (en complément ou indépendamment des groupes).
@@ -117,7 +118,7 @@ Pour chaque rôle personnel ajouté :
 * Un périmètre doit être spécifié pour définir les organisations sur lesquelles le rôle s’applique.
 
 ⚠️ Un rôle personnel **doit toujours être associé à un périmètre**. Par défaut, ce sont les périmètres de l’utilisateur créant l’affectation qui sont pris en compte.
-<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/utilisateur/liste-role-creer-utilisateur.png" height="200" />
+![Liste des rôles associables à un utilisateur](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/utilisateur/liste-role-creer-utilisateur.png)
 
 ### Enregistrement de l’utilisateur
 Une fois toutes les informations saisies :
@@ -142,7 +143,7 @@ Papaours ne permet pas la création manuelle d’un mot de passe pour des raison
 * Le mail envoyé à pour titre : *Définir le mot de passe de votre compte Papaours*
 
 Il est de la forme suivante : 
-<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/utilisateur/mail-initialiser-mot-de-passe.png" height="200" />
+![mail d'initialiation de compte Papaours](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/ggestion-des-droits/utilisateur/mail-initialiser-mot-de-passe.png)
 
 * L’utilisateur peut définir lui-même son mot de passe en cliquant sur **Définir mon mot de passe**
 
