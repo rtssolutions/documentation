@@ -17,7 +17,7 @@ version: "1"
 9. [Association à un ou plusieurs groupes](#association-à-un-ou-plusieurs-groupes)  
 10. [Attribution de rôles personnels](#attribution-de-rôles-personnels)  
 11. [Enregistrement de l’utilisateur](#enregistrement-de-lutilisateur)  
-12. [Cumul de rôle(s) et groupe(s) pour un utilisateur](#cumul-de-rôles-et-groupes-pour-un-utilisateur)  
+12. [Cumul de rôle(s) et groupe(s) pour un utilisateur](#cumul-de-rôle(s)-et-groupe(s)-pour-un-utilisateur)  
 13. [Attribuer un périmètre](#attribuer-un-périmètre)
 
 ---
