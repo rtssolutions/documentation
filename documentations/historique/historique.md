@@ -1,7 +1,7 @@
 ---
 title: "01 - Historique des actions"
 description: "Module de recherche et de visualisation des actions utilisateurs par entité"
-date: "2025-07-29"
+date: "2025-07-31"
 version: "1"
 ---
 ## 📚 Table des matières
@@ -32,7 +32,8 @@ Chaque action est historisée avec ses métadonnées (date, auteur, type d'actio
 ## Accès à l'historique
 L’utilisateur accède au module de recherche dédié à l’historique des actions via le menu **Historique** présent dans le menu contextuel.
 Vous devez disposer de la permissions Gestion de l'historique / Historique / Lecture
-<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/historique/permissions-historique.png" height="200" />
+![permissions historique](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/historique/permissions-historique.png)
+
 
 Le module de recherche d'historique permet de rechercher en appliquant des filtres : 
 - **Entité concernée** (ex. : Apprenant, Formation, Contrat, etc.)
