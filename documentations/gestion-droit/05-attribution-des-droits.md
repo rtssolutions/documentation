@@ -1,7 +1,7 @@
 ---
 title: "05 - Attribution des droits"
 description: ""
-date: "2025-07-31"
+date: "2025-07-29"
 version: "1"
 ---
 ### 📚 Table des matières
@@ -9,6 +9,9 @@ version: "1"
 2. [Attribution indirecte via groupe d’utilisateurs](#attribution-indirecte-via-groupe-dutilisateurs)
 
 ---
+
+**Cette section explique comment attribuer des rôles — et donc des permissions — à un utilisateur.**
+> Pour cela, les rôles et les groupes d'utilisateurs doivent avoir été préalablement créés dans le système.
 
 ## Attribution directe d’un rôle à un utilisateur
 
@@ -31,7 +34,7 @@ L'attribution directe d'un rôle à un utilisateur est une méthode fondamentale
 3. **Périmètre** :  
    Le rôle personnel est automatiquement attribué aux organisations de l’utilisateur qui effectue l’action.
    <img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/utilisateur/role-personnel-attribue.png" height="200" />
-   
+
    Le périmetre de ce rôle est modifiable lorsque vous cliquez sur le bouton **Modifier le périmetre(x)**
    Retrouvez dans la section [06 - Modifier les droits d’accès](06-modifier-les-droits-dacces), Modifier un périmetre
 
@@ -58,8 +61,12 @@ Dans le cadre de la gestion des accès et des permissions, une méthode efficace
 #### 1. Depuis la page de modification d’un utilisateur
 
 1. Accédez à la modification de l’utilisateur
+<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/utilisateur/modifier-utilisateur-depuis-detail.png" height="200" />
+
 2. **Choix du groupe** :  
    Dans la liste **groupe d’utilisateur**, sélectionnez le groupe souhaité
+   <img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/groupe/liste-groupe-utilisateur.png" height="200" />
+
 3. **Périmètre** :  
    Hérité du groupe utilisateur sélectionné
 4. **Confirmation** :  
@@ -68,12 +75,15 @@ Dans le cadre de la gestion des accès et des permissions, une méthode efficace
 #### 2. Depuis la page de modification d’un groupe utilisateur
 
 1. Accédez à la modification du groupe utilisateur
+<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/groupe/modifier-un-groupe.png" height="200" />
+
 2. **Choix de l’utilisateur** :  
-   Recherchez l’utilisateur via son nom/prénom dans le champ **Ajouter un membre au groupe**
-3. **Périmètre** :  
-   Celui du groupe en cours de modification
-4. **Confirmation** :  
+   Recherchez l’utilisateur via son nom/prénom dans la section **Membres du groupe** puis cliquez sur **Ajouter au groupe**
+   <img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/groupe/ajouter-utilisateur-au-groupe.png" height="200" />
+
+3. **Confirmation** :  
    Cliquez sur **Modifier le groupe**
+   L'utilisateur possède les rôles du groupe auquel il appartient
 
 ---
 
@@ -87,6 +97,6 @@ L'attribution indirecte via groupes est une **pratique recommandée** pour une g
 - Renforce la sécurité globale du système
 
 ### Pour aller plus loin
--> [06 - Modifier les droits d’accès](06-modifier-les-droits-dacces)
+-> [06 - Modifier les rôles, groupes et utilisateurs](06-modifier-les-droits-dacces)
    
 [Retour à l'Accueil](../accueil)
