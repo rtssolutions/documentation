@@ -29,7 +29,6 @@ Les rôles sont des regroupements de permissions permettant de structurer les dr
   <source src="https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/role/creer-role.mov" type="video/mp4" />
 </video>
 
----
 
 ### Accéder à la création de rôle
 La gestion des rôles se fait depuis la section **"Gestion des droits"**, dans le **sous-menu "Rôles"**.
