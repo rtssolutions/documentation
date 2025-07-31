@@ -1,7 +1,7 @@
 ---
 title: "05 - Attribution des droits"
 description: ""
-date: "2025-07-29"
+date: "2025-07-31"
 version: "1"
 ---
 ### 📚 Table des matières
@@ -17,10 +17,24 @@ L'attribution directe d'un rôle à un utilisateur est une méthode fondamentale
 ### Étapes pour attribuer un rôle personnel à un utilisateur :
 
 1. **Accéder à la modification de l’utilisateur**
+   Pour modifier un utilisateur, vous devez disposer de la permission **Gestion des utilisateurs / Écriture**. Deux chemins sont possibles pour accéder à l’édition d’un utilisateur :
+   - Depuis la **page de détail** de l’utilisateur, en cliquant sur le bouton **Modifier**
+   <img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/utilisateur/modifier-utilisateur-depuis-detail.png" height="200" />
+
+   - Depuis la **liste des utilisateurs**, en cliquant sur le bouton **Modifier** situé sur la ligne correspondante
+   <img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/utilisateur/modifier-utilisateur-depuis-liste.png" height="200" />
+
 2. **Choix du rôle** :  
    Dans la liste **Rôle personnel**, sélectionnez le rôle souhaité parmi les rôles disponibles dans le système en recherchant via le nom ou dans la liste déroulante.
+   <img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/utilisateur/attribuer-role-personnel.png" height="200" />
+   
 3. **Périmètre** :  
    Le rôle personnel est automatiquement attribué aux organisations de l’utilisateur qui effectue l’action.
+   <img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/utilisateur/role-personnel-attribue.png" height="200" />
+   
+   Le périmetre de ce rôle est modifiable lorsque vous cliquez sur le bouton **Modifier le périmetre(x)**
+   Retrouvez dans la section [06 - Modifier les droits d’accès](06-modifier-les-droits-dacces), Modifier un périmetre
+
 4. **Confirmation** :  
    Cliquez sur **Modifier l'utilisateur** pour valider l'attribution.
 
@@ -73,6 +87,6 @@ L'attribution indirecte via groupes est une **pratique recommandée** pour une g
 - Renforce la sécurité globale du système
 
 ### Pour aller plus loin
--> [06 - Modifier les droits](06-modification-des-entites)
+-> [06 - Modifier les droits d’accès](06-modifier-les-droits-dacces)
    
 [Retour à l'Accueil](../accueil)
