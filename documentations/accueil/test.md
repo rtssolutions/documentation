@@ -40,7 +40,7 @@ Pour créer un nouveau rôle :
 * Cliquez sur le bouton **"Ajouter un rôle"** : Vous devez disposez de la permission rôle / Écriture pour accéder à ce bouton.
 
 <img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/role/acces-creer-un-role.png" height="200" />
-![Une image cool](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/role/acces-creer-un-role.png=100x100)
+![Une image cool](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/role/acces-creer-un-role.png "> 640x480")
   ### Informations à renseigner pour un rôle
 La création d’un rôle nécessite les éléments suivants :
 
