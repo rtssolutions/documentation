@@ -23,9 +23,6 @@ version: "1"
 ---
  <video controls>
     <source src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/gestion-des-droits.mp4" type="video/mp4" />
-
-    Téléchargez la vidéo :
-    <a href="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/gestion-des-droits.mp4">MP4</a>
   </video>
 
 ## Créer un rôle
