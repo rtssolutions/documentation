@@ -21,7 +21,7 @@ version: "1"
 13. [Attribuer un périmètre](#attribuer-un-périmètre)
 
 ---
- <video controls width="250">
+ <video controls>
     <source src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/gestion-des-droits.mp4" type="video/mp4" />
 
     Téléchargez la vidéo :
