@@ -26,7 +26,7 @@ Par défaut, les profils suivants peuvent accéder à ce menu :
 
 Les utilisateurs sans les permissions adéquates n’ont pas ce menu visible dans leur interface.
 
-<img src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/gestion-des-droits/acces-gestion-droits.png" alt="Menu d'accès à la gestion des droits" height="200" />
+![Menu d'accès à la gestion des droits](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-gestion-droits.png)
 
 
 ## Que permet le menu "Gestion des droits" ?
@@ -70,7 +70,10 @@ Chaque action effectuée dans le module "Gestion des droits" est tracée :
 
 Retrouvez dans la section [Historique](../historique/historique), comment rechercher l'historique des actions sur ces informations
 
+
 ### Pour aller plus loin
 -> [04 - Créer des rôles, groupes et utilisateurs](04-creation-des-entites)
    
 [Retour à l'Accueil](../accueil)
+
+
