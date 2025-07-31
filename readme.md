@@ -23,10 +23,13 @@ Papaours Gestion. Vous apprendrez à :
 La section documentation permet de consulter et naviguer dans l'ensemble des guides, tutoriels et références techniques
 de l'application. Elle offre :
 
-- **Navigation intuitive** avec une sidebar arborescente
-- **Recherche rapide** dans les documents
+- **Navigation intuitive** avec une sidebar arborescente et tri intelligent
+- **Interface optimisée** avec sidebar réduite par défaut pour plus d'espace de lecture
+- **Icônes personnalisées** pour organiser visuellement les dossiers
+- **Tri hiérarchique** : fichiers d'abord, puis dossiers, triés alphabétiquement
 - **Affichage optimisé** avec mise en forme automatique
-- **Liens croisés** entre les documents
+- **Support vidéo** pour les tutoriels multimédias
+- **Liens intelligents** avec navigation Next.js optimisée
 
 ### Release Notes (`/dashboard/documentations/release-notes/`)
 
@@ -47,17 +50,17 @@ Organisez vos documents dans le repository GitHub selon cette hiérarchie logiqu
 documentations/
 ├── index.md                          # 🏠 Page d'accueil
 ├── guides-utilisateur/               # 👥 Guides pour les utilisateurs finaux
-│   ├── index.md                     # Titre : "Guides Utilisateur"
+│   ├── index.md                     # Titre : "Guides Utilisateur", Icon: "UserGroupIcon"
 │   ├── premiers-pas.md              # Guide de démarrage
 │   ├── gestion-contrats.md          # Gestion des contrats
 │   └── formation/
-│       ├── index.md                 # Titre : "Formation"
+│       ├── index.md                 # Titre : "Formation", Icon: "AcademicCapIcon"
 │       ├── creation-formation.md    # Créer une formation
 │       └── suivi-apprenants.md      # Suivre les apprenants
 ├── guides-technique/                # 🔧 Documentation technique
-│   ├── index.md                     # Titre : "Guides Technique"
+│   ├── index.md                     # Titre : "Guides Technique", Icon: "CogIcon"
 │   ├── api/
-│   │   ├── index.md                 # Titre : "API"
+│   │   ├── index.md                 # Titre : "API", Icon: "DocumentTextIcon"
 │   │   ├── authentication.md       # Authentification
 │   │   ├── endpoints.md             # Points d'entrée
 │   │   └── exemples.md              # Exemples d'utilisation
@@ -67,7 +70,7 @@ documentations/
 │   │   └── production.md            # Mise en production
 │   └── troubleshooting.md           # Résolution de problèmes
 └── processus/                       # 📋 Processus métier
-    ├── index.md                     # Titre : "Processus"
+    ├── index.md                     # Titre : "Processus", Icon: "ChartBarIcon"
     ├── onboarding.md                # Processus d'accueil
     └── validation.md                # Processus de validation
 ```
@@ -78,6 +81,7 @@ documentations/
     - ⚠️ **Uniquement pour les titres de dossiers**
     - Ne s'affichent PAS comme des liens dans le menu
     - Définissent le nom affiché du dossier
+    - Peuvent définir une icône avec la propriété `icon`
 
 2. **Fichiers de documentation** :
     - Extension `.md` obligatoire
@@ -108,6 +112,7 @@ Votre contenu markdown commence ici...
 title: "Gestion des Contrats d'Apprentissage"
 
 # 📝 MÉTADONNÉES UTILISABLES
+icon: "DocumentTextIcon"                    # Icône pour les dossiers (index.md seulement)
 description: "Guide complet pour créer et gérer les contrats d'apprentissage"
 date: "2024-01-15"
 author: "Marie Dupont"
@@ -118,9 +123,10 @@ tags: ["contrat", "formation", "guide"]
 # Votre contenu ici
 ```
 
-**Métadonnées officielles supportées** (interface `DocumentMarkdownData`) :
+**Métadonnées officielles supportées** :
 
 - `title?: string` - **Obligatoire** - Titre affiché dans le menu
+- `icon?: string` - **Nouveau** - Nom de l'icône Heroicons
 - `description?: string` - Description du document
 - `date?: string` - Date de création/modification
 - `author?: string` - Auteur du document
@@ -138,6 +144,7 @@ tags: ["contrat", "formation", "guide"]
 title: "Mon Guide Utilisateur"
 description: "Guide d'utilisation pour les utilisateurs finaux"
 author: "Équipe Documentation"
+icon: "AcademicCapIcon"
 tags: ["guide", "tutoriel"]
 ---
 ```
@@ -171,26 +178,27 @@ tags: ["processus", "workflow", "validation"]
 
 1. **Introduction** : Présentation rapide du sujet
 2. **Prérequis** : Ce qu'il faut savoir avant de commencer
-3. **Étapes** : Guide pas à pas avec captures d'écran
+3. **Étapes** : Guide pas à pas avec captures d'écran et/ou vidéos
 4. **Exemples** : Cas d'usage concrets
 5. **Dépannage** : Solutions aux problèmes courants
 6. **Ressources** : Liens utiles et documentation complémentaire
 
 ### Style de rédaction
 
-- **Structure** : Titres hiérarchiques (H1, H2, H3...)
+- **Structure** : Titres hiérarchiques (H1, H2, H3...) avec ancres automatiques
 - **Lisibilité** : Paragraphes courts, listes à puces
-- **Visuels** : Captures d'écran, diagrammes, icônes
+- **Visuels** : Captures d'écran, vidéos, diagrammes, icônes
+- **Navigation** : Liens internes avec composants Next.js optimisés
 
-### Exemple de document bien structuré
+### Exemple de document bien structuré avec nouvelles fonctionnalités
 
 ```markdown
 ---
 title: "Créer un Contrat d'Apprentissage"
 description: "Comment créer un contrat d'apprentissage sur Papaours"
-version: "1.0.0"
+version: "2.0.0"
 author: "Sebastien Buisine"
-tags: ["contrat", "création", "tutoriel"]
+tags: ["contrat", "création", "tutoriel", "vidéo"]
 ---
 
 # Créer un Contrat d'Apprentissage
@@ -198,6 +206,13 @@ tags: ["contrat", "création", "tutoriel"]
 ## 📋 Introduction
 
 Ce guide vous explique comment créer un nouveau contrat d'apprentissage dans l'application Papaours Gestion.
+
+## 🎥 Tutoriel vidéo
+
+<video controls>
+  <source src="/videos/tutoriel-formation.webm" type="video/webm" />
+  <source src="/videos/tutoriel-formation.mp4" type="video/mp4" />
+</video>
 
 ## 🎯 Prérequis
 
@@ -215,9 +230,16 @@ Avant de commencer, assurez-vous de :
 2. Allez dans **Contrats** > **Nouveau contrat**
 3. Cliquez sur **"Créer un brouillon"**
 
+<img src="/images/interface-creation-contrat.png" alt="Interface de création de contrat" width="800" height="500" />
+
 ### 2. Remplir les informations
 
 #### Informations de l'apprenant
+
+<video controls width="600">
+  <source src="/videos/saisie-apprenant.webm" type="video/webm" />
+  <source src="/videos/saisie-apprenant.mp4" type="video/mp4" />
+</video>
 
 - **Nom et prénom** : Saisir les données d'état civil
 - **Date de naissance** : Format JJ/MM/AAAA
@@ -243,6 +265,8 @@ Après validation, vous devriez voir :
 - Un statut "En cours de rédaction"
 - Un identifiant unique généré
 
+![Alt text](/images/contrat-cree-liste.png "WIDTHxHEIGHT") les tailles ne sont pas obligatoire
+
 ## 🔧 Dépannage
 
 ### Le bouton "Créer" est grisé
@@ -260,7 +284,19 @@ Après validation, vous devriez voir :
 - [Guide de validation des contrats](validation-contrats)
 - [Gestion des apprenants](gestion-apprenants)
 - [FAQ Contrats](faq-contrats)
+- [Tutoriel vidéo avancé](tutoriel-contrat-avance)
 ```
+
+### Sidebar optimisée
+- **Mode réduit par défaut** sur les pages de documentation pour maximiser l'espace de lecture
+
+### Navigation améliorée
+- **Ancres automatiques** : Tous les titres H1-H4 génèrent des ancres pour les liens directs
+- **Liens Next.js optimisés** : Navigation client-side rapide entre les documents
+
+### Support multimédia
+- **Composant vidéo natif** : Support HTML5 avec fallbacks multiples
+- **Images optimisées** : Compression automatique et formats modernes (WebP, AVIF)
 
 ## 🚀 Release Notes - Guide Complet
 
@@ -505,10 +541,6 @@ Correction d'une faille de sécurité...
     - `v2.0.0-rc.1` (release candidate)
     - `v1.1.1` (correctif)
 
----
 
-**Dernière mise à jour** : Janvier 2025  
-**Version du guide** : 2.0  
-**Équipe** : Documentation Papaours Gestion
 
-Pour toute question ou suggestion, contactez l'équipe de documentation à `doc@papaours.com`
+Pour toute question ou suggestion, contactez l'équipe de documentation à `contact@rtssolutions.fr`
