@@ -156,6 +156,7 @@ Cette limitation est une **mesure de sécurité essentielle** et une pratique co
 En somme, cette restriction dans l'application de gestion des droits de la plateforme **Papaours** n'est **pas une lacune**, mais bien **une fonctionnalité délibérée** visant à renforcer la sécurité, la fiabilité et la gouvernance des accès au sein de l'environnement applicatif.  
 
 Les modifications des permissions des utilisateurs doivent ainsi être **gérées par une autorité externe et habilitée**, garantissant que chaque changement est intentionnel, justifié et enregistré.
+
 -> Retrouvez les bonnes pratiques de gestion dans la section [08 - Bonnes pratiques](08-bonnes-pratiques)
 
 
