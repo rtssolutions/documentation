@@ -1,7 +1,7 @@
 ---
 title: "08 - Bonnes pratiques"
 description: ""
-date: "2025-07-29"
+date: "2025-08-01"
 version: "1"
 ---
 
@@ -63,11 +63,11 @@ La segmentation des accès par une utilisation raisonnée des périmètres vise 
 
 --- 
 
-### Gestion des comptes inactifs et audit des accèsGestion des comptes inactifs et audit des accès
+### Gestion des comptes inactifs et audit des accès
 
-  Afin de garantir la sécurité et l'intégrité de votre plateforme, une gestion rigoureuse des comptes utilisateurs est primordiale. Cela inclut non seulement la création et la modification des accès, mais également une attention particulière portée aux comptes inactifs et la mise en place d'audits réguliers des droits d'accès.
+Afin de garantir la sécurité et l'intégrité de votre plateforme, une gestion rigoureuse des comptes utilisateurs est primordiale. Cela inclut non seulement la création et la modification des accès, mais également une attention particulière portée aux comptes inactifs et la mise en place d'audits réguliers des droits d'accès.
 
-  Comptes inactifs
+#### Comptes inactifs
 
   Les comptes utilisateurs qui ne sont plus utilisés représentent un risque de sécurité significatif. Ils peuvent être compromis et utilisés par des acteurs malveillants pour accéder à des informations sensibles, effectuer des actions non autorisées ou propager des logiciels malveillants. Pour minimiser ce risque, les mesures suivantes peuvent être mises en œuvre :
 
@@ -77,7 +77,7 @@ La segmentation des accès par une utilisation raisonnée des périmètres vise 
 * Suppression définitive : Après une période de désactivation temporaire et sans demande de réactivation justifiée, les comptes seront définitivement supprimés. Il est essentiel de documenter les processus de suppression et de s'assurer que toutes les données associées au compte sont traitées conformément aux politiques de rétention des données et aux réglementations en vigueur (par exemple, RGPD).  
 * Politique de rétention des comptes : Une politique claire définissant la durée d'inactivité avant la désactivation et la suppression des comptes sera établie et communiquée à tous les utilisateurs.
 
-Audit des accès
+#### Audit des accès
 
 L'audit régulier des droits d'accès est une composante essentielle de la gestion de la sécurité. Il permet de s'assurer que les utilisateurs n'ont accès qu'aux ressources nécessaires à l'exécution de leurs fonctions (principe du moindre privilège) et de détecter toute dérive ou attribution de droits non justifiée.
 
