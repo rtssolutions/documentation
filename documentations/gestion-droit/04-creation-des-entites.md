@@ -152,7 +152,7 @@ Papaours ne permet pas la création manuelle d’un mot de passe pour des raison
 * Le mail envoyé à pour titre : *Définir le mot de passe de votre compte Papaours*
 
 Il est de la forme suivante : 
-![mail d'initialiation de compte Papaours](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/ggestion-des-droits/utilisateur/mail-initialiser-mot-de-passe.png)
+![mail d'initialiation de compte Papaours](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/utilisateur/mail-initialiser-mot-de-passe.png)
 
 * L’utilisateur peut définir lui-même son mot de passe en cliquant sur **Définir mon mot de passe**
 
