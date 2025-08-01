@@ -37,7 +37,7 @@ L'attribution directe d'un rôle à un utilisateur est une méthode fondamentale
 ![Rôle personnel attribué](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/utilisateur/role-personnel-attribue.png "980*174")
 
    Le périmetre de ce rôle est modifiable lorsque vous cliquez sur le bouton **Modifier le périmetre(x)**
-   Retrouvez dans la section [06 - Modifier les droits d’accès](06-modifier-les-droits-dacces), Modifier un périmetre
+   Retrouvez dans la section [06 - Modifier les droits d’accès](06-modifier-les-droits-dacces), Modifier un périmetre, la procédure pour modifier un périmètre.
 
 4. **Confirmation** :  
    Cliquez sur **Modifier l'utilisateur** pour valider l'attribution.
@@ -84,18 +84,20 @@ Dans le cadre de la gestion des accès et des permissions, une méthode efficace
 
 3. **Confirmation** :  
    Cliquez sur **Modifier le groupe**
-   L'utilisateur possède les rôles du groupe auquel il appartient
+   L'utilisateur appartient à présent au groupe
 
 ---
 
 ### En résumé
 
-L'attribution indirecte via groupes est une **pratique recommandée** pour une gestion structurée et sécurisée des droits. Elle :
+L'attribution indirecte de permissions via des groupes utilisateurs est une **pratique recommandée** pour une gestion structurée et sécurisée des droits. Elle :
 
 - Simplifie les opérations
 - Facilite la maintenance
 - Améliore l’organisation
 - Renforce la sécurité globale du système
+-> Retrouvez les bonnes pratiques de gestion dans la section [08 - Bonnes pratiques](08-bonnes-pratiques)
+
 
 ### Pour aller plus loin
 -> [06 - Modifier les rôles, groupes et utilisateurs](06-modifier-les-droits-dacces)
