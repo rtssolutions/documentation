@@ -53,7 +53,7 @@ En appliquant ce principe, vous permettez à l'utilisateur de bénéficier d'une
 
 --- 
 
-### Utilisation raisonnée des périmètres pour segmenter les accès {#utilisation-raisonnée-des-périmètres-pour-segmenter-les-accès}
+### Utilisation raisonnée des périmètres pour segmenter les accès
 
 La segmentation des accès par une utilisation raisonnée des périmètres vise à garantir que chaque utilisateur ou groupe d'utilisateurs n'ait accès qu'aux ressources strictement nécessaires à l'accomplissement de ses tâches.
 
@@ -63,7 +63,7 @@ La segmentation des accès par une utilisation raisonnée des périmètres vise 
 
 --- 
 
-### Gestion des comptes inactifs et audit des accèsGestion des comptes inactifs et audit des accès {#gestion-des-comptes-inactifs-et-audit-des-accèsgestion-des-comptes-inactifs-et-audit-des-accès}
+### Gestion des comptes inactifs et audit des accèsGestion des comptes inactifs et audit des accès
 
   Afin de garantir la sécurité et l'intégrité de votre plateforme, une gestion rigoureuse des comptes utilisateurs est primordiale. Cela inclut non seulement la création et la modification des accès, mais également une attention particulière portée aux comptes inactifs et la mise en place d'audits réguliers des droits d'accès.
 
