@@ -29,7 +29,7 @@ Chaque entité est connectée selon les règles suivantes :
 - Un **groupe** est associé à un ou plusieurs **rôles**.
 - Un **rôle** donne accès à un ensemble de **permissions** sur un périmètre donné.
 
-![Concepts Clés](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/diagramme-concept.png)
+![Concepts Clés](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/diagramme-concept.png "576*595")
 
 ## Définitions
 - **Utilisateur** : personne ayant un compte sur la plateforme, identifiable par une adresse e-mail unique.
