@@ -116,7 +116,7 @@ Une fois les informations de base renseignées, l’utilisateur peut être ajout
 
 * Cette étape est facultative, mais recommandée pour faciliter la gestion collective des rôles.  
 * L’ajout à un groupe permet à l’utilisateur d’hériter automatiquement des rôles et périmètres attribués à ce groupe.
-![liste des groupes associables à un utilisateur](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/utilisateur/liste-groupe-creer-utilisateur.png "")
+![liste des groupes associables à un utilisateur](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/utilisateur/liste-groupe-creer-utilisateur.png "980*186")
 
 ### Attribution de rôles personnels
 Il est également possible d’associer directement des rôles à l’utilisateur en tant que rôles personnels (en complément ou indépendamment des groupes).
@@ -127,7 +127,7 @@ Pour chaque rôle personnel ajouté :
 * Un périmètre doit être spécifié pour définir les organisations sur lesquelles le rôle s’applique.
 
 ⚠️ Un rôle personnel **doit toujours être associé à un périmètre**. Par défaut, ce sont les périmètres de l’utilisateur créant l’affectation qui sont pris en compte.
-![Liste des rôles associables à un utilisateur](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/utilisateur/liste-role-creer-utilisateur.png)
+![Liste des rôles associables à un utilisateur](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/utilisateur/liste-role-creer-utilisateur.png "1012*230")
 
 ### Enregistrement de l’utilisateur
 Une fois toutes les informations saisies :
@@ -152,7 +152,7 @@ Papaours ne permet pas la création manuelle d’un mot de passe pour des raison
 * Le mail envoyé à pour titre : *Définir le mot de passe de votre compte Papaours*
 
 Il est de la forme suivante : 
-![mail d'initialiation de compte Papaours](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/utilisateur/mail-initialiser-mot-de-passe.png)
+![mail d'initialiation de compte Papaours](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/utilisateur/mail-initialiser-mot-de-passe.png "528*479")
 
 * L’utilisateur peut définir lui-même son mot de passe en cliquant sur **Définir mon mot de passe**
 
