@@ -161,6 +161,6 @@ Les modifications des permissions des utilisateurs doivent ainsi être **gérée
 
 
 ### Pour aller plus loin
--> [07 - Supprimer les rôles, groupes et utilisateurs](07-suppressions-des-entites)
+-> [07 - Supprimer les rôles, groupes et utilisateurs](07-suppression-des-entites)
    
 [Retour à l'Accueil](../accueil)
