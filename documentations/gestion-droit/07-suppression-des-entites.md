@@ -1,5 +1,5 @@
 ---
-title: "07 - Suppression des entités"
+title: "07 - Supprimer les rôles, groupes et utilisateurs"
 description: ""
 date: "2025-08-01"
 version: "1"
