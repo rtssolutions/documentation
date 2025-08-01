@@ -96,6 +96,7 @@ L'attribution indirecte de permissions via des groupes utilisateurs est une **pr
 - Facilite la maintenance
 - Améliore l’organisation
 - Renforce la sécurité globale du système
+
 -> Retrouvez les bonnes pratiques de gestion dans la section [08 - Bonnes pratiques](08-bonnes-pratiques)
 
 
