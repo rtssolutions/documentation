@@ -26,7 +26,7 @@ Par défaut, les profils suivants peuvent accéder à ce menu :
 
 Les utilisateurs sans les permissions adéquates n’ont pas ce menu visible dans leur interface.
 
-![Menu d'accès à la gestion des droits](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-gestion-droits.png)
+![Menu d'accès à la gestion des droits](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-gestion-droits.png "338*388")
 
 
 ## Que permet le menu "Gestion des droits" ?
