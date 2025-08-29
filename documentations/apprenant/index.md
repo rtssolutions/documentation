@@ -3,7 +3,7 @@ title: "Apprenant"
 description: "Suivi des apprenants, informations et parcours"
 date: "2025-07-29"
 version: "1"
-icon:"academicCapIcon"
+icon: "AcademicCapIcon"
 ---
 
 # Apprenant
