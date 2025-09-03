@@ -15,10 +15,9 @@ Une unité de formation représente un organisme dispensateur de formations prof
 - **Informations commerciales** : nom commercial, slogan, description
 - **Moyens de contact** : coordonnées et canaux de communication
 
-### États d'une Unité de Formationn
+### États d'une Unité de Formation
 - **Active** : Validée et opérationnelle
 - **Inactive** : Désactivée temporairement
-- **Archivée** : Supprimée logiquement du système
 
 ### Statuts de Conformité
 - **Valide** : Toutes les informations obligatoires sont renseignées et valides
@@ -26,9 +25,7 @@ Une unité de formation représente un organisme dispensateur de formations prof
 - **À corriger** : Contient des erreurs à rectifier
 
 ### Lieu de Formation
-Site géographique où se déroulent les formations, rattaché à une unité de formation :
-- **Principal** : Siège social ou site principal de l'organisme
-- **Secondaire** : Sites additionnels de dispensation
+Site géographique où se déroulent les formations, rattaché à une unité de formation
 
 ### Processus d'Approbation
 Workflow de validation qualité des unités de formation avant leur mise en service :

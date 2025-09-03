@@ -7,385 +7,161 @@ version: "1"
 
 ### Table des matières
 1. [Principe du processus d'approbation](#principe-du-processus-dapprobation)
-2. [États et workflow](#états-et-workflow)
-3. [Accéder au module d'approbation](#accéder-au-module-dapprobation)
-4. [Traitement des approbations individuelles](#traitement-des-approbations-individuelles)
+2. [États d'approbation](#états-dapprobation)
+3. [Accéder aux approbations](#accéder-aux-approbations)
+4. [Traitement des approbations](#traitement-des-approbations)
 5. [Approbations par lot](#approbations-par-lot)
-6. [Gestion des rejets et corrections](#gestion-des-rejets-et-corrections)
-7. [Suivi et reporting](#suivi-et-reporting)
 
 ---
 
 ## Principe du processus d'approbation
 
 ### Objectif
-Le processus d'approbation garantit la qualité et la conformité des unités de formation avant leur mise en service. Il permet un contrôle qualité systématique et une validation métier des informations saisies.
+Le processus d'approbation permet de valider la qualité et la conformité des unités de formation avant leur activation. Il garantit que les informations sont complètes et correctes.
 
-### Acteurs du processus
-
-**Créateurs/Modificateurs**
-- **Gestionnaires de formation** : Saisie initiale des unités
-- **Administrateurs fonctionnels** : Modifications et corrections
-- **Utilisateurs métier** : Compléments d'informations
-
-![Acteurs création](placeholder-acteurs-creation.png "Rôles de saisie")
-
-**Approbateurs**
-- **Responsables qualité** : Validation des conformités
-- **Administrateurs système** : Contrôle technique
-- **Référents métier** : Validation fonctionnelle
-
-![Acteurs approbation](placeholder-acteurs-approbation.png "Rôles de validation")
+### Qui peut approuver
+- **Utilisateurs associés à un centre de formation** avec la permission **"Approbation des unités de formation"**
+- **Basé sur les périmètres** : les approbateurs ne voient que les unités de leur périmètre
 
 ### Déclenchement
-L'approbation est requise dans les cas suivants :
-- **Création** d'une nouvelle unité de formation
-- **Modification majeure** d'une unité existante
-- **Changement de statut** critique (réactivation)
-- **Demande explicite** d'un gestionnaire
-
-![Déclenchement approbation](placeholder-declenchement-approbation.png "Conditions d'entrée")
+L'approbation est requise pour :
+- **Nouvelles unités de formation** créées
+- **Modifications importantes** nécessitant revalidation
 
 ---
 
-## États et workflow
+## États d'approbation
 
-### États d'approbation
+Le système utilise 5 états d'approbation :
 
-**À compléter**
-- **Données insuffisantes** : Champs obligatoires manquants
-- **Informations incomplètes** : Détails nécessaires absents
-- **Documentation manquante** : Pièces justificatives non fournies
+### À compléter
+- Champs obligatoires manquants
+- Informations incomplètes
 
-![État à compléter](placeholder-etat-completer.png "Données insuffisantes")
+![État à compléter](placeholder-etat-a-completer.png "Données insuffisantes")
 
-**À corriger**
-- **Erreurs détectées** : Incohérences dans les données
-- **Format incorrect** : Non-respect des contraintes
-- **Informations contradictoires** : Conflits entre champs
+### À corriger  
+- Erreurs détectées dans les données
+- Formats incorrects ou incohérences
 
-![État à corriger](placeholder-etat-corriger.png "Corrections nécessaires")
+![État à corriger](placeholder-etat-a-corriger.png "Corrections nécessaires")
 
-**À valider**
-- **Données complètes** : Tous les champs requis renseignés
-- **Conformité technique** : Formats respectés
-- **Prêt pour validation** : En attente d'approbation finale
+### À valider
+- Toutes les informations sont complètes
+- Prêt pour validation finale
 
-![État à valider](placeholder-etat-valider.png "Prêt pour validation")
+![État à valider](placeholder-etat-a-valider.png "Prêt pour validation")
 
-**Validée**
-- **Approbation accordée** : Unité validée par un approbateur
-- **Mise en service** : Activation automatique de l'unité
-- **Intégration complète** : Disponible dans tous les modules
+### Validée
+- Approbation accordée
+- Unité activée et disponible
 
 ![État validée](placeholder-etat-validee.png "Approbation accordée")
 
-**Refusée**
-- **Non-conformité majeure** : Problèmes bloquants identifiés
-- **Critères non respectés** : Standards qualité non atteints
-- **Décision de rejet** : Approbation explicitement refusée
+### Refusée
+- Non-conformité détectée
+- Approbation refusée
 
 ![État refusée](placeholder-etat-refusee.png "Approbation refusée")
 
-### Workflow de traitement
+---
 
-```mermaid
-flowchart TD
-    A[Création/Modification] --> B[À compléter]
-    B --> C[Complément d'informations]
-    C --> D[À corriger]
-    D --> E[Corrections apportées]
-    E --> F[À valider]
-    F --> G{Décision approbateur}
-    G -->|Approuve| H[Validée]
-    G -->|Rejette| I[Refusée]
-    G -->|Corrections nécessaires| D
-    I --> J[Nouvelle soumission]
-    J --> B
-```
+## Accéder aux approbations
 
-![Workflow approbation](placeholder-workflow-approbation.png "Flux de traitement")
+### Navigation
+- **Menu Formation** > **Unités de Formation**
+- **Onglet "Approbations"** dans l'interface
+- Organisation par **onglets selon les statuts**
+
+![Navigation approbations](placeholder-navigation-approbations.png "Accès aux approbations")
+
+### Interface par statuts
+L'interface est organisée en onglets :
+- **À compléter** : Unités nécessitant des informations
+- **À corriger** : Unités avec erreurs à rectifier  
+- **À valider** : Unités prêtes pour validation
+- **Refusées** : Unités non validées
+
+![Interface par statuts](placeholder-interface-statuts.png "Organisation par onglets")
 
 ---
 
-## Accéder au module d'approbation
+## Traitement des approbations
 
-### Navigation principale
-Le module d'approbation est accessible via :
-- **Menu "Formation"** > **"Unités de Formation"** > **"Approbations"**
-- **Onglet "Approbations"** depuis la liste des unités
-- **Notifications** directes d'éléments en attente
+### Actions disponibles
 
-![Navigation approbation](placeholder-navigation-approbation.png "Accès au module")
+**Approuver une unité**
+- Vérification des informations
+- Validation en un clic
+- Activation automatique
 
-### Permissions requises
-Pour accéder aux approbations :
-- **"Consultation des approbations"** : Vue d'ensemble et détails
-- **"Approbation des unités de formation"** : Actions de validation/rejet
-- **Périmètre approprié** : Accès aux unités concernées
+![Action approuver](placeholder-action-approuver.png "Validation d'une unité")
 
-![Permissions approbation](placeholder-permissions-approbation.png "Contrôles d'accès")
+**Refuser une unité**
+- Saisie du motif de refus
+- Commentaire explicatif
+- Notification du refus
 
-### Vue d'ensemble
+![Action refuser](placeholder-action-refuser.png "Refus d'une unité")
 
-**Tableau de bord des approbations**
-- **Compteurs par statut** : Nombre d'unités dans chaque état
-- **Répartition temporelle** : Évolution des volumes
-- **Alertes de délai** : Approbations en retard
-- **Assignations** : Répartition par approbateur
+**Modifier avant validation**
+- Correction directe des informations
+- Mise à jour des données
+- Retour au statut approprié
 
-![Dashboard approbations](placeholder-dashboard-approbations.png "Vue synthétique")
+![Modification avant validation](placeholder-modif-avant-validation.png "Correction des données")
 
-**Liste des unités en attente**
-Organisation par colonnes :
-- **Dénomination** : Nom de l'unité concernée
-- **Statut** : État actuel dans le workflow
-- **Date de soumission** : Ancienneté de la demande
-- **Approbateur assigné** : Responsable du traitement
-- **Priorité** : Niveau d'urgence
+### Informations d'aide
 
-![Liste attente approbation](placeholder-liste-attente-approbation.png "Unités à traiter")
+**Champs manquants**
+- Liste des informations obligatoires non renseignées
+- Aide contextuelle pour la completion
 
----
+![Champs manquants](placeholder-champs-manquants.png "Informations à compléter")
 
-## Traitement des approbations individuelles
+**Champs invalides**  
+- Détail des erreurs de format ou de contenu
+- Suggestions de correction
 
-### Consultation d'une unité en attente
-
-**Accès au détail**
-- Cliquez sur l'unité dans la liste d'approbation
-- **Vue spécialisée** avec focus sur les éléments à valider
-- **Comparaison** avec la version précédente si modification
-
-![Détail unité approbation](placeholder-detail-unite-approbation.png "Vue d'approbation")
-
-**Informations spécifiques**
-- **Historique des modifications** : Changements apportés
-- **Commentaires** des versions précédentes
-- **Points de vigilance** : Éléments nécessitant attention
-- **Pièces justificatives** : Documents associés
-
-![Infos spécifiques approbation](placeholder-infos-specifiques-approbation.png "Données de validation")
-
-### Actions d'approbation
-
-**Approuver l'unité**
-1. **Vérification complète** : Contrôle de tous les éléments
-2. **Validation métier** : Conformité aux standards
-3. **Commentaire d'approbation** : Justification de la décision
-4. **Confirmation** : Validation définitive
-
-![Action approuver](placeholder-action-approuver.png "Processus d'approbation")
-
-**Demander des corrections**
-1. **Identification des problèmes** : Liste détaillée des points
-2. **Catégorisation** : Bloquant, Amélioration, Information
-3. **Instructions précises** : Explications pour les corrections
-4. **Délai de correction** : Temps imparti pour les modifications
-
-![Demander corrections](placeholder-demander-corrections.png "Retour pour correction")
-
-**Refuser l'unité**
-1. **Motifs de refus** : Raisons détaillées du rejet
-2. **Références** : Standards ou règles non respectés
-3. **Recommandations** : Pistes d'amélioration pour l'avenir
-4. **Confirmation explicite** : Validation du refus définitif
-
-![Action refuser](placeholder-action-refuser.png "Processus de rejet")
-
-### Outils d'aide à la décision
-
-**Check-list de validation**
-- ✅ **Informations légales** : SIRET, dénomination, forme juridique
-- ✅ **Données fiscales** : TVA, numéros officiels
-- ✅ **Cohérence métier** : Secteur d'activité, formations proposées
-- ✅ **Moyens de contact** : Accessibilité et validité
-- ✅ **Lieux de formation** : Adresses et capacités réalistes
-
-![Check-list validation](placeholder-checklist-validation.png "Points de contrôle")
-
-**Référentiels de contrôle**
-- **Base SIRET** : Vérification de l'existence et statut
-- **Registres professionnels** : Validité des habilitations
-- **Standards qualité** : Conformité aux exigences sectorielles
-- **Règles internes** : Respect des procédures de l'organisation
-
-![Référentiels contrôle](placeholder-referentiels-controle.png "Sources de vérification")
+![Champs invalides](placeholder-champs-invalides.png "Erreurs à corriger")
 
 ---
 
 ## Approbations par lot
 
-### Sélection des unités
+### Traitement groupé
+Possibilité de traiter plusieurs unités simultanément :
 
-**Critères de groupement**
-Traitement simultané possible pour :
-- **Même type de problème** : Corrections similaires
-- **Même créateur** : Unités saisies par la même personne
-- **Même période** : Soumissions groupées
-- **Même nature** : Organismes du même secteur
+**Tout approuver**
+- Approbation en masse des unités d'un statut
+- Vérification automatique de la conformité
+- Traitement par lot avec rapport de résultats
 
-![Critères groupement](placeholder-criteres-groupement.png "Logique de lot")
+![Tout approuver](placeholder-tout-approuver.png "Approbation en masse")
 
-**Interface de sélection**
-- **Cases à cocher** : Sélection multiple dans la liste
-- **Filtres avancés** : Critères de regroupement
-- **Aperçu du lot** : Récapitulatif des unités sélectionnées
-- **Vérification** : Contrôle de compatibilité
+**Tout refuser**
+- Refus groupé avec motif commun
+- Application à toutes les unités sélectionnées
+- Rapport détaillé des actions effectuées
 
-![Interface sélection lot](placeholder-interface-selection-lot.png "Sélection groupée")
+![Tout refuser](placeholder-tout-refuser.png "Refus en masse")
 
-### Actions par lot
+### Gestion des résultats
+- **Rapport de traitement** : Succès et échecs détaillés
+- **Gestion des erreurs** : Unités non traitées identifiées
+- **Actions de suivi** : Possibilité de retraiter les échecs
 
-**Approbation massive**
-- **Pré-contrôles** : Vérification automatique de chaque unité
-- **Validation globale** : Commentaire unique pour le lot
-- **Traitement séquentiel** : Approbation une par une
-- **Rapport de résultats** : Succès et échecs détaillés
-
-![Approbation massive](placeholder-approbation-massive.png "Traitement groupé")
-
-**Demande de corrections groupée**
-- **Problème commun** : Même type de correction pour toutes
-- **Instructions standardisées** : Message uniforme
-- **Assignation** : Retour vers les créateurs respectifs
-- **Suivi unifié** : Monitoring des corrections
-
-![Corrections groupées](placeholder-corrections-groupees.png "Retours collectifs")
-
-**Rejet par lot**
-- **Motifs partagés** : Problèmes similaires identifiés
-- **Documentation** : Justifications détaillées
-- **Communication** : Notification aux parties prenantes
-- **Archivage** : Conservation des décisions
-
-![Rejet par lot](placeholder-rejet-par-lot.png "Refus collectifs")
-
-### Gestion des exceptions
-Dans un lot, traitement spécifique pour :
-- **Unités non conformes** : Exclusion du traitement global
-- **Cas particuliers** : Nécessitant une analyse individuelle
-- **Problèmes techniques** : Erreurs système lors du traitement
-- **Conflits de permissions** : Droits insuffisants sur certaines unités
-
-![Gestion exceptions](placeholder-gestion-exceptions.png "Cas spéciaux")
+![Résultats approbations lot](placeholder-resultats-lot.png "Rapport de traitement")
 
 ---
 
-## Gestion des rejets et corrections
+## Historique des approbations
 
-### Traitement des unités refusées
+### Traçabilité
+- **Journal des décisions** : Historique complet des approbations/refus
+- **Dates et auteurs** : Traçabilité des actions
 
-**Communication du refus**
-- **Notification automatique** : Email au créateur
-- **Détail des motifs** : Explications précises des problèmes
-- **Références** : Standards et règles applicables
-- **Contact** : Coordonnées de l'approbateur pour clarifications
-
-![Communication refus](placeholder-communication-refus.png "Information du créateur")
-
-**Options post-refus**
-- **Nouvelle soumission** : Correction et resoumission possible
-- **Abandon** : Archivage de la demande
-- **Escalade** : Remontée vers un niveau supérieur
-- **Expertise externe** : Conseil spécialisé si nécessaire
-
-![Options post-refus](placeholder-options-post-refus.png "Suite du processus")
-
-### Corrections demandées
-
-**Notification des corrections**
-- **Liste détaillée** : Points à corriger avec priorités
-- **Exemples** : Illustrations des bonnes pratiques
-- **Délai** : Temps imparti pour les modifications
-- **Assistance** : Contact pour aide si nécessaire
-
-![Notification corrections](placeholder-notification-corrections.png "Guide de correction")
-
-**Suivi des corrections**
-- **Statut en temps réel** : Avancement des modifications
-- **Alertes de délai** : Rappels avant échéance
-- **Validation intermédiaire** : Contrôle partiel des corrections
-- **Resoumission** : Nouveau cycle d'approbation
-
-![Suivi corrections](placeholder-suivi-corrections.png "Monitoring des modifications")
-
-### Escalade et résolution de conflits
-
-**Procédure d'escalade**
-En cas de désaccord :
-1. **Dialogue direct** : Discussion entre créateur et approbateur
-2. **Médiation** : Intervention d'un référent métier
-3. **Arbitrage** : Décision d'un responsable hiérarchique
-4. **Commission** : Examen collégial si nécessaire
-
-![Procédure escalade](placeholder-procedure-escalade.png "Résolution de conflits")
-
-**Documentation des décisions**
-- **Historique complet** : Toutes les interactions documentées
-- **Justifications** : Raisons détaillées de chaque décision
-- **Précédents** : Constitution d'une base de référence
-- **Amélioration continue** : Évolution des critères
-
-![Documentation décisions](placeholder-documentation-decisions.png "Traçabilité complète")
-
----
-
-## Suivi et reporting
-
-### Métriques d'activité
-
-**Indicateurs de performance**
-- **Délai moyen d'approbation** : Temps de traitement par statut
-- **Taux d'approbation** : Pourcentage de validations directes
-- **Volume mensuel** : Évolution du nombre de demandes
-- **Répartition par approbateur** : Charge de travail individuelle
-
-![Métriques performance](placeholder-metriques-performance.png "Indicateurs clés")
-
-**Tableaux de bord**
-- **Vue temps réel** : Situation actuelle des approbations
-- **Tendances** : Évolution sur plusieurs mois
-- **Comparaisons** : Benchmarks avec périodes précédentes
-- **Prévisions** : Charge de travail anticipée
-
-![Tableaux de bord](placeholder-tableaux-de-bord.png "Vues synthétiques")
-
-### Rapports de qualité
-
-**Analyse des rejets**
-- **Motifs récurrents** : Causes principales de refus
-- **Organismes concernés** : Profils des unités rejetées
-- **Actions préventives** : Mesures d'amélioration suggérées
-- **Formation** : Besoins identifiés pour les créateurs
-
-![Analyse rejets](placeholder-analyse-rejets.png "Étude des problèmes")
-
-**Conformité globale**
-- **Taux de conformité** : Evolution de la qualité générale
-- **Standards respectés** : Niveau d'adhésion aux exigences
-- **Points d'amélioration** : Axes de progression identifiés
-- **Bonnes pratiques** : Exemples de réussites à diffuser
-
-![Conformité globale](placeholder-conformite-globale.png "Qualité d'ensemble")
-
-### Optimisation du processus
-
-**Amélioration continue**
-- **Feedback des utilisateurs** : Retours créateurs et approbateurs
-- **Simplification** : Réduction des étapes non nécessaires
-- **Automatisation** : Contrôles techniques automatisés
-- **Formation** : Montée en compétence des acteurs
-
-![Amélioration continue](placeholder-amelioration-continue.png "Evolution du processus")
-
-**Évolution des critères**
-- **Adaptation métier** : Prise en compte des évolutions sectorielles
-- **Retours terrain** : Intégration de l'expérience utilisateur
-- **Conformité réglementaire** : Mise à jour selon la législation
-- **Benchmark externe** : Comparaison avec les meilleures pratiques
-
-![Évolution critères](placeholder-evolution-criteres.png "Adaptation des standards")
+![Historique approbations](placeholder-historique-approbations.png "Suivi des décisions")
 
 ### Pour aller plus loin
 -> [09 - Bonnes pratiques et cas d'usage](09-bonnes-pratiques)
