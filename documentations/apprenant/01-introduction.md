@@ -27,5 +27,5 @@ Cette documentation s’adresse aux :
 ## 📎 Pour aller plus loin
 
 ➡️ Poursuivez avec la page suivante :  
-[02 - Définition des concepts clés](./02-definition-concepts-cles.md)
+[02 - Définition des concepts clés](02-definition-concepts-cles.md)
 ---
