@@ -132,8 +132,9 @@ Cependant, tous les champs restent modifiable.
 
 ### Suppression d'un lieu
 
-La suppression est une action critique sur des unités de formation.
-Certain cas ne permet donc pas de supprimer un lieu :
+La suppression est une action critique sur des unités de formation.<br/>
+Une confirmation de suppression est donc demandé avant de supprimer le lieu. <br/>
+Certain cas ne permettent donc pas de supprimer un lieu :
 - Si le lieu est **Principal** pour l'unité de formation
 - Si le lieu est **Principal** dans une session ou action enfant.
 

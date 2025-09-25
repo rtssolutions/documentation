@@ -20,14 +20,10 @@ version: "1"
 ### Permissions requises
 La suppression d'une unité de formation est une action critique qui nécessite le role **d'administrateur de centre de formation**
 
-![Permissions suppression](placeholder-permissions-suppression.png "Contrôle d'accès")
-
 ### Restrictions d'accès
-La suppression est **bloquée** dans certains cas :
+La suppression est **bloquée** et non affiché dans les écrans dans certains cas :
 - **Utilisateur standard** : Pas d'accès à cette fonction
 - **Actions de formation associées** : Il faut d'abord les supprimer manuellement
-
-![Restrictions accès](placeholder-restrictions-acces.png "Limitations de suppression")
 
 ---
 
@@ -39,7 +35,7 @@ Pour supprimer une unité de formation :
 **Depuis la fiche détaillée**
 - Cliquez sur le bouton rouge **"Supprimer"** en haut de page
 
-![Accès suppression fiche](placeholder-acces-suppression-fiche.png "Suppression depuis détail")
+![Accès suppression fiche](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/07/detail-uf-btn-supp.png)
 
 ### Confirmation progressive
 
@@ -47,6 +43,8 @@ La suppression d'une unité de formation est critique dans le système, et nous 
 La suppression est donc précédé d'une fenêtre de confirmation et indique :
 - **Nature irréversible** de l'action
 - **Impact** sur les données liées
+
+![confirmation suppression fiche](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/07/supp-confirmation-uf.png "506x298")
 
 ---
 
