@@ -29,62 +29,40 @@ L'approbation est requise pour :
 
 ---
 
-## États d'approbation
-
-Le système utilise 5 états d'approbation :
-
-
-
-![État des unités](placeholder-etat-a-completer.png "Données insuffisantes")
-
-
-### À compléter
-- Champs obligatoires manquants
-- Informations incomplètes
-- 
-### À corriger  
-- Erreurs détectées dans les données
-- Formats incorrects ou incohérences
-
-### À valider
-- Toutes les informations sont complètes
-- Prêt pour validation manuelle
-
-### Validée
-- Approbation approuver
-- Unité activée et disponible en gestion
-
-### Refusée
-- Approbation refusée manuellement
-
----
-
 ## Accéder aux approbations
 
 ### Navigation
-Dans le cas où vous avez des unités de formations à approuver, un bandeau d'alerte apparait sur la liste des unités de formation.
-Vous pouvez y accéder en cliquant sur le menu **"Formation"**, sous-menu **"Unités de Formation"**.
+Dans le cas où vous avez des unités de formations à approuver, un bandeau d'alerte apparait sur la liste des unités de formation.<br/>
+Vous pouvez y accéder en cliquant sur le menu **"Formation"**, sous-menu **"Unités de Formation"**.<br/>
 Cliquez ensuite sur **"Finaliser l'importation"** présent dans le bandeau.
 
-![Navigation approbations](placeholder-navigation-approbations.png "Accès aux approbations")
+![Menu approbations](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/08/menu-unite-formation.png "315x448")
+![Navigation approbations](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/08/liste-unite-formation-approb.png)
 
 ### Interface par statuts
 L'interface est organisée en onglets :
 - **À compléter** : Unités nécessitant des informations
-- **À corriger** : Unités avec erreurs à rectifier  
+  - Champs obligatoires manquants
+  - Informations incomplètes
+- **À corriger** : Unités avec erreurs à rectifier
+  - Erreurs détectées dans les données
+  - Formats incorrects ou incohérences
 - **À valider** : Unités prêtes pour validation
+  - Toutes les informations sont complètes
+  - Prêt pour validation manuelle
 - **Refusées** : Unités non validées
+  - Approbation refusée manuellement
+- **Validée**: 
+  - Approbation approuver
+  - Unité activée et disponible en gestion
 
-![Interface par statuts](placeholder-interface-statuts.png "Organisation par onglets")
+![Interface par statuts](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/08/detail-status-uf-approb.png)
 
 ---
 
-## Traitement des approbations
+## Detail d'une approbation
 
 ### Actions disponibles
-
-
-![Actions](placeholder-action-refuser.png "Refus d'une unité")
 
 **Approuver une unité**
 - Disponible si le statut est "à valider"
@@ -96,29 +74,29 @@ L'interface est organisée en onglets :
 
 **Modifier**
 - Permet de modifier les informations de l'unité de formation en approbation
-- Affiche les champs à compléter et à corrigé à l'aide d'un code couleur et des icones dans les formulaire
-![Modification avant validation](placeholder-modif-avant-validation.png "Correction des données")
+- Affiche les champs à compléter et a corrigé à l'aide d'un code couleur et des icônes dans les formulaires
+
+![Action approbation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/08/detail-uf-approb-action.png)
 
 ---
 
 ## Approbations par lot
 
 ### Traitement groupé
-Possibilité de traiter plusieurs unités simultanément :
+Il est possible de traiter plusieurs unités simultanément depuis l'écran qui liste les approbations par statut :
+- **Tout approuver**
+  - Approbation en masse des unités ayant le statut "à valider"
+- **Tout refuser**
 
-**Tout approuver**
-- Approbation en masse des unités ayant le statut "à valider"
-**Tout refuser**
 
-![Tout refuser](placeholder-tout-refuser.png "Refus en masse")
+![Action masse approbation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/08/detail-status-uf-approb-actions.png)
+
 
 ## Historique des approbations
 
 ### Traçabilité
 - **Journal des décisions** : Historique complet des approbations/refus
 - **Dates et auteurs** : Traçabilité des actions
-
-![Historique approbations](placeholder-historique-approbations.png "Suivi des décisions")
 
 ### Pour aller plus loin
 -> [09 - Bonnes pratiques et cas d'usage](09-bonnes-pratiques)
