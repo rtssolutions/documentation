@@ -31,20 +31,18 @@ Pour consulter une unité de formation :
   - Centre de formation : Liste toutes les Unités de formation
   - Unité de formation : Liste uniquement son Unité de formation
 
-![Accès détail depuis liste](placeholder-acces-detail.png "Navigation vers le détail")
+![Accès détail depuis liste](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/05/liste-voir-uf.png)
 
 ### Navigation directe
 - Accès par URL directe si vous connaissez le code
 - Liens depuis d'autres modules (actions de formation, sessions, etc.)
 - Favoris et raccourcis personnalisés
 
-![Navigation directe](placeholder-navigation-directe.png "Accès rapides")
-
 ---
 
 ## Détail de la page
 
-![Détail d'une unité de formation](placeholder-entete-fiche.png "Screen de la page")
+![Détail d'une unité de formation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/05/detail-uf.png)
 
 ### Informations disponibles
 Vous retrouverez dans cette page toutes les informations récoltées sur une unité de formation :
@@ -56,7 +54,6 @@ Vous retrouverez dans cette page toutes les informations récoltées sur une uni
 - **Historique** : Historique des opérations réalisé sur l'unité de formation
 
 ### Actions disponibles
-> A mettre en forme
 - **Modifier** les informations si nécessaire
   - [06 - Modification d'une unité de formation](06-modification-unite-formation)
 - **Supprimer** l'unité de formation 

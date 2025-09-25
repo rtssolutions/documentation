@@ -26,17 +26,17 @@ Pour modifier une unité de formation, vous devez :
 ### Depuis la fiche de consultation
 - Cliquez sur le bouton **"Modifier"** en haut de la fiche
 
-![Bouton modifier depuis fiche](placeholder-modifier-depuis-fiche.png "Accès modification")
+![Bouton modifier depuis fiche](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/06/detail-uf-btn-modifier.png)
 
 ### Depuis la liste
 - Cliquez sur **"Modifier"** dans les actions de ligne
 
-![Modifier depuis liste](placeholder-modifier-depuis-liste.png "Modification directe")
+![Modifier depuis liste](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/06/liste-uf-modifier.png)
 
 ### Mode de modification
 Le système ouvre le formulaire de modification avec les données actuelles pré-remplies.
 
-![Formulaire modification](placeholder-formulaire-modification.png "Interface d'édition")
+![Formulaire modification](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/06/modification-uf.png)
 
 ---
 
@@ -50,21 +50,15 @@ Certaines données sont protégées et non éditables :
 - **Nature juridique** : Données référentiel
 - **Adresse du siège** : Liée au SIRET
 
-![Champs protégés](placeholder-champs-proteges.png "Données non modifiables")
-
 ### Informations commerciales modifiables
 
 **Nom commercial**
 - Modification libre du nom d'usage
 - Mise à jour automatique dans tous les modules
 
-![Modification nom commercial](placeholder-modif-nom-commercial.png "Changement d'enseigne")
-
 **Slogan et description**
 - **Slogan** : Texte libre
 - **Description** : Présentation détaillée, format texte riche
-
-![Modification description](placeholder-modif-description.png "Contenu commercial")
 
 ### Informations administratives
 
@@ -73,14 +67,10 @@ Certaines données sont protégées et non éditables :
 - **Numéro TVA** : Validation automatique du format
 - **Contrôle de cohérence** avec le régime choisi
 
-![Modification TVA](placeholder-modif-tva.png "Données fiscales")
-
 **Numéro UAI**
 - Saisie libre avec validation de format
 - **Vérification** à l'aide du numéro INSEE de la commune
 - **Alerte** si numéro invalide
-
-![Modification UAI](placeholder-modif-uai.png "Identifiant éducation")
 
 ### Sauvegarde des modifications
 
@@ -89,46 +79,7 @@ Certaines données sont protégées et non éditables :
 - **Messages d'erreur** contextuels remontés en cas d'incohérence détectée
 - **Blocage de sauvegarde** si erreurs critiques
 
-![Validation champs](placeholder-validation-champs.png "Contrôles de saisie")
-
----
-
-## Gestion des lieux de formation
-
-### Vue d'ensemble des lieux
-Interface dédiée à la gestion des sites de formation :
-
-- **Lieu principal** : Siège social (informations limitées)
-- **Lieux secondaires** : Modification complète autorisée
-
-![Gestion lieux vue](placeholder-gestion-lieux-vue.png "Interface de gestion")
-
-### Modification d'un lieu existant
-
-Il est toujours requis d'avoir au moins un lieu de formation principale.
-Cependant, tous les champs restent modifiable.
-
-![Modification lieu secondaire](placeholder-modif-lieu-secondaire.png "Édition complète")
-
-### Ajout d'un nouveau lieu
-
-**Processus d'ajout**
-1. Cliquez sur **"Ajouter un lieu de formation"**
-2. Saisissez l'adresse avec autocomplétion
-3. Configurez les spécificités du site
-4. Validez l'ajout
-
-![Ajout nouveau lieu](placeholder-ajout-lieu.png "Création d'un site")
-
-**Informations requises**
-- **Adresse complète** : Rue, code postal, ville
-
-![Config nouveau lieu](placeholder-config-nouveau-lieu.png "Configuration détaillée")
-
-### Suppression d'un lieu
-
-> des règles existe mais je ne m'en souvient plus 
-> A compléter
+![Validation champs](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/06/modification-uf-champs.png)
 
 ---
 
@@ -145,11 +96,51 @@ Cependant, tous les champs restent modifiable.
 - **Format** des moyens de contact
 
 ### Statut de conformité mis à jour
-Après modification, recalcul automatique :
-
+Après modification, le statut est re-calculé automatiquement :
 - **Valide** : Toutes les données requises sont valides
 - **À corriger** : Informations incorrectes dans des champs obligatoires
 - **À compléter** : Des données manquantes
+
+---
+
+## Gestion des lieux de formation
+
+### Vue d'ensemble des lieux
+Une carte est présente dans le détail d'une unité de formation.
+Elle affiche les lieux de formation principaux et secondaires
+
+![Carte lieux de formations](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/06/carte-lieux.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=SCW2X6M8ABHWFXEYGDMV%2F20250925%2Ffr-par%2Fs3%2Faws4_request&X-Amz-Date=20250925T121347Z&X-Amz-Expires=3599&X-Amz-Signature=853ff8fa113862026671dde53626b35273f15d2393b6a489211fe6ef823c6b11&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+
+### Modification des lieux
+
+Il est toujours requis d'avoir au moins un lieu de formation principale.
+Cependant, tous les champs restent modifiable.
+
+![Modification lieu](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/06/modification-lieux.png)
+
+### Ajout d'un nouveau lieu
+
+**Processus d'ajout**
+1. Cliquez sur **"Ajouter un autre lieu"**
+2. Saisissez l'adresse avec autocomplétion
+3. Configurez les spécificités du site
+4. Validez l'ajout
+
+**Informations requises**
+- **Adresse complète** : Rue, code postal, ville
+- **Nom** : Utilisé pour reconnaitre facilement le lieu
+
+### Suppression d'un lieu
+
+La suppression est une action critique sur des unités de formation.
+Certain cas ne permet donc pas de supprimer un lieu :
+- Si le lieu est **Principal** pour l'unité de formation
+- Si le lieu est **Principal** dans une session ou action enfant.
+
+Les lieux sont secondaires de l'unité et non principal dans une session ou action de formation enfant sont eux supprimable.
+
+![Suppression lieu](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/06/confirmation-supp-lieu.png "578×235")
+![Suppression lieu echec](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/06/echec-supp-lieux.png "1123×235")
 
 ---
 

@@ -157,11 +157,10 @@ Le siège social est automatiquement défini comme lieu de formation principal :
 
 ### Vérification avant enregistrement
 Avant finalisation, contrôlez :
-
 ✅ **Toutes les informations obligatoires** sont renseignées
-✅ **Au moins un lieu de formation** est configuré
-✅ **Les moyens de contact** sont valides
-✅ **Les données fiscales** sont cohérentes
+- ✅ **Au moins un lieu de formation** est configuré
+- ✅ **Les moyens de contact** sont valides
+- ✅ **Les données fiscales** sont cohérentes
 
 ### Statut de conformité
 Le système calcule automatiquement le statut :

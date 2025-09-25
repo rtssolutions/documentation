@@ -17,7 +17,7 @@ Pour accéder au module, vous devez disposer au minimum de la permission **"Lect
 
 - **Consulter** : Permission "Lecture des unités de formation"
 - **Créer/Modifier** : Permission "Écriture des unités de formation" 
-- **Supprimer** : Permission "Administration des unités de formation"
+- **Supprimer** : Permission "Suppresion des unités de formation" et role "Administrateur"
 
 Toutes les unités de formations sont accessibles par les utilisateurs ayant un périmètre Centre de Formation.
 Cependant, pour un utilisateur ayant un périmètre Unité de Formation, il ne pourra consulter que son UF dans l'application.
