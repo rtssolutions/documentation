@@ -21,7 +21,9 @@ La création d'une unité de formation suit un workflow structuré en plusieurs 
 
 ### 🎥 Tutoriel vidéo
 
-![Placeholder vidéo création](placeholder-video-creation-unite.png "Tutoriel de création d'unité de formation")
+<video controls>
+  <source src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/04/creation-unite-formation.mp4" type="video/mp4" />
+</video>
 
 ---
 
@@ -33,7 +35,7 @@ Pour créer une nouvelle unité de formation :
 - Cliquez sur **"Créer une unité de formation"** dans le header de la page
 - Vous devez disposer de la permission **"Écriture des unités de formation"**
 
-![Bouton ajouter unité](placeholder-bouton-ajouter-unite.png "Point d'entrée création")
+![Bouton création unité](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/03/liste-unite-formation-creation.png)
 
 ### Critères de recherche
 La recherche s'effectue sur plusieurs critères :
@@ -43,21 +45,18 @@ La recherche s'effectue sur plusieurs critères :
 - Recherche exacte dans les référentiels d'entreprises
 - Affichage immédiat si l'organisme existe
 
-![Recherche par SIRET](placeholder-recherche-siret.png "Champ de recherche SIRET")
-
 **Par dénomination sociale**
 - Recherche textuelle sur le nom de l'entreprise
 - Support des recherches partielles
 - Liste des résultats correspondants
-
-![Recherche par nom](placeholder-recherche-nom.png "Recherche textuelle")
 
 **Par localisation**
 - Filtrage par département ou région
 - Combinable avec les autres critères
 - Affinage géographique des résultats
 
-![Filtres géographiques](placeholder-filtres-geo.png "Sélection géographique")
+![Recherche unité](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/04/creation-uf-recherche.png)
+
 
 ### Résultats de recherche
 Les organismes potentiels s'affichent dans un tableau avec :
@@ -65,9 +64,6 @@ Les organismes potentiels s'affichent dans un tableau avec :
 - **Dénomination sociale**
 - **SIRET**
 - **Adresse** du siège social
-
-![Tableau résultats recherche](placeholder-tableau-resultats.png "Liste des organismes trouvés")
-
 ---
 
 ## Sélection d'un organisme
@@ -79,11 +75,14 @@ Les organismes potentiels s'affichent dans un tableau avec :
 - Vérification automatique de l'éligibilité
 - Pré-remplissage des données disponibles
 
-![Bouton sélection](placeholder-bouton-selectionner.png "Action de sélection")
+![Bouton sélection](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/04/creation-uf-selection.png)
 
 ---
 
 ## Saisie des informations
+
+![Bouton création unité](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/04/creation-uf-detail.png)
+
 
 ### Informations automatiquement remplies
 Après sélection, certains champs sont pré-remplis depuis les référentiels :
@@ -94,8 +93,6 @@ Après sélection, certains champs sont pré-remplis depuis les référentiels :
 - **Code NAF** *(non modifiable)*
 - **Nature juridique** *(non modifiable)*
 
-![Champs pré-remplis](placeholder-champs-preremplis.png "Données automatiques")
-
 ### Informations obligatoires à compléter
 
 **Informations commerciales**
@@ -103,18 +100,12 @@ Après sélection, certains champs sont pré-remplis depuis les référentiels :
 - **Slogan** *(optionnel)* : Phrase d'accroche commerciale
 - **Description** : Présentation de l'organisme et de son expertise
 
-![Informations commerciales](placeholder-infos-commerciales.png "Données marketing")
-
 **Informations fiscales**
 - **Régime TVA** : Non assujetti, Assujetti, Franchise en base
 - **Numéro de TVA intracommunautaire** *(si applicable)*
 
-![Informations fiscales](placeholder-infos-fiscales.png "Données fiscales")
-
 **Numéro UAI** *(optionnel)*
 - Identifiant du ministère de l'Éducation nationale
-
-![Numéro UAI](placeholder-numero-uai.png "Identifiant éducation")
 
 ### Moyens de contact
 
@@ -122,8 +113,6 @@ Après sélection, certains champs sont pré-remplis depuis les référentiels :
 - **Téléphone** : Numéro principal de l'organisme
 - **Email** : Adresse email institutionnelle
 - **Site web** : URL du site officiel
-
-![Moyens de contact](placeholder-moyens-contact.png "Coordonnées de contact")
 
 ### Validation des données
 Le système effectue des contrôles automatiques :
@@ -133,8 +122,6 @@ Le système effectue des contrôles automatiques :
 - **Format téléphone** : Contrôle du format français/international
 - **Cohérence TVA** : Vérification du numéro intracommunautaire
 - **Numéro UAI** : Respect du code INSEE associé et du format
-
-![Validation automatique](placeholder-validation-donnees.png "Contrôles de cohérence")
 
 ---
 
@@ -146,28 +133,23 @@ Le siège social est automatiquement défini comme lieu de formation principal :
 - **Adresse** : Reprise depuis les données SIRET
 - **Statut** : Principal (non modifiable)
 
-![Lieu principal](placeholder-lieu-principal.png "Configuration siège social")
+![Lieu principal](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/04/creation-uf-lieu.png)
 
 ### Lieux secondaires
 
 **Ajouter un lieu secondaire**
 - Cliquez sur **"Ajouter un autre lieu"**
-- Saisissez l'adresse complète
+- Saisissez l'adresse complète qui sera complétée via un referentiel d'adresses
 
-![Ajouter lieu secondaire](placeholder-ajouter-lieu.png "Nouveau site de formation")
+![Bouton création unité](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/04/creation-uf-lieu-secondaire.png)
 
 **Informations par lieu**
 - **Dénomination** : Nom du site (obligatoire)
 - **Adresse complète** : Localisation précise
 
-![Configuration lieu](placeholder-config-lieu.png "Détail d'un lieu de formation")
-
 ### Gestion des lieux
 - **Modifier** un lieu existant
 - **Supprimer** un lieu secondaire (principal non supprimable)
-- **Dupliquer** les informations entre lieux similaires
-
-![Gestion des lieux](placeholder-gestion-lieux.png "Actions sur les lieux")
 
 ---
 
@@ -181,8 +163,6 @@ Avant finalisation, contrôlez :
 ✅ **Les moyens de contact** sont valides
 ✅ **Les données fiscales** sont cohérentes
 
-![Check-list validation](placeholder-checklist.png "Points de contrôle final")
-
 ### Statut de conformité
 Le système calcule automatiquement le statut :
 
@@ -190,7 +170,6 @@ Le système calcule automatiquement le statut :
 - **Non conforme** : Données manquantes ou invalides
 - **À compléter** : Informations manquantes
 
-![Statut conformité](placeholder-statut-conformite.png "Niveau de complétude")
 
 ### Actions post-création
 Après création, vous pouvez :
@@ -200,7 +179,7 @@ Après création, vous pouvez :
 - **Créer des actions de formation** rattachées
 - **Gérer les lieux** de formation additionnels
 
-![Actions post-création](placeholder-actions-post-creation.png "Suite du workflow")
+![Confirmation post creation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/04/confiramtion-creation-uf.png "811×434")
 
 ### Pour aller plus loin
 -> [05 - Consultation et lecture d'une unité de formation](05-consultation-unite-formation)

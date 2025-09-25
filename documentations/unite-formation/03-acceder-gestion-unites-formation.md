@@ -10,7 +10,7 @@ version: "1"
 ### Accès principal
 La gestion des unités de formation est accessible depuis le menu principal de Papaours, dans la section **"Formation"**, sous-menu **"Unités de Formation"**.
 
-![Accès au menu unités de formation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/03/menu-unite-formation.png)
+![Accès au menu unités de formation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/03/menu-unite-formation.png "315x448")
 
 ### Permissions d'accès
 Pour accéder au module, vous devez disposer au minimum de la permission **"Lecture des unités de formation"**. Les fonctionnalités disponibles dépendront de vos permissions spécifiques :
@@ -51,9 +51,9 @@ Recherche textuelle sur :
 ### Module d'approbation
 Lorsque vous avez des unités de formations en attente d'importation ou d'approbation, un bandeau apparaitra dans la **liste de vos unités de formation**
 
-![Accès module approbation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/03/liste-unite-formation-approb.png)
-
 Ce module regroupe toutes les unités en attente de validation, organisées par statut d'approbation.
+
+![Accès module approbation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/03/liste-unite-formation-approb.png)
 
 ### Création d'unité de formation
 Le bouton **"Ajouter une unité de formation"** lance le processus de création, débutant par la recherche d'organismes potentiels.
