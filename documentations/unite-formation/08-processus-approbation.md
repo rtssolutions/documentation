@@ -7,10 +7,9 @@ version: "1"
 
 ### Table des matières
 1. [Principe du processus d'approbation](#principe-du-processus-dapprobation)
-2. [États d'approbation](#états-dapprobation)
-3. [Accéder aux approbations](#accéder-aux-approbations)
-4. [Traitement des approbations](#traitement-des-approbations)
-5. [Approbations par lot](#approbations-par-lot)
+2. [Accéder aux approbations](#accéder-aux-approbations)
+3. [Détail d'une approbation](#détail-dune-approbation)
+4. [Approbations par lot](#approbations-par-lot)
 
 ---
 
@@ -32,7 +31,7 @@ L'approbation est requise pour :
 ## Accéder aux approbations
 
 ### Navigation
-Dans le cas où vous avez des unités de formations à approuver, un bandeau d'alerte apparait sur la liste des unités de formation.<br/>
+Dans le cas où vous avez des unités de formation à approuver, un bandeau d'alerte apparaît sur la liste des unités de formation.<br/>
 Vous pouvez y accéder en cliquant sur le menu **"Formation"**, sous-menu **"Unités de Formation"**.<br/>
 Cliquez ensuite sur **"Finaliser l'importation"** présent dans le bandeau.
 
@@ -52,15 +51,15 @@ L'interface est organisée en onglets :
   - Prêt pour validation manuelle
 - **Refusées** : Unités non validées
   - Approbation refusée manuellement
-- **Validée**: 
-  - Approbation approuver
+- **Validée** :
+  - Approbation approuvée
   - Unité activée et disponible en gestion
 
 ![Interface par statuts](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/08/detail-status-uf-approb.png)
 
 ---
 
-## Detail d'une approbation
+## Détail d'une approbation
 
 ### Actions disponibles
 
@@ -74,7 +73,7 @@ L'interface est organisée en onglets :
 
 **Modifier**
 - Permet de modifier les informations de l'unité de formation en approbation
-- Affiche les champs à compléter et a corrigé à l'aide d'un code couleur et des icônes dans les formulaires
+- Affiche les champs à compléter et à corriger à l'aide d'un code couleur et des icônes dans les formulaires
 
 ![Action approbation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/08/detail-uf-approb-action.png)
 
@@ -99,4 +98,4 @@ Il est possible de traiter plusieurs unités simultanément depuis l'écran qui 
 - **Dates et auteurs** : Traçabilité des actions
 
 ### Pour aller plus loin
--> [09 - Bonnes pratiques et cas d'usage](09-bonnes-pratiques)
+-> [01 - Introduction](01-introduction)

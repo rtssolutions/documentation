@@ -17,10 +17,10 @@ Pour accéder au module, vous devez disposer au minimum de la permission **"Lect
 
 - **Consulter** : Permission "Lecture des unités de formation"
 - **Créer/Modifier** : Permission "Écriture des unités de formation" 
-- **Supprimer** : Permission "Suppresion des unités de formation" et role "Administrateur"
+- **Supprimer** : Permission "Suppression des unités de formation" et rôle "Administrateur"
 
-Toutes les unités de formations sont accessibles par les utilisateurs ayant un périmètre Centre de Formation.
-Cependant, pour un utilisateur ayant un périmètre Unité de Formation, il ne pourra consulter que son UF dans l'application.
+Toutes les unités de formation sont accessibles par les utilisateurs ayant un périmètre Centre de Formation.
+Cependant, un utilisateur ayant un périmètre Unité de Formation ne pourra consulter que son UF dans l'application.
 
 ## Vue d'ensemble des unités de formation
 
@@ -49,9 +49,9 @@ Recherche textuelle sur :
 ## Accès aux fonctionnalités spécialisées
 
 ### Module d'approbation
-Lorsque vous avez des unités de formations en attente d'importation ou d'approbation, un bandeau apparaitra dans la **liste de vos unités de formation**
-
-Ce module regroupe toutes les unités en attente de validation, organisées par statut d'approbation.
+Lorsque vous avez des unités de formation en attente d'importation ou d'approbation, un bandeau apparaîtra dans la **liste de vos unités de formation**.<br/>
+Ce module regroupe toutes les unités en attente de validation, organisées par statut d'approbation.<br/>
+-> [08 - Principe du processus d'approbation](08-processus-approbation)
 
 ![Accès module approbation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/03/liste-unite-formation-approb.png)
 

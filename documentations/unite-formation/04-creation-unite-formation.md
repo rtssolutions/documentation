@@ -139,7 +139,7 @@ Le siège social est automatiquement défini comme lieu de formation principal :
 
 **Ajouter un lieu secondaire**
 - Cliquez sur **"Ajouter un autre lieu"**
-- Saisissez l'adresse complète qui sera complétée via un referentiel d'adresses
+- Saisissez l'adresse complète qui sera complétée via un référentiel d'adresses
 
 ![Bouton création unité](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/04/creation-uf-lieu-secondaire.png)
 
@@ -178,7 +178,7 @@ Après création, vous pouvez :
 - **Créer des actions de formation** rattachées
 - **Gérer les lieux** de formation additionnels
 
-![Confirmation post creation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/04/confiramtion-creation-uf.png "811×434")
+![Confirmation post création](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/04/confiramtion-creation-uf.png "811×434")
 
 ### Pour aller plus loin
 -> [05 - Consultation et lecture d'une unité de formation](05-consultation-unite-formation)

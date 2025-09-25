@@ -7,21 +7,18 @@ version: "1"
 
 ### Table des matières
 1. [Prérequis et permissions](#prérequis-et-permissions)
-2. [Vérifications préalables](#vérifications-préalables)
-3. [Processus de suppression](#processus-de-suppression)
-4. [Impact sur les éléments liés](#impact-sur-les-éléments-liés)
-5. [Suppression définitive vs archivage](#suppression-définitive-vs-archivage)
-6. [Restauration d'une unité supprimée](#restauration-dune-unité-supprimée)
+2. [Processus de suppression](#processus-de-suppression)
+3. [Impact sur les éléments liés](#impact-sur-les-éléments-liés)
 
 ---
 
 ## Prérequis et permissions
 
 ### Permissions requises
-La suppression d'une unité de formation est une action critique qui nécessite le role **d'administrateur de centre de formation**
+La suppression d'une unité de formation est une action critique qui nécessite le rôle **d'administrateur de centre de formation**
 
 ### Restrictions d'accès
-La suppression est **bloquée** et non affiché dans les écrans dans certains cas :
+La suppression est **bloquée** et non affichée dans les écrans dans certains cas :
 - **Utilisateur standard** : Pas d'accès à cette fonction
 - **Actions de formation associées** : Il faut d'abord les supprimer manuellement
 
@@ -39,8 +36,8 @@ Pour supprimer une unité de formation :
 
 ### Confirmation progressive
 
-La suppression d'une unité de formation est critique dans le système, et nous ne préconisons d'éviter les suppressions.
-La suppression est donc précédé d'une fenêtre de confirmation et indique :
+La suppression d'une unité de formation est critique dans le système, et nous préconisons d'éviter les suppressions.
+La suppression est donc précédée d'une fenêtre de confirmation et indique :
 - **Nature irréversible** de l'action
 - **Impact** sur les données liées
 

@@ -8,10 +8,8 @@ version: "1"
 ### Table des matières
 1. [Accéder à la modification](#accéder-à-la-modification)
 2. [Modification des informations générales](#modification-des-informations-générales)
-3. [Gestion des lieux de formation](#gestion-des-lieux-de-formation)
-4. [Mise à jour des contacts](#mise-à-jour-des-contacts)
-5. [Validation des modifications](#validation-des-modifications)
-6. [Cas particuliers](#cas-particuliers)
+3. [Validation des modifications](#validation-des-modifications)
+4. [Gestion des lieux de formation](#gestion-des-lieux-de-formation)
 
 ---
 
@@ -128,20 +126,20 @@ Cependant, tous les champs restent modifiable.
 
 **Informations requises**
 - **Adresse complète** : Rue, code postal, ville
-- **Nom** : Utilisé pour reconnaitre facilement le lieu
+- **Nom** : Utilisé pour reconnaître facilement le lieu
 
 ### Suppression d'un lieu
 
 La suppression est une action critique sur des unités de formation.<br/>
-Une confirmation de suppression est donc demandé avant de supprimer le lieu. <br/>
-Certain cas ne permettent donc pas de supprimer un lieu :
+Une confirmation de suppression est donc demandée avant de supprimer le lieu.<br/>
+Certains cas ne permettent donc pas de supprimer un lieu :
 - Si le lieu est **Principal** pour l'unité de formation
 - Si le lieu est **Principal** dans une session ou action enfant.
 
-Les lieux sont secondaires de l'unité et non principal dans une session ou action de formation enfant sont eux supprimable.
+Les lieux qui sont secondaires de l'unité et non principaux dans une session ou action de formation enfant sont eux supprimables.
 
 ![Suppression lieu](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/06/confirmation-supp-lieu.png "578×235")
-![Suppression lieu echec](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/06/echec-supp-lieux.png "1123×235")
+![Suppression lieu échec](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/unite-formation/06/echec-supp-lieux.png "1123×235")
 
 ---
 

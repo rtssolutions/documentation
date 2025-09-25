@@ -26,7 +26,7 @@ Une unité de formation représente un organisme dispensateur de formations prof
 
 ### Lieu de Formation
 Site géographique où se déroulent les formations, rattaché à une unité de formation
-Les lieux de formations sont utilisé dans les actions de formation ainsi que dans les sessions de formation
+Les lieux de formation sont utilisés dans les actions de formation ainsi que dans les sessions de formation
 Un lieu de formation peut être principal dans une unité de formation, mais secondaire dans une action ou session de formation
 
 ### Processus d'Approbation
