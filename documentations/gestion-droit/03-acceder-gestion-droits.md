@@ -46,7 +46,7 @@ L’interface s’adapte au périmètre de l’utilisateur :
 - Un administrateur restreint à une organisation ne verra que les entités relevant de son périmètre
 
 ### Visibilité des rôles
-L’utilisateur voit la bibliothéque complète des rôles définis au sein de sa plateforme Papaours
+L’utilisateur voit la bibliothèque complète des rôles définis au sein de sa plateforme Papaours
 > Certains rôles sont réservés et non modifiables. Ce sont généralement des rôles gérés par la plateforme Papaours directement.
 
 ### Visibilité des groupes
