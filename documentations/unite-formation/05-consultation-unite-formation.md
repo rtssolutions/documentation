@@ -28,8 +28,8 @@ Pour consulter une unité de formation :
   - Ou utilisez le bouton **"Voir"** dans les actions de ligne
 - Vous devez disposer de la permission **"Lecture des unités de formation"**
 - Vous devez avoir la visibilité pour consulter une unité de formation
-  - CF : Liste toutes les UFs
-  - UF : Liste uniquement son UF
+  - Centre de formation : Liste toutes les Unités de formation
+  - Unité de formation : Liste uniquement son Unité de formation
 
 ![Accès détail depuis liste](placeholder-acces-detail.png "Navigation vers le détail")
 
@@ -57,10 +57,12 @@ Vous retrouverez dans cette page toutes les informations récoltées sur une uni
 
 ### Actions disponibles
 > A mettre en forme
-- Modifier 
-- Supprimer 
-- Modifier les lieux de formation 
-- Consulter et ajouter des actions de formations
+- **Modifier** les informations si nécessaire
+  - [06 - Modification d'une unité de formation](06-modification-unite-formation)
+- **Supprimer** l'unité de formation 
+  - [07 - Suppression d'une unité de formation](07-suppression-unite-formation)
+- **Créer des actions de formation** rattachées
+- **Gérer les lieux** de formation additionnels
 
 
 ### Pour aller plus loin
