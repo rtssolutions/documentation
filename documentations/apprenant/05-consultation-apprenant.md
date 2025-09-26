@@ -65,3 +65,4 @@ Vous retrouverez dans cette page toutes les informations récoltées sur un appr
 
 
 ### Pour aller plus loin
+-> [06 - Modification d'un apprenant](06-modification-apprenant)

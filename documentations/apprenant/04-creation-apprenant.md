@@ -55,7 +55,7 @@ Le système effectue des contrôles automatiques :
 - **Date de naissance**: Doit être une date valide et l'apprenant doit avoir plus de 14ans
 - **Courriel**: Doit respecter le format standard (ex: mail@mail.mail)
 - **Téléphone**: Doit respecter le format international (ex: +33 6 12 34 56 78 ou +1 123 456 7890)
-- **Numéro de sécurité sociale**: Doit respecter le format standard (ex: 1 99 99 99 999 999 99) et doit être cphérent avec les autres informations renseignées (date de naissance, sexe, pays de naissance, commune de naissance)
+- **Numéro de sécurité sociale**: Doit respecter le format standard (ex: 1 99 99 99 999 999 99) et doit être cohérent avec les autres informations renseignées (date de naissance, sexe, pays de naissance, commune de naissance)
 - **Adresse**: Doit être une adresse française valide et complète (numéro, rue, code postal, ville, pays) complétable via le référentiel des adresses
 - **Nationalité**: Doit être une nationalité reconnue (liste déroulante)
 - **Pays de naissance**: Doit être un pays reconnu (liste déroulante)
