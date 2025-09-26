@@ -6,7 +6,7 @@ version: "1"
 ---
 
 ### Table des matières
-1. [Accéder au détail d'une unité](#accéder-à-la-fiche-dun-apprenant)
+1. [Accéder au détail d'un apprenant](#accéder-à-la-fiche-dun-apprenant)
 2. [Actions disponibles](#actions-disponibles)
 
 ---
@@ -26,20 +26,20 @@ Pour consulter un apprenant :
     - Centre de formation : Liste touts les apprenants
     - Unité de formation : Liste uniquement les apprenants autorisés pour cette organisation
 
-![Accès détail depuis liste]
+![Accès détail depuis liste](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/05/acces-detail-liste.png
 
 ### Navigation directe
 - Accès par URL directe si vous connaissez le code
 - Liens depuis d'autres modules (dossiers de formation, brouillon de contrat, ...)
 - Favoris et raccourcis personnalisés
 
-![Navigation directe]
+![Navigation directe](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/05/acces-detail-liste-via-ligne.png)
 
 ---
 
 ## Détail de la page
 
-![Détail d'un apprenant]
+![Détail d'un apprenant](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/05/detail-apprenant.png)
 
 ### Informations disponibles
 Vous retrouverez dans cette page toutes les informations récoltées sur un apprenant :
@@ -60,6 +60,8 @@ Vous retrouverez dans cette page toutes les informations récoltées sur un appr
 - **Ajouter un représentant légal** (permission de création sur les représentants légaux requise)
 - **Ajouter un document** (permission de création sur les documents de l'apprenant requise)
 - **Modifier les besoins spécifiques** (permission d'écriture sur les besoins spécifiques de l'apprenant requise)
+
+![Actions disponibles](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/05/detail-apprenant-actions.png)
 
 
 ### Pour aller plus loin
