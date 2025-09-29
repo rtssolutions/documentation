@@ -20,7 +20,7 @@ La suppression d’un apprenant est une opération sensible, encadrée par des r
 
 ## Pré-requis et permissions
 - **Permission requise** : "Suppression des apprenants".
-- L’utilisateur doit être contextualisé sur le centre de formation ou une unité de formation qui posséde la visibilite sur l’apprenant.
+- L’utilisateur doit être contextualisé sur le centre de formation ou une unité de formation qui possède la visibilite sur l’apprenant.
 - La suppression n’est possible que si l’apprenant n’est pas engagé dans un processus bloquant (ex : formation en cours, inscription validée, etc.).
 
 ## Procédure de suppression

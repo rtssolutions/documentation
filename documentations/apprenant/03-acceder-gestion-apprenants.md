@@ -1,5 +1,5 @@
 ---
-title: "03 - Accéder à la gestion des apprenant"
+title: "03 - Accéder à la gestion des apprenants"
 description: ""
 date: "2025-09-25"
 version: "1"
@@ -23,26 +23,27 @@ fonctionnalités disponibles dépendront de vos permissions spécifiques :
 - **Créer/Modifier** : Permission "Écriture des apprenants"
 - **Supprimer** : Permission "Supression des apprenants"
 
-Tout les apprenants sont accessibles par les utilisateurs ayant un périmètre Centre de Formation.
-Cependant, pour un utilisateur ayant un périmètre de une ou plusieurs unités de formation, il ne pourra accéder que aux
-apprenants dont le centre de formation à autorisé la visibilité pour l'organisation dans laquelle il est contextualisé.
+Les utilisateurs rattachés à un **Centre de Formation** voient l’ensemble des apprenants.
+Ceux rattachés à une ou plusieurs **unités de formation** ne voient que les apprenants **autorisés par le centre de formation**
+pour leur organisation.
 
 ### Visibilite
 
 Un apprenant en gestion est la propriété du centre de formation et sa visibilite est privé. Cela veut dire qu'il n'est
 visible que par le centre de formation et son organisation créatrice par défaut.
 Les utilisateurs contextualisés au centre de formation ayant la permission en écriture sur la visibilité
-peuvent la modifier. Pour cela il faut se rendre sur la fiche de l'apprenant et modifié la switch ci-après: 
+peuvent la modifier. Pour cela il faut se rendre sur la fiche de l'apprenant et modifié la switch ci-après:
 
 ![visibilite](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/3/switch-visibilite-apprenant.png)
 
-Pour plus d'informations sur la visibilité et les droits d'accès : [Document des droits d'accès](../../documentations/gestion-droit/01-introduction.md)
+Pour plus d'informations sur la visibilité et les droits d'
+accès : [Document des droits d'accès](../../documentations/gestion-droit/01-introduction.md)
 
 ## Vue d'ensemble des apprenants
 
 ### Page de liste principale
 
-La page principale présente un tableau récapitulatif de toutes les apprenants avec :
+La page principale présente un tableau récapitulatif de tous les apprenants avec :
 
 - **Nom et Prenom**
 - **Référence**
@@ -56,7 +57,8 @@ La page principale présente un tableau récapitulatif de toutes les apprenants 
 
 #### Barre de recherche
 
-Recherche textuelle sur :
+Il est possible d’effectuer une recherche dans la liste des apprenants en **saisissant un mot-clé dans la barre de
+recherche** puis en **appuyant sur la touche Entrée**. La recherche s’effectue sur les champs suivants :
 
 - Nom
 - Prénom
@@ -70,8 +72,7 @@ Recherche textuelle sur :
 
 ### Création d'un apprenant
 
-Le bouton **"Ajouter un apprenant"** lance le processus de création, débutant par la recherche d'organismes
-potentiels.
+Le bouton **"Ajouter un apprenant"** lance le processus de création.
 
 ![Création d'un apprenant](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/3/creer-apprenant.png)
 
