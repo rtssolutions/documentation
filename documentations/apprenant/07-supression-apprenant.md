@@ -48,7 +48,5 @@ La suppression d’un apprenant est une opération sensible, encadrée par des r
   - Si l’apprenant est inscrit à une session de formation en cours, la suppression est bloquée.
   - Un message explicite indique la raison du blocage.
 - **Bonnes pratiques** :
-  - Privilégier l’archivage ou la désactivation plutôt que la suppression définitive, sauf en cas d’erreur manifeste de saisie.
-
-## Pour aller plus loin
+  - Privilégier l’archivage plutôt que la suppression définitive, sauf en cas d’erreur manifeste de saisie.
 

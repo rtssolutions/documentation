@@ -27,7 +27,7 @@ Les utilisateurs rattachés à un **Centre de Formation** voient l’ensemble de
 Ceux rattachés à une ou plusieurs **unités de formation** ne voient que les apprenants **autorisés par le centre de formation**
 pour leur organisation.
 
-### Visibilite
+### Visibilité
 
 Un apprenant en gestion est la propriété du centre de formation et sa visibilite est privé. Cela veut dire qu'il n'est
 visible que par le centre de formation et son organisation créatrice par défaut.
@@ -45,7 +45,7 @@ accès : [Document des droits d'accès](../../documentations/gestion-droit/01-in
 
 La page principale présente un tableau récapitulatif de tous les apprenants avec :
 
-- **Nom et Prenom**
+- **Nom et Prénom**
 - **Référence**
 - **Date de naissance**
 - **Numéro sécurité social** si renseigné
