@@ -1,5 +1,5 @@
 ---
-title: "06 - Modification d'une apprenant"
+title: "06 - Modification d'un apprenant"
 description: ""
 date: "2025-09-25"
 version: "1"
@@ -40,7 +40,7 @@ Le système ouvre le formulaire de modification avec les données actuelles pré
 ## Modification des informations générales
 
 ### Informations non modifiables
-Aucune données de l'apprenant est non modifiable.
+Toutes les données de l'apprenant sont modifiables.
 Cependant les mêmes contrôles de cohérences et de validités que lors de la création sont appliqués.
 Les mêmes référentiels sont utilisés pour les listes déroulantes.
 

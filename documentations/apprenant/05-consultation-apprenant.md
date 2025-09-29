@@ -23,7 +23,7 @@ Pour consulter un apprenant :
     - Ou utilisez le bouton **"Voir"** dans les actions de ligne
 - Vous devez disposer de la permission **"Lecture des apprenants"**
 - Vous devez avoir la visibilité pour consulter cet apprenant
-    - Centre de formation : Liste touts les apprenants
+    - Centre de formation : Liste tout les apprenants
     - Unité de formation : Liste uniquement les apprenants autorisés pour cette organisation
 
 ![Accès détail depuis liste](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/5/acces-detail-liste.png)
@@ -43,14 +43,14 @@ Pour consulter un apprenant :
 
 ### Informations disponibles
 Vous retrouverez dans cette page toutes les informations récoltées sur un apprenant :
-- **Carte identié** : Toutes les informations d'identité de l'apprenant
-- **Carte Parcours**: Toutes les inforamtions relatives à la scolarité et au parcours professionnel de l'apprenant
-- **Carte Besoins Spécifiques**: Visible uniquement si l'utilisateur posséde la permission de lecture sur les besoins spécifiques de l'apprenant
-- **Informations spécifiqueses** : Informations complémentaires sur la scolarité de l'apprenant
-- **Dossiers de formation** : Liste des dossiers de formation liés à l'apprenant sous forme de liste si vous posséder la permission de lecture sur les dossiers de formations
-- **Représentants légaux** : Liste des représentants légaux liés à l'apprenant sous forme de liste si vous posséder la permission de lecture sur les représentants légaux
-- **Documents** : Liste des documents liés à l'apprenant sous forme de liste si vous posséder la permission de lecture sur les documents de l'apprenant
-- **Historique** : Historique des opérations réalisé sur l'apprenant si vous posséder la permission de lecture sur l'historique des apprenants
+- **Carte identité** : Toutes les informations d'identité de l'apprenant
+- **Carte Parcours**: Toutes les informations relatives à la scolarité et au parcours professionnel de l'apprenant
+- **Carte Besoins Spécifiques**: Visible uniquement si l'utilisateur possède la permission de lecture sur les besoins spécifiques de l'apprenant
+- **Informations spécifiques** : Informations complémentaires sur la scolarité de l'apprenant
+- **Dossiers de formation** : Liste des dossiers de formation liés à l'apprenant sous forme de liste si vous possédez la permission de lecture sur les dossiers de formations
+- **Représentants légaux** : Liste des représentants légaux liés à l'apprenant sous forme de liste si vous possédez la permission de lecture sur les représentants légaux
+- **Documents** : Liste des documents liés à l'apprenant sous forme de liste si vous possédez la permission de lecture sur les documents de l'apprenant
+- **Historique** : Historique des opérations réalisées sur l'apprenant si vous possédez la permission de lecture sur l'historique des apprenants
 
 ### Actions disponibles
 - **Modifier** les informations si nécessaire (permission d'écriture sur les apprenants requise)
