@@ -20,7 +20,6 @@ version: "1"
 
 🔍 Pour consulter les besoins spécifiques d’un apprenant, rendez-vous sur la fiche de l’apprenant concerné. Une carte dédiée aux besoins spécifiques est affichée sur la fiche. Cette carte indique si l’apprenant présente ou non des besoins spécifiques. Pour accéder au détail complet, cliquez sur le bouton **"Voir le détail"** présent sur la carte. Cette action nécessite de disposer de la permission **"Lecture des besoins spécifiques"** sur l’apprenant.
 
-En haut à droite de la carte besoins spécifiques, un bouton **"Ressources utiles"** permet d’accéder à des liens d’information publique sur les travailleurs en situation de handicap et les sportifs de haut niveau:
 ![Carte besoins spécifiques - fiche apprenant](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/8/carte-besoins-specifiques.png)
 
 ---
@@ -55,6 +54,7 @@ Seuls les utilisateurs disposant des permissions adéquates peuvent accéder à 
     - Si l’apprenant est en situation de handicap, il est également précisé s’il souhaite partager les informations liées à son handicap avec les équipes pédagogiques ou administratives (Oui/Non).
 
 Pour chaque situation de handicap renseignée (RQTH, BOE, Équivalence jeune RQTH), il est obligatoire de déposer un document justificatif. Un bouton **"Ajouter un justificatif"** apparaît à côté du champ concerné pour téléverser le document directement.
+En haut à droite de la carte besoins spécifiques, un bouton **"Ressources utiles"** permet d’accéder à des liens d’information publique sur les travailleurs en situation de handicap et les sportifs de haut niveau:
 
 ![Page consultation besoins spécifiques](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/8/consultation-besoins-specifiques.png)
 
