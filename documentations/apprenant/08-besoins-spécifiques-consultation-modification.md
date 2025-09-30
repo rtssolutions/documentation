@@ -1,5 +1,5 @@
 ---
-title: "Besoins spécifiques - Consultation et modification"
+title: "08- Besoins spécifiques - Consultation et modification"
 description: "Gestion complète des besoins spécifiques d’un apprenant : consultation, modification et dépôt de justificatifs."
 date: "2025-09-28"
 version: "1"
@@ -7,26 +7,26 @@ version: "1"
 
 ## 📝 Table des matières
 
-1. [Accès à la consultation](#accès-à-la-consultation)
-2. [Permissions requises](#permissions-requises)
-3. [Consultation des besoins spécifiques](#consultation-des-besoins-spécifiques)
-4. [Modification des besoins spécifiques](#modification-des-besoins-spécifiques)
-5. [Gestion des documents justificatifs](#gestion-des-documents-justificatifs)
-6. [Bonnes pratiques et confidentialité](#bonnes-pratiques-et-confidentialité)
+1. [🔍 Accès à la consultation](#accès-à-la-consultation)
+2. [🔒 Permissions requises](#permissions-requises)
+3. [ℹ️ Consultation des besoins spécifiques](#consultation-des-besoins-spécifiques)
+4. [✏️ Modification des besoins spécifiques](#modification-des-besoins-spécifiques)
+5. [📎 Gestion des documents justificatifs](#gestion-des-documents-justificatifs)
+6. [🛡️ Bonnes pratiques et confidentialité](#bonnes-pratiques-et-confidentialité)
 
 ---
 
-## Accès à la consultation
+## 🔍 Accès à la consultation
 
-🔍 Pour consulter les besoins spécifiques d’un apprenant, rendez-vous sur la fiche de l’apprenant concerné. Une carte dédiée aux besoins spécifiques est affichée sur la fiche. Cette carte indique si l’apprenant présente ou non des besoins spécifiques. Pour accéder au détail complet, cliquez sur le bouton **"Voir le détail"** présent sur la carte. Cette action nécessite de disposer de la permission **"Lecture des besoins spécifiques"** sur l’apprenant.
+Pour consulter les besoins spécifiques d’un apprenant, rendez-vous sur la fiche de l’apprenant concerné. Une carte dédiée aux besoins spécifiques est affichée sur la fiche. Cette carte indique si l’apprenant présente ou non des besoins spécifiques. Pour accéder au détail complet, cliquez sur le bouton **"Voir le détail"** présent sur la carte. Cette action nécessite de disposer de la permission **"Lecture des besoins spécifiques"** sur l’apprenant.
 
 ![Carte besoins spécifiques - fiche apprenant](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/8/carte-besoins-specifiques.png)
 
 ---
 
-## Permissions requises
+## 🔒 Permissions requises
 
-🔒 L’accès et la gestion des besoins spécifiques sont strictement encadrés par des permissions distinctes:
+L’accès et la gestion des besoins spécifiques sont strictement encadrés par des permissions distinctes:
 
 - **Lecture des besoins spécifiques** : permet de consulter les informations relatives aux besoins spécifiques d’un apprenant (statut, titres, partage, etc.).
 - **Écriture des besoins spécifiques** : permet de modifier les informations relatives aux besoins spécifiques.
@@ -37,9 +37,9 @@ Seuls les utilisateurs disposant des permissions adéquates peuvent accéder à 
 
 ---
 
-## Consultation des besoins spécifiques
+## ℹ️ Consultation des besoins spécifiques
 
-ℹ️ Lors de la consultation, les informations suivantes sont affichées :
+Lors de la consultation, les informations suivantes sont affichées :
 
 - **Sportif de haut niveau** : indique si l’apprenant bénéficie de ce statut (Oui/Non).
 - **Apprenant en situation de handicap** : indique si l’apprenant est reconnu comme tel (Oui/Non).
@@ -57,9 +57,9 @@ Seuls les utilisateurs disposant des permissions adéquates peuvent accéder à 
 
 ---
 
-## Modification des besoins spécifiques
+## ✏️ Modification des besoins spécifiques
 
-✏️ La modification des besoins spécifiques s’effectue uniquement depuis la page de consultation détaillée. Si vous disposez de la permission **"Écriture des besoins spécifiques"**, un bouton **"Modifier"** apparaît en haut à droite de la page. En cliquant dessus, vous accédez au formulaire de modification.
+La modification des besoins spécifiques s’effectue uniquement depuis la page de consultation détaillée. Si vous disposez de la permission **"Écriture des besoins spécifiques"**, un bouton **"Modifier"** apparaît en haut à droite de la page. En cliquant dessus, vous accédez au formulaire de modification.
 
 ![Bouton modifier besoins spécifiques](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/8/bouton-modifier-besoins-specifiques.png)
 
@@ -77,9 +77,9 @@ Le formulaire permet de :
 
 ---
 
-## Gestion des documents justificatifs
+## 📎 Gestion des documents justificatifs
 
-📎 La section **Documents justificatifs** est affichée uniquement si vous disposez de la permission spécifique de lecture sur les documents des besoins spécifiques d’un apprenant. Elle présente la liste des documents déjà déposés, qui peuvent être consultés selon les droits de l’utilisateur.
+La section **Documents justificatifs** est affichée uniquement si vous disposez de la permission spécifique de lecture sur les documents des besoins spécifiques d’un apprenant. Elle présente la liste des documents déjà déposés, qui peuvent être consultés selon les droits de l’utilisateur.
 
 ![Section documents justificatifs](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/8/section-documents-justificatifs.png)
 
@@ -89,6 +89,6 @@ Le formulaire permet de :
 
 ---
 
-## Bonnes pratiques et confidentialité
+## 🛡️ Bonnes pratiques et confidentialité
 
-🛡️ Les besoins spécifiques et les documents associés sont des données particulièrement sensibles. Il est impératif de respecter la confidentialité et de limiter l’accès aux seules personnes disposant des permissions adéquates. Chaque modification ou dépôt de document est historisé (date, utilisateur, détail de l’action) afin d’assurer la traçabilité et la sécurité des informations.
+Les besoins spécifiques et les documents associés sont des données particulièrement sensibles. Il est impératif de respecter la confidentialité et de limiter l’accès aux seules personnes disposant des permissions adéquates. Chaque modification ou dépôt de document est historisé (date, utilisateur, détail de l’action) afin d’assurer la traçabilité et la sécurité des informations.

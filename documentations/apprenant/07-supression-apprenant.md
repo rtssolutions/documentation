@@ -54,5 +54,5 @@ La suppression d’un apprenant est une opération sensible, encadrée par des r
 ## Pour aller plus loin
 
 ➡️ Consultez la page suivante :  
-[Besoins spécifiques](08-besoins-spécifiques-consultation-modification)
+[08- Besoins spécifiques](08-besoins-spécifiques-consultation-modification)
 
