@@ -49,4 +49,10 @@ La suppression d’un apprenant est une opération sensible, encadrée par des r
   - Un message explicite indique la raison du blocage.
 - **Bonnes pratiques** :
   - Privilégier l’archivage plutôt que la suppression définitive, sauf en cas d’erreur manifeste de saisie.
+- ---
+
+## Pour aller plus loin
+
+➡️ Consultez la page suivante :  
+[Besoins spécifiques](08-besoins-spécifiques-consultation-modification)
 
