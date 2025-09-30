@@ -1,5 +1,5 @@
 ---
-title: "01 - Introduction aux besoins spécifiques de l'apprenant"
+title: "01 - Introduction"
 description: "Présentation du module et des enjeux liés à la gestion des besoins spécifiques dans Papaours."
 date: "2025-09-30"
 version: "1"

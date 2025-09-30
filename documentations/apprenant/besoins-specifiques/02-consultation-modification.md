@@ -13,6 +13,7 @@ version: "1"
 - [Modification des besoins spécifiques](#modification-des-besoins-spécifiques)
 - [Gestion des documents justificatifs](#gestion-des-documents-justificatifs)
 - [Bonnes pratiques et confidentialité](#bonnes-pratiques-et-confidentialité)
+- [Ressources utiles](#ressources-utiles)
 
 ---
 
@@ -54,9 +55,21 @@ Seuls les utilisateurs disposant des permissions adéquates peuvent accéder à 
     - Si l’apprenant est en situation de handicap, il est également précisé s’il souhaite partager les informations liées à son handicap avec les équipes pédagogiques ou administratives (Oui/Non).
 
 Pour chaque situation de handicap renseignée (RQTH, BOE, Équivalence jeune RQTH), il est obligatoire de déposer un document justificatif. Un bouton **"Ajouter un justificatif"** apparaît à côté du champ concerné pour téléverser le document directement.
-En haut à droite de la carte besoins spécifiques, un bouton **"Ressources utiles"** permet d’accéder à des liens d’information publique sur les travailleurs en situation de handicap et les sportifs de haut niveau:
 
 ![Page consultation besoins spécifiques](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/8/consultation-besoins-specifiques.png)
+
+---
+
+## Ressources utiles
+
+🧰 Une section dédiée aux ressources utiles est accessible depuis la carte besoins spécifiques ou via le bouton "Ressources utiles". Cette section propose des liens vers des informations officielles et pratiques pour accompagner les apprenants en situation de handicap ou sportifs de haut niveau. L’ouverture de cette section se fait dans une modal (voir capture à intégrer).
+
+### Liens proposés
+
+- [Apprentissage et handicap : guide pour les employeurs et les apprentis (travail-emploi.gouv.fr)](https://travail-emploi.gouv.fr/apprentissage-et-handicap-un-guide-pour-les-employeurs-et-les-apprentis)
+- [Liste des sportifs français de haut niveau (sports.gouv.fr)](https://www.sports.gouv.fr/liste-des-sportifs-francais-de-haut-niveau-60)
+
+![Modal ressources utiles](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/8/modal-ressources-utiles.png)
 
 ---
 
