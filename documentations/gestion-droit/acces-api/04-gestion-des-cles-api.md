@@ -175,6 +175,7 @@ modification. La clé retrouvera alors sa pleine fonctionnalité.
 ### Pour aller plus loin
 
 - [Sécurité et bonnes pratiques →](05-securite-et-bonnes-pratiques.md)
+- [Utiliser une clé API dans votre code →](06-utilisation-cle-api.md)
 - [Retour à la gestion des machines](03-gestion-des-machines.md)
 
 [Retour à l'Accueil](../accueil)

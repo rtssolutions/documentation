@@ -44,6 +44,7 @@ Cette documentation est organisée en plusieurs sections :
 3. **Gestion des machines** : Créer, consulter et modifier des machines
 4. **Gestion des clés API** : Créer, consulter et modifier des clés API
 5. **Sécurité et bonnes pratiques** : Protéger et utiliser vos clés API en toute sécurité
+6. **Utilisation d'une clé API** : Exemples de code et intégration dans vos applications
 
 ## Cas d'usage courants
 
@@ -69,6 +70,7 @@ machine "Scripts reporting" avec les rôles et groupes de lecture appropriés.
 - [Créer votre première machine →](03-gestion-des-machines.md)
 - [Générer une clé API →](04-gestion-des-cles-api.md)
 - [Sécuriser vos clés →](05-securite-et-bonnes-pratiques.md)
+- [Utiliser une clé API dans votre code →](06-utilisation-cle-api.md)
 
 ---
 

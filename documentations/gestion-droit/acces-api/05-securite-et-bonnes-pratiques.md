@@ -41,7 +41,7 @@ const API_KEY = "pk_prod_abc123def456ghi789";
 
 fetch("https://api.papaours.fr/contrats", {
   headers: {
-    "Authorization": `Bearer ${API_KEY}`
+    "X-API-KEY": API_KEY
   }
 });
 ```
@@ -54,7 +54,7 @@ const API_KEY = process.env.PAPAOURS_API_KEY;
 
 fetch("https://api.papaours.fr/contrats", {
   headers: {
-    "Authorization": `Bearer ${API_KEY}`
+    "X-API-KEY": API_KEY
   }
 });
 ```
@@ -158,7 +158,7 @@ Si vous n'utilisez plus une clé API :
 - **Désactivez-la** plutôt que de la laisser active sans utilisation.
 - **Conservez l'historique** : Une clé désactivée reste visible dans la liste pour référence, mais ne peut plus être
   utilisée.
-- 
+
 ---
 
 ## Ce que Papaours gère pour vous
@@ -187,6 +187,7 @@ Le code de génération et de validation des clés est :
 
 - [Créer une machine →](03-gestion-des-machines.md)
 - [Créer une clé API →](04-gestion-des-cles-api.md)
+- [Utiliser une clé API dans votre code →](06-utilisation-cle-api.md)
 - [Comprendre les concepts →](02-definition-concepts-cles-machines-cles-api.md)
 
 [Retour à l'Accueil](../accueil)
