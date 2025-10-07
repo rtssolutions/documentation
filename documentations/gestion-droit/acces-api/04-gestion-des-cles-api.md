@@ -21,7 +21,7 @@ système. Les clés API permettent aux machines d'accéder de manière sécuris�
 ### Prérequis
 
 - Une machine doit déjà exister (voir [Créer une machine](03-gestion-des-machines.md#créer-une-machine))
-- Vous devez disposer de la permission **Gestion des droits / Machines / Créer une clé API**
+- Vous devez disposer de la permission **Gestion des droits / Machines / Écriture**
 
 ### Étapes de création
 
@@ -117,7 +117,7 @@ libellé d'une clé ou de désactiver/réactiver son utilisation.
 
 ### Prérequis
 
-Vous devez disposer de la permission **Gestion des droits / Machines / Modifier une clé API**.
+Vous devez disposer de la permission **Gestion des droits / Machines / Écriture**.
 
 ### Étapes de modification
 

@@ -20,8 +20,8 @@ ressources de la plateforme Papaours de manière programmatique.
 - Elle possède des **rôles** et des **groupes** qui déterminent ce qu'elle peut faire sur la plateforme via des droits
   d'accès.
 - Ces droits d'accès fonctionnent de la même manière que pour un utilisateur humain.
-- Une machine est lié à une seule organisation, et ceux même si elle est associés à des rôles et groupes
-  multi-organisations.
+- Une machine est liée à **une seule organisation de rattachement** choisie à la création ou à la modification.
+- Les rôles et groupes assignés peuvent avoir un périmètre multi-organisations, mais **les droits d'accès ne sont effectifs que si l'organisation de rattachement de la machine est incluse dans le périmètre** de ces rôles/groupes.
 - C'est l'**identité fonctionnelle** qui porte les droits d'accès.
 
 **Exemple** : Une machine "Service de facturation" pourrait avoir les permissions de lecture sur les contrats et
@@ -54,8 +54,9 @@ lors de ses appels API.
 ```
 ┌─────────────────────────────────────┐
 │    Machine "Service Facturation"    │
+│  Organisation : CFA Jean Bosco      │
 │                                     │
-│  Permissions :                      │
+│  Droits d'accès (via rôles/groupes):│
 │  ✓ Lire les contrats                │
 │  ✓ Écrire les factures              │
 │  ✗ Accéder aux formations           │
@@ -107,12 +108,13 @@ autorisations.
 
 ### Points clés à retenir
 
-> 🔑 **Machine = Autorisations** : La machine définit **CE QUE** le système peut faire (permissions, rôles, périmètres).
+> 🔑 **Machine = Autorisations** : La machine définit **CE QUE** le système peut faire via les rôles et groupes qui lui sont assignés, générant des droits d'accès (combinaison de permission + opération + organisations).
 
 > 🔐 **Clé API = Identification** : La clé API prouve **QUI** fait la requête (authentification).
 
-> ⚠️ **Une clé compromise = permissions compromises** : Si une clé API est volée, l'attaquant obtient toutes les
-> permissions de la machine associée. D'où l'importance de bien sécuriser les clés et de les renouveler régulièrement.
+> 🏢 **Organisation de rattachement** : Une machine appartient à **une seule organisation**. Les droits d'accès issus des rôles/groupes ne sont effectifs que si cette organisation est incluse dans leur périmètre.
+
+> ⚠️ **Une clé compromise = droits d'accès compromis** : Si une clé API est volée, l'attaquant obtient tous les droits d'accès de la machine associée. D'où l'importance de bien sécuriser les clés et de les renouveler régulièrement.
 
 ![Screenshot à placer : Exemple de dialogue de création de clé API avec le champ "Libellé"]
 

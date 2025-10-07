@@ -72,14 +72,6 @@ Il est recommandé de changer vos clés API régulièrement, même si vous ne su
 
 Cette pratique limite les risques en cas de fuite accidentelle d'une clé.
 
-### Fréquence de rotation recommandée
-
-| Environnement   | Fréquence recommandée |
-|-----------------|----------------------|
-| **Production**  | Tous les 6 mois      |
-| **Test**        | Tous les 3 mois      |
-| **Développement** | Tous les mois      |
-
 ---
 
 ## Utilisation de clés distinctes par environnement
@@ -146,6 +138,7 @@ Si vous suspectez qu'une de vos clés API a été vue ou utilisée par une perso
 
 > ⚠️ **Réagissez rapidement** : Tant que la clé compromise reste active, elle peut être utilisée par des personnes non
 > autorisées.
+> N'hésitez pas à contacter les équipes Papaours pour vous accompagner sur ce point.
 
 ### Signes de compromission
 
@@ -165,16 +158,7 @@ Si vous n'utilisez plus une clé API :
 - **Désactivez-la** plutôt que de la laisser active sans utilisation.
 - **Conservez l'historique** : Une clé désactivée reste visible dans la liste pour référence, mais ne peut plus être
   utilisée.
-
-### Audit régulier
-
-Révisez régulièrement vos clés API :
-
-- [ ] Identifiez les clés qui n'ont pas été utilisées depuis plus de 3 mois
-- [ ] Vérifiez auprès des équipes si ces clés sont encore nécessaires
-- [ ] Désactivez les clés confirmées comme inutilisées
-- [ ] Documentez les raisons de la désactivation
-
+- 
 ---
 
 ## Ce que Papaours gère pour vous
@@ -189,14 +173,6 @@ Tous les appels effectués avec vos clés sont enregistrés. Vous pouvez ainsi :
 - Identifier les clés actives vs inactives
 - Détecter des usages anormaux
 
-### 🛡️ La surveillance des accès
-
-Les tentatives d'accès avec des clés invalides ou désactivées sont :
-
-- Automatiquement détectées et bloquées
-- Enregistrées dans les logs de sécurité
-- Signalées aux administrateurs
-
 ### 🔐 La sécurité du système
 
 Le code de génération et de validation des clés est :
@@ -204,22 +180,6 @@ Le code de génération et de validation des clés est :
 - Maintenu et mis à jour par l'équipe Papaours
 - Protégé selon les standards de sécurité les plus élevés
 - Régulièrement audité
-
-> ℹ️ **Concentrez-vous sur l'essentiel** : Vous n'avez pas à vous soucier de ces aspects techniques. Concentrez-vous sur
-> la protection et le bon usage de vos clés.
-
----
-
-## Récapitulatif des bonnes pratiques
-
-| Pratique                              | Fréquence       | Importance |
-|---------------------------------------|-----------------|------------|
-| Stocker les clés de manière sécurisée | Toujours       | ⭐⭐⭐       |
-| Ne jamais versionner les clés         | Toujours       | ⭐⭐⭐       |
-| Utiliser des clés par environnement   | Toujours       | ⭐⭐⭐       |
-| Nommer clairement les clés            | À chaque création | ⭐⭐        |
-| Renouveler les clés                   | Tous les 3-6 mois | ⭐⭐        |
-| Auditer les clés inutilisées          | Tous les mois  | ⭐⭐        |
 
 ---
 

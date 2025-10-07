@@ -22,7 +22,7 @@ de :
 
 - Donner un accès programmatique à la plateforme Papaours à des services automatisés
 - Intégrer des systèmes externes avec Papaours via API
-- Gérer les permissions d'accès pour des applications tierces
+- Gérer les droits d'accès pour des applications tierces
 - Sécuriser les communications entre systèmes
 
 ## Prérequis
@@ -50,18 +50,18 @@ Cette documentation est organisée en plusieurs sections :
 ### Intégration d'un système de facturation
 
 Vous développez un service de facturation qui doit accéder aux données de contrats et créer des factures dans Papaours.
-Vous créerez une machine "Service de facturation" avec les permissions appropriées, puis générerez des clés API pour
+Vous créerez une machine "Service de facturation" avec les rôles et groupes appropriés, puis générerez des clés API pour
 chaque environnement (développement, test, production).
 
 ### Synchronisation avec un système externe
 
 Votre organisation utilise un système RH externe qui doit lire les données d'apprentis depuis Papaours. Vous créerez une
-machine "Système RH" avec les permissions de lecture nécessaires et générerez une clé API pour l'authentification.
+machine "Système RH" avec les rôles et groupes de lecture nécessaires et générerez une clé API pour l'authentification.
 
 ### Automatisation de processus
 
 Vous mettez en place des scripts automatisés pour extraire des rapports quotidiens depuis Papaours. Vous créerez une
-machine "Scripts reporting" avec les permissions de lecture appropriées.
+machine "Scripts reporting" avec les rôles et groupes de lecture appropriés.
 
 ## Navigation rapide
 

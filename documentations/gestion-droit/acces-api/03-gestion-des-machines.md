@@ -40,16 +40,19 @@ nouvelles machines.
 
    ![Screenshot à placer : Formulaire de création de machine avec les champs "Nom" et "Description"]
 
-4. **Attribuer les rôles et groupes** : Sélectionnez les rôles et groupes qui définissent ce que la machine sera
-   autorisée à
-   faire sur la plateforme.
+4. **Définir l'organisation de rattachement** : Choisissez l'organisation unique à laquelle la machine sera rattachée.
+   Cette organisation peut être modifiée ultérieurement si nécessaire.
 
-   ![Screenshot à placer : Section d'attribution des rôles avec liste de rôles disponibles]
+   ![Screenshot à placer : Section de sélection de l'organisation de rattachement]
 
-5. **Définir le périmètre** : Associé l'organisation qui sera utilisée par la machine lors de son utilisation sur nos
-   APIs.
+5. **Attribuer les rôles et groupes** : Sélectionnez les rôles et groupes qui déterminent les droits d'accès de la
+   machine sur la plateforme. Les droits d'accès sont automatiquement calculés à partir des permissions et opérations
+   contenues dans ces rôles et groupes.
 
-   ![Screenshot à placer : Section de définition du périmètre avec sélection d'organisations]
+   > ⚠️ **Important** : Les droits d'accès issus d'un rôle ou groupe ne seront effectifs que si l'organisation de
+   > rattachement de la machine est incluse dans le périmètre de ce rôle/groupe.
+
+   ![Screenshot à placer : Section d'attribution des rôles et groupes avec liste disponible]
 
 6. **Créer la machine** : Cliquez sur le bouton **Créer** pour finaliser la création de la machine.
 
@@ -58,8 +61,9 @@ nouvelles machines.
 Une fois la machine créée, vous serez automatiquement redirigé vers sa page de détail. À partir de là, vous pourrez :
 
 - Consulter les informations de la machine
-- Modifier ses rôles et permissions si nécessaire
-- **Créer des clés API** pour permettre à vos systèmes de s'authentifier avec les permissions de cette machine
+- Modifier ses rôles et groupes si nécessaire
+- Modifier son organisation de rattachement si nécessaire
+- **Créer des clés API** pour permettre à vos systèmes de s'authentifier avec les droits d'accès de cette machine
 
 > ℹ️ **Note** : Une machine nouvellement créée ne possède aucune clé API. Vous devrez en créer au moins une pour que vos
 > systèmes puissent utiliser cette machine.
@@ -82,8 +86,8 @@ Cette section explique comment visualiser les informations d'une machine existan
 1. **Sélectionner une machine** : Cliquez sur la ligne de la machine que vous souhaitez consulter.
 2. **Visualiser les informations** : La page de détail affiche :
     - **Informations générales** : Nom, description, date de création
-    - **Rôles et groupes** : Liste des rôles et groupes attribués à la machine
-    - **Périmètre** : Organisation à laquelle la machine est associée
+    - **Organisation de rattachement** : Organisation unique à laquelle la machine est rattachée
+    - **Rôles et groupes** : Liste des rôles et groupes attribués à la machine (avec leur périmètre d'organisations)
     - **Clés API** : Liste des clés API associées à cette machine
 
 ![Screenshot à placer : Page de détail d'une machine avec toutes les sections]
@@ -99,9 +103,13 @@ Cette section explique comment visualiser les informations d'une machine existan
 
 #### Rôles et groupes
 
-Cette section liste tous les rôles attribués à la machine. Chaque rôle définit un ensemble de permissions qui
-déterminent
-ce que la machine peut faire sur la plateforme au travers des droits d'accès.
+Cette section liste tous les rôles et groupes attribués à la machine :
+- Les **rôles** contiennent des permissions avec des opérations (lecture, écriture, suppression, archivage)
+- Les **groupes** rassemblent plusieurs rôles
+- Chaque rôle/groupe a un **périmètre** (liste d'organisations sur lesquelles il s'applique)
+- Les **droits d'accès** sont automatiquement générés en combinant : organisation(s) du périmètre + permission + opération
+
+> ⚠️ **Important** : Un rôle ou groupe n'accorde des droits d'accès effectifs que si l'organisation de rattachement de la machine est incluse dans son périmètre.
 
 #### Clés API
 
@@ -134,8 +142,8 @@ machines.
 3. **Modifier les informations** : Vous pouvez modifier :
     - **Nom** : Changez le nom de la machine
     - **Description** : Mettez à jour la description
-    - **Rôles** : Ajoutez ou retirez des rôles
-    - **Périmètre** : Modifiez les organisations accessibles
+    - **Organisation de rattachement** : Modifiez l'organisation unique de rattachement
+    - **Rôles et groupes** : Ajoutez ou retirez des rôles et groupes
 
    ![Screenshot à placer : Formulaire de modification avec tous les champs]
 
@@ -143,12 +151,11 @@ machines.
 
 ### Conséquences de la modification
 
-> ⚠️ **Attention** : Modifier les rôles ou le périmètre d'une machine affecte **toutes les clés API** associées à cette
-> machine.
+> ⚠️ **Attention** : Modifier les rôles, groupes ou l'organisation de rattachement d'une machine affecte **toutes les clés API** associées à cette machine, car cela modifie les droits d'accès disponibles.
 
-- **Ajout de permissions** : Toutes les clés API de la machine pourront effectuer de nouvelles actions.
-- **Retrait de permissions** : Les clés API ne pourront plus effectuer certaines actions, ce qui peut entraîner des
-  erreurs dans vos systèmes.
+- **Ajout de rôles/groupes** : Toutes les clés API de la machine pourront effectuer de nouvelles actions (si l'organisation de rattachement est dans le périmètre).
+- **Retrait de rôles/groupes** : Les clés API ne pourront plus effectuer certaines actions, ce qui peut entraîner des erreurs dans vos systèmes.
+- **Changement d'organisation** : Les droits d'accès issus des rôles/groupes peuvent devenir inactifs si la nouvelle organisation de rattachement n'est plus dans leur périmètre.
 
 ### Conseils avant modification
 
