@@ -172,7 +172,7 @@ machines.
 Pour désactiver temporairement une machine sans perdre sa configuration :
 
 1. Désactivez toutes ses clés API (voir [Modifier une clé API](04-gestion-des-cles-api.md#modifier-une-clé-api))
-2. Les permissions restent configurées mais aucune clé ne peut être utilisée
+2. Les rôles et groupes restent configurés mais aucune clé ne peut être utilisée
 
 #### Suppression définitive
 
