@@ -26,24 +26,21 @@ nouvelles machines.
 ### Étapes de création
 
 1. **Accéder à la gestion des machines** : Naviguez vers la section *Machines* du menu *Gestion des droits*.
-
-   ![Screenshot à placer : Menu de navigation avec "Gestion des droits" > "Machines"]
+   ![Menu machine](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/03/menu%20machine.png "319×211")
 
 2. **Ouvrir le formulaire de création** : Cliquez sur le bouton **Créer une machine** (icône plus).
 
-   ![Screenshot à placer : Page de liste des machines avec le bouton "Créer une machine"]
+   ![Bouton création](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/03/Creation%20machine%20bouton%20liste.png)
 
 3. **Renseigner les informations de la machine** :
     - **Nom** : Saisissez un nom descriptif pour identifier la machine (exemple : "Service de facturation", "API
       Partenaire XYZ", etc.).
     - **Description** : Ajoutez une description détaillée expliquant le rôle et l'usage de cette machine.
 
-   ![Screenshot à placer : Formulaire de création de machine avec les champs "Nom" et "Description"]
-
 4. **Définir l'organisation de rattachement** : Choisissez l'organisation unique à laquelle la machine sera rattachée.
-   Cette organisation peut être modifiée ultérieurement si nécessaire.
+   Cette organisation peut être modifiée ultérieurement si nécessaire. Par défaut, l'organisation est celle que l'utilisateur a sélectionnée.
 
-   ![Screenshot à placer : Section de sélection de l'organisation de rattachement]
+   ![Modification organisation](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/03/Modification%20organisation.png "656×343")
 
 5. **Attribuer les rôles et groupes** : Sélectionnez les rôles et groupes qui déterminent les droits d'accès de la
    machine sur la plateforme. Les droits d'accès sont automatiquement calculés à partir des permissions et opérations
@@ -52,9 +49,10 @@ nouvelles machines.
    > ⚠️ **Important** : Les droits d'accès issus d'un rôle ou groupe ne seront effectifs que si l'organisation de
    > rattachement de la machine est incluse dans le périmètre de ce rôle/groupe.
 
-   ![Screenshot à placer : Section d'attribution des rôles et groupes avec liste disponible]
-
 6. **Créer la machine** : Cliquez sur le bouton **Créer** pour finaliser la création de la machine.
+
+![Page de creation](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/03/Cre%CC%81ation%20d%27une%20machine.png)
+
 
 ### Après la création
 
@@ -79,7 +77,7 @@ Cette section explique comment visualiser les informations d'une machine existan
 1. **Accéder à la gestion des machines** : Naviguez vers la section *Machines* du menu *Gestion des droits*.
 2. **Parcourir la liste** : La page affiche toutes les machines auxquelles vous avez accès.
 
-![Screenshot à placer : Liste des machines avec colonnes Nom, Description, Date de création]
+![Liste des machines](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/03/Liste%20machines.png)
 
 ### Consulter le détail d'une machine
 
@@ -90,7 +88,7 @@ Cette section explique comment visualiser les informations d'une machine existan
     - **Rôles et groupes** : Liste des rôles et groupes attribués à la machine (avec leur périmètre d'organisations)
     - **Clés API** : Liste des clés API associées à cette machine
 
-![Screenshot à placer : Page de détail d'une machine avec toutes les sections]
+![Détail d'une machine](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/03/Detail%20d%27une%20machine.png)
 
 ### Informations disponibles
 
@@ -135,9 +133,7 @@ machines.
 
 1. **Accéder à la page de détail** : Depuis la liste des machines, cliquez sur la machine que vous souhaitez modifier.
 
-2. **Ouvrir le formulaire de modification** : Cliquez sur le bouton **Modifier** (icône crayon).
-
-   ![Screenshot à placer : Page de détail avec le bouton "Modifier"]
+2. **Ouvrir le formulaire de modification** : Cliquez sur le bouton **Modifier** en haut à droite de la page (icône crayon).
 
 3. **Modifier les informations** : Vous pouvez modifier :
     - **Nom** : Changez le nom de la machine
@@ -145,9 +141,10 @@ machines.
     - **Organisation de rattachement** : Modifiez l'organisation unique de rattachement
     - **Rôles et groupes** : Ajoutez ou retirez des rôles et groupes
 
-   ![Screenshot à placer : Formulaire de modification avec tous les champs]
-
 4. **Enregistrer les modifications** : Cliquez sur le bouton **Enregistrer** pour appliquer les changements.
+
+![Modification machine](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/03/Modification%20machine.png)
+
 
 ### Conséquences de la modification
 

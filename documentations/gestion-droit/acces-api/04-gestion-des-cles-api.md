@@ -27,29 +27,27 @@ système. Les clés API permettent aux machines d'accéder de manière sécuris�
 
 1. **Accéder à la gestion des machines** : Naviguez vers la section *Machines* du menu *Gestion des droits*.
 
-   ![Screenshot à placer : Menu de navigation avec "Gestion des droits" > "Machines"]
+   ![Menu machine](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/04/menu%20machine.png "319×211")
 
 2. **Sélectionner la machine** : Cliquez sur la machine pour laquelle vous souhaitez créer une clé API afin d'accéder à
    sa page de détail.
 
-   ![Screenshot à placer : Liste des machines avec une ligne sélectionnable]
-
 3. **Ouvrir le formulaire de création** : Dans la carte **Clés API**, cliquez sur le bouton **Créer une clé API** (icône
    plus).
 
-   ![Screenshot à placer : Carte "Clés API" avec le bouton "Créer une clé API"]
+   ![Liste cle api bouton creation](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/04/bouton%20creation%20api%20key.png)
 
 4. **Renseigner les informations** :
     - **Libellé** : Saisissez un nom descriptif pour identifier facilement l'usage de cette clé API (exemple : "Clé
       production", "Clé environnement de test", etc.).
 
-   ![Screenshot à placer : Modal de création avec le champ "Libellé" rempli]
+   ![creation api key](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/04/Cre%CC%81er%20cle%CC%81%20api.png "422×273")
 
 5. **Créer la clé** : Cliquez sur le bouton **Créer** pour générer la clé API.
 
 6. **Récupérer la valeur de la clé** : Une fenêtre s'affiche immédiatement avec la valeur générée de la clé API.
 
-   ![Screenshot à placer : Modal d'affichage de la clé API avec la valeur générée et le bouton "Copier"]
+   ![confirmation api key](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/04/Cle%20api%20valeur%20non%20copie.png "996×371")
 
 ### ⚠️ Important : Sauvegarder la clé API
 
@@ -85,7 +83,7 @@ Cette section explique comment visualiser l'ensemble des clés API associées à
 3. **Visualiser la carte Clés API** : La page de détail de la machine affiche une carte **Clés API** contenant la liste
    de toutes les clés associées.
 
-![Screenshot à placer : Page de détail d'une machine avec la carte "Clés API" montrant plusieurs clés avec leur libellé et statut]
+![Liste des cles api](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/04/Liste%20cle%CC%81%20api.png)
 
 ### Informations affichées
 
@@ -126,13 +124,11 @@ Vous devez disposer de la permission **Gestion des droits / Machines / Écriture
 2. **Sélectionner la clé à modifier** : Dans la ligne correspondant à la clé API que vous souhaitez modifier, cliquez
    sur le bouton **Modifier** dans la colonne des actions (icône crayon).
 
-   ![Screenshot à placer : Ligne d'une clé API avec le bouton "Modifier" visible dans la colonne actions]
-
 3. **Éditer les informations de la clé** : Une fenêtre modale s'ouvre vous permettant de modifier :
     - **Libellé** : Changez le nom descriptif de la clé API.
     - **Active** : Utilisez l'interrupteur pour activer ou désactiver la clé.
 
-   ![Screenshot à placer : Modal de modification avec les champs "Libellé" et l'interrupteur "Active"]
+   ![Modification api key](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/04/Modifier%20cle%20api.png "383×293")
 
 4. **Enregistrer les modifications** : Cliquez sur le bouton **Enregistrer** pour appliquer les changements.
 

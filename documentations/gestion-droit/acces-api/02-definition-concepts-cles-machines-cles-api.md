@@ -27,7 +27,7 @@ ressources de la plateforme Papaours de manière programmatique.
 **Exemple** : Une machine "Service de facturation" pourrait avoir les permissions de lecture sur les contrats et
 d'écriture sur les factures, mais aucun accès aux données de formation.
 
-![Screenshot à placer : Page de détail d'une machine montrant ses rôles et permissions]
+![Detail d'une machine](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/02/Detail%20d%27une%20machine.png)
 
 ### Qu'est-ce qu'une clé API ?
 
@@ -47,7 +47,7 @@ lors de ses appels API.
 - `Clé test` utilisée par l'environnement de test
 - `Clé développement` utilisée par les développeurs en local
 
-![Screenshot à placer : Carte "Clés API" affichant plusieurs clés avec leur statut]
+![Liste cle api](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/02/Liste%20cle%CC%81%20api.png)
 
 ### Relation entre machine et clés API
 
@@ -115,8 +115,6 @@ autorisations.
 > 🏢 **Organisation de rattachement** : Une machine appartient à **une seule organisation**. Les droits d'accès issus des rôles/groupes ne sont effectifs que si cette organisation est incluse dans leur périmètre.
 
 > ⚠️ **Une clé compromise = droits d'accès compromis** : Si une clé API est volée, l'attaquant obtient tous les droits d'accès de la machine associée. D'où l'importance de bien sécuriser les clés et de les renouveler régulièrement.
-
-![Screenshot à placer : Exemple de dialogue de création de clé API avec le champ "Libellé"]
 
 ---
 
