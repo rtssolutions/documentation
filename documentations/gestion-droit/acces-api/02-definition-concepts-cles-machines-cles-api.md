@@ -51,28 +51,24 @@ lors de ses appels API.
 
 ### Relation entre machine et clés API
 
-```
-┌─────────────────────────────────────┐
-│    Machine "Service Facturation"    │
-│  Organisation : CFA Jean Bosco      │
-│                                     │
-│  Droits d'accès (via rôles/groupes):│
-│  ✓ Lire les contrats                │
-│  ✓ Écrire les factures              │
-│  ✗ Accéder aux formations           │
-└──────────────┬──────────────────────┘
-               │
-               │ possède
-               │
-       ┌───────┴────────┐
-       │                │
-       ▼                ▼
-┌─────────────┐  ┌─────────────┐
-│ Clé API     │  │ Clé API     │
-│ "Production"│  │ "Test"      │
-│ (Active)    │  │ (Active)    │
-└─────────────┘  └─────────────┘
-```
+Une **machine** est l'entité qui porte les droits d'accès, tandis que les **clés API** sont les identifiants techniques qui permettent d'utiliser ces droits.
+
+**Fonctionnement** :
+- Une machine peut posséder **plusieurs clés API**
+- Chaque clé API hérite automatiquement de **tous les droits d'accès** de sa machine
+- Toutes les clés d'une même machine ont donc exactement les **mêmes permissions**
+
+**Exemple concret** :
+La machine "Service Facturation" (rattachée au CFA Jean Bosco) possède les droits suivants via ses rôles/groupes :
+- ✓ Lire les contrats
+- ✓ Écrire les factures
+- ✗ Accéder aux formations
+
+Cette machine peut avoir deux clés API :
+- **Clé "Production"** → utilisée par le serveur de production → mêmes droits que la machine
+- **Clé "Test"** → utilisée par l'environnement de test → mêmes droits que la machine
+
+Les deux clés donneront exactement les mêmes permissions, car elles appartiennent à la même machine.
 
 ### Pourquoi plusieurs clés API pour une même machine ?
 
