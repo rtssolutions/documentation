@@ -188,4 +188,4 @@ Pour supprimer une machine :
 - [Créer des clés API pour votre machine →](04-gestion-des-cles-api.md)
 - [Bonnes pratiques de sécurité →](05-securite-et-bonnes-pratiques.md)
 
-[Retour à l'Accueil](../accueil)
+[Retour à l'Accueil](../../accueil)

@@ -74,4 +74,4 @@ machine "Scripts reporting" avec les rôles et groupes de lecture appropriés.
 
 ---
 
-[Retour à l'Accueil](../accueil)
+[Retour à l'Accueil](../../accueil)

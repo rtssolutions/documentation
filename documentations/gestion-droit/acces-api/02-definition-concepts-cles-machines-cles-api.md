@@ -120,4 +120,4 @@ autorisations.
 - [Générer une clé API →](04-gestion-des-cles-api.md)
 - [Utiliser une clé API dans votre code →](06-utilisation-cle-api.md)
 
-[Retour à l'Accueil](../accueil)
+[Retour à l'Accueil](../../accueil)

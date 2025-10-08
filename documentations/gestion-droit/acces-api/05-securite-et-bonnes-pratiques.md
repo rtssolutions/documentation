@@ -190,4 +190,4 @@ Le code de génération et de validation des clés est :
 - [Utiliser une clé API dans votre code →](06-utilisation-cle-api.md)
 - [Comprendre les concepts →](02-definition-concepts-cles-machines-cles-api.md)
 
-[Retour à l'Accueil](../accueil)
+[Retour à l'Accueil](../../accueil)
