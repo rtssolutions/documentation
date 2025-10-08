@@ -346,4 +346,4 @@ Si vous rencontrez des difficultés lors de l'utilisation de votre clé API :
 1. Vérifiez que tous les prérequis sont remplis
 2. Contactez le support technique Papaours
 
-[Retour à l'Accueil](../accueil)
+[Retour à l'Accueil](/accueil)

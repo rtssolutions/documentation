@@ -84,9 +84,9 @@ Créez des clés API différentes pour vos différents environnements :
 
 ### Avantages de cette séparation
 
-✅ **Désactiver uniquement la clé de test** sans affecter la production
-✅ **Identifier plus facilement l'origine des appels** dans les logs
-✅ **Limiter l'impact** en cas de compromission d'une clé
+- ✅ **Désactiver uniquement la clé de test** sans affecter la production
+- ✅ **Identifier plus facilement l'origine des appels** dans les logs
+- ✅ **Limiter l'impact** en cas de compromission d'une clé
 
 ### Exemple d'organisation
 
