@@ -49,6 +49,8 @@ nouvelles machines.
    > ⚠️ **Important** : Les droits d'accès issus d'un rôle ou groupe ne seront effectifs que si l'organisation de
    > rattachement de la machine est incluse dans le périmètre de ce rôle/groupe.
 
+   > ℹ️ **Règles d'assignation** : L'attribution des rôles et groupes aux machines suit des règles précises de parentalité et de périmètre d'organisations. Consultez la section [09 - Règles d'assignation](../09-regles-assignation.md#machine--rôle) pour plus de détails.
+
 6. **Créer la machine** : Cliquez sur le bouton **Créer** pour finaliser la création de la machine.
 
 ![Page de creation](https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/gestion-des-droits/acces-api/03/Cre%CC%81ation%20d%27une%20machine.png)
@@ -109,6 +111,8 @@ Cette section liste tous les rôles et groupes attribués à la machine :
 
 > ⚠️ **Important** : Un rôle ou groupe n'accorde des droits d'accès effectifs que si l'organisation de rattachement de la machine est incluse dans son périmètre.
 
+> ℹ️ **À noter** : Certains rôles et groupes sont administrés par Papaours et ne peuvent pas être assignés (ex: "Administrateur Papaours"). De même, certaines machines système administrées par Papaours ne peuvent pas être modifiées. Consultez la section [09 - Règles d'assignation](../09-regles-assignation.md) pour plus de détails.
+
 #### Clés API
 
 Cette section affiche toutes les clés API associées à la machine. Pour chaque clé, vous pouvez voir :
@@ -140,6 +144,8 @@ machines.
     - **Description** : Mettez à jour la description
     - **Organisation de rattachement** : Modifiez l'organisation unique de rattachement
     - **Rôles et groupes** : Ajoutez ou retirez des rôles et groupes
+
+   > ⚠️ **Machines administrées par Papaours** : Les machines système administrées par Papaours ne peuvent pas être modifiées. Seules les machines créées par votre organisation peuvent être modifiées.
 
 4. **Enregistrer les modifications** : Cliquez sur le bouton **Enregistrer** pour appliquer les changements.
 
@@ -185,6 +191,7 @@ Pour supprimer une machine :
 
 ### Pour aller plus loin
 
+- [Règles d'assignation des droits d'accès →](../09-regles-assignation.md)
 - [Créer des clés API pour votre machine →](04-gestion-des-cles-api.md)
 - [Bonnes pratiques de sécurité →](05-securite-et-bonnes-pratiques.md)
 

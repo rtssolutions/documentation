@@ -14,6 +14,8 @@ Cette section explique comment attribuer des rôles — et donc des permissions 
 
 > Pour cela, les rôles et les groupes d'utilisateurs doivent avoir été préalablement créés dans le système.
 
+> ℹ️ **Règles d'assignation** : L'attribution des rôles et groupes suit des règles précises de parentalité et de périmètre d'organisations. Pour une description complète de ces règles, consultez la section [09 - Règles d'assignation](09-regles-assignation.md).
+
 ## Attribution directe d’un rôle à un utilisateur
 
 L'attribution directe d'un rôle à un utilisateur est une méthode fondamentale pour la gestion des accès et des permissions au sein de notre système. Cette approche permet de définir précisément les actions qu'un utilisateur est autorisé à effectuer. En attribuant un rôle personnel, nous accordons à cet utilisateur un ensemble prédéfini de droits, facilitant ainsi le contrôle et la supervision de l'accès aux ressources et aux fonctionnalités de l'application.
@@ -101,6 +103,7 @@ L'attribution indirecte de permissions via des groupes utilisateurs est une **pr
 
 
 ### Pour aller plus loin
--> [06 - Modifier les rôles, groupes et utilisateurs](06-modifier-les-droits-dacces)
-   
+- [09 - Règles d'assignation des droits d'accès →](09-regles-assignation.md)
+- [06 - Modifier les rôles, groupes et utilisateurs →](06-modifier-les-droits-dacces.md)
+
 [Retour à l'Accueil](../accueil)
