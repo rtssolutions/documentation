@@ -49,7 +49,66 @@ nouvelles machines.
    > ⚠️ **Important** : Les droits d'accès issus d'un rôle ou groupe ne seront effectifs que si l'organisation de
    > rattachement de la machine est incluse dans le périmètre de ce rôle/groupe.
 
-   > ℹ️ **Règles d'assignation** : L'attribution des rôles et groupes aux machines suit des règles précises de parentalité et de périmètre d'organisations. Consultez la section [09 - Règles d'assignation](../09-regles-assignation.md#machine--rôle) pour plus de détails.
+---
+
+### 🔒 Règles d'assignation pour les machines
+
+L'attribution des rôles et groupes aux machines suit les **mêmes règles** que pour les utilisateurs, avec des restrictions supplémentaires.
+
+#### 📋 Règles Machine → Rôle
+
+Les **3 règles** de l'assignation Utilisateur → Rôle s'appliquent également aux machines :
+
+1. **Parentalité d'organisation du rôle** : Le rôle DOIT provenir de l'organisation de la machine ou d'une organisation parente
+2. **Périmètre du sujet (machine)** : L'organisation assignée DOIT être l'organisation de la machine ou une organisation enfant
+3. **Périmètre du rôle** : L'organisation assignée DOIT appartenir au périmètre du rôle
+
+**Exemple** : Si la machine appartient à `Organisation Parent`
+
+| Rôle provenant de | Organisation assignée | Résultat | Explication |
+|-------------------|----------------------|----------|-------------|
+| Organisation Centre de Formation | Organisation Parent | ✅ | Toutes les règles respectées |
+| Organisation Parent | Organisation Enfant A | ✅ | Machine peut agir sur org enfant |
+| Organisation Enfant A | Organisation Enfant A | ❌ | Rôle enfant non autorisé |
+
+---
+
+#### ⚠️ Règle supplémentaire : Machines administrées par Papaours
+
+Certaines machines **système** sont administrées par Papaours et **ne peuvent pas être modifiées**.
+
+| Type de machine | Peut être modifiée ? | Peut assigner des rôles ? |
+|-----------------|---------------------|---------------------------|
+| Machine système Papaours | ❌ | ❌ |
+| Machine créée par votre CFA | ✅ | ✅ |
+
+**Exemples** :
+
+| Machine | Type | Actions possibles |
+|---------|------|-------------------|
+| "Machine Système" | Machine Papaours | ❌ Aucune modification possible |
+| "API CFA Production" | Machine du CFA | ✅ Tous droits modifiables |
+| "Service Facturation" | Machine du CFA | ✅ Tous droits modifiables |
+
+---
+
+#### 📋 Règles Machine → Groupe
+
+Lorsqu'une machine est ajoutée à un groupe, les **mêmes règles de périmètre** que pour Machine → Rôle s'appliquent pour **tous les rôles du groupe**.
+
+| Machine | Groupe | Rôles du groupe | Résultat | Explication |
+|---------|--------|-----------------|----------|-------------|
+| Org Parent | Groupe Org Parent | Rôle Parent sur Parent | ✅ | Toutes les règles respectées |
+| Org Parent | Groupe Org Enfant A | Rôle Enfant A sur Enfant A | ❌ | Rôle enfant invalide |
+| Machine Système (Papaours) | Groupe quelconque | Rôles quelconques | ❌ | Machine non modifiable |
+
+---
+
+### 📖 Référence technique complète
+
+> Pour une documentation exhaustive sur les règles d'assignation des machines avec tous les cas d'usage et exemples détaillés, consultez l'[Annexe A - Référence technique des règles d'assignation](../09-regles-assignation.md#machine--rôle).
+
+---
 
 6. **Créer la machine** : Cliquez sur le bouton **Créer** pour finaliser la création de la machine.
 
@@ -111,7 +170,7 @@ Cette section liste tous les rôles et groupes attribués à la machine :
 
 > ⚠️ **Important** : Un rôle ou groupe n'accorde des droits d'accès effectifs que si l'organisation de rattachement de la machine est incluse dans son périmètre.
 
-> ℹ️ **À noter** : Certains rôles et groupes sont administrés par Papaours et ne peuvent pas être assignés (ex: "Administrateur Papaours"). De même, certaines machines système administrées par Papaours ne peuvent pas être modifiées. Consultez la section [09 - Règles d'assignation](../09-regles-assignation.md) pour plus de détails.
+> ℹ️ **À noter** : Certains rôles et groupes sont administrés par Papaours et ne peuvent pas être assignés (ex: "Administrateur Papaours"). De même, certaines machines système administrées par Papaours ne peuvent pas être modifiées. Consultez l'[Annexe A - Référence technique](../09-regles-assignation.md) pour plus de détails.
 
 #### Clés API
 
@@ -191,7 +250,7 @@ Pour supprimer une machine :
 
 ### Pour aller plus loin
 
-- [Règles d'assignation des droits d'accès →](../09-regles-assignation.md)
+- [Annexe A - Référence technique des règles d'assignation →](../09-regles-assignation.md)
 - [Créer des clés API pour votre machine →](04-gestion-des-cles-api.md)
 - [Bonnes pratiques de sécurité →](05-securite-et-bonnes-pratiques.md)
 

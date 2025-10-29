@@ -21,7 +21,26 @@ Cette section détaille la procédure à suivre pour modifier un rôle existant 
 
 Avant de procéder à la modification d'un rôle, assurez-vous d'avoir les privilèges d'administrateur nécessaires. Seuls les utilisateurs disposant de la permission **Écrire un rôle** sont autorisés à modifier les rôles et leurs permissions associées.
 
-> ⚠️ **Rôles administrés par Papaours** : Certains rôles sont administrés par Papaours (ex: "Administrateur Papaours") et ne peuvent pas être modifiés. Consultez la section [09 - Règles d'assignation](09-regles-assignation.md#règle-4--rôles-non-assignables) pour plus de détails.
+### 🔒 Règles de modification des rôles
+
+> ⚠️ **Rôles administrés par Papaours** : Certains rôles sont administrés par Papaours et **ne peuvent pas être modifiés**.
+
+#### Quels rôles peuvent être modifiés ?
+
+| Type de rôle | Nom modifiable ? | Permissions modifiables ? | Peut être supprimé ? |
+|--------------|------------------|---------------------------|---------------------|
+| Rôle système Papaours | ❌ | ❌ | ❌ |
+| Rôle créé par votre CFA | ✅ | ✅ | ✅ |
+
+**Exemples** :
+
+| Rôle | Peut être modifié ? | Explication |
+|------|---------------------|-------------|
+| "Administrateur Papaours" | ❌ | Rôle système réservé à Papaours |
+| "Directeur CFA" | ✅ | Rôle créé par le CFA, modifiable |
+| "Formateur" | ✅ | Rôle créé par le CFA, modifiable |
+
+> 💡 **Astuce** : Si vous ne pouvez pas modifier un rôle, vérifiez qu'il n'est pas administré par Papaours.
 
 ### Étapes de modification
 
@@ -47,7 +66,42 @@ Cette section détaille la procédure à suivre pour modifier un groupe existant
 
 Avant de procéder à la modification d'un groupe, assurez-vous d'avoir les privilèges d'administrateur nécessaires. Seuls les utilisateurs disposant de la permissions Gestion des permissions / Groupe / Écriture sont autorisés à modifier les groupes et les données associées.
 
-> ⚠️ **Groupes administrés par Papaours** : Certains groupes sont administrés par Papaours et ont des restrictions spécifiques. Par exemple, le groupe "Administrateur Papaours" ne peut pas être modifié. D'autres groupes administrés par Papaours permettent de modifier uniquement la liste des utilisateurs, mais pas le nom ni les rôles. Consultez la section [09 - Règles d'assignation](09-regles-assignation.md#règle-3--restrictions-sur-les-groupes-administrés-par-papaours) pour plus de détails.
+### 🔒 Règles de modification des groupes
+
+> ⚠️ **Groupes administrés par Papaours** : Certains groupes sont administrés par Papaours et ont des **restrictions spécifiques**.
+
+#### Quels groupes peuvent être modifiés ?
+
+| Type de groupe | Nom modifiable ? | Rôles modifiables ? | Membres modifiables ? | Peut être supprimé ? |
+|----------------|------------------|---------------------|----------------------|---------------------|
+| Groupe système Papaours | ❌ | ❌ | ❌ | ❌ |
+| Groupe standard Papaours | ❌ | ❌ | ✅ | ❌ |
+| Groupe créé par votre CFA | ✅ | ✅ | ✅ | ✅ |
+
+**Exemples** :
+
+| Groupe                               | Type | Actions possibles |
+|--------------------------------------|------|-------------------|
+| "Administrateur Papaours"            | Système | ❌ Aucune modification possible |
+| "Administrateur centre de formation" | Standard Papaours | ✅ Ajouter/retirer des membres uniquement |
+| "Formateurs CFA Paris"               | Créé par le CFA | ✅ Toutes modifications possibles |
+
+---
+
+### 🚫 Règle d'auto-assignation
+
+> ⚠️ **Interdiction** : Vous **ne pouvez pas** vous ajouter ou vous retirer vous-même d'un groupe.
+
+Cette règle de sécurité empêche les utilisateurs de s'accorder eux-mêmes des droits supplémentaires.
+
+| Action | Autorisé ? | Explication |
+|--------|------------|-------------|
+| Vous vous ajoutez à un groupe | ❌ | Auto-assignation interdite |
+| Vous ajoutez un autre utilisateur | ✅ | Assignation d'un tiers autorisée |
+| Vous vous retirez d'un groupe | ❌ | Auto-retrait interdit |
+| Vous modifiez les rôles d'un groupe dont vous êtes membre | ❌ | Modification de vos propres droits interdite |
+
+> 💡 **Que faire ?** Si vous devez être ajouté à un groupe, demandez à un autre administrateur de le faire pour vous.
 
 ### Étapes de modification
 
@@ -165,7 +219,7 @@ Les modifications des permissions des utilisateurs doivent ainsi être **gérée
 
 
 ### Pour aller plus loin
-- [09 - Règles d'assignation des droits d'accès →](09-regles-assignation.md)
+- [Annexe A - Référence technique des règles d'assignation →](09-regles-assignation.md)
 - [07 - Supprimer les rôles, groupes et utilisateurs →](07-suppression-des-entites.md)
 
 [Retour à l'Accueil](../accueil)

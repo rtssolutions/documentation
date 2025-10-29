@@ -20,7 +20,22 @@ version: "1"
 13. [Attribuer un périmètre](#attribuer-un-périmètre)
 ---
 ## Créer un rôle
-Les rôles sont des regroupements de permissions permettant de structurer les droits d’accès des utilisateurs et des groupes dans votre plateforme **Papaours**. Chaque rôle correspond à un ensemble d’actions autorisées dans le système.
+Les rôles sont des regroupements de permissions permettant de structurer les droits d'accès des utilisateurs et des groupes dans votre plateforme **Papaours**. Chaque rôle correspond à un ensemble d'actions autorisées dans le système.
+
+---
+
+### 🔒 Règles à connaître avant de créer un rôle
+
+> **💡 Important** : Certains rôles sont administrés par Papaours et ne peuvent pas être modifiés ou supprimés. Ces rôles système sont réservés à des usages internes spécifiques.
+
+#### Rôles non modifiables
+
+| Type de rôle | Peut être créé/modifié ? | Exemple                                   |
+|--------------|--------------------------|-------------------------------------------|
+| Rôle système Papaours | ❌ Non modifiable | "Administrateur Papaours"                 |
+| Rôle créé par votre CFA | ✅ Modifiable | "Gestionnaire administratif", "Formateur" |
+
+> ⚠️ **Attention** : Le rôle **"Administrateur Papaours"** est un rôle système. Il ne peut pas être créé, modifié ou assigné par les utilisateurs. Il est géré uniquement par Papaours.
 
 ---
 
@@ -68,8 +83,32 @@ Une fois le rôle configuré :
 
 ---
 
-## Créer un groupe d’utilisateurs
+## Créer un groupe d'utilisateurs
 Afin de faciliter la gestion des accès et des permissions au sein de notre système, il est possible de structurer les utilisateurs en groupes distincts. La création de ces groupes permet d'attribuer des rôles et des droits spécifiques à un ensemble d'utilisateurs de manière efficace et centralisée.
+
+### 🔒 Règles à connaître avant de créer un groupe
+
+> **💡 Important** : Certains groupes sont administrés par Papaours. Ces groupes système ont des restrictions spécifiques.
+
+#### Groupes non modifiables
+
+| Type de groupe | Nom modifiable ? | Rôles modifiables ? | Membres modifiables ? |
+|----------------|------------------|---------------------|----------------------|
+| Groupe système Papaours | ❌ | ❌ | ❌ |
+| Groupe standard Papaours | ❌ | ❌ | ✅ |
+| Groupe créé par votre CFA | ✅ | ✅ | ✅ |
+
+**Exemples** :
+
+| Groupe                               | Type | Actions possibles |
+|--------------------------------------|------|-------------------|
+| "Administrateur Papaours"            | Groupe système | ❌ Aucune modification possible |
+| "Administrateur centre de formation" | Groupe Papaours | ✅ Ajouter/retirer des membres uniquement |
+| "Formateurs CFA Paris"               | Groupe créé par le CFA | ✅ Toutes modifications possibles |
+
+> ⚠️ **Attention** : Le groupe **"Administrateur Papaours"** est un groupe système. Il ne peut pas être modifié et vous ne pouvez pas ajouter ou retirer des utilisateurs de ce groupe.
+
+---
 
 Voici les étapes à suivre pour créer un nouveau groupe d'utilisateurs :
 

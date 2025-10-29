@@ -1,13 +1,31 @@
 ---
-title: "09 - Règles d'assignation des droits d'accès"
-description: "Documentation détaillée des règles métier qui régissent l'assignation des rôles et groupes aux utilisateurs et machines"
+title: "Annexe A - Référence technique des règles d'assignation"
+description: "Documentation exhaustive et technique des règles métier qui régissent l'assignation des rôles et groupes aux utilisateurs et machines"
 date: "2025-10-28"
 version: "1"
 ---
 
-# Règles d'assignation des droits d'accès
+# Annexe A - Référence technique des règles d'assignation
 
-Cette documentation décrit les règles métier qui régissent l'assignation des rôles et groupes aux utilisateurs et machines dans l'application.
+> 📖 **Document de référence technique exhaustif**
+>
+> Ce document contient la description complète et détaillée de toutes les règles métier d'assignation des droits d'accès dans Papaours. Il est destiné aux utilisateurs avancés qui souhaitent comprendre en profondeur le fonctionnement des règles de parentalité et de périmètre d'organisations.
+>
+> **Pour une compréhension rapide et pratique**, consultez plutôt :
+> - [05 - Attribution des droits](05-attribution-des-droits.md) - Guide pratique avec règles essentielles
+> - [06 - Modifier les droits d'accès](06-modifier-les-droits-dacces.md) - Règles de modification
+> - [acces-api/03 - Gestion des machines](acces-api/03-gestion-des-machines.md) - Règles pour les machines
+
+---
+
+## À propos de ce document
+
+Cette annexe technique décrit **exhaustivement** les règles métier qui régissent l'assignation des rôles et groupes aux utilisateurs et machines dans l'application. Elle contient :
+
+- ✅ Tous les cas d'usage possibles
+- ✅ Des exemples détaillés avec tableaux de validation
+- ✅ Des schémas récapitulatifs
+- ✅ La documentation complète des 5 types de relations (Utilisateur→Rôle, Utilisateur→Groupe, Groupe→Rôle, Machine→Rôle, Machine→Groupe)
 
 ## 📚 Table des matières
 
