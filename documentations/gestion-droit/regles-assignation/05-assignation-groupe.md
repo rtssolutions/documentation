@@ -1,11 +1,11 @@
 ---
-title: "Assignation de groupe"
+title: "05 - Assignation de groupe"
 description: "Types de groupes et règles d'assignation"
 date: "2025-10-29"
 version: "3.0"
 ---
 
-# Assignation de groupe
+# 05 - Assignation de groupe
 
 Un **groupe** est un ensemble d'**utilisateurs** et/ou de **machines** partageant les mêmes **rôles**.
 

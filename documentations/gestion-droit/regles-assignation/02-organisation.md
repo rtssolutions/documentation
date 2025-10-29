@@ -1,11 +1,11 @@
 ---
-title: "Organisation - Hiérarchie de référence"
+title: "02 - Organisation"
 description: "Présentation détaillée de la hiérarchie d'organisations utilisée dans tous les exemples"
 date: "2025-10-29"
 version: "2.0"
 ---
 
-# Organisation - Hiérarchie de référence
+# 02 - Organisation
 
 Cette page présente en détail la hiérarchie d'organisations utilisée comme référence dans tous les exemples de cette documentation.
 

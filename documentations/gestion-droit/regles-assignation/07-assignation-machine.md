@@ -1,11 +1,11 @@
 ---
-title: "Assignation machine"
+title: "07 - Assignation machine"
 description: "Vue centrée machine : Machine → Rôle et Machine → Groupe"
 date: "2025-10-29"
 version: "3.0"
 ---
 
-# Assignation machine
+# 07 - Assignation machine
 
 Une **machine** représente un système automatisé accédant à l'API Papaours.
 

@@ -1,11 +1,11 @@
 ---
-title: "Assignation utilisateur"
+title: "06 - Assignation utilisateur"
 description: "Vue centrée utilisateur : Utilisateur → Rôle et Utilisateur → Groupe"
 date: "2025-10-29"
 version: "3.0"
 ---
 
-# Assignation utilisateur
+# 06 - Assignation utilisateur
 
 Un utilisateur peut obtenir des permissions de **deux manières** :
 

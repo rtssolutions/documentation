@@ -1,11 +1,11 @@
 ---
-title: "Assignation de rôle"
+title: "04 - Assignation de rôle"
 description: "Types de rôles et règles d'assignation"
 date: "2025-10-29"
 version: "3.0"
 ---
 
-# Assignation de rôle
+# 04 - Assignation de rôle
 
 Un **rôle** définit un ensemble de **permissions** applicables sur une **organisation** et ses **enfants**.
 

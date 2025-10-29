@@ -1,11 +1,11 @@
 ---
-title: "Concepts et relations"
+title: "01 - Concepts et relations"
 description: "Définitions des entités et relations dans le système de gestion des droits"
 date: "2025-10-29"
 version: "2.0"
 ---
 
-# Concepts et relations
+# 01 - Concepts et relations
 
 Cette page présente les concepts fondamentaux et les relations entre les différentes entités du système de gestion des droits.
 

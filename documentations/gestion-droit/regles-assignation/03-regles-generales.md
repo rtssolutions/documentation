@@ -1,11 +1,11 @@
 ---
-title: "Règles générales"
+title: "03 - Règles générales"
 description: "Les 3 règles fondamentales d'assignation des droits"
 date: "2025-10-29"
 version: "3.0"
 ---
 
-# Règles générales
+# 03 - Règles générales
 
 Cette page présente les **3 règles fondamentales** qui régissent toutes les assignations de droits.
 
