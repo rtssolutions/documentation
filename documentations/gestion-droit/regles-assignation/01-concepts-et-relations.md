@@ -140,35 +140,31 @@ Machine API: Export Données
 
 ### Diagramme général
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     SYSTÈME DE DROITS                       │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                ┌─────────────┴─────────────┐
-                │                           │
-         ┌──────▼──────┐            ┌──────▼──────┐
-         │ UTILISATEUR │            │   MACHINE   │
-         └──────┬──────┘            └──────┬──────┘
-                │                           │
-                │ org. responsable          │ org. responsable
-                │                           │
-         ┌──────▼───────────────────────────▼──────┐
-         │          ORGANISATION                    │
-         │  (hiérarchie parent/enfant)              │
-         └──────────────────────────────────────────┘
-                │
-                │
-    ┌───────────┴───────────┐
-    │                       │
-┌───▼────┐              ┌───▼────┐
-│  RÔLE  │              │ GROUPE │
-└───┬────┘              └───┬────┘
-    │                       │
-    │ org. responsable      │ org. responsable
-    │ + périmètre           │ + liste rôles
-    │                       │ + liste utilisateurs/machines
-    └───────────────────────┘
+```mermaid
+graph TD
+    SYSTEME["SYSTÈME DE DROITS"]
+
+    SYSTEME --> UTILISATEUR["👤 UTILISATEUR"]
+    SYSTEME --> MACHINE["🖥️ MACHINE"]
+
+    UTILISATEUR -->|org. responsable| ORGANISATION["🏢 ORGANISATION<br/>(hiérarchie parent/enfant)"]
+    MACHINE -->|org. responsable| ORGANISATION
+
+    ORGANISATION --> ROLE["🎭 RÔLE<br/>org. responsable<br/>+ périmètre"]
+    ORGANISATION --> GROUPE["👥 GROUPE<br/>org. responsable<br/>+ liste rôles<br/>+ liste utilisateurs/machines"]
+
+    ROLE -.hérite via.-> GROUPE
+    GROUPE -.assigne à.-> UTILISATEUR
+    GROUPE -.assigne à.-> MACHINE
+    ROLE -.assigne directement à.-> UTILISATEUR
+    ROLE -.assigne directement à.-> MACHINE
+
+    style SYSTEME fill:#e1f5ff,stroke:#0288d1,stroke-width:3px
+    style UTILISATEUR fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style MACHINE fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style ORGANISATION fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style ROLE fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style GROUPE fill:#fce4ec,stroke:#c2185b,stroke-width:2px
 ```
 
 ---
