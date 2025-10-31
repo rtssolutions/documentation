@@ -18,7 +18,7 @@ Ces 3 règles **DOIVENT être respectées simultanément** pour qu'une assignati
 ```
 Assignation valide ✅ SI ET SEULEMENT SI :
 ├── Règle 1 : Parentalité du rôle ✅
-├── Règle 2 : Périmètre du sujet ✅
+├── Règle 2 : Périmètre de l'utilisateur/machine ✅
 └── Règle 3 : Périmètre du rôle ✅
 ```
 
@@ -26,9 +26,9 @@ Assignation valide ✅ SI ET SEULEMENT SI :
 
 ### Règle 1 : Parentalité du rôle
 
-**Le rôle DOIT provenir de l'organisation du sujet OU d'une organisation parente.**
+**Le rôle DOIT provenir de l'organisation de l'utilisateur/machine OU d'une organisation parente.**
 
-| Sujet (org.) | Rôle (org.) | Relation | Résultat | Explication |
+| Utilisateur/Machine (org.) | Rôle (org.) | Relation | Résultat | Explication |
 |--------------|-------------|----------|----------|-------------|
 | Pierre (OI) | Rôle OI | Même org | ✅ | Même organisation |
 | Pierre (OI) | Rôle CF | Parent direct | ✅ | CF est parent de OI |
@@ -44,11 +44,11 @@ Assignation valide ✅ SI ET SEULEMENT SI :
 
 ---
 
-### Règle 2 : Périmètre du sujet
+### Règle 2 : Périmètre de l'utilisateur/machine
 
-**L'organisation assignée DOIT être l'organisation du sujet OU une organisation enfant.**
+**L'organisation assignée DOIT être l'organisation de l'utilisateur/machine OU une organisation enfant.**
 
-| Sujet (org.) | Org. assignée | Relation | Résultat | Explication |
+| Utilisateur/Machine (org.) | Org. assignée | Relation | Résultat | Explication |
 |--------------|---------------|----------|----------|-------------|
 | Pierre (OI) | OI | Même org | ✅ | Même organisation |
 | Pierre (OI) | UF-A | Enfant direct | ✅ | UF-A est enfant de OI |
@@ -61,7 +61,7 @@ Assignation valide ✅ SI ET SEULEMENT SI :
 | Sophie (UF-A) | CF | Parent éloigné | ❌ | Hors périmètre (organisation parente) |
 | Sophie (UF-A) | UF-B | Organisation sœur | ❌ | Hors périmètre (pas d'enfant) |
 
-**Principe** : On ne peut recevoir des rôles que sur son organisation ou ses enfants.
+**Principe** : Un utilisateur ou une machine ne peut recevoir des rôles que sur son organisation ou ses enfants.
 
 ---
 
@@ -92,8 +92,8 @@ Assignation valide ✅ SI ET SEULEMENT SI :
 
 | Règle | Vérification | Résultat |
 |-------|--------------|----------|
-| **Règle 1** | Rôle CF vs Sujet OI → CF parent de OI | ✅ |
-| **Règle 2** | Org OI vs Sujet OI → Même org | ✅ |
+| **Règle 1** | Rôle CF vs Pierre (OI) → CF parent de OI | ✅ |
+| **Règle 2** | Org OI vs Pierre (OI) → Même org | ✅ |
 | **Règle 3** | Org OI vs Rôle CF → OI enfant de CF | ✅ |
 | **RÉSULTAT** | Toutes les règles respectées | **✅ VALIDE** |
 
@@ -101,7 +101,7 @@ Assignation valide ✅ SI ET SEULEMENT SI :
 
 | Règle | Vérification | Résultat |
 |-------|--------------|----------|
-| **Règle 1** | Rôle UF-A vs Sujet OI → UF-A enfant de OI | ❌ |
+| **Règle 1** | Rôle UF-A vs Pierre (OI) → UF-A enfant de OI | ❌ |
 | **RÉSULTAT** | Règle 1 non respectée | **❌ INVALIDE** |
 
 ---
@@ -119,14 +119,14 @@ En plus des 3 règles fondamentales, des règles spécifiques s'appliquent :
 
 ## Glossaire rapide
 
-| Terme | Définition |
-|-------|------------|
-| **Parent direct** | Organisation immédiatement au-dessus (ex: OI est parent direct de UF-A) |
-| **Parent éloigné** | Organisation plus haut dans la hiérarchie (ex: CF est parent éloigné de UF-A) |
-| **Enfant direct** | Organisation immédiatement en-dessous (ex: UF-A est enfant direct de OI) |
-| **Enfant éloigné** | Organisation plus bas dans la hiérarchie (ex: UF-A est enfant éloigné de CF) |
-| **Organisation sœur** | Organisation avec le même parent direct (ex: UF-A et UF-B) |
-| **Périmètre** | Organisation + tous ses enfants (directs et éloignés) |
+| Terme | Définition                                                                     |
+|-------|--------------------------------------------------------------------------------|
+| **Parent direct** | Organisation immédiatement au-dessus (ex: OI est parent direct de UF-A)        |
+| **Parent éloigné** | Organisation pluws haut dans la hiérarchie (ex: CF est parent éloigné de UF-A) |
+| **Enfant direct** | Organisation immédiatement en-dessous (ex: UF-A est enfant direct de OI)       |
+| **Enfant éloigné** | Organisation plus bas dans la hiérarchie (ex: UF-A est enfant éloigné de CF)   |
+| **Organisation sœur** | Organisation avec le même parent direct (ex: UF-A et UF-B)                     |
+| **Périmètre** | Organisation + tous ses enfants (directs et éloignés)                          |
 
 ---
 
