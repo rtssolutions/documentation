@@ -140,7 +140,7 @@ Machine API: Export Données
 
 ### Diagramme général
 
-```mermaid
+```mermaid "600px"
 graph TD
     SYSTEME["SYSTÈME DE DROITS"]
 
