@@ -19,7 +19,7 @@ Utilisateur
 
 ## Utilisateur → Rôle
 
-Les **3 règles fondamentales** s'appliquent (voir [Règles générales](03-regles-generales.md)).
+Les **3 règles fondamentales** s'appliquent (voir [03 - Règles générales](03-regles-generales)).
 
 ### Matrice globale
 
@@ -159,8 +159,7 @@ Sophie
 
 ## Navigation
 
-- [← Assignation de groupe](05-assignation-groupe.md)
-- [← Retour à l'index](index.md)
-- [Assignation machine →](07-assignation-machine.md)
+- [05 - Assignation de groupe](05-assignation-groupe)
+- [07 - Assignation machine](07-assignation-machine)
 
-[Retour à la gestion des droits](../index.md)
+[Retour à la gestion des droits](../index)

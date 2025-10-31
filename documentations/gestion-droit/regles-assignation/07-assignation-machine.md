@@ -45,7 +45,7 @@ Une **machine** représente un système automatisé accédant à l'API Papaours.
 
 ## Machine → Rôle
 
-Les **mêmes règles** que pour [Utilisateur → Rôle](06-assignation-utilisateur.md#utilisateur--rôle) s'appliquent.
+Les **mêmes règles** que pour [06 - Assignation utilisateur](06-assignation-utilisateur#utilisateur--rôle) s'appliquent.
 
 **+ Règle T4** : Les machines système ne peuvent pas être modifiées
 
@@ -62,7 +62,7 @@ Les **mêmes règles** que pour [Utilisateur → Rôle](06-assignation-utilisate
 
 ## Machine → Groupe
 
-Les **mêmes règles** que pour [Utilisateur → Groupe](06-assignation-utilisateur.md#utilisateur--groupe) s'appliquent.
+Les **mêmes règles** que pour [06 - Assignation utilisateur](06-assignation-utilisateur#utilisateur--groupe) s'appliquent.
 
 **+ Règle T4** : Les machines système ne peuvent pas être ajoutées à des groupes
 
@@ -183,15 +183,14 @@ Machine API Export Centre
 ## Documentation API
 
 Pour plus de détails :
-- [Gestion des machines →](../acces-api/03-gestion-des-machines.md)
-- [Gestion des clés API →](../acces-api/04-gestion-des-cles-api.md)
-- [Sécurité et bonnes pratiques →](../acces-api/05-securite-et-bonnes-pratiques.md)
+- [Gestion des machines](../acces-api/03-gestion-des-machines)
+- [Gestion des clés API](../acces-api/04-gestion-des-cles-api)
+- [Sécurité et bonnes pratiques](../acces-api/05-securite-et-bonnes-pratiques)
 
 ---
 
 ## Navigation
 
-- [← Assignation utilisateur](06-assignation-utilisateur.md)
-- [← Retour à l'index](index.md)
+- [06 - Assignation utilisateur](06-assignation-utilisateur)
 
-[Retour à la gestion des droits](../index.md)
+[Retour à la gestion des droits](../index)

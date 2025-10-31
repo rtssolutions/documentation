@@ -189,8 +189,7 @@ Un utilisateur **NE PEUT PAS** :
 
 ## Navigation
 
-- [← Assignation de rôle](04-assignation-role.md)
-- [← Retour à l'index](index.md)
-- [Assignation utilisateur →](06-assignation-utilisateur.md)
+- [04 - Assignation de rôle](04-assignation-role)
+- [06 - Assignation utilisateur](06-assignation-utilisateur)
 
-[Retour à la gestion des droits](../index.md)
+[Retour à la gestion des droits](../index)

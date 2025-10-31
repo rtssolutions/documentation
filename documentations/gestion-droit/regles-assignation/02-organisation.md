@@ -426,8 +426,7 @@ Marie (CF)
 
 ## Navigation
 
-- [← Concepts et relations](01-concepts-et-relations.md)
-- [← Retour à l'index](index.md)
-- [Règles générales →](03-regles-generales.md)
+- [01 - Concepts et relations](01-concepts-et-relations)
+- [03 - Règles générales](03-regles-generales)
 
-[Retour à la gestion des droits](../index.md)
+[Retour à la gestion des droits](../index)

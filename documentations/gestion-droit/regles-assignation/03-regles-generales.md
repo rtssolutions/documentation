@@ -110,10 +110,10 @@ Assignation valide ✅ SI ET SEULEMENT SI :
 
 En plus des 3 règles fondamentales, des règles spécifiques s'appliquent :
 
-- **T1 - Rôles système non assignables** → Voir [Types de rôle](04-assignation-role.md#types-de-rôle)
-- **T2 - Groupes non modifiables** → Voir [Types de groupe](05-assignation-groupe.md#types-de-groupe)
-- **T3 - Interdiction d'auto-assignation** → Voir [Assignation utilisateur](06-assignation-utilisateur.md#utilisateur--groupe)
-- **T4 - Machines système non modifiables** → Voir [Types de machine](07-assignation-machine.md#types-de-machine)
+- **T1 - Rôles système non assignables** → Voir [04 - Assignation de rôle](04-assignation-role#types-de-rôle)
+- **T2 - Groupes non modifiables** → Voir [05 - Assignation de groupe](05-assignation-groupe#types-de-groupe)
+- **T3 - Interdiction d'auto-assignation** → Voir [06 - Assignation utilisateur](06-assignation-utilisateur#utilisateur--groupe)
+- **T4 - Machines système non modifiables** → Voir [07 - Assignation machine](07-assignation-machine#types-de-machine)
 
 ---
 
@@ -132,8 +132,7 @@ En plus des 3 règles fondamentales, des règles spécifiques s'appliquent :
 
 ## Navigation
 
-- [← Organisation](02-organisation.md)
-- [← Retour à l'index](index.md)
-- [Assignation de rôle →](04-assignation-role.md)
+- [02 - Organisation](02-organisation)
+- [04 - Assignation de rôle](04-assignation-role)
 
-[Retour à la gestion des droits](../index.md)
+[Retour à la gestion des droits](../index)

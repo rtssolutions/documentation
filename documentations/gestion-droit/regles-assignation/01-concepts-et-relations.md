@@ -442,8 +442,7 @@ Certaines entités sont **créées et gérées par Papaours** et ne peuvent pas 
 
 ## Navigation
 
-- [← Retour à l'index](index.md)
-- [Organisation →](02-organisation.md)
-- [Règles générales →](03-regles-generales.md)
+- [02 - Organisation](02-organisation)
+- [03 - Règles générales](03-regles-generales)
 
-[Retour à la gestion des droits](../index.md)
+[Retour à la gestion des droits](../index)

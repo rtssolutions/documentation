@@ -60,7 +60,7 @@ Périmètre = Organisation responsable + Tous les enfants (directs et éloignés
 
 ## Assignation Sujet → Rôle
 
-Les **3 règles fondamentales** s'appliquent (voir [Règles générales](03-regles-generales.md)).
+Les **3 règles fondamentales** s'appliquent (voir [03 - Règles générales](03-regles-generales)).
 
 ### Matrice de validation rapide
 
@@ -174,8 +174,7 @@ Pierre (OI) → Rôle "Formateur UF-A" sur UF-A ❌
 
 ## Navigation
 
-- [← Règles générales](03-regles-generales.md)
-- [← Retour à l'index](index.md)
-- [Assignation de groupe →](05-assignation-groupe.md)
+- [03 - Règles générales](03-regles-generales)
+- [05 - Assignation de groupe](05-assignation-groupe)
 
-[Retour à la gestion des droits](../index.md)
+[Retour à la gestion des droits](../index)
