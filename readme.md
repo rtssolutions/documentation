@@ -267,6 +267,91 @@ Après validation, vous devriez voir :
 
 ![Alt text](/images/contrat-cree-liste.png "WIDTHxHEIGHT") les tailles ne sont pas obligatoire
 
+## 📊 Diagrammes Mermaid
+
+Vous pouvez créer des diagrammes interactifs avec Mermaid directement dans vos documents Markdown.
+
+### Syntaxe disponible
+
+**Option 1 : Avec classe Tailwind**
+
+Tailles disponibles : `max-w-sm`, `max-w-md`, `max-w-lg`, `max-w-xl`, `max-w-2xl`, `max-w-3xl`, `max-w-4xl`, `max-w-5xl`, `max-w-6xl`, `max-w-7xl`, `max-w-full`
+
+```markdown
+```mermaid "max-w-2xl"
+graph TD
+    A[Start] --> B[End]
+```
+```
+
+**Option 2 : Avec pixels**
+
+Tailles disponibles : `400px`, `500px`, `600px`, `700px`, `800px`, `900px`, `1000px`
+
+```markdown
+```mermaid "600px"
+graph TD
+    A[Start] --> B[End]
+```
+```
+
+**Option 3 : Sans spécifier (utilise max-w-4xl par défaut)**
+```markdown
+```mermaid
+graph TD
+    A[Start] --> B[End]
+```
+```
+
+### Exemples de diagrammes
+
+#### Diagramme de flux
+```markdown
+```mermaid "max-w-3xl"
+graph TD
+    A[Démarrage] --> B{Condition ?}
+    B -->|Oui| C[Action 1]
+    B -->|Non| D[Action 2]
+    C --> E[Fin]
+    D --> E
+```
+```
+
+#### Diagramme de séquence
+```markdown
+```mermaid "800px"
+sequenceDiagram
+    participant U as Utilisateur
+    participant S as Serveur
+    participant DB as Base de données
+
+    U->>S: Requête
+    S->>DB: Query
+    DB-->>S: Résultat
+    S-->>U: Réponse
+```
+```
+
+#### Diagramme de classes
+```markdown
+```mermaid
+classDiagram
+    class Utilisateur {
+        +String nom
+        +String email
+        +login()
+        +logout()
+    }
+    class Role {
+        +String nom
+        +Array permissions
+    }
+    Utilisateur --> Role : possède
+```
+```
+
+**Pour plus d'informations** : [Documentation Mermaid](https://mermaid.js.org/)
+
 ## 🔧 Dépannage
 
 ### Le bouton "Créer" est grisé
@@ -297,6 +382,7 @@ Après validation, vous devriez voir :
 ### Support multimédia
 - **Composant vidéo natif** : Support HTML5 avec fallbacks multiples
 - **Images optimisées** : Compression automatique et formats modernes (WebP, AVIF)
+- **Diagrammes Mermaid** : Création de schémas et graphiques interactifs
 
 ## 🚀 Release Notes - Guide Complet
 
