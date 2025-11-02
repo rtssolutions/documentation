@@ -28,7 +28,7 @@ Un **dossier de formation** regroupe toutes les informations et documents liés 
 Chaque dossier associe :
 - **Un apprenant** : personne inscrite à la formation
 - **Une session de formation** : période durant laquelle se déroule la formation
-- **Un contrat**
+- **Une liste potentielle de contrat**
 - **Des documents** : pièces administratives et pédagogiques
 
 Le dossier permet le suivi individuel de chaque apprenant au sein d'une session de formation.
@@ -37,9 +37,9 @@ Le dossier permet le suivi individuel de chaque apprenant au sein d'une session 
 
 Le dossier de formation remplit plusieurs fonctions :
 
-- **Centralisation** : Il rassemble en un seul endroit tous les éléments du parcours de l'apprenant
-- **Conformité administrative** : Il stocke les pièces justificatives nécessaires aux contrôles qualités
-
+- **Centralisation** : Il rassemble en un seul endroit tous les éléments du parcours de l'apprenant 
+- **Timeline**  : Il permet de comprendre dans le temps ce qui constitue la période de formation d’un apprenant pour l’obtention d’un titre ou diplôme via la timeline du dossier. 
+- **Suivi** : Le système calcule pour vous la situation actuelle du dossier. C’est ce qui permet de suivre vos effectifs et situation de chacun de vos apprenants au sein de votre centre.
 ### Public visé par la documentation
 
 Cette documentation s'adresse aux administrateurs et gestionnaires qui interviennent dans le cycle de vie d'un dossier de formation.
