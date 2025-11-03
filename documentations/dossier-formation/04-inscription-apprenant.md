@@ -39,3 +39,6 @@ Avant de procéder à l'inscription :
 - Un apprenant **ne peut être inscrit** qu'à une seule session de la même action de formation
 
 Si vous tentez d'inscrire un apprenant déjà inscrit à la session, le système affichera un message d'erreur et l'inscription sera refusée.
+
+## Pour aller plus loin
+→ [05 - Annulation d'une inscription](05-annulation-inscription.md)

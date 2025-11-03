@@ -38,3 +38,8 @@ L'annulation est possible seulement si le dossier est dans l'état suivant :
 <video controls>
   <source src="https://papaours-documentation.s3.fr-par.scw.cloud/tutoriels/dossier-formation/annulation-inscription.mp4" type="video/mp4" />
 </video>
+
+## Navigation
+
+[Retour à l’accueil](../accueil.md)  
+[Revenir à la première page : 01 - Introduction](01-introduction.md)
