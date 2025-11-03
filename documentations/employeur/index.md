@@ -3,6 +3,7 @@ title: "Employeur"
 description: "Fiches employeurs, contrats associés et suivi"
 date: "2025-07-29"
 version: "1"
+icon: "BuildingOffice2Icon"
 ---
 
 # Employeur

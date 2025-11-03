@@ -45,7 +45,7 @@ La création d’un employeur s’effectue via une recherche au sein de la base 
     - État administratif (actif / fermé) ou si votre employeur est déjà dans votre base de gestion : "employeur connu"
 
 3. **Sélection d’un résultat** :
-    - Si l’employeur existe déjà au sein de votre organisation, vous disposez d’un bouton voir, vous permettrez d’accéder à sa fiche employeur connu de votre organisation.
+    - Si l’employeur existe déjà au sein de votre organisation, vous disposez d’un bouton voir, vous permettant d’accéder à sa fiche employeur connu de votre organisation.
     - Sinon, un bouton sélectionner apparait, entrainant la création de l'employeur en base de gestion et redirection vers le formulaire de complétion des informations.
 
 ![Recherche SIRENE](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/employeur/5/recherche-sirene.png)
