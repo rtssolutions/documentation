@@ -26,8 +26,7 @@ Elle est encadrée pour garantir la cohérence des données et la traçabilité 
 
 - **Permission requise** : Suppression des employeurs
 - L’utilisateur doit être contextualisé sur le centre de formation ou l’organisation ayant la visibilité sur l’employeur
-- La suppression n’est possible que si l’employeur n’est associé à aucun contrat valide ou brouillon
-
+- La suppression n’est possible que si l’employeur n’est associé à aucune entité de gestion (ex : Contrat, financement, etc.)
 ---
 
 ## Procédure de suppression

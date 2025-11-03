@@ -19,10 +19,10 @@ version: "1"
 
 La page **Liste des employeurs** permet de consulter tous les employeurs connus du tenant de votre organisation.
 
-- Accessible depuis le menu **Employeurs > Liste**
-- Vue centralisée pour la gestion des contrats et financements
-- Les actions disponibles dépendent des permissions attribuées
+- La page est accessible depuis le menu principal Papaours, rubrique **Employeurs**, sous-menu **Liste**.
+![Menu d'accès aux employeurs](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/employeur/3/menu-employeurs.png "259×397")
 
+- Les actions disponibles dépendent des permissions attribuées
 ![Page liste employeurs](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/employeur/4/liste-employeurs.png)
 
 ---
@@ -36,7 +36,7 @@ Chaque ligne de la liste présente les informations principales d’un employeur
 - **SIRET**
 - **Adresse complète**
 - **Statut personnalisé**
-- **Statut entreprise** : Actif ou Fermé, donnée récupérer depuis le référentiel d'entreprises de l'état.
+- **Statut entreprise** : Actif ou Fermé, cette donnée est pilotée par le référentiel SIRENE de l'Etat français.
 
 ---
 
@@ -46,14 +46,12 @@ Une barre de recherche est disponible et permet de rechercher un employeur par :
 
 - Nom commercial
 - SIRET
-- IDCC
+- Identifiant de convention collective (IDCC)
 - Référence
 
 **Règles de recherche** :
 
 - Minimum 3 caractères pour lancer la recherche
-- Les résultats se filtrent en temps réel
-- Possibilité d’ajouter des filtres avancés dans de futures versions
 
 ![Barre de recherche employeurs](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/employeur/4/recherche-employeurs.png)
 
@@ -62,8 +60,7 @@ Une barre de recherche est disponible et permet de rechercher un employeur par :
 ## Tri et pagination
 
 - **Tri par défaut** : Date de dernière modification
-- Possibilité de trier par d’autres colonnes dans les futures versions
-- **Pagination** : 10 résultats par page, navigation possible entre le page via le composant dédié
+- **Pagination** : 10 résultats par page
 
 ---
 

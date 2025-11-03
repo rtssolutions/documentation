@@ -85,3 +85,8 @@ Ils permettent donc d’assurer la liaison entre l’employeur et le suivi admin
 ![Contacts utilisés dans le contrat](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/employeur/10/contacts-contrat.png)
 
 ---
+
+## Navigation
+
+[Retour à l’accueil](../accueil.md)  
+[Revenir à la première page : 01 - Introduction](01-introduction.md)
