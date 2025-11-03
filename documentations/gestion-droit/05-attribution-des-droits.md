@@ -14,7 +14,7 @@ Cette section explique comment attribuer des rôles — et donc des permissions 
 
 > Pour cela, les rôles et les groupes d'utilisateurs doivent avoir été préalablement créés dans le système.
 
-> ℹ️ **Règles d'assignation** : L'attribution des rôles et groupes suit des règles précises de parentalité et de périmètre d'organisations. Pour une description complète de ces règles, consultez la section [09 - Règles d'assignation](09-regles-assignation.md).
+> ℹ️ **Règles d'assignation** : L'attribution des rôles et groupes suit des règles précises de parentalité et de périmètre d'organisations. Pour une description complète de ces règles, consultez la section [09 - Règles d'assignation](09-regles-assignation).
 
 ## Attribution directe d’un rôle à un utilisateur
 
@@ -103,7 +103,7 @@ L'attribution indirecte de permissions via des groupes utilisateurs est une **pr
 
 
 ### Pour aller plus loin
-- [09 - Règles d'assignation des droits d'accès →](09-regles-assignation.md)
-- [06 - Modifier les rôles, groupes et utilisateurs →](06-modifier-les-droits-dacces.md)
+- [09 - Règles d'assignation des droits d'accès →](09-regles-assignation)
+- [06 - Modifier les rôles, groupes et utilisateurs →](06-modifier-les-droits-dacces)
 
 [Retour à l'Accueil](../accueil)

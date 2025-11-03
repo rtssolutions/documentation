@@ -281,7 +281,7 @@ Sophie (UF Enfant A) reçoit le rôle "Formateur" sur l'organisation "UF Enfant 
                                                               └─── Organisation assignée
 ```
 
-**Important** : L'organisation assignée doit respecter les règles de périmètre (voir [Règles générales](03-regles-generales.md)).
+**Important** : L'organisation assignée doit respecter les règles de périmètre (voir [Règles générales](03-regles-generales)).
 
 ---
 

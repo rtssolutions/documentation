@@ -129,4 +129,4 @@ Lors de la création, le système génère automatiquement la visibilité :
 ### Pour aller plus loin
 
 ➡️ Poursuivez avec la page suivante :  
-[06 - Consultation d'un employeur](06-consultation-employeur.md)
+[06 - Consultation d'un employeur](06-consultation-employeur)

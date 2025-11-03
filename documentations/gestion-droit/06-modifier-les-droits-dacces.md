@@ -21,7 +21,7 @@ Cette section détaille la procédure à suivre pour modifier un rôle existant 
 
 Avant de procéder à la modification d'un rôle, assurez-vous d'avoir les privilèges d'administrateur nécessaires. Seuls les utilisateurs disposant de la permission **Écrire un rôle** sont autorisés à modifier les rôles et leurs permissions associées.
 
-> ⚠️ **Rôles administrés par Papaours** : Certains rôles sont administrés par Papaours (ex: "Administrateur Papaours") et ne peuvent pas être modifiés. Consultez la section [09 - Règles d'assignation](09-regles-assignation.md#règle-4--rôles-non-assignables) pour plus de détails.
+> ⚠️ **Rôles administrés par Papaours** : Certains rôles sont administrés par Papaours (ex: "Administrateur Papaours") et ne peuvent pas être modifiés. Consultez la section [09 - Règles d'assignation](09-regles-assignation#règle-4--rôles-non-assignables) pour plus de détails.
 
 ### Étapes de modification
 
@@ -47,7 +47,7 @@ Cette section détaille la procédure à suivre pour modifier un groupe existant
 
 Avant de procéder à la modification d'un groupe, assurez-vous d'avoir les privilèges d'administrateur nécessaires. Seuls les utilisateurs disposant de la permissions Gestion des permissions / Groupe / Écriture sont autorisés à modifier les groupes et les données associées.
 
-> ⚠️ **Groupes administrés par Papaours** : Certains groupes sont administrés par Papaours et ont des restrictions spécifiques. Par exemple, le groupe "Administrateur Papaours" ne peut pas être modifié. D'autres groupes administrés par Papaours permettent de modifier uniquement la liste des utilisateurs, mais pas le nom ni les rôles. Consultez la section [09 - Règles d'assignation](09-regles-assignation.md#règle-3--restrictions-sur-les-groupes-administrés-par-papaours) pour plus de détails.
+> ⚠️ **Groupes administrés par Papaours** : Certains groupes sont administrés par Papaours et ont des restrictions spécifiques. Par exemple, le groupe "Administrateur Papaours" ne peut pas être modifié. D'autres groupes administrés par Papaours permettent de modifier uniquement la liste des utilisateurs, mais pas le nom ni les rôles. Consultez la section [09 - Règles d'assignation](09-regles-assignation#règle-3--restrictions-sur-les-groupes-administrés-par-papaours) pour plus de détails.
 
 ### Étapes de modification
 
@@ -165,7 +165,7 @@ Les modifications des permissions des utilisateurs doivent ainsi être **gérée
 
 
 ### Pour aller plus loin
-- [09 - Règles d'assignation des droits d'accès →](09-regles-assignation.md)
-- [07 - Supprimer les rôles, groupes et utilisateurs →](07-suppression-des-entites.md)
+- [09 - Règles d'assignation des droits d'accès →](09-regles-assignation)
+- [07 - Supprimer les rôles, groupes et utilisateurs →](07-suppression-des-entites)
 
 [Retour à l'Accueil](../accueil)

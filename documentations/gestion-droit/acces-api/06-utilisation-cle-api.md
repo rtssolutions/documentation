@@ -324,18 +324,18 @@ Voici les codes d'erreur courants que vous pourriez rencontrer lors de l'utilisa
 ## Ressources complémentaires
 
 - [Documentation de l'API Papaours](https://api.papaours.fr/swagger-ui)
-- [Créer une machine →](03-gestion-des-machines.md)
-- [Créer une clé API →](04-gestion-des-cles-api.md)
-- [Sécurité et bonnes pratiques →](05-securite-et-bonnes-pratiques.md)
+- [Créer une machine →](03-gestion-des-machines)
+- [Créer une clé API →](04-gestion-des-cles-api)
+- [Sécurité et bonnes pratiques →](05-securite-et-bonnes-pratiques)
 
 ---
 
 ### Pour aller plus loin
 
-- [Retour à la gestion des machines →](03-gestion-des-machines.md)
-- [Retour à la gestion des clés API →](04-gestion-des-cles-api.md)
-- [Bonnes pratiques de sécurité →](05-securite-et-bonnes-pratiques.md)
-- [Comprendre les concepts →](02-definition-concepts-cles-machines-cles-api.md)
+- [Retour à la gestion des machines →](03-gestion-des-machines)
+- [Retour à la gestion des clés API →](04-gestion-des-cles-api)
+- [Bonnes pratiques de sécurité →](05-securite-et-bonnes-pratiques)
+- [Comprendre les concepts →](02-definition-concepts-cles-machines-cles-api)
 
 ---
 

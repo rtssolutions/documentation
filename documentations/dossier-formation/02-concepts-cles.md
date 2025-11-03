@@ -89,4 +89,4 @@ Les changements d'état se font automatiquement selon les événements :
 - Le dossier est lié à une session de formation spécifique
 
 ### Pour aller plus loin
-→ [03 - Comprendre la situation actuelle](03-situation-actuelle.md)
+→ [03 - Comprendre la situation actuelle](03-situation-actuelle)

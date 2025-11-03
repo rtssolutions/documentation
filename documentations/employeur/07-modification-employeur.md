@@ -106,4 +106,4 @@ Pour modifier un employeur, vous devez :
 ### Pour aller plus loin
 
 ➡️ Consultez la page suivante :  
-[08 - Suppression et archivage d'un employeur](08-suppression-employeur.md)
+[08 - Suppression et archivage d'un employeur](08-suppression-employeur)

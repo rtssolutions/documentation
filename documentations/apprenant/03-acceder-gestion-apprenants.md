@@ -37,7 +37,7 @@ peuvent la modifier. Pour cela il faut se rendre sur la fiche de l'apprenant et 
 ![visibilite](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/3/switch-visibilite-apprenant.png)
 
 Pour plus d'informations sur la visibilité et les droits d'
-accès : [Document des droits d'accès](../../documentations/gestion-droit/01-introduction.md)
+accès : [Document des droits d'accès](../../documentations/gestion-droit/01-introduction)
 
 ## Vue d'ensemble des apprenants
 

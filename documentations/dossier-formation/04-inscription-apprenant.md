@@ -41,4 +41,4 @@ Avant de procéder à l'inscription :
 Si vous tentez d'inscrire un apprenant déjà inscrit à la session, le système affichera un message d'erreur et l'inscription sera refusée.
 
 ## Pour aller plus loin
-→ [05 - Annulation d'une inscription](05-annulation-inscription.md)
+→ [05 - Annulation d'une inscription](05-annulation-inscription)

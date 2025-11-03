@@ -66,11 +66,11 @@ machine "Scripts reporting" avec les rôles et groupes de lecture appropriés.
 
 ## Navigation rapide
 
-- [Comprendre les machines et clés API →](02-definition-concepts-cles-machines-cles-api.md)
-- [Créer votre première machine →](03-gestion-des-machines.md)
-- [Générer une clé API →](04-gestion-des-cles-api.md)
-- [Sécuriser vos clés →](05-securite-et-bonnes-pratiques.md)
-- [Utiliser une clé API dans votre code →](06-utilisation-cle-api.md)
+- [Comprendre les machines et clés API →](02-definition-concepts-cles-machines-cles-api)
+- [Créer votre première machine →](03-gestion-des-machines)
+- [Générer une clé API →](04-gestion-des-cles-api)
+- [Sécuriser vos clés →](05-securite-et-bonnes-pratiques)
+- [Utiliser une clé API dans votre code →](06-utilisation-cle-api)
 
 ---
 

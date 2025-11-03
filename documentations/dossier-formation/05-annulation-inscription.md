@@ -41,5 +41,5 @@ L'annulation est possible seulement si le dossier est dans l'état suivant :
 
 ## Navigation
 
-[Retour à l’accueil](../accueil.md)  
-[Revenir à la première page : 01 - Introduction](01-introduction.md)
+[Retour à l’accueil](../accueil)  
+[Revenir à la première page : 01 - Introduction](01-introduction)

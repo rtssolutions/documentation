@@ -12,10 +12,10 @@ Elle vous guide à travers les premières étapes essentielles pour commencer à
 
 ## Étapes à suivre
 
-1. [Connexion à Papaours](./connexion.md)  
-2. [Découverte de l’interface](./navigation.md)  
-3. [Personnalisation de votre profil](./profil.md)  
-4. [Accéder aux modules fonctionnels](./accès-aux-modules.md)
+1. [Connexion à Papaours](./connexion)  
+2. [Découverte de l’interface](./navigation)  
+3. [Personnalisation de votre profil](./profil)  
+4. [Accéder aux modules fonctionnels](./accès-aux-modules)
 
 ---
 

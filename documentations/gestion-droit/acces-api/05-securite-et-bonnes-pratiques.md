@@ -185,9 +185,9 @@ Le code de génération et de validation des clés est :
 
 ### Pour aller plus loin
 
-- [Créer une machine →](03-gestion-des-machines.md)
-- [Créer une clé API →](04-gestion-des-cles-api.md)
-- [Utiliser une clé API dans votre code →](06-utilisation-cle-api.md)
-- [Comprendre les concepts →](02-definition-concepts-cles-machines-cles-api.md)
+- [Créer une machine →](03-gestion-des-machines)
+- [Créer une clé API →](04-gestion-des-cles-api)
+- [Utiliser une clé API dans votre code →](06-utilisation-cle-api)
+- [Comprendre les concepts →](02-definition-concepts-cles-machines-cles-api)
 
 [Retour à l'Accueil](../../accueil)

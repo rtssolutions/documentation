@@ -53,4 +53,4 @@ La situation est recalculée automatiquement lors de :
 - Clôturer le dossier
 
 ## Pour aller plus loin
-→ [04 - Inscription d'un apprenant](04-inscription-apprenant.md)
+→ [04 - Inscription d'un apprenant](04-inscription-apprenant)

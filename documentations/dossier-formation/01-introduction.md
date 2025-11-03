@@ -13,22 +13,22 @@ version: "2"
    - [Définition et rôle](#définition-et-rôle)
    - [Fonctions principales](#fonctions-principales)
    - [Public visé par la documentation](#public-visé-par-la-documentation)
-2. [Concepts clés](02-concepts-cles.md)
+2. [Concepts clés](02-concepts-cles)
    - Dossier de formation
    - État du dossier (Situation actuelle)
    - Session de formation
    - Règles métier essentielles
    - Liens avec les autres modules
-3. [Situation actuelle](03-situation-actuelle.md)
+3. [Situation actuelle](03-situation-actuelle)
    - Qu'est-ce que la situation actuelle ?
    - Comment est-elle calculée ?
    - Actions par situation
-4. [Inscription d'un apprenant](04-inscription-apprenant.md)
+4. [Inscription d'un apprenant](04-inscription-apprenant)
    - Vue d'ensemble
    - Procédure d'inscription
    - Prérequis
    - Règle d'unicité
-5. [Annulation d'une inscription](05-annulation-inscription.md)
+5. [Annulation d'une inscription](05-annulation-inscription)
    - Vue d'ensemble
    - Situations permettant l'annulation
    - Procédure d'annulation
@@ -72,4 +72,4 @@ Cette documentation s'adresse aux :
 - Toute personne intervenant dans le cycle de vie d'un dossier de formation
 
 ## Pour aller plus loin
-→ [02 - Définition des concepts clés](02-concepts-cles.md)
+→ [02 - Définition des concepts clés](02-concepts-cles)

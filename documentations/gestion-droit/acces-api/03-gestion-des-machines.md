@@ -49,7 +49,7 @@ nouvelles machines.
    > ⚠️ **Important** : Les droits d'accès issus d'un rôle ou groupe ne seront effectifs que si l'organisation de
    > rattachement de la machine est incluse dans le périmètre de ce rôle/groupe.
 
-   > ℹ️ **Règles d'assignation** : L'attribution des rôles et groupes aux machines suit des règles précises de parentalité et de périmètre d'organisations. Consultez la section [09 - Règles d'assignation](../09-regles-assignation.md#machine--rôle) pour plus de détails.
+   > ℹ️ **Règles d'assignation** : L'attribution des rôles et groupes aux machines suit des règles précises de parentalité et de périmètre d'organisations. Consultez la section [09 - Règles d'assignation](../09-regles-assignation#machine--rôle) pour plus de détails.
 
 6. **Créer la machine** : Cliquez sur le bouton **Créer** pour finaliser la création de la machine.
 
@@ -111,7 +111,7 @@ Cette section liste tous les rôles et groupes attribués à la machine :
 
 > ⚠️ **Important** : Un rôle ou groupe n'accorde des droits d'accès effectifs que si l'organisation de rattachement de la machine est incluse dans son périmètre.
 
-> ℹ️ **À noter** : Certains rôles et groupes sont administrés par Papaours et ne peuvent pas être assignés (ex: "Administrateur Papaours"). De même, certaines machines système administrées par Papaours ne peuvent pas être modifiées. Consultez la section [09 - Règles d'assignation](../09-regles-assignation.md) pour plus de détails.
+> ℹ️ **À noter** : Certains rôles et groupes sont administrés par Papaours et ne peuvent pas être assignés (ex: "Administrateur Papaours"). De même, certaines machines système administrées par Papaours ne peuvent pas être modifiées. Consultez la section [09 - Règles d'assignation](../09-regles-assignation) pour plus de détails.
 
 #### Clés API
 
@@ -120,7 +120,7 @@ Cette section affiche toutes les clés API associées à la machine. Pour chaque
 - Son libellé
 - Son statut (Active ou Inactive)
 
-Consultez la section [Gestion des clés API](04-gestion-des-cles-api.md) pour plus de détails.
+Consultez la section [Gestion des clés API](04-gestion-des-cles-api) pour plus de détails.
 
 ---
 
@@ -174,7 +174,7 @@ machines.
 
 Pour désactiver temporairement une machine sans perdre sa configuration :
 
-1. Désactivez toutes ses clés API (voir [Modifier une clé API](04-gestion-des-cles-api.md#modifier-une-clé-api))
+1. Désactivez toutes ses clés API (voir [Modifier une clé API](04-gestion-des-cles-api#modifier-une-clé-api))
 2. Les rôles et groupes restent configurés mais aucune clé ne peut être utilisée
 
 #### Suppression définitive
@@ -191,8 +191,8 @@ Pour supprimer une machine :
 
 ### Pour aller plus loin
 
-- [Règles d'assignation des droits d'accès →](../09-regles-assignation.md)
-- [Créer des clés API pour votre machine →](04-gestion-des-cles-api.md)
-- [Bonnes pratiques de sécurité →](05-securite-et-bonnes-pratiques.md)
+- [Règles d'assignation des droits d'accès →](../09-regles-assignation)
+- [Créer des clés API pour votre machine →](04-gestion-des-cles-api)
+- [Bonnes pratiques de sécurité →](05-securite-et-bonnes-pratiques)
 
 [Retour à l'Accueil](../../accueil)

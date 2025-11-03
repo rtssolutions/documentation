@@ -40,4 +40,4 @@ Pour utiliser les fonctionnalités du module Employeurs, l’utilisateur doit di
 ## 📎 Pour aller plus loin
 
 ➡️ Poursuivez avec la page suivante :  
-[02 - Définitions et concepts clés](02-definition-concepts-cles.md)
+[02 - Définitions et concepts clés](02-definition-concepts-cles)

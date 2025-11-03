@@ -15,25 +15,25 @@ Cette documentation décrit les règles métier qui régissent l'assignation des
 
 Cette documentation est divisée en 7 sections pour faciliter la compréhension :
 
-1. **[Concepts et relations →](01-concepts-et-relations.md)**
+1. **[Concepts et relations →](01-concepts-et-relations)**
    Définitions des entités, relations entre elles, notions de responsabilité et périmètre
 
-2. **[Organisation →](02-organisation.md)**
+2. **[Organisation →](02-organisation)**
    Hiérarchie de référence utilisée dans tous les exemples, relations parent/enfant
 
-3. **[Règles générales →](03-regles-generales.md)**
+3. **[Règles générales →](03-regles-generales)**
    Les 3 règles fondamentales et règles transversales applicables à toutes les assignations
 
-4. **[Assignation de rôle →](04-assignation-role.md)**
+4. **[Assignation de rôle →](04-assignation-role)**
    Propriétés des rôles, rôles système vs CFA, exemples détaillés
 
-5. **[Assignation de groupe →](05-assignation-groupe.md)**
+5. **[Assignation de groupe →](05-assignation-groupe)**
    Composition des groupes, restrictions, règles spécifiques
 
-6. **[Assignation utilisateur →](06-assignation-utilisateur.md)**
+6. **[Assignation utilisateur →](06-assignation-utilisateur)**
    Vue centrée utilisateur : Utilisateur → Rôle et Utilisateur → Groupe
 
-7. **[Assignation machine →](07-assignation-machine.md)**
+7. **[Assignation machine →](07-assignation-machine)**
    Machine → Rôle et Machine → Groupe, machines système vs CFA
 
 ---
@@ -109,9 +109,9 @@ Ces entités sont marquées visuellement dans l'interface et leurs restrictions 
 
 ## 📖 Comment utiliser cette documentation
 
-1. **Découverte** : Commencez par [Concepts et relations](01-concepts-et-relations.md) pour comprendre les bases
-2. **Référence** : Consultez [Organisation](02-organisation.md) pour la hiérarchie utilisée dans tous les exemples
-3. **Apprentissage** : Lisez [Règles générales](03-regles-generales.md) pour maîtriser les 3 règles fondamentales
+1. **Découverte** : Commencez par [Concepts et relations](01-concepts-et-relations) pour comprendre les bases
+2. **Référence** : Consultez [Organisation](02-organisation) pour la hiérarchie utilisée dans tous les exemples
+3. **Apprentissage** : Lisez [Règles générales](03-regles-generales) pour maîtriser les 3 règles fondamentales
 4. **Pratique** : Consultez les sections spécifiques selon votre besoin (Rôle, Groupe, Utilisateur, Machine)
 
 ---

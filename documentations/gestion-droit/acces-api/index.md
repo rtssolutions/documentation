@@ -11,12 +11,12 @@ Cette section de la documentation vous guide dans la gestion des **machines** et
 
 ## Sommaire
 
-1. [Introduction aux machines et clés API](01-introduction-machines-cles-api.md)
-2. [Définition et concepts clés](02-definition-concepts-cles-machines-cles-api.md)
-3. [Gestion des machines](03-gestion-des-machines.md)
-4. [Gestion des clés API](04-gestion-des-cles-api.md)
-5. [Sécurité et bonnes pratiques](05-securite-et-bonnes-pratiques.md)
-6. [Utilisation d'une clé API](06-utilisation-cle-api.md)
+1. [Introduction aux machines et clés API](01-introduction-machines-cles-api)
+2. [Définition et concepts clés](02-definition-concepts-cles-machines-cles-api)
+3. [Gestion des machines](03-gestion-des-machines)
+4. [Gestion des clés API](04-gestion-des-cles-api)
+5. [Sécurité et bonnes pratiques](05-securite-et-bonnes-pratiques)
+6. [Utilisation d'une clé API](06-utilisation-cle-api)
 
 ## Démarrage rapide
 

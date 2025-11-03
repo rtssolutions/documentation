@@ -46,4 +46,4 @@ où `YYYY` est l’année de création et `XXXXXX` un compteur incrémental.
 ### Pour aller plus loin
 
 ➡️ Poursuivez avec la page suivante :  
-[03 - Accéder à la gestion des employeurs](03-gestion-visibilite-employeurs.md)
+[03 - Accéder à la gestion des employeurs](03-gestion-visibilite-employeurs)
