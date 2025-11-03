@@ -38,25 +38,19 @@ La situation est recalculée automatiquement lors de :
 
 #### Inscrit à la formation
 **Actions autorisées** :
-- Créer un brouillon de contrat
 - Ajouter/supprimer des documents
 - Annuler l'inscription
 
 #### SFP avant contrat
 **Actions autorisées** :
 - Consulter les informations
-- Ajouter des documents
+- Ajouter/supprimer des documents
+- Créer un brouillon de contrat
 
-**Actions bloquées** :
-- Créer un nouveau contrat
-- Supprimer le dossier
 
 #### Inscription annulée
 **Actions autorisées** :
-
-**Actions bloquées** :
-- Création de contrat
-- Ajout d'une SFP
+- Clôturer le dossier
 
 ## Pour aller plus loin
 → [04 - Inscription d'un apprenant](04-inscription-apprenant.md)

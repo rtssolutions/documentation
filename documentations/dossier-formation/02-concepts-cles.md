@@ -34,7 +34,7 @@ Cette information cruciale détermine les actions possibles et reflète l'avance
    - Aucun contrat actif
 
 2. **SFP avant contrat**
-   - Statut de Formation Professionnelle
+   - Stagiaire de la Formation Professionnelle
    - Période transitoire avant signature du contrat
 
 3. **Apprenti sous contrat**

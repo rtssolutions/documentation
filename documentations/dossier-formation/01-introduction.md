@@ -33,7 +33,7 @@ version: "2"
    - Situations permettant l'annulation
    - Procédure d'annulation
 
-## Qu'est-ce qu'un dossier de formation ?
+## Qu'est-ce qu'un dossier de formation
 
 ### Définition et rôle
 
