@@ -23,33 +23,30 @@ Certains champs sont pré-remplis via la base SIRENE.
 
 - Accès : **Menu Employeurs > Création d'un employeur** ou le bouton **Ajouter un employeur** sur la page principal du
   module
-- Utilisateur habilité doit disposer de la permission **Écriture sur les employeurs**
+- Vous devez disposer de la permission Ecriture sur les employeurs pour accéder à cette fonctionnalité
 - Toutes les créations sont historisées
 
 ---
 
 ## Recherche dans la base SIRENE
 
-Avant de créer un employeur, il faut le rechercher dans la base SIRENE afin de récupérer des données publics officiels
-sur cet employeur :
+La création d’un employeur s’effectue via une recherche au sein de la base SIRENE de l’État français :
 
 1. **Critères de recherche** :
     - SIRET de l'établissement
     - Dénomination sociale (minimum 3 caractères)
     - Adresse de l'établissement
-    - IDCC
 
 2. **Résultats affichés** :
     - Dénomination sociale
     - SIRET
     - Adresse complète (Code postal / Ville)
-    - IDCC
+    -  Identifiant de convention collective (IDCC)
     - État administratif (actif / fermé) ou si votre employeur est déjà dans votre base de gestion : "employeur connu"
 
 3. **Sélection d’un résultat** :
-    - Si l’employeur existe déjà : bouton "voir" permettant d'accéder à sa fiche en gestion
-    - Sinon : bouton "sélectionner" entrainant la création de l'employeur en base de gestion et redirection vers le
-      formulaire de complétion des informations
+    - Si l’employeur existe déjà au sein de votre organisation, vous disposez d’un bouton voir, vous permettrez d’accéder à sa fiche employeur connu de votre organisation.
+    - Sinon, un bouton sélectionner apparait, entrainant la création de l'employeur en base de gestion et redirection vers le formulaire de complétion des informations.
 
 ![Recherche SIRENE](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/employeur/5/recherche-sirene.png)
 
@@ -63,6 +60,7 @@ sur cet employeur :
 - **Statut personnalisé** (valeur par défaut à la création : Nouveau)
 
 ### Champs optionnels modifiables
+
 - Coordonnées : téléphone, courriel, site internet
 - Convention collective principale (IDCC)
 - Autres conventions collectives
@@ -75,6 +73,7 @@ sur cet employeur :
 - TVA et régime applicable
 
 ### Champs non modifiables
+
 - SIREN
 - SIRET
 - Adresse
