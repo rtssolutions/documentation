@@ -88,5 +88,5 @@ Ils permettent donc d’assurer la liaison entre l’employeur et le suivi admin
 
 ## Navigation
 
-🔙 [Retour à l’accueil](../accueil.md)  
-⬆️ [Revenir à la première page : 01 - Introduction](01-introduction.md)
+[Retour à l’accueil](../accueil.md)  
+[Revenir à la première page : 01 - Introduction](01-introduction.md)
