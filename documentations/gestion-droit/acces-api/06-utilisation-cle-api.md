@@ -57,9 +57,6 @@ X-API-KEY: votre_cle_api_ici
 
 ### Format complet d'une requête
 
-
-ICI : <VAR.url-papaours>
-
 ```http
 GET /v1/contrats HTTP/1.1
 Host: api.papaours.fr
