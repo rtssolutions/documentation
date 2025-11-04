@@ -119,5 +119,6 @@ autorisations.
 - [Créer une machine →](03-gestion-des-machines)
 - [Générer une clé API →](04-gestion-des-cles-api)
 - [Utiliser une clé API dans votre code →](06-utilisation-cle-api)
+- [Documentation Swagger de l'API](<VAR.url-papaours>/swagger-client.html)
 
 [Retour à l'Accueil](../../accueil)

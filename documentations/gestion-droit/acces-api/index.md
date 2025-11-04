@@ -29,7 +29,7 @@ Cette section de la documentation vous guide dans la gestion des **machines** et
 
 ### Pour utiliser une clé API :
 ```bash
-curl -X GET "<url_de_votre_tenant>/v1/contrats" \
+curl -X GET "<VAR.url-papaours>/v1/contrats" \
   -H "X-API-KEY: votre_cle_api_ici" \
   -H "Content-Type: application/json"
 ```

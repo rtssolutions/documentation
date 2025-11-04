@@ -7,11 +7,27 @@ version: "1"
 
 ## 📚 Table des matières
 
-1. [Authentification via clé API](#authentification-via-clé-api)
-2. [Format de la requête](#format-de-la-requête)
-3. [Exemples de code](#exemples-de-code)
-4. [Gestion des erreurs](#gestion-des-erreurs)
-5. [Bonnes pratiques d'utilisation](#bonnes-pratiques-dutilisation)
+1. [Documentation de l'API](#documentation-de-lapi)
+2. [Authentification via clé API](#authentification-via-clé-api)
+3. [Format de la requête](#format-de-la-requête)
+4. [Exemples de code](#exemples-de-code)
+5. [Gestion des erreurs](#gestion-des-erreurs)
+6. [Bonnes pratiques d'utilisation](#bonnes-pratiques-dutilisation)
+
+---
+
+## Documentation de l'API
+
+Pour tester et explorer l'API Papaours de manière interactive, vous pouvez utiliser notre interface Swagger :
+
+- **Documentation API Swagger** : [<VAR.url-papaours>/swagger-client.html](<VAR.url-papaours>/swagger-client.html)
+- **Votre URL d'API** : `<VAR.url-papaours>`
+
+L'interface Swagger vous permet de :
+- Consulter tous les endpoints disponibles
+- Tester les appels API directement depuis votre navigateur
+- Voir les formats de requête et de réponse attendus
+- Générer des exemples de code pour différents langages
 
 ---
 
@@ -65,7 +81,7 @@ const API_KEY = process.env.PAPAOURS_API_KEY;
 
 async function recupererContrats() {
   try {
-    const response = await fetch('<url_de_votre_tenant>/v1/contrats', {
+    const response = await fetch('<VAR.url-papaours>/v1/contrats', {
       method: 'GET',
       headers: {
         'X-API-KEY': API_KEY,
@@ -93,7 +109,7 @@ async function recupererContrats() {
 const axios = require('axios');
 
 const api = axios.create({
-  baseURL: '<url_de_votre_tenant>/v1',
+  baseURL: '<VAR.url-papaours>/v1',
   headers: {
     'X-API-KEY': process.env.PAPAOURS_API_KEY,
     'Content-Type': 'application/json'
@@ -134,7 +150,7 @@ import os
 import requests
 
 API_KEY = os.environ.get('PAPAOURS_API_KEY')
-BASE_URL = '<url_de_votre_tenant>/v1'
+BASE_URL = '<VAR.url-papaours>/v1'
 
 headers = {
     'X-API-KEY': API_KEY,
@@ -196,7 +212,7 @@ class PapaoursApiClient(
     private val apiKey: String
 ) {
     private val webClient = WebClient.builder()
-        .baseUrl("<url_de_votre_tenant>/v1")
+        .baseUrl("<VAR.url-papaours>/v1")
         .defaultHeader("X-API-KEY", apiKey)
         .defaultHeader(HttpHeaders.CONTENT_TYPE, "application/json")
         .build()
@@ -242,12 +258,12 @@ println("Facture créée: $facture")
 
 ```bash
 # Récupérer des contrats
-curl -X GET "<url_de_votre_tenant>/v1/contrats" \
+curl -X GET "<VAR.url-papaours>/v1/contrats" \
   -H "X-API-KEY: pk_prod_abc123def456ghi789" \
   -H "Content-Type: application/json"
 
 # Créer une facture
-curl -X POST "<url_de_votre_tenant>/v1/factures" \
+curl -X POST "<VAR.url-papaours>/v1/factures" \
   -H "X-API-KEY: pk_prod_abc123def456ghi789" \
   -H "Content-Type: application/json" \
   -d '{
@@ -323,6 +339,7 @@ Voici les codes d'erreur courants que vous pourriez rencontrer lors de l'utilisa
 
 ## Ressources complémentaires
 
+- [Documentation Swagger de l'API](<VAR.url-papaours>/swagger-client.html)
 - [Créer une machine →](03-gestion-des-machines)
 - [Créer une clé API →](04-gestion-des-cles-api)
 - [Sécurité et bonnes pratiques →](05-securite-et-bonnes-pratiques)
