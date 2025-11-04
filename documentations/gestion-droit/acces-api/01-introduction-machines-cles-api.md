@@ -64,6 +64,14 @@ machine "Système RH" avec les rôles et groupes de lecture nécessaires et gén
 Vous mettez en place des scripts automatisés pour extraire des rapports quotidiens depuis Papaours. Vous créerez une
 machine "Scripts reporting" avec les rôles et groupes de lecture appropriés.
 
+## Ressources API
+
+Pour explorer et tester l'API Papaours :
+- **Documentation Swagger** : [<VAR.url-papaours>/swagger-client.html](<VAR.url-papaours>/swagger-client.html)
+- **URL de l'API** : `<VAR.url-papaours>`
+
+---
+
 ## Navigation rapide
 
 - [Comprendre les machines et clés API →](02-definition-concepts-cles-machines-cles-api)

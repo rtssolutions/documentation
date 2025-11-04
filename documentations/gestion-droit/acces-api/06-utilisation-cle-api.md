@@ -7,11 +7,27 @@ version: "1"
 
 ## 📚 Table des matières
 
-1. [Authentification via clé API](#authentification-via-clé-api)
-2. [Format de la requête](#format-de-la-requête)
-3. [Exemples de code](#exemples-de-code)
-4. [Gestion des erreurs](#gestion-des-erreurs)
-5. [Bonnes pratiques d'utilisation](#bonnes-pratiques-dutilisation)
+1. [Documentation de l'API](#documentation-de-lapi)
+2. [Authentification via clé API](#authentification-via-clé-api)
+3. [Format de la requête](#format-de-la-requête)
+4. [Exemples de code](#exemples-de-code)
+5. [Gestion des erreurs](#gestion-des-erreurs)
+6. [Bonnes pratiques d'utilisation](#bonnes-pratiques-dutilisation)
+
+---
+
+## Documentation de l'API
+
+Pour tester et explorer l'API Papaours de manière interactive, vous pouvez utiliser notre interface Swagger :
+
+- **Documentation API Swagger** : [<VAR.url-papaours>/swagger-client.html](<VAR.url-papaours>/swagger-client.html)
+- **Votre URL d'API** : `<VAR.url-papaours>`
+
+L'interface Swagger vous permet de :
+- Consulter tous les endpoints disponibles
+- Tester les appels API directement depuis votre navigateur
+- Voir les formats de requête et de réponse attendus
+- Générer des exemples de code pour différents langages
 
 ---
 
@@ -323,7 +339,7 @@ Voici les codes d'erreur courants que vous pourriez rencontrer lors de l'utilisa
 
 ## Ressources complémentaires
 
-- [Documentation de l'API Papaours](<VAR.url-papaours>/swagger-ui)
+- [Documentation Swagger de l'API](<VAR.url-papaours>/swagger-client.html)
 - [Créer une machine →](03-gestion-des-machines)
 - [Créer une clé API →](04-gestion-des-cles-api)
 - [Sécurité et bonnes pratiques →](05-securite-et-bonnes-pratiques)
