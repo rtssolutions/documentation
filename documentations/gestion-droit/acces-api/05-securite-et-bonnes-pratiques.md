@@ -39,7 +39,7 @@ Si vous développez des applications utilisant les clés API Papaours :
 // ❌ Ne faites JAMAIS cela
 const API_KEY = "pk_prod_abc123def456ghi789";
 
-fetch("https://api.papaours.fr/contrats", {
+fetch("<url_de_votre_tenant>/contrats", {
   headers: {
     "X-API-KEY": API_KEY
   }
@@ -52,7 +52,7 @@ fetch("https://api.papaours.fr/contrats", {
 // ✅ Utilisez des variables d'environnement
 const API_KEY = process.env.PAPAOURS_API_KEY;
 
-fetch("https://api.papaours.fr/contrats", {
+fetch("<url_de_votre_tenant>/contrats", {
   headers: {
     "X-API-KEY": API_KEY
   }
