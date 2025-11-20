@@ -20,6 +20,79 @@ Cette période permet à l'apprenant de :
 
 ---
 
+## Diagramme de gestion des SFP
+
+Le diagramme ci-dessous illustre les règles de calcul et de gestion des périodes SFP dans Papaours :
+
+```mermaid
+flowchart TD
+    Start([Événement déclenché]) --> CheckContrat{Premier contrat<br/>signé ?}
+    
+    CheckContrat -->|Oui| CalculDateReelle[Calcul de la date<br/>de fin réelle]
+    CheckContrat -->|Non| CheckSFPExiste{SFP<br/>existe ?}
+    
+    CalculDateReelle --> CheckDateContrat{Date début contrat ≥<br/>Date entrée formation ?}
+    CheckDateContrat -->|Oui| SetDateFinReelle[Date fin réelle =<br/>Veille date début contrat]
+    CheckDateContrat -->|Non| SetDateFinTheorique[Date fin réelle =<br/>Date théorique<br/>entrée + 89 jours]
+    
+    CheckSFPExiste -->|Non| CheckParametrage{Paramétrage<br/>automatique ?}
+    CheckSFPExiste -->|Oui| RecalculeSFP[Recalcule SFP existante]
+    
+    CheckParametrage -->|Oui| CreateSFP[Création automatique SFP<br/>Début = Date entrée formation<br/>Fin théorique = Entrée + 89j]
+    CheckParametrage -->|Non| NoSFP[Pas de SFP créée]
+    
+    RecalculeSFP --> CheckDateTheorique{Date actuelle ><br/>Date théorique ?}
+    CheckDateTheorique -->|Oui| SetDateFinAutomatique[Date fin réelle =<br/>Date théorique]
+    CheckDateTheorique -->|Non| KeepSFP[SFP inchangée]
+    
+    SetDateFinReelle --> CheckTerminee{Date fin réelle ≤<br/>Date actuelle ?}
+    SetDateFinTheorique --> CheckTerminee
+    SetDateFinAutomatique --> CheckTerminee2{Date fin réelle ≤<br/>Date actuelle ?}
+    
+    CheckTerminee -->|Oui| SFPTerminee[SFP TERMINÉE]
+    CheckTerminee -->|Non| SFPEnCours[SFP EN COURS]
+    CheckTerminee2 -->|Oui| SFPTerminee
+    CheckTerminee2 -->|Non| SFPEnCours
+    
+    CreateSFP --> End([Fin])
+    NoSFP --> End
+    KeepSFP --> End
+    SFPTerminee --> End
+    SFPEnCours --> End
+    
+    style Start fill:#e1f5ff
+    style End fill:#e1f5ff
+    style CheckContrat fill:#fff4e6
+    style CheckSFPExiste fill:#fff4e6
+    style CheckParametrage fill:#fff4e6
+    style CheckDateContrat fill:#fff4e6
+    style CheckDateTheorique fill:#fff4e6
+    style CheckTerminee fill:#fff4e6
+    style CheckTerminee2 fill:#fff4e6
+    style CreateSFP fill:#d4edda
+    style RecalculeSFP fill:#d4edda
+    style SetDateFinReelle fill:#d4edda
+    style SetDateFinTheorique fill:#d4edda
+    style SetDateFinAutomatique fill:#d4edda
+    style KeepSFP fill:#d4edda
+    style SFPTerminee fill:#d1ecf1
+    style SFPEnCours fill:#d1ecf1
+    style NoSFP fill:#f8d7da
+```
+
+**Points clés du diagramme** :
+- Une SFP est **terminée** uniquement si sa **date de fin réelle existe** ET qu'elle est **inférieure ou égale à la date actuelle**
+- La signature d'un contrat **définit la date de fin réelle** de la SFP mais ne la termine pas automatiquement
+- Le système vérifie quotidiennement si les SFP doivent être terminées en comparant la date actuelle avec la date de fin réelle
+
+**Événements déclencheurs** :
+- Signature d'un contrat (définit la date de fin réelle)
+- Inscription d'un apprenant
+- Recalcul automatique quotidien (termine les SFP dont la date de fin réelle est dépassée)
+- Déclaration manuelle d'une SFP
+
+---
+
 ## Quand créer une SFP ?
 
 ### Conditions pour créer une SFP
@@ -81,11 +154,15 @@ Une période SFP peut avoir **4 statuts différents** :
 - La date actuelle est comprise entre la date de début et la date de fin théorique
 - La période SFP est active
 - L'apprenant bénéficie du statut de stagiaire de la formation professionnelle
+- **Important** : Une SFP reste "En cours" même si un contrat est signé, tant que la date de fin réelle n'est pas dépassée
 
 ### 3. Terminée
-- La date de fin réelle est dépassée
-- La période SFP a pris fin normalement
-- **Cas de terminaison automatique** : Lorsqu'un contrat est signé, la SFP a une date de fin réelle renseigné automatiquement à la veille de la date de début d'exécution du contrat
+- Une **date de fin réelle** existe ET cette date est **dans le passé** (inférieure ou égale à la date actuelle)
+- La période SFP a pris fin
+- **Cas de terminaison** :
+    - Lorsque la date de fin théorique est atteinte (89 jours après le début)
+    - Lorsqu'un contrat est signé ET que la veille de sa date de début d'exécution est atteinte
+    - Lorsqu'une date de fin réelle manuelle est définie et dépassée
 
 ### 4. Annulée
 - La période SFP a été annulée manuellement
@@ -142,21 +219,24 @@ Vous **ne pouvez pas** annuler une SFP si :
 
 Lorsqu'un contrat est signé sur un dossier de formation, plusieurs événements se produisent automatiquement :
 
-### Terminaison automatique de la SFP
+### Définition de la date de fin réelle
 
-**Si une SFP est en cours** :
+**Si une SFP existe déjà** :
 - La **date de fin réelle** est fixée à la **veille de la date de début d'exécution du contrat**
-- Si la date de fin réelle est dépassé, alors la SFP est automatiquement terminée
-- Exemple : Si le contrat débute le 15 janvier, la SFP se termine le 14 janvier
+- La SFP **ne passe pas immédiatement au statut "Terminée"**
+- Elle sera automatiquement terminée lors du prochain recalcul quotidien si la date de fin réelle est dépassée
+- Exemple : Si le contrat débute le 15 janvier et qu'on signe le 10 janvier, la date de fin réelle est fixée au 14 janvier, mais la SFP ne sera terminée qu'à partir du 15 janvier
 
-**Si aucune SFP n'existe mais que les conditions sont réunies** :
-- Le système crée automatiquement une SFP
-- Cette SFP couvre la période entre la date d'entrée en formation et la veille du début du contrat
+**Si aucune SFP n'existe** :
+- Le système crée automatiquement une SFP avec :
+    - Date de début = Date d'entrée en formation
+    - Date de fin réelle = Veille de la date de début d'exécution du contrat
+- Si la date de fin réelle est déjà dépassée, la SFP sera créée avec le statut "Terminée"
 - Cela permet de garder une traçabilité complète du parcours de l'apprenant
 
 ### Changement d'état du dossier
 
-- Le dossier passe de **"SFP avant contrat"** à **"Apprenti sous contrat"**
+- Le dossier passe de **"Inscrit à la formation"** ou **"SFP avant contrat"** à **"Apprenti sous contrat"**
 - Les actions disponibles changent en conséquence
 - La période SFP reste consultable dans l'historique
 
@@ -189,7 +269,8 @@ Le paramétrage de la création automatique des SFP se fait au niveau du centre 
 
 Le système effectue des recalculs automatiques quotidiens pour :
 - Créer les SFP en mode automatique quand le délai est atteint
-- Terminer les SFP dont la date de fin théorique est dépassée
+- Définir la date de fin réelle des SFP quand la date théorique est dépassée
+- Terminer les SFP dont la date de fin réelle est dépassée par rapport à la date actuelle
 - Mettre à jour l'état des dossiers en conséquence
 
 ---
@@ -237,6 +318,15 @@ Le P2S est un formulaire pré-rempli qui documente la période de stage de forma
 | SFP déjà existante (non annulée)                 | ❌ Non                                      |
 | Inscription annulée                              | ❌ Non                                      |
 
+### Terminaison d'une SFP
+
+| Condition                                                       | SFP terminée ? |
+|-----------------------------------------------------------------|----------------|
+| Date de fin réelle existe ET date de fin réelle ≤ Date actuelle | ✅ Oui          |
+| Date de fin réelle existe ET date de fin réelle > Date actuelle | ❌ Non          |
+| Pas de date de fin réelle                                       | ❌ Non          |
+| SFP annulée                                                     | ❌ Non          |
+
 ### Annulation d'une SFP
 
 | Statut SFP | Annulation possible |
@@ -258,6 +348,6 @@ Le P2S est un formulaire pré-rempli qui documente la période de stage de forma
 
 ## Pour aller plus loin
 
-→ [03 - Situation actuelle](03-situation-actuelle) : Comprendre les états des dossiers
-→ [04 - Inscription d'un apprenant](04-inscription-apprenant) : Créer un nouveau dossier
+→ [03 - Situation actuelle](03-situation-actuelle) : Comprendre les états des dossiers  
+→ [04 - Inscription d'un apprenant](04-inscription-apprenant) : Créer un nouveau dossier  
 → [Module Contrats](#) : Gérer les contrats d'apprentissage
