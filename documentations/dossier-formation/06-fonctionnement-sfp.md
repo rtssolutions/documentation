@@ -24,7 +24,7 @@ Cette période permet à l'apprenant de :
 
 Le diagramme ci-dessous illustre les règles de calcul et de gestion des périodes SFP dans Papaours :
 
-```mermaid
+```mermaid "600px"
 flowchart TD
     Start([Événement déclenché]) --> CheckContrat{Premier contrat<br/>signé ?}
     
