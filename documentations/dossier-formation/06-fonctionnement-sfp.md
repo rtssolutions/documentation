@@ -18,21 +18,6 @@ Cette période permet à l'apprenant de :
 
 **Durée maximale** : Une période SFP peut durer jusqu'à **89 jours**.
 
----
-
-**Points clés du diagramme** :
-- Une SFP est **terminée** uniquement si sa **date de fin réelle existe** ET qu'elle est **inférieure ou égale à la date actuelle**
-- La signature d'un contrat **définit la date de fin réelle** de la SFP mais ne la termine pas automatiquement
-- Le système vérifie quotidiennement si les SFP doivent être terminées en comparant la date actuelle avec la date de fin réelle
-
-**Événements déclencheurs** :
-- Signature d'un contrat (définit la date de fin réelle)
-- Inscription d'un apprenant
-- Recalcul automatique quotidien (termine les SFP dont la date de fin réelle est dépassée)
-- Déclaration manuelle d'une SFP
-
----
-
 ## Quand créer une SFP ?
 
 ### Conditions pour créer une SFP
@@ -289,5 +274,4 @@ Le P2S est un formulaire pré-rempli qui documente la période de stage de forma
 ## Pour aller plus loin
 
 → [03 - Situation actuelle](03-situation-actuelle) : Comprendre les états des dossiers  
-→ [04 - Inscription d'un apprenant](04-inscription-apprenant) : Créer un nouveau dossier  
-→ [Module Contrats](#) : Gérer les contrats d'apprentissage
+→ [04 - Inscription d'un apprenant](04-inscription-apprenant) : Créer un nouveau dossier 
