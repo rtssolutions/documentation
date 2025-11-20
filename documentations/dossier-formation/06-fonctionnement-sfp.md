@@ -305,6 +305,47 @@ Le P2S est un formulaire pré-rempli qui documente la période de stage de forma
 - Consultez l'onglet **"Documents"** du dossier
 - Le P2S est disponible au téléchargement
 
+---
+
+## Récapitulatif des règles métier
+
+### Création d'une SFP
+
+| Condition                                        | Création possible                          |
+|--------------------------------------------------|--------------------------------------------|
+| Dossier "Inscrit à la formation" + Aucun contrat | ✅ Oui                                      |
+| Dossier avec contrat signé                       | ❌ Non (créé automatiquement si nécessaire) |
+| SFP déjà existante (non annulée)                 | ❌ Non                                      |
+| Inscription annulée                              | ❌ Non                                      |
+
+### Terminaison d'une SFP
+
+| Condition                                                       | SFP terminée ? |
+|-----------------------------------------------------------------|----------------|
+| Date de fin réelle existe ET date de fin réelle ≤ Date actuelle | ✅ Oui          |
+| Date de fin réelle existe ET date de fin réelle > Date actuelle | ❌ Non          |
+| Pas de date de fin réelle                                       | ❌ Non          |
+| SFP annulée                                                     | ❌ Non          |
+
+### Annulation d'une SFP
+
+| Statut SFP | Annulation possible |
+|------------|---------------------|
+| À venir    | ✅ Oui               |
+| En cours   | ✅ Oui               |
+| Terminée   | ❌ Non               |
+| Annulée    | ❌ Non               |
+
+### Actions par état du dossier
+
+| État du dossier            | Actions principales                                                        |
+|----------------------------|----------------------------------------------------------------------------|
+| **Inscrit à la formation** | - Créer SFP<br>- Créer contrat<br>- Annuler inscription                    |
+| **SFP avant contrat**      | - Créer contrat<br>- Générer P2S<br>- Annuler SFP<br>- Annuler inscription |
+| **Apprenti sous contrat**  | - Gérer le contrat<br>- Consulter historique SFP                           |
+
+---
+
 ## Pour aller plus loin
 
 → [03 - Situation actuelle](03-situation-actuelle) : Comprendre les états des dossiers  
