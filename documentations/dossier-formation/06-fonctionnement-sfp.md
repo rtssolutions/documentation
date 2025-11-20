@@ -338,11 +338,11 @@ Le P2S est un formulaire pré-rempli qui documente la période de stage de forma
 
 ### Actions par état du dossier
 
-| État du dossier            | Actions principales                                                        |
-|----------------------------|----------------------------------------------------------------------------|
-| **Inscrit à la formation** | - Créer SFP<br>- Créer contrat<br>- Annuler inscription                    |
-| **SFP avant contrat**      | - Créer contrat<br>- Générer P2S<br>- Annuler SFP<br>- Annuler inscription |
-| **Apprenti sous contrat**  | - Gérer le contrat<br>- Consulter historique SFP                           |
+| État du dossier            | Actions principales                                               |
+|----------------------------|-------------------------------------------------------------------|
+| **Inscrit à la formation** | - Créer SFP - Créer contrat - Annuler inscription                 |
+| **SFP avant contrat**      | - Créer contrat - Générer P2S - Annuler SFP - Annuler inscription |
+| **Apprenti sous contrat**  | - Gérer le contrat - Consulter historique SFP                     |
 
 ---
 
