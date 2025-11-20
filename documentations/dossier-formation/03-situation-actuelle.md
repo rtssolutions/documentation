@@ -20,7 +20,7 @@ La situation actuelle n'est pas une donnée stockée mais un **calcul en temps r
 1. **Existence d'un contrat** : Y a-t-il un contrat associé au dossier ?
 2. **État du contrat** : Si un contrat existe, quel est son statut ?
 3. **Dates** : Les dates de début et fin de la session de formation sont-elles atteintes ?
-4. **Statut administratif** : L'apprenant est-il en SFP ?
+4. **Statut administratif** : L'apprenant est-il en SFP avant contrat ?
 5. **Inscription** : L'inscription est-elle active ou annulée ?
 
 
@@ -30,9 +30,9 @@ La situation est recalculée automatiquement lors de :
 - **Création** d'un contrat
 - **Signature** d'un contrat
 - **Rupture** d'un contrat
-- **Passage en SFP** de l'apprenant
+- **Passage en SFP avant contrat** de l'apprenant
 - **Annulation** de l'inscription
-- **Arrivée à échéance** des dates de la session de formation ou SFP (début, fin)
+- **Arrivée à échéance** des dates de la session de formation ou SFP avant contrat (début, fin)
 
 ### Actions par situation
 
@@ -42,10 +42,17 @@ La situation est recalculée automatiquement lors de :
 - Annuler l'inscription
 
 #### SFP avant contrat
+La période SFP avant contrat (Stagiaire de la Formation Professionnelle avant contrat) permet à l'apprenant de commencer sa formation avant la signature du contrat d'apprentissage.
+
 **Actions autorisées** :
 - Consulter les informations
 - Ajouter/supprimer des documents
 - Créer un brouillon de contrat
+- Générer le formulaire CERFA P2S
+- Annuler la période SFP avant contrat
+- Annuler l'inscription
+
+→ [Voir le fonctionnement détaillé des SFP avant contrat](06-fonctionnement-sfp)
 
 
 #### Inscription annulée
