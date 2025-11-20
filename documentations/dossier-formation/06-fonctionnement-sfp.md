@@ -27,63 +27,90 @@ Le diagramme ci-dessous illustre les règles de calcul et de gestion des périod
 ```mermaid
 flowchart TD
     Start([Événement déclenché]) --> CheckContrat{Premier contrat<br/>signé ?}
-    
-    CheckContrat -->|Oui| CalculDateReelle[Calcul de la date<br/>de fin réelle]
+
+%% Branche SANS contrat signé
     CheckContrat -->|Non| CheckSFPExiste{SFP<br/>existe ?}
-    
-    CalculDateReelle --> CheckDateContrat{Date début contrat >=<br/>Date entrée formation ?}
-    CheckDateContrat -->|Oui| SetDateFinReelle[Date fin réelle =<br/>Veille date début contrat]
-    CheckDateContrat -->|Non| SetDateFinTheorique[Date fin réelle =<br/>Date théorique<br/>entrée + 89 jours]
-    
     CheckSFPExiste -->|Non| CheckParametrage{Paramétrage<br/>automatique ?}
-    CheckSFPExiste -->|Oui| RecalculeSFP[Recalcule SFP existante]
-    
     CheckParametrage -->|Oui| CreateSFP[Création automatique SFP<br/>Début = Date entrée formation<br/>Fin théorique = Entrée + 89j]
     CheckParametrage -->|Non| NoSFP[Pas de SFP créée]
-    
+
+    CheckSFPExiste -->|Oui| RecalculeSFP[Recalcule SFP existante]
     RecalculeSFP --> CheckDateTheorique{Date actuelle ><br/>Date théorique ?}
-    CheckDateTheorique -->|Oui| SetDateFinAutomatique[Date fin réelle =<br/>Date théorique]
+    CheckDateTheorique -->|Oui| SetDateFinTheorique2[Date fin réelle =<br/>Date théorique]
     CheckDateTheorique -->|Non| KeepSFP[SFP inchangée]
-    
-    SetDateFinReelle --> CheckTerminee{Date fin réelle <=<br/>Date actuelle ?}
-    SetDateFinTheorique --> CheckTerminee
-    SetDateFinAutomatique --> CheckTerminee2{Date fin réelle <=<br/>Date actuelle ?}
-    
-    CheckTerminee -->|Oui| SFPTerminee[SFP TERMINÉE]
-    CheckTerminee -->|Non| SFPEnCours[SFP EN COURS]
-    CheckTerminee2 -->|Oui| SFPTerminee
-    CheckTerminee2 -->|Non| SFPEnCours
-    
-    CreateSFP --> End([Fin])
-    NoSFP --> End
-    KeepSFP --> End
-    SFPTerminee --> End
-    SFPEnCours --> End
-    
-    style Start fill:#e1f5ff
-    style End fill:#e1f5ff
-    style CheckContrat fill:#fff4e6
-    style CheckSFPExiste fill:#fff4e6
-    style CheckParametrage fill:#fff4e6
-    style CheckDateContrat fill:#fff4e6
-    style CheckDateTheorique fill:#fff4e6
-    style CheckTerminee fill:#fff4e6
-    style CheckTerminee2 fill:#fff4e6
-    style CreateSFP fill:#d4edda
-    style RecalculeSFP fill:#d4edda
-    style SetDateFinReelle fill:#d4edda
-    style SetDateFinTheorique fill:#d4edda
-    style SetDateFinAutomatique fill:#d4edda
-    style KeepSFP fill:#d4edda
-    style SFPTerminee fill:#d1ecf1
-    style SFPEnCours fill:#d1ecf1
-    style NoSFP fill:#f8d7da
+
+    SetDateFinTheorique2 --> CheckTerminee2{Date fin réelle ≤<br/>Date actuelle ?}
+CheckTerminee2 -->|Oui| SFPTerminee2[SFP TERMINÉE]
+CheckTerminee2 -->|Non| SFPEnCours2[SFP EN COURS]
+
+%% Branche AVEC contrat signé
+CheckContrat -->|Oui| CheckSFPRequis{SFP Requis ?<br/>Date début contrat ><br/>Date entrée formation ?}
+
+CheckSFPRequis -->|Non<br/>Dates égales| DeleteSFP[Suppression SFP<br/>si existante]
+DeleteSFP --> ChangementEtat[Dossier passe en<br/>Apprenti sous contrat]
+
+CheckSFPRequis -->|Oui| CheckSFPExiste2{SFP<br/>existe ?}
+
+CheckSFPExiste2 -->|Oui| RecalculeSFPContrat[Recalcule SFP existante<br/>avec contrat]
+CheckSFPExiste2 -->|Non| CreateSFPContrat[Création SFP<br/>avec date fin réelle]
+
+RecalculeSFPContrat --> CalculDateReelle[Calcul de la date<br/>de fin réelle]
+CreateSFPContrat --> CalculDateReelle
+
+CalculDateReelle --> CheckDateContrat{Date début contrat ≥<br/>Date entrée formation ?}
+CheckDateContrat -->|Oui| SetDateFinReelle[Date fin réelle =<br/>Veille date début contrat]
+CheckDateContrat -->|Non| SetDateFinTheorique[Date fin réelle =<br/>Date théorique<br/>entrée + 89 jours]
+
+SetDateFinReelle --> CheckTerminee{Date fin réelle ≤<br/>Date actuelle ?}
+SetDateFinTheorique --> CheckTerminee
+CheckTerminee -->|Oui| SFPTerminee[SFP TERMINÉE]
+CheckTerminee -->|Non| SFPEnCours[SFP EN COURS]
+
+%% Convergence vers Fin
+CreateSFP --> End([Fin])
+NoSFP --> End
+KeepSFP --> End
+SFPTerminee2 --> End
+SFPEnCours2 --> End
+ChangementEtat --> End
+SFPTerminee --> End
+SFPEnCours --> End
+
+%% Styles
+style Start fill:#e1f5ff
+style End fill:#e1f5ff
+style CheckContrat fill:#fff4e6
+style CheckSFPExiste fill:#fff4e6
+style CheckSFPExiste2 fill:#fff4e6
+style CheckParametrage fill:#fff4e6
+style CheckDateContrat fill:#fff4e6
+style CheckDateTheorique fill:#fff4e6
+style CheckTerminee fill:#fff4e6
+style CheckTerminee2 fill:#fff4e6
+style CheckSFPRequis fill:#ffe6e6
+style CreateSFP fill:#d4edda
+style RecalculeSFP fill:#d4edda
+style RecalculeSFPContrat fill:#d4edda
+style CreateSFPContrat fill:#d4edda
+style CalculDateReelle fill:#d4edda
+style SetDateFinReelle fill:#d4edda
+style SetDateFinTheorique fill:#d4edda
+style SetDateFinTheorique2 fill:#d4edda
+style KeepSFP fill:#d4edda
+style DeleteSFP fill:#f8d7da
+style ChangementEtat fill:#d1ecf1
+style SFPTerminee fill:#d1ecf1
+style SFPEnCours fill:#d1ecf1
+style SFPTerminee2 fill:#d1ecf1
+style SFPEnCours2 fill:#d1ecf1
+style NoSFP fill:#f8d7da
 ```
 
 **Points clés du diagramme** :
 - Une SFP est **terminée** uniquement si sa **date de fin réelle existe** ET qu'elle est **inférieure ou égale à la date actuelle**
 - La signature d'un contrat **définit la date de fin réelle** de la SFP mais ne la termine pas automatiquement
 - Le système vérifie quotidiennement si les SFP doivent être terminées en comparant la date actuelle avec la date de fin réelle
+- **Cas particulier** : Si la date de début d'exécution du contrat est **égale** à la date d'entrée en formation, **aucune SFP n'est nécessaire** et sera supprimée si elle existe
 
 **Événements déclencheurs** :
 - Signature d'un contrat (définit la date de fin réelle)
@@ -221,6 +248,14 @@ Lorsqu'un contrat est signé sur un dossier de formation, plusieurs événements
 
 ### Définition de la date de fin réelle
 
+**Cas particulier : Dates identiques**
+
+Si la **date de début d'exécution du contrat** est **égale** à la **date d'entrée en formation** :
+- **Aucune SFP n'est requise** (l'apprenant n'a pas eu de période sans contrat)
+- Si une SFP existe, elle est **automatiquement supprimée**
+- Le dossier passe directement à l'état **"Apprenti sous contrat"**
+- Exemple : Apprenant entre en formation le 1er septembre et le contrat débute le 1er septembre → Pas de SFP
+
 **Si une SFP existe déjà** :
 - La **date de fin réelle** est fixée à la **veille de la date de début d'exécution du contrat**
 - La SFP **ne passe pas immédiatement au statut "Terminée"**
@@ -311,21 +346,21 @@ Le P2S est un formulaire pré-rempli qui documente la période de stage de forma
 
 ### Création d'une SFP
 
-| Condition                                        | Création possible                          |
-|--------------------------------------------------|--------------------------------------------|
+| Condition                                         | Création possible                          |
+|---------------------------------------------------|--------------------------------------------|
 | Dossier "Inscrit à la formation" + Aucun contrat | ✅ Oui                                      |
-| Dossier avec contrat signé                       | ❌ Non (créé automatiquement si nécessaire) |
-| SFP déjà existante (non annulée)                 | ❌ Non                                      |
-| Inscription annulée                              | ❌ Non                                      |
+| Dossier avec contrat signé                        | ❌ Non (créé automatiquement si nécessaire) |
+| SFP déjà existante (non annulée)                  | ❌ Non                                      |
+| Inscription annulée                               | ❌ Non                                      |
 
 ### Terminaison d'une SFP
 
-| Condition                                                       | SFP terminée ? |
-|-----------------------------------------------------------------|----------------|
+| Condition                                                   | SFP terminée ? |
+|-------------------------------------------------------------|----------------|
 | Date de fin réelle existe ET date de fin réelle ≤ Date actuelle | ✅ Oui          |
-| Date de fin réelle existe ET date de fin réelle > Date actuelle | ❌ Non          |
-| Pas de date de fin réelle                                       | ❌ Non          |
-| SFP annulée                                                     | ❌ Non          |
+| Date de fin réelle existe ET date de fin réelle > Date actuelle  | ❌ Non          |
+| Pas de date de fin réelle                                   | ❌ Non          |
+| SFP annulée                                                 | ❌ Non          |
 
 ### Annulation d'une SFP
 
@@ -349,4 +384,5 @@ Le P2S est un formulaire pré-rempli qui documente la période de stage de forma
 ## Pour aller plus loin
 
 → [03 - Situation actuelle](03-situation-actuelle) : Comprendre les états des dossiers  
-→ [04 - Inscription d'un apprenant](04-inscription-apprenant) : Créer un nouveau dossier 
+→ [04 - Inscription d'un apprenant](04-inscription-apprenant) : Créer un nouveau dossier  
+→ [Module Contrats](#) : Gérer les contrats d'apprentissage
