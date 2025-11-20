@@ -42,10 +42,17 @@ La situation est recalculée automatiquement lors de :
 - Annuler l'inscription
 
 #### SFP avant contrat
+La période SFP (Stagiaire de la Formation Professionnelle) permet à l'apprenant de commencer sa formation avant la signature du contrat.
+
 **Actions autorisées** :
 - Consulter les informations
 - Ajouter/supprimer des documents
 - Créer un brouillon de contrat
+- Générer le formulaire CERFA P2S
+- Annuler la période SFP
+- Annuler l'inscription
+
+→ [Voir le fonctionnement détaillé des SFP](06-fonctionnement-sfp)
 
 
 #### Inscription annulée

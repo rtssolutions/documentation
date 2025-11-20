@@ -13,8 +13,9 @@ L'**annulation d'inscription** est une action administrative qui permet d'annule
 
 ### Situations permettant l'annulation
 
-L'annulation est possible seulement si le dossier est dans l'état suivant :
+L'annulation est possible seulement si le dossier est dans l'un des états suivants :
 - Inscrit à la formation
+- SFP avant contrat
 
 ### Étape 1 - Accéder au dossier
 
@@ -30,8 +31,16 @@ L'annulation est possible seulement si le dossier est dans l'état suivant :
 3. Un message de confirmation apparaît
 4. Le dossier passe immédiatement à l'état **Inscription annulée**.
 5. Le nombre de places disponible dans la session est décrémenté automatiquement.
+6. **Attention** : Cette action est définitive
 
-5. **Attention** : Cette action est définitive
+### Impact sur les périodes SFP
+
+Si le dossier était en état **"SFP avant contrat"** au moment de l'annulation :
+- La période SFP est **automatiquement annulée**
+- Le statut de la SFP passe à **"Annulée"**
+- La période SFP reste consultable dans l'historique du dossier
+
+→ [En savoir plus sur les SFP](06-fonctionnement-sfp)
 
 
 ### Démonstration vidéo
