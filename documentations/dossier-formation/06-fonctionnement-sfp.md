@@ -27,83 +27,75 @@ Le diagramme ci-dessous illustre les règles de calcul et de gestion des périod
 ```mermaid
 flowchart TD
     Start([Événement déclenché]) --> CheckContrat{Premier contrat<br/>signé ?}
-
-%% Branche SANS contrat signé
+    
+    %% Branche SANS contrat signé
     CheckContrat -->|Non| CheckSFPExiste{SFP<br/>existe ?}
     CheckSFPExiste -->|Non| CheckParametrage{Paramétrage<br/>automatique ?}
     CheckParametrage -->|Oui| CreateSFP[Création automatique SFP<br/>Début = Date entrée formation<br/>Fin théorique = Entrée + 89j]
     CheckParametrage -->|Non| NoSFP[Pas de SFP créée]
-
+    
     CheckSFPExiste -->|Oui| RecalculeSFP[Recalcule SFP existante]
     RecalculeSFP --> CheckDateTheorique{Date actuelle ><br/>Date théorique ?}
     CheckDateTheorique -->|Oui| SetDateFinTheorique2[Date fin réelle =<br/>Date théorique]
     CheckDateTheorique -->|Non| KeepSFP[SFP inchangée]
-
+    
     SetDateFinTheorique2 --> CheckTerminee2{Date fin réelle ≤<br/>Date actuelle ?}
-CheckTerminee2 -->|Oui| SFPTerminee2[SFP TERMINÉE]
-CheckTerminee2 -->|Non| SFPEnCours2[SFP EN COURS]
-
-%% Branche AVEC contrat signé
-CheckContrat -->|Oui| CheckSFPRequis{SFP Requis ?<br/>Date début contrat ><br/>Date entrée formation ?}
-
-CheckSFPRequis -->|Non<br/>Dates égales| DeleteSFP[Suppression SFP<br/>si existante]
-DeleteSFP --> ChangementEtat[Dossier passe en<br/>Apprenti sous contrat]
-
-CheckSFPRequis -->|Oui| CheckSFPExiste2{SFP<br/>existe ?}
-
-CheckSFPExiste2 -->|Oui| RecalculeSFPContrat[Recalcule SFP existante<br/>avec contrat]
-CheckSFPExiste2 -->|Non| CreateSFPContrat[Création SFP<br/>avec date fin réelle]
-
-RecalculeSFPContrat --> CalculDateReelle[Calcul de la date<br/>de fin réelle]
-CreateSFPContrat --> CalculDateReelle
-
-CalculDateReelle --> CheckDateContrat{Date début contrat ≥<br/>Date entrée formation ?}
-CheckDateContrat -->|Oui| SetDateFinReelle[Date fin réelle =<br/>Veille date début contrat]
-CheckDateContrat -->|Non| SetDateFinTheorique[Date fin réelle =<br/>Date théorique<br/>entrée + 89 jours]
-
-SetDateFinReelle --> CheckTerminee{Date fin réelle ≤<br/>Date actuelle ?}
-SetDateFinTheorique --> CheckTerminee
-CheckTerminee -->|Oui| SFPTerminee[SFP TERMINÉE]
-CheckTerminee -->|Non| SFPEnCours[SFP EN COURS]
-
-%% Convergence vers Fin
-CreateSFP --> End([Fin])
-NoSFP --> End
-KeepSFP --> End
-SFPTerminee2 --> End
-SFPEnCours2 --> End
-ChangementEtat --> End
-SFPTerminee --> End
-SFPEnCours --> End
-
-%% Styles
-style Start fill:#e1f5ff
-style End fill:#e1f5ff
-style CheckContrat fill:#fff4e6
-style CheckSFPExiste fill:#fff4e6
-style CheckSFPExiste2 fill:#fff4e6
-style CheckParametrage fill:#fff4e6
-style CheckDateContrat fill:#fff4e6
-style CheckDateTheorique fill:#fff4e6
-style CheckTerminee fill:#fff4e6
-style CheckTerminee2 fill:#fff4e6
-style CheckSFPRequis fill:#ffe6e6
-style CreateSFP fill:#d4edda
-style RecalculeSFP fill:#d4edda
-style RecalculeSFPContrat fill:#d4edda
-style CreateSFPContrat fill:#d4edda
-style CalculDateReelle fill:#d4edda
-style SetDateFinReelle fill:#d4edda
-style SetDateFinTheorique fill:#d4edda
-style SetDateFinTheorique2 fill:#d4edda
-style KeepSFP fill:#d4edda
-style DeleteSFP fill:#f8d7da
-style ChangementEtat fill:#d1ecf1
-style SFPTerminee fill:#d1ecf1
-style SFPEnCours fill:#d1ecf1
-style SFPTerminee2 fill:#d1ecf1
-style SFPEnCours2 fill:#d1ecf1
-style NoSFP fill:#f8d7da
+    CheckTerminee2 -->|Oui| SFPTerminee2[SFP TERMINÉE]
+    CheckTerminee2 -->|Non| SFPEnCours2[SFP EN COURS]
+    
+    %% Branche AVEC contrat signé
+    CheckContrat -->|Oui| CheckSFPRequis{SFP Requis ?<br/>Date début contrat ><br/>Date entrée formation ?}
+    
+    CheckSFPRequis -->|Non<br/>Dates égales| DeleteSFP[Suppression SFP<br/>si existante]
+    DeleteSFP --> ChangementEtat[Dossier passe en<br/>Apprenti sous contrat]
+    
+    CheckSFPRequis -->|Oui| CheckSFPExiste2{SFP<br/>existe ?}
+    
+    CheckSFPExiste2 -->|Oui| RecalculeSFPContrat[Recalcule SFP existante<br/>avec contrat]
+    CheckSFPExiste2 -->|Non| CreateSFPContrat[Création SFP<br/>avec date fin réelle]
+    
+    RecalculeSFPContrat --> SetDateFinReelle[Date fin réelle =<br/>Veille date début contrat]
+    CreateSFPContrat --> SetDateFinReelle
+    
+    SetDateFinReelle --> CheckTerminee{Date fin réelle ≤<br/>Date actuelle ?}
+    CheckTerminee -->|Oui| SFPTerminee[SFP TERMINÉE]
+    CheckTerminee -->|Non| SFPEnCours[SFP EN COURS]
+    
+    %% Convergence vers Fin
+    CreateSFP --> End([Fin])
+    NoSFP --> End
+    KeepSFP --> End
+    SFPTerminee2 --> End
+    SFPEnCours2 --> End
+    ChangementEtat --> End
+    SFPTerminee --> End
+    SFPEnCours --> End
+    
+    %% Styles
+    style Start fill:#e1f5ff
+    style End fill:#e1f5ff
+    style CheckContrat fill:#fff4e6
+    style CheckSFPExiste fill:#fff4e6
+    style CheckSFPExiste2 fill:#fff4e6
+    style CheckParametrage fill:#fff4e6
+    style CheckDateTheorique fill:#fff4e6
+    style CheckTerminee fill:#fff4e6
+    style CheckTerminee2 fill:#fff4e6
+    style CheckSFPRequis fill:#ffe6e6
+    style CreateSFP fill:#d4edda
+    style RecalculeSFP fill:#d4edda
+    style RecalculeSFPContrat fill:#d4edda
+    style CreateSFPContrat fill:#d4edda
+    style SetDateFinReelle fill:#d4edda
+    style SetDateFinTheorique2 fill:#d4edda
+    style KeepSFP fill:#d4edda
+    style DeleteSFP fill:#f8d7da
+    style ChangementEtat fill:#d1ecf1
+    style SFPTerminee fill:#d1ecf1
+    style SFPEnCours fill:#d1ecf1
+    style SFPTerminee2 fill:#d1ecf1
+    style SFPEnCours2 fill:#d1ecf1
+    style NoSFP fill:#f8d7da
 ```
 
 **Points clés du diagramme** :
@@ -373,11 +365,11 @@ Le P2S est un formulaire pré-rempli qui documente la période de stage de forma
 
 ### Actions par état du dossier
 
-| État du dossier            | Actions principales                                               |
-|----------------------------|-------------------------------------------------------------------|
-| **Inscrit à la formation** | - Créer SFP - Créer contrat - Annuler inscription                 |
-| **SFP avant contrat**      | - Créer contrat - Générer P2S - Annuler SFP - Annuler inscription |
-| **Apprenti sous contrat**  | - Gérer le contrat - Consulter historique SFP                     |
+| État du dossier            | Actions principales                                                         |
+|----------------------------|-----------------------------------------------------------------------------|
+| **Inscrit à la formation** | - Créer SFP<br>- Créer contrat<br>- Annuler inscription                     |
+| **SFP avant contrat**      | - Créer contrat<br>- Générer P2S<br>- Annuler SFP<br>- Annuler inscription |
+| **Apprenti sous contrat**  | - Gérer le contrat<br>- Consulter historique SFP                            |
 
 ---
 
