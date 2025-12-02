@@ -16,7 +16,7 @@ Cette période permet à l'apprenant de :
 - Être couvert administrativement pendant la recherche d'un employeur
 - Bénéficier d'un statut officiel pendant la période précédant le contrat d'apprentissage
 
-**Durée maximale** : Une période SFP avant contrat peut durer jusqu'à **89 jours**.
+**Durée maximale** : Une période SFP avant contrat peut durer jusqu'à **+ 3 mois - 1 jours**.
 
 ---
 
@@ -31,7 +31,7 @@ flowchart TD
     %% Branche SANS contrat signé
     CheckContrat -->|Non| CheckSFPExiste{SFP<br/>existe ?}
     CheckSFPExiste -->|Non| CheckParametrage{Paramétrage<br/>automatique ?}
-    CheckParametrage -->|Oui| CreateSFP[Création automatique SFP<br/>Début = Date entrée formation<br/>Fin théorique = Entrée + 89j]
+    CheckParametrage -->|Oui| CreateSFP[Création automatique SFP<br/>Début = Date entrée formation<br/>Fin théorique = Entrée + 3 mois - 1 jours]
     CheckParametrage -->|Non| NoSFP[Pas de SFP créée]
     
     CheckSFPExiste -->|Oui| RecalculeSFP[Recalcule SFP existante]
@@ -141,7 +141,7 @@ Dans ce mode, vous décidez explicitement quand déclarer un apprenant en SFP av
 2. Cliquez sur le bouton **"Déclarer en SFP avant contrat"**
 3. La période SFP avant contrat est créée immédiatement avec :
     - **Date de début** : Date d'entrée en formation de l'apprenant
-    - **Date de fin théorique** : Date de début + 89 jours
+    - **Date de fin théorique** : Date de début + 3 mois - 1 jour
     - **Statut** : Le dossier passe automatiquement en état **"SFP avant contrat"**
 
 ### Mode automatique
@@ -179,7 +179,7 @@ Une période SFP avant contrat peut avoir **4 statuts différents** :
 - Une **date de fin réelle** existe ET cette date est **dans le passé** (inférieure ou égale à la date actuelle)
 - La période SFP avant contrat a pris fin
 - **Cas de terminaison** :
-    - Lorsque la date de fin théorique est atteinte (89 jours après le début)
+    - Lorsque la date de fin théorique est atteinte (+ 3 mois - 1 jour après le début)
     - Lorsqu'un contrat est signé ET que la veille de sa date de début d'exécution est atteinte
     - Lorsqu'une date de fin réelle manuelle est définie et dépassée
 
