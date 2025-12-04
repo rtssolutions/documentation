@@ -40,5 +40,15 @@ Avant de procéder à l'inscription :
 
 Si vous tentez d'inscrire un apprenant déjà inscrit à la session, le système affichera un message d'erreur et l'inscription sera refusée.
 
+### Après l'inscription
+
+Une fois l'apprenant inscrit, plusieurs options s'offrent à vous :
+- **Créer directement un contrat** si l'apprenant a trouvé un employeur
+- **Déclarer l'apprenant en SFP avant contrat** (Stagiaire de la Formation Professionnelle avant contrat) s'il n'a pas encore de contrat
+  - La création peut être manuelle ou automatique selon votre paramétrage
+  - La période SFP avant contrat permet à l'apprenant de commencer sa formation en attendant la signature du contrat d'apprentissage
+  - → [Voir le fonctionnement détaillé des SFP avant contrat](06-fonctionnement-sfp)
+
 ## Pour aller plus loin
 → [05 - Annulation d'une inscription](05-annulation-inscription)
+→ [06 - Fonctionnement des SFP avant contrat](06-fonctionnement-sfp)

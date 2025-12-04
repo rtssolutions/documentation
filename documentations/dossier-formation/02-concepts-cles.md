@@ -34,8 +34,9 @@ Cette information cruciale détermine les actions possibles et reflète l'avance
    - Aucun contrat actif
 
 2. **SFP avant contrat**
-   - Stagiaire de la Formation Professionnelle
-   - Période transitoire avant signature du contrat
+   - Stagiaire de la Formation Professionnelle avant contrat
+   - Période transitoire avant signature du contrat d'apprentissage
+   - → [Voir le fonctionnement détaillé des SFP avant contrat](06-fonctionnement-sfp)
 
 3. **Apprenti sous contrat**
    - Contrat d'apprentissage actif
@@ -63,8 +64,7 @@ Le dossier est obligatoirement rattaché à une session spécifique.
 
 #### Conditions de création de contrat
 Un brouillon de contrat ne peut être créé que si :
--  Le dossier est à l'état **"Inscrit à la formation"**
--  L'apprenant n'est pas en SFP
+-  Le dossier est à l'état **"Inscrit à la formation"** ou **"SFP avant contrat"**
 -  L'apprenant n'a pas de contrat actif
 -  L'inscription n'est pas annulée
 

@@ -32,6 +32,11 @@ version: "2"
    - Vue d'ensemble
    - Situations permettant l'annulation
    - Procédure d'annulation
+6. [Fonctionnement des SFP avant contrat](06-fonctionnement-sfp)
+   - Qu'est-ce qu'une SFP avant contrat ?
+   - Création et gestion des périodes SFP avant contrat
+   - Statuts et transitions
+   - Impact de la signature d'un contrat
 
 ## Qu'est-ce qu'un dossier de formation
 
