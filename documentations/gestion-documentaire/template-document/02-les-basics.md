@@ -12,7 +12,7 @@ version: "1"
 Cette page décrit les **principes essentiels de substitution** dans un template de document utilisé avec la plateforme :  
 comment écrire des balises simples pour **insérer des données JSON** à l’endroit voulu dans votre template.
 
-Les balises permettent de faire correspondre les données de votre application avec le contenu du document final.
+Les balises permettent de faire correspondre les données de l'application avec le contenu du document final.
 
 ---
 
