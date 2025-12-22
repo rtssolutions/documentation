@@ -79,4 +79,4 @@ Dans cet exemple :
 
 ## Pour aller plus loin
 
--> [12 - formater les données](12-apercu-formatters)
+-> [12 - Formater les données](12-apercu-formatters)
