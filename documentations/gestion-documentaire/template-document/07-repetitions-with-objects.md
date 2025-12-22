@@ -1,141 +1,117 @@
 ---
-title: "07 - Répétitions avec des objets"
-description: "Répéter des sections de document en parcourant des objets JSON"
+title: "08 - Tri dans les tableaux"
+description: "Trier des tableaux JSON lors des répétitions dans les templates"
 date: "2025-11-20"
 version: "1"
 ---
 
-# Répétitions avec des objets
+# Tri dans les répétitions
 
-Répéter des sections de document à partir d’objets JSON
+Trier les données lors des répétitions
 
 ---
 
 ## Overview
 
-Cette page décrit comment **répéter une partie d’un document** lorsque les données à parcourir sont des **objets JSON** (et non des tableaux).
+Cette page décrit comment **trier un tableau JSON directement dans un template**, au moment d’une répétition.
 
-Contrairement aux tableaux, les objets ne disposent pas d’index numériques.  
-La plateforme permet néanmoins de les parcourir en utilisant un itérateur interne.
-
----
-
-## Principe
-
-Pour parcourir un objet, la plateforme :
-- itère sur chacune de ses **propriétés**
-- expose implicitement une paire **clé / valeur**
-- répète le motif détecté pour chaque propriété de l’objet
-
-Comme pour les tableaux, il suffit d’indiquer dans le template :
-- une occurrence avec `i`
-- une occurrence avec `i+1`
-
-La seconde occurrence (`i+1`) est utilisée uniquement pour détecter le motif et est supprimée avant le rendu final.
+Le tri est effectué **avant** l’application du motif de répétition.  
+Il est basé sur les **attributs des objets** du tableau, et non sur l’indice `i`.
 
 ---
 
-## Exemple simple avec un objet
+## Tri ascendant
+
+Le tri ascendant est le comportement par défaut.  
+Les éléments sont triés selon un ou plusieurs attributs.
+
+Si deux éléments ont la même valeur pour un attribut donné, la plateforme utilise **l’indice d’origine du tableau (`i`)** comme critère de départage.
 
 ### data
 
 ```json
 {
-  "cars": {
-    "toyota": { "id": 1 },
-    "hyundai": { "id": 2 },
-    "bmw": { "id": 3 }
-  }
+  "cars": [
+    { "brand": "Ferrari", "power": 3 },
+    { "brand": "Peugeot", "power": 1 },
+    { "brand": "BMW",     "power": 2 },
+    { "brand": "Lexus",   "power": 1 }
+  ]
 }
 ```
 
 ### template
 
 ```text
-Cars id{d.cars[i].id}{d.cars[i+1].id}
+Cars
+{d.cars[power, i].brand}
+{d.cars[power+1, i+1].brand}
 ```
 
-### result
+### Document généré
 
 ```text
-Cars id 1 2 3
+Cars
+Peugeot
+Lexus
+BMW
+Ferrari
 ```
 
 ---
 
-## Accéder à la clé et à la valeur
+## Tri avec plusieurs attributs
 
-Lorsqu’un objet est parcouru :
-- `.key` permet d’accéder à la **clé**
-- `.value` permet d’accéder à la **valeur**
+Il est possible de trier un tableau sur **plusieurs attributs successifs**.
+
+Les éléments sont triés :
+1. selon le premier attribut
+2. puis selon le deuxième attribut
+3. puis selon l’ordre initial (`i`) si nécessaire
 
 ### data
 
 ```json
 {
-  "cars": {
-    "toyota": { "power": 90 },
-    "hyundai": { "power": 110 }
-  }
+  "cars": [
+    { "brand": "Ferrari", "power": 3, "sub": { "size": 1 } },
+    { "brand": "Aptera",  "power": 1, "sub": { "size": 20 } },
+    { "brand": "Peugeot", "power": 1, "sub": { "size": 20 } },
+    { "brand": "BMW",     "power": 2, "sub": { "size": 1 } },
+    { "brand": "Kia",     "power": 1, "sub": { "size": 10 } }
+  ]
 }
 ```
 
 ### template
 
 ```text
-{d.cars[i].key}: {d.cars[i].value.power}{d.cars[i+1].key}
+Cars
+{d.cars[power, sub.size, i].brand}
+{d.cars[power+1, sub.size+1, i+1].brand}
 ```
 
-### result
+### Document généré
 
 ```text
-toyota: 90
-hyundai: 110
+Cars
+Kia
+Aptera
+Peugeot
+BMW
+Ferrari
 ```
 
 ---
 
-## Objets imbriqués
+## Tri descendant
 
-### data
+Le tri descendant (ordre inverse) **n’est pas encore disponible** à ce jour.
 
-```json
-{
-  "brands": {
-    "toyota": {
-      "models": {
-        "prius": { "power": 125 },
-        "yaris": { "power": 100 }
-      }
-    },
-    "kia": {
-      "models": {
-        "ev6": { "power": 500 }
-      }
-    }
-  }
-}
-```
-
-### template
-
-```text
-{d.brands[i].key}
-{d.brands[i].value.models[i].key} - {d.brands[i].value.models[i].value.power}
-{d.brands[i].value.models[i+1].key}{d.brands[i+1].key}
-```
-
-### result
-
-```text
-toyota
-prius - 125
-yaris - 100
-kia
-ev6 - 500
-```
+Cette fonctionnalité est prévue pour une version future de la plateforme (v5).
 
 ---
+
 ## Pour aller plus loin
 
--> [08 - Tri dans les tableaux](08-tri-tableau)
+-> [09 - filtres dans les tableaux](09-filtre-tableau)
