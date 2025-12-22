@@ -1,3 +1,4 @@
+
 ---
 title: "04 - Recherche dans un tableau"
 description: "Rechercher un élément dans un tableau JSON sans boucle, en utilisant des filtres dans les balises"
@@ -10,8 +11,6 @@ version: "1"
 ## Objectif
 
 Cette page explique comment **rechercher un élément dans un tableau JSON sans créer de boucle explicite**, en appliquant **des filtres directement dans les balises de substitution**.
-
-> Fonctionnalité communautaire — disponible selon l’édition ou l’environnement de la plateforme.
 
 ---
 
@@ -48,8 +47,6 @@ Back to the future: 1985
 ---
 
 ## Filtre avec variable
-
-> Disponible depuis la version 4.2.0+
 
 Si le **second opérande commence par un point (`.`)**, la plateforme considère que cet opérande est une **variable provenant du JSON**.
 
@@ -158,7 +155,6 @@ The oldest movie was BTTF.
 Il est possible d’accéder aux **propriétés de l’objet parent** en utilisant **deux points (`..`)** ou plus, lorsque vous appliquez un filtre dans un tableau imbriqué.
 
 ### Données (JSON)
-
 ```json
 {
   "country": "USA",
@@ -171,13 +167,14 @@ Il est possible d’accéder aux **propriétés de l’objet parent** en utilisa
 ```
 
 ### Template
-
 ```text
 {d.movies[year=1999]..country}
 ```
 
 ### Document généré
-
 ```text
 USA
 ```
+
+## Pour aller plus loin
+-> [05 - Alias de substitution](05-alias-de-substitution)
