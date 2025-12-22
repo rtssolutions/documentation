@@ -46,7 +46,7 @@ Dans cet exemple, on souhaite parcourir un tableau de voitures.
 Cars id{d.cars[i].brand}{d.cars[i].id}{d.cars[i+1].brand}
 ```
 
-### Résultat
+### Document généré
 
 ```text
 Cars id Toyota 1 Hyundai 2 BMW 3 Peugeot 4
@@ -79,7 +79,7 @@ La plateforme gère les tableaux imbriqués (profondeur illimitée). Voici un ex
 {d[i].brand}Models{d[i].models[i].size} - {d[i].models[i].power}{d[i].models[i+1].size}{d[i+1].brand}
 ```
 
-### Résultat
+### Document généré
 
 ```text
 Toyota Models Prius 4 - 125 Prius 5 - 139 Kia Models EV4 - 450 EV6 - 500
@@ -118,7 +118,7 @@ Quelques restrictions :
 {d.titles[i].name}{d.titles[i+1].name}{d.cars[i].models[i]}{d.cars[i].models[i+1]}{d.cars[i+1].models[i]}
 ```
 
-### Résultat
+### Document généré
 
 ```text
 Kia Toyota Hopium EV3 Prius 1 Prototype EV4 Prius 2 EV6 Prius 3
@@ -172,8 +172,11 @@ Cela permet d’imprimer le contenu d’un autre tableau, `brands`, avec le mêm
 Cars id{d.cars[i].id}{d.cars[i].id:print(..brands[.i].name)}{d.cars[i+1].id}
 ```
 
-### Résultat
+### Document généré
 
 ```text
 Cars id 1 Toyota 2 Hyundai 3 BMW 4
 ```
+
+## Pour aller plus loin
+-> [07 - Répétitions avec des objets](07-repetitions-with-objects)
