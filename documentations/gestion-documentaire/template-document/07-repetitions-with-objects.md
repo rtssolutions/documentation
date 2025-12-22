@@ -9,11 +9,6 @@ version: "1"
 
 Répéter des sections de document à partir d’objets JSON
 
-**FONCTIONNALITÉ COMMUNAUTAIRE** — Disponible pour :
-- Plateforme Cloud
-- Plateforme On-premise
-- Plateforme embarquée (JS)
-
 ---
 
 ## Overview
@@ -141,18 +136,6 @@ ev6 - 500
 ```
 
 ---
+## Pour aller plus loin
 
-## Bonnes pratiques
-
-- ne pas supposer un ordre strict des clés d’un objet
-- utiliser des tableaux lorsque l’ordre est important
-- tester avec différentes structures JSON
-- combiner avec des alias pour améliorer la lisibilité
-
----
-
-## Voir aussi
-
-→ Répétitions avec des tableaux  
-→ Recherche dans un tableau  
-→ Alias de substitution
+-> [08 - Tri dans les tableaux](08-tri-tableau)
