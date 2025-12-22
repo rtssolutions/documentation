@@ -1,6 +1,6 @@
 ---
 title: "03 - Les bases des substitutions"
-description: "Comprendre comment utiliser les substitutions (balises) simples dans les templates de document"
+description: "Utiliser les balises de substitution simples pour insérer des données dans les templates"
 date: "2025-11-20"
 version: "1"
 ---
@@ -9,26 +9,16 @@ version: "1"
 
 ## Objectif
 
-Cette page décrit les **principes essentiels de substitution** dans un template de document utilisé avec la plateforme :  
-comment écrire des balises simples pour **insérer des données JSON** à l’endroit voulu dans votre template.
-
-Les balises permettent de faire correspondre les données de l'application avec le contenu du document final.
+Cette page présente comment utiliser une **balise de substitution simple** dans un template de document avec la plateforme.  
+Les balises `{d.…}` font référence aux données JSON qui seront injectées lors de la génération du document.
 
 ---
 
-## Qu’est‑ce qu’une balise de substitution ?
+## Balises simples
 
-Une **balise de substitution** est une instruction dans votre template indiquant à la plateforme **où et comment afficher les données** fournies via JSON.
+Une balise de substitution est écrite entre **accolades `{}`** et commence par `d.` pour indiquer que la donnée vient du JSON fourni par l’application.
 
-Les balises sont écrites entre **accolades `{}`** et suivent une syntaxe spécifique comme `{d.…}`.
-
-Lors de la génération du document, la plateforme **remplace** chaque balise par la donnée correspondante.
-
----
-
-## Exemple simple
-
-**Données JSON**
+### Données JSON
 
 ```json
 {
@@ -37,25 +27,25 @@ Lors de la génération du document, la plateforme **remplace** chaque balise pa
 }
 ```
 
-**Template**
+### Template
 
-```
+```text
 Hello {d.firstname} {d.lastname} !
 ```
 
-**Document généré**
+### Document généré
 
-```
+```text
 Hello John Doe !
 ```
 
 ---
 
-## Accéder à des objets imbriqués
+## Accéder aux sous-objets
 
-La plateforme permet d’accéder à des **objets imbriqués** à l’aide de la **notation pointée**.
+Lorsque vos données JSON contiennent des objets imbriqués, vous pouvez utiliser la **notation pointée (`.`)** pour accéder aux propriétés internes.
 
-**Données JSON**
+### Données JSON
 
 ```json
 {
@@ -67,19 +57,26 @@ La plateforme permet d’accéder à des **objets imbriqués** à l’aide de la
 }
 ```
 
-**Template**
+### Template
 
-```
+```text
 {d.firstname} est un {d.type.name}
+```
+
+### Document généré
+
+```text
+John est un human
 ```
 
 ---
 
-## Accéder aux éléments d’un tableau
+## Accéder aux tableaux
 
-Les tableaux sont **indexés à partir de 0**.
+Si vos données JSON contiennent un **tableau**, vous pouvez accéder à un élément précis grâce à un **indice**.  
+Les tableaux sont indexés à partir de **0**.
 
-**Données JSON**
+### Données JSON
 
 ```json
 [
@@ -89,24 +86,59 @@ Les tableaux sont **indexés à partir de 0**.
 ]
 ```
 
-**Template**
+### Template
 
-```
+```text
 Les films préférés sont {d[i=1].movie} et {d[2].movie}
 ```
 
----
+### Document généré
 
-## Bonnes pratiques
-
-- Comprendre la structure JSON avant de créer le template
-- Tester avec des données simples
-- Construire progressivement des templates plus complexes
+```text
+Les films préférés sont Matrix et Back to the future
+```
 
 ---
+
+## Accéder aux propriétés du parent
+
+Il est possible d’accéder aux **propriétés d’un objet parent** en utilisant **deux points (`..`) ou plus**.
+
+### Données JSON
+
+```json
+{
+  "country": "France",
+  "movie": {
+    "name": "Inception",
+    "sub": {
+      "a": "test"
+    }
+  }
+}
+```
+
+### Template
+
+```text
+{d.movie.sub..name}{d.movie.sub...country}
+```
+
+### Document généré
+
+```text
+Inception France
+```
+
+---
+
+## Résumé
+
+- `{d.…}` permet d’injecter une donnée JSON
+- La notation `.` permet d’accéder aux objets imbriqués
+- Les indices `[i]` permettent d’accéder aux tableaux
+- Les double points `..` permettent de remonter au parent
 
 ## Pour aller plus loin
 
-→ Alias et raccourcis  
-→ Recherche dans les tableaux  
-→ Filtres et conditions
+-> [04 - Recherche dans un tableau](04-recherche-tableau)
