@@ -1,4 +1,3 @@
-
 ---
 title: "04 - Recherche dans un tableau"
 description: "Rechercher un élément dans un tableau JSON sans boucle, en utilisant des filtres dans les balises"
