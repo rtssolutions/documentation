@@ -125,5 +125,5 @@ Tester fréquemment permet de :
 
 ## Pour aller plus loin
 
--> [03 - Les bases des substitutions](03-les-basics)
+-> [03 - Les bases des substitutions](03-les-bases-des-substitutions)
 
