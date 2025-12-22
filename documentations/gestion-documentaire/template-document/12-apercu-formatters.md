@@ -1,5 +1,5 @@
 ---
-title: "12 - formater les données"
+title: "12 - Formater les données"
 description: "Vue d’ensemble des moyens utilisés pour transformer et formater des données dans les templates"
 date: "2025-11-20"
 version: "1"
@@ -164,5 +164,3 @@ Les transformateurs sont exécutés **de gauche à droite**.
 - Garder les templates lisibles
 
 ---
-
-
