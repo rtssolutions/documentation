@@ -112,8 +112,6 @@ Venise
 
 ---
 
-## Voir aussi
+## Pour aller plus loin
 
-→ Répétitions avec des tableaux  
-→ Filtrage dans les répétitions  
-→ Tri dans les répétitions
+-> [11 - Valeurs distinctes dans les tableaux](11-repetitions-distinct)
