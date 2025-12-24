@@ -122,9 +122,8 @@ Rend les retours chariot `\r\n` et les sauts de ligne `\n` *dans les documents*,
 
 ### Notes importantes
 
-- Fonction supportée pour les fichiers **DOCX, PPTX, ODT, ODP et ODS**.
-- Le support **ODS** est expérimental pour le moment (contactez le support si vous constatez des problèmes).
-- Depuis `v3.5.3`, utiliser `:convCRLF` avant `:html` convertit `\n` en balises `<br>`.  
+- Fonction supportée pour les fichiers **DOCX, PPTX**.
+- Utiliser `:convCRLF` avant `:html` convertit `\n` en balises `<br>`.  
   Exemple : `{d.content:convCRLF:html}`
 
 ### Exemples
