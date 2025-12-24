@@ -64,6 +64,8 @@ Chaque groupe est identifié par une valeur unique de `brand`, et la quantité e
 
 ## Transformer un résultat de base de données
 
+Depuis la version **v4.23.0+** (option *pre-release* activée), il est possible de **transformer la structure JSON** avant de l’utiliser dans une répétition.
+
 Cela permet par exemple de transformer un tableau plat en structure hiérarchique.
 
 ### data
