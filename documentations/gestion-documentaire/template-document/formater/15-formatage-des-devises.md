@@ -9,11 +9,6 @@ version: "1"
 
 Formater et convertir des montants monétaires
 
-**FONCTIONNALITÉ COMMUNAUTAIRE** — Disponible pour :
-- Plateforme Cloud
-- Plateforme On-premise
-- Plateforme embarquée (JS) — v2.0+
-
 ---
 
 ## :formatC(precisionOrFormat, targetCurrency)
