@@ -98,4 +98,4 @@ Affiche un compteur incrémental lors d’une répétition.
 
 ## Pour aller plus loin
 
--> [18 - Formatters de tableaux](18-formater-tableau)
+-> [19 - Les conditions](../conditionner/19-conditions)
