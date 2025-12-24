@@ -302,3 +302,8 @@ Il existe des variations en majuscule et minuscule pour un même format. La vers
 
 Source : DayJS (day.js.org).
 
+---
+
+## Pour aller plus loin
+
+-> [17 - Formatage des intervalles](17-formater-intervalles)
