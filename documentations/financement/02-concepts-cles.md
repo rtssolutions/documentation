@@ -9,7 +9,8 @@ version: "1"
 
 ### Dossier de financement apprentissage
 
-Le **dossier de financement** est l'entité centrale du module. Il est créé automatiquement lors du financement d'un contrat d'apprentissage et regroupe :
+Le **dossier de financement** est l'entité centrale du module. Il est créé automatiquement lors du financement d'un
+contrat d'apprentissage et regroupe :
 
 - Le lien vers le **contrat** concerné
 - La liste des **financeurs** associés
@@ -19,6 +20,7 @@ Le **dossier de financement** est l'entité centrale du module. Il est créé au
 - Le **récapitulatif** des montants
 
 **Format du code** : `DFIAYYYY-XXXXXX`
+
 - `DFIA` : Dossier Financement Apprentissage
 - `YYYY` : Année de création
 - `XXXXXX` : Compteur incrémental
@@ -27,10 +29,10 @@ Le **dossier de financement** est l'entité centrale du module. Il est créé au
 
 Un dossier de financement peut avoir les statuts suivants :
 
-| Statut | Description |
-|--------|-------------|
+| Statut     | Description                                                                    |
+|------------|--------------------------------------------------------------------------------|
 | `EN_COURS` | Le dossier est en cours de traitement, les ventilations peuvent être modifiées |
-| `CLOTURE` | Le dossier est finalisé, aucune modification possible |
+| `CLOTURE`  | Le dossier est finalisé, aucune modification possible                          |
 
 ---
 
@@ -38,7 +40,8 @@ Un dossier de financement peut avoir les statuts suivants :
 
 ### Définition
 
-Un **financeur** est une entité qui prend en charge tout ou partie du coût de la formation. Chaque financeur est caractérisé par :
+Un **financeur** est une entité qui prend en charge tout ou partie du coût de la formation. Chaque financeur est
+caractérisé par :
 
 - Un **code** unique (ex: `FIN2025-000001`)
 - Un **type de financeur** (voir ci-dessous)
@@ -49,12 +52,12 @@ Un **financeur** est une entité qui prend en charge tout ou partie du coût de 
 
 Papaours gère quatre types de financeurs :
 
-| Code | Intitulé | Description |
-|------|----------|-------------|
-| `OPCO` | Opérateur de compétences | Organisme collecteur des fonds de formation |
-| `EMPLOYEUR` | Employeur | L'entreprise qui emploie l'apprenti |
-| `REGION` | Région | Financement régional complémentaire |
-| `AUTRE` | Autre | Tout autre type de financeur |
+| Code        | Intitulé                 | Description                                 |
+|-------------|--------------------------|---------------------------------------------|
+| `OPCO`      | Opérateur de compétences | Organisme collecteur des fonds de formation |
+| `EMPLOYEUR` | Employeur                | L'entreprise qui emploie l'apprenti         |
+| `REGION`    | Région                   | Financement régional complémentaire         |
+| `AUTRE`     | Autre                    | Tout autre type de financeur                |
 
 ### Association automatique des financeurs
 
@@ -80,6 +83,7 @@ Une **prestation vendue** représente un service facturé dans le cadre de la fo
 ### Prestation obligatoire
 
 Certaines prestations sont marquées comme **obligatoires**. Elles :
+
 - Sont ajoutées automatiquement au dossier de financement
 - Ne peuvent pas être supprimées
 - Ont une ventilation créée automatiquement
@@ -90,13 +94,13 @@ Certaines prestations sont marquées comme **obligatoires**. Elles :
 
 Le système calcule automatiquement un récapitulatif comprenant :
 
-| Indicateur | Description |
-|------------|-------------|
+| Indicateur                | Description                                     |
+|---------------------------|-------------------------------------------------|
 | Montant total prestations | Somme des montants HT de toutes les prestations |
-| Montant total ventilé | Somme des montants attribués aux financeurs |
-| Reste à financer | Différence entre le total et le ventilé |
-| Est complètement financé | Vrai si le reste à financer est nul ou négatif |
-| Taux de couverture global | Pourcentage du montant ventilé sur le total |
+| Montant total ventilé     | Somme des montants attribués aux financeurs     |
+| Reste à financer          | Différence entre le total et le ventilé         |
+| Est complètement financé  | Vrai si le reste à financer est nul ou négatif  |
+| Taux de couverture global | Pourcentage du montant ventilé sur le total     |
 
 ### Formules de calcul
 
