@@ -199,7 +199,12 @@ Montant total HT = Prix divisé × Quantité
 - Intitulé : "Pédagogie BTS Commerce"
 - Montant catalogue : 7 300 €/an HT
 - Unité : Année proratisée
-- TVA : 0%
+
+**Prestation vendue** (contrat de 365 jours) :
+
+1. Prix divisé : 7 300 € ÷ 365 = **20 €/jour**
+2. Quantité : 365 jours
+3. Montant total HT : 20 € × 365 = **7 300 €**
 
 **Prestation vendue** (contrat de 365 jours) :
 
