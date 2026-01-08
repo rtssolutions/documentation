@@ -18,8 +18,8 @@ Le **dossier de financement** est l'entité centrale du module. Il est créé au
 - Les **remises** applicables
 - Le **récapitulatif** des montants
 
-**Format du code** : `DFA-YYYY-XXXXXX`
-- `DFA` : Dossier Financement Apprentissage
+**Format du code** : `DFIAYYYY-XXXXXX`
+- `DFIA` : Dossier Financement Apprentissage
 - `YYYY` : Année de création
 - `XXXXXX` : Compteur incrémental
 
@@ -40,7 +40,7 @@ Un dossier de financement peut avoir les statuts suivants :
 
 Un **financeur** est une entité qui prend en charge tout ou partie du coût de la formation. Chaque financeur est caractérisé par :
 
-- Un **code** unique (ex: `OPCO-2025-000001`)
+- Un **code** unique (ex: `FIN2025-000001`)
 - Un **type de financeur** (voir ci-dessous)
 - Une **dénomination** (nom du financeur)
 - Un **statut** (actif/inactif)
