@@ -90,7 +90,7 @@ Une **prestation** est un élément du catalogue, basé sur un type de prestatio
 
 | Propriété | Description |
 |-----------|-------------|
-| Code | Identifiant unique généré (ex: `PREST-2025-000001`) |
+| Code | Identifiant unique généré (ex: `PRT2025-000001`) |
 | Type de prestation | Le type auquel elle appartient |
 | Intitulé | Libellé personnalisable |
 | Montant unitaire HT | Prix de base hors taxes |
@@ -142,24 +142,74 @@ Une **prestation vendue** est l'instanciation d'une prestation du catalogue dans
 
 ### Formules de calcul
 
-```
-Montant total HT = Prix unitaire HT × Quantité
+Le calcul du montant total se fait en **deux étapes** :
 
-Montant total TTC = Prix unitaire TTC × Quantité
+1. **Division du prix catalogue** selon l'unité de vente et la date de conclusion
+2. **Multiplication** du prix divisé par la quantité
+
+```
+Prix divisé = Prix catalogue ÷ Diviseur (selon unité et date)
+Montant total HT = Prix divisé × Quantité
 ```
 
-### Exemple concret
+#### Diviseurs selon la date de conclusion
+
+**Contrats conclus AVANT le 01/07/2025 (mode mois) :**
+
+| Unité de vente | Diviseur | Explication |
+|----------------|----------|-------------|
+| `ANNEE_PRORATISEE` | ÷ 12 | Prix ramené au mois |
+| `ANNEE_NON_PRORATISEE` | ÷ 1 | Prix inchangé |
+| `MOIS` | ÷ 1 | Prix inchangé |
+| `JOUR` | × 31 | Prix converti en mois |
+| `HEURE` | × 217 | Prix converti en mois |
+
+**Contrats conclus À PARTIR du 01/07/2025 (mode jours) :**
+
+| Unité de vente | Diviseur | Explication |
+|----------------|----------|-------------|
+| `ANNEE_PRORATISEE` | ÷ 365 | Prix ramené au jour |
+| `ANNEE_NON_PRORATISEE` | ÷ 1 | Prix inchangé |
+| `MOIS` | ÷ 31 | Prix ramené au jour |
+| `JOUR` | ÷ 1 | Prix inchangé |
+| `HEURE` | × 7 | Prix converti en jours |
+
+### Exemples concrets
+
+#### Exemple 1 : Contrat conclu avant juillet 2025 (mode mois)
 
 **Prestation du catalogue** :
 - Intitulé : "Pédagogie BTS Commerce"
-- Montant unitaire : 8 000 € HT
+- Montant catalogue : 12 000 €/an HT
 - Unité : Année proratisée
-- TVA : 0%
 
-**Prestation vendue** (dans un dossier de financement) :
-- Prestation source : Pédagogie BTS Commerce
-- Quantité : 1.75 (contrat de 21 mois = 1.75 années)
-- Montant total HT : 8 000 € × 1.75 = **14 000 €**
+**Prestation vendue** (contrat de 21 mois) :
+1. Prix divisé : 12 000 € ÷ 12 = **1 000 €/mois**
+2. Quantité : 21 mois
+3. Montant total HT : 1 000 € × 21 = **21 000 €**
+
+#### Exemple 2 : Contrat conclu après juillet 2025 (mode jours)
+
+**Prestation du catalogue** :
+- Intitulé : "Pédagogie BTS Commerce"
+- Montant catalogue : 7 300 €/an HT
+- Unité : Année proratisée
+
+**Prestation vendue** (contrat de 365 jours) :
+1. Prix divisé : 7 300 € ÷ 365 = **20 €/jour**
+2. Quantité : 365 jours
+3. Montant total HT : 20 € × 365 = **7 300 €**
+
+#### Exemple 3 : Année non proratisée
+
+**Prestation du catalogue** :
+- Montant catalogue : 8 000 €/an HT
+- Unité : Année non proratisée
+
+**Prestation vendue** (contrat de 2 ans) :
+1. Prix divisé : 8 000 € ÷ 1 = **8 000 €** (inchangé)
+2. Quantité : 2 années
+3. Montant total HT : 8 000 € × 2 = **16 000 €**
 
 ### Personnalisation
 

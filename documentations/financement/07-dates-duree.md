@@ -154,19 +154,23 @@ Lorsque les dates de financement sont modifiées, le système **recalcule automa
 | `MOIS` | Quantité recalculée en mois |
 | `FORFAIT` | Pas d'impact (quantité = 1) |
 
-### Exemple
+### Exemple (contrat conclu avant le 01/07/2025)
 
 **Avant modification** :
 - Date début : 01/09/2025
 - Date fin : 31/08/2026
-- Durée : 12 mois (1 an)
-- Prestation pédagogie : 8 000 €/an × 1 = 8 000 €
+- Durée : 12 mois
+- Prestation pédagogie (12 000 €/an) :
+  - Prix divisé : 12 000 € ÷ 12 = 1 000 €/mois
+  - Montant : 1 000 € × 12 = **12 000 €**
 
 **Après modification** :
 - Date début : 01/09/2025
 - Date fin : 31/12/2026
-- Durée : 16 mois (1.33 an)
-- Prestation pédagogie : 8 000 €/an × 1.33 = 10 640 €
+- Durée : 16 mois
+- Prestation pédagogie (12 000 €/an) :
+  - Prix divisé : 12 000 € ÷ 12 = 1 000 €/mois
+  - Montant : 1 000 € × 16 = **16 000 €**
 
 ---
 
