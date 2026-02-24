@@ -19,12 +19,22 @@ Ces dates sont déterminées automatiquement lors de la création du dossier, se
 
 ## Type de financement
 
-Le type de financement est déterminé par la **catégorie de l'employeur** :
+Le type de financement est déterminé automatiquement par la **catégorie de l'employeur** lors de la création du dossier :
 
 | Catégorie employeur | Type de financement |
 |---------------------|---------------------|
 | Publique | `PUBLIC` |
 | Privée | `PRIVE` |
+
+### Modification du type à la création
+
+Le type de financement est **modifiable par l'utilisateur lors de la création** du dossier de financement. Le système pré-remplit la valeur en fonction de la catégorie de l'employeur, mais l'utilisateur peut la modifier si nécessaire.
+
+**Après la création du dossier**, le type de financement n'est plus modifiable.
+
+### Comportement lors d'un changement d'employeur
+
+Si le contrat change d'employeur après la création du dossier de financement, le type de financement **n'est pas recalculé automatiquement**. De même, si la catégorie de l'employeur est modifiée dans sa fiche, le type de financement existant reste inchangé.
 
 Le type de financement influence le calcul de la date de début.
 
@@ -190,5 +200,5 @@ Lorsque les dates de financement sont modifiées, le système **recalcule automa
 
 ### Pour aller plus loin
 
-Retour à l'introduction :
-[01 - Introduction au financement](01-introduction)
+Poursuivez avec la page suivante :
+[08 - Les subventions](08-subventions)

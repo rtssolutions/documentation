@@ -28,6 +28,10 @@ Le module Financement couvre :
 | Ventilation | Répartition des montants entre financeurs |
 | Remises | Remises sur ventilation et remises globales par financeur |
 | Récapitulatif | Suivi des totaux et du reste à financer |
+| Subventions | NPEC OPCO, coût d'amorçage, minorations, majorations |
+| Moteur PEC pédagogie | Calcul automatique de la prise en charge OPCO en 9 étapes |
+| Financement RQTH | Prise en charge de l'accompagnement des travailleurs handicapés |
+| Échéanciers | Planification des échéances de facturation employeur et OPCO |
 
 ### Prérequis
 
