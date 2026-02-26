@@ -9,7 +9,7 @@ version: "1"
 
 Le module Qualité repose sur une structure hiérarchique à quatre niveaux :
 
-```mermaid "max-w-2xl"
+```mermaid "max-w-sm"
 graph TD
     A[Ensemble qualité] --> B[Critère]
     B --> C[Indicateur]
