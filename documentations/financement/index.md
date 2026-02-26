@@ -1,6 +1,6 @@
 ---
 title: "Financement"
-description: "Gestion du financement des contrats d'apprentissage : dossiers, financeurs, prestations et ventilation"
+description: "Gestion du financement des contrats d'apprentissage : dossiers, financeurs, prestations, ventilation, subventions et échéanciers"
 date: "2025-01-08"
 version: "1"
 icon: "BanknotesIcon"
@@ -18,3 +18,7 @@ Ce module permet de gérer le financement des contrats d'apprentissage, incluant
 - La ventilation des montants entre financeurs
 - Les remises applicables
 - Le suivi du reste à financer
+- Les subventions (NPEC OPCO, coût d'amorçage, minorations, majorations)
+- Le moteur de calcul de la prise en charge pédagogie (PEC)
+- Le financement RQTH pour les travailleurs handicapés
+- Les échéanciers de facturation (employeur et OPCO)

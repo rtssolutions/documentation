@@ -6,21 +6,45 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is the documentation repository for **Papaours Gestion**, a French application for managing professional training programs and apprenticeship contracts. All content is written in **French**.
 
+The documentation is primarily **tutorial-style** (step-by-step guides for end users). It is also ingested by a **vector database (RAG)** to power an AI agent that helps users navigate and use the application. Keep this dual audience in mind: content must be clear for human readers and well-structured for semantic search/retrieval.
+
 ## Repository Structure
 
 ```
-documentations/           # User documentation organized by feature/module
-  accueil.md             # Main welcome page
-  apprenant/             # Apprentice management
-  employeur/             # Employer management
-  contrats/              # Contract management
-  dossier-formation/     # Training file management
-  unite-formation/       # Training unit management
-  gestion-droit/         # Access rights management
-  gestion-documentaire/  # Document templates (substitutions, formatting, conditions)
-  ...
-release-notes/           # Version release notes (0.1.0, 0.2.0, etc.)
+documentations/
+  accueil.md               # Landing page
+  prise-en-main/           # Getting started (navigation, first steps)
+  apprenant/               # Apprentice management
+    besoins-specifiques/   #   Specific needs sub-module
+  employeur/               # Employer management
+  contrats/                # Contract management
+  dossier-formation/       # Training file management
+  unite-formation/         # Training unit management
+  formation/               # Training catalog
+  financement/             # Financing / billing
+  vente/                   # Sales
+  comptabilite/            # Accounting
+  gestion-droit/           # Access rights management
+    acces-api/             #   API keys & machine access
+    regles-assignation/    #   Assignment rules (roles, groups, users, machines)
+  gestion-documentaire/    # Document templates
+    template-document/     #   Template engine docs
+      conditionner/        #     Conditional logic
+      demarrer/            #     Getting started with templates
+      formater/            #     Formatting helpers
+      substituer/          #     Substitution variables
+      tableau/             #     Table/array repetitions
+  qualite/                 # Quality management
+  historique/              # Activity history
+  mes-taches/              # Task management
+  mon-profil/              # User profile
+  parametres/              # Settings
+  aide-au-permis/          # Driving license assistance
+  aide-contact/            # Help & contact
+release-notes/             # Version release notes (0.1.0 → 0.8.0)
 ```
+
+Modules can contain **nested subfolders**, each with their own `index.md`. This allows deep topic hierarchies (e.g., `gestion-droit/acces-api/01-introduction.md`).
 
 ## Markdown Format
 
@@ -42,7 +66,7 @@ Content here...
 
 ### Key Conventions
 
-- **`index.md` files**: Define folder titles and icons only - they do NOT appear as links in navigation. Use `icon` property for Heroicons (e.g., `UserGroupIcon`, `DocumentTextIcon`)
+- **`index.md` files**: Define folder titles and icons only - they do NOT appear as links in navigation. The `icon` property (Heroicons, e.g., `UserGroupIcon`, `DocumentTextIcon`) is optional and used only at the top-level module folders
 - **Regular `.md` files**: Appear as clickable links in the sidebar
 - **File naming**: Use `kebab-case` (e.g., `gestion-contrats.md`)
 - **Numbered prefixes**: Used for ordering (e.g., `01-introduction.md`, `02-concepts.md`)

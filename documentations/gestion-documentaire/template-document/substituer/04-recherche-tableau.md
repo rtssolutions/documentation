@@ -9,13 +9,15 @@ version: "1"
 
 ## Objectif
 
-Cette page explique comment **rechercher un élément dans un tableau JSON sans créer de boucle explicite**, en appliquant **des filtres directement dans les balises de substitution**.
+Cette page explique comment **rechercher un élément dans un tableau JSON sans créer de boucle explicite**, en appliquant
+**des filtres directement dans les balises de substitution**.
 
 ---
 
 ## Filtres simples
 
-Au lieu d’utiliser le mot réservé `i` pour accéder au i‑ème élément d’un tableau, la plateforme accepte des **filtres basés sur les attributs des objets** du tableau.  
+Au lieu d’utiliser le mot réservé `i` pour accéder au i‑ème élément d’un tableau, la plateforme accepte des **filtres
+basés sur les attributs des objets** du tableau.  
 Si le filtre renvoie plusieurs éléments, **seule la première occurrence est conservée**.  
 Utilisez des **apostrophes simples** pour filtrer du texte contenant des espaces.
 
@@ -23,9 +25,18 @@ Utilisez des **apostrophes simples** pour filtrer du texte contenant des espaces
 
 ```json
 [
-  { "name": "Inception", "year": 2010 },
-  { "name": "Matrix", "year": 1999 },
-  { "name": "Back to the future", "year": 1985 }
+  {
+    "name": "Inception",
+    "year": 2010
+  },
+  {
+    "name": "Matrix",
+    "year": 1999
+  },
+  {
+    "name": "Back to the future",
+    "year": 1985
+  }
 ]
 ```
 
@@ -47,7 +58,8 @@ Back to the future: 1985
 
 ## Filtre avec variable
 
-Si le **second opérande commence par un point (`.`)**, la plateforme considère que cet opérande est une **variable provenant du JSON**.
+Si le **second opérande commence par un point (`.`)**, la plateforme considère que cet opérande est une **variable
+provenant du JSON**.
 
 ### Données (JSON)
 
@@ -60,12 +72,20 @@ Si le **second opérande commence par un point (`.`)**, la plateforme considère
     {
       "text": 1000,
       "other": 1,
-      "sub": { "b": { "c": 1 } }
+      "sub": {
+        "b": {
+          "c": 1
+        }
+      }
     },
     {
       "text": 2000,
       "other": 1,
-      "sub": { "b": { "c": 2 } }
+      "sub": {
+        "b": {
+          "c": 2
+        }
+      }
     }
   ]
 }
@@ -96,9 +116,27 @@ Si le filtre renvoie plusieurs éléments, **seule la première occurrence est c
 
 ```json
 [
-  { "name": "Interstellar",   "year": 2014, "meta": { "type": "SF" } },
-  { "name": "Matrix",         "year": 1999, "meta": { "type": "SF" } },
-  { "name": "The Green Mile", "year": 1999, "meta": { "type": "Drama" } }
+  {
+    "name": "Interstellar",
+    "year": 2014,
+    "meta": {
+      "type": "SF"
+    }
+  },
+  {
+    "name": "Matrix",
+    "year": 1999,
+    "meta": {
+      "type": "SF"
+    }
+  },
+  {
+    "name": "The Green Mile",
+    "year": 1999,
+    "meta": {
+      "type": "Drama"
+    }
+  }
 ]
 ```
 
@@ -129,9 +167,18 @@ Vous pouvez récupérer le **dernier élément d’un tableau** à l’aide d’
 
 ```json
 [
-  { "name": "Inception", "year": 2010 },
-  { "name": "Matrix", "year": 1999 },
-  { "name": "BTTF", "year": 1985 }
+  {
+    "name": "Inception",
+    "year": 2010
+  },
+  {
+    "name": "Matrix",
+    "year": 1999
+  },
+  {
+    "name": "BTTF",
+    "year": 1985
+  }
 ]
 ```
 
@@ -151,7 +198,8 @@ The oldest movie was BTTF.
 
 ## Filtrer et afficher une donnée du parent
 
-Il est possible d’accéder aux **propriétés de l’objet parent** en utilisant **deux points (`..`)** ou plus, lorsque vous appliquez un filtre dans un tableau imbriqué.
+Il est possible d’accéder aux **propriétés de l’objet parent** en utilisant **deux points (`..`)** ou plus, lorsque vous
+appliquez un filtre dans un tableau imbriqué.
 
 ### Données (JSON)
 
@@ -159,9 +207,18 @@ Il est possible d’accéder aux **propriétés de l’objet parent** en utilisa
 {
   "country": "USA",
   "movies": [
-    { "name": "Inception", "year": 2010 },
-    { "name": "Matrix", "year": 1999 },
-    { "name": "BTTF", "year": 1985 }
+    {
+      "name": "Inception",
+      "year": 2010
+    },
+    {
+      "name": "Matrix",
+      "year": 1999
+    },
+    {
+      "name": "BTTF",
+      "year": 1985
+    }
   ]
 }
 ```
