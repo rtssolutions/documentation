@@ -1,5 +1,5 @@
 ---
-title: "Signature électronique"
+title: "04 - Signature électronique"
 description: "Signature électronique dématérialisée via DocuSeal"
 date: "2026-02-26"
 version: "1"
@@ -107,7 +107,7 @@ Pour les personnes morales (organisations), deux modes de signature existent :
 | **Automatique** | Le tampon est apposé automatiquement sans intervention |
 | **Validation par courriel** | Un responsable reçoit un email et doit valider l'apposition |
 
-Le mode est configuré lors du [paramétrage du visa](04-parametrage-visa) sur l'entité concernée (Centre de formation, Unité de formation, Employeur).
+Le mode est configuré lors du [paramétrage du visa](05-parametrage-visa) sur l'entité concernée (Centre de formation, Unité de formation, Employeur).
 
 > Si aucun visa n'est paramétré sur l'entité, il n'y aura pas de signataire moral sur la signature.
 

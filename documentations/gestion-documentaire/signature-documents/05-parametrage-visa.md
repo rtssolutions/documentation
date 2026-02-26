@@ -1,5 +1,5 @@
 ---
-title: "Paramétrage des visas"
+title: "05 - Paramétrage des visas"
 description: "Configurer les tampons numériques des organisations"
 date: "2026-02-26"
 version: "1"
