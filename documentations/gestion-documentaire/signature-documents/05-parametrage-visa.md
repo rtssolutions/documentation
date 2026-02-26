@@ -99,7 +99,7 @@ Pour le CERFA FA13 (contrat d'apprentissage) :
 2. Lors de la génération, le système récupère le visa paramétré sur le Centre
 3. Le visa apparaît comme signataire moral dans la liste des signataires
 4. Selon le mode configuré :
-   - **Automatique** : le tampon est apposé dès que les autres signataires ont signé
+   - **Automatique** : le tampon est apposé en premier, avant les autres signataires
    - **Validation par courriel** : le responsable reçoit un email pour valider
 
 ## Modifier un visa
@@ -136,3 +136,10 @@ Pour le CERFA FA13 (contrat d'apprentissage) :
 - Utilisez une adresse email professionnelle
 - Préférez une adresse générique (ex: `signature@cfa.fr`) plutôt que personnelle
 - Assurez-vous que la boîte email est consultée régulièrement
+
+---
+
+### Pour aller plus loin
+
+➡️ Poursuivez avec la page suivante :
+[06 - Tutoriel : Signer un CERFA FA13](06-tutoriel-cerfa-fa13)

@@ -33,7 +33,7 @@ Deux catégories de signataires existent dans le système :
 | **Personne morale (Visa)** | Une organisation identifiée par un code visa | CFA (visa/tampon) |
 
 Une personne morale peut signer :
-- **Automatiquement** : le tampon est apposé sans intervention
+- **Automatiquement** : le tampon est apposé en premier, sans intervention
 - **Validation par courriel** : un responsable reçoit un email pour valider
 
 > Voir [05 - Paramétrage des visas](05-parametrage-visa) pour configurer les visas des organisations.

@@ -104,7 +104,7 @@ Pour les personnes morales (organisations), deux modes de signature existent :
 
 | Mode | Description |
 |------|-------------|
-| **Automatique** | Le tampon est apposé automatiquement sans intervention |
+| **Automatique** | Le tampon est apposé automatiquement en premier, sans intervention |
 | **Validation par courriel** | Un responsable reçoit un email et doit valider l'apposition |
 
 Le mode est configuré lors du [paramétrage du visa](05-parametrage-visa) sur l'entité concernée (Centre de formation, Unité de formation, Employeur).
@@ -169,3 +169,10 @@ La suppression est possible uniquement si la signature est :
 - À l'état **Annulée**
 
 > **Attention** : La suppression est **irréversible**.
+
+---
+
+### Pour aller plus loin
+
+➡️ Poursuivez avec la page suivante :
+[05 - Paramétrage des visas](05-parametrage-visa)

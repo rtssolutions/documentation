@@ -29,10 +29,11 @@ Le template CERFA FA13 définit automatiquement les signataires suivants :
 | **CFA** | Personne morale (Visa) | Visa CFA | Oui |
 
 L'ordre de signature par défaut est **séquentiel** :
-1. Apprenant
-2. Représentant légal (si l'apprenant est mineur)
-3. Employeur
-4. CFA (visa)
+1. CFA (visa) - si mode automatique, apposé en premier
+2. Apprenant
+3. Représentant légal (si l'apprenant est mineur)
+4. Employeur
+5. CFA (visa) - si mode validation par courriel
 
 > Si l'apprenant est majeur, l'étape du représentant légal est automatiquement ignorée.
 
@@ -70,12 +71,11 @@ La signature passe à l'état **Envoyée en signature**.
 
 Les signataires reçoivent les invitations dans l'ordre séquentiel :
 
-1. **Apprenant** : reçoit l'invitation, signe dans DocuSeal
-2. **Représentant légal** (si mineur) : reçoit l'invitation après l'apprenant
-3. **Employeur** : reçoit l'invitation après les signatures précédentes
-4. **CFA (visa)** : selon le mode configuré :
-   - **Automatique** : le tampon est apposé sans intervention
-   - **Validation par courriel** : le responsable reçoit un email pour valider
+1. **CFA (visa)** - si mode **Automatique** : le tampon est apposé en premier, avant les autres signataires
+2. **Apprenant** : reçoit l'invitation, signe dans DocuSeal
+3. **Représentant légal** (si mineur) : reçoit l'invitation après l'apprenant
+4. **Employeur** : reçoit l'invitation après les signatures précédentes
+5. **CFA (visa)** - si mode **Validation par courriel** : le responsable reçoit un email pour valider
 
 > Si l'apprenant est majeur, l'étape du représentant légal est ignorée.
 
@@ -96,10 +96,15 @@ Le PDF signé contient :
 ```mermaid "max-w-3xl"
 sequenceDiagram
     participant G as Gestionnaire
+    participant C as CFA
     participant A as Apprenant
     participant R as Représentant légal
     participant E as Employeur
-    participant C as CFA
+
+    alt Visa automatique
+        Note over C: Visa apposé automatiquement en premier
+        C-->>G: Visa OK
+    end
 
     G->>A: Envoi invitation
     Note over A: Signe le CERFA
@@ -115,9 +120,11 @@ sequenceDiagram
     Note over E: Signe le CERFA
     E-->>G: Signature OK
 
-    G->>C: Envoi invitation (ou auto)
-    Note over C: Appose le visa
-    C-->>G: Visa OK
+    alt Visa avec validation par courriel
+        G->>C: Envoi invitation
+        Note over C: Appose le visa
+        C-->>G: Visa OK
+    end
 
     Note over G: Document signé récupéré
 ```

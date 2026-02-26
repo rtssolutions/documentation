@@ -185,3 +185,10 @@ L'historique retrace toutes les actions effectuées sur la signature :
 - Annulation
 
 ![Historique](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/historique-actions.png)
+
+---
+
+### Pour aller plus loin
+
+➡️ Poursuivez avec la page suivante :
+[04 - Signature électronique](04-signature-electronique)
