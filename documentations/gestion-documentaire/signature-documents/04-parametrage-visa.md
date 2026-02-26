@@ -9,6 +9,16 @@ version: "1"
 
 Un visa est un tampon numérique d'une organisation (personne morale) qui peut être apposé sur les documents signés. Le visa permet d'authentifier et valider un document au nom d'une entité.
 
+## Tutoriel vidéo
+
+La vidéo ci-dessous présente le paramétrage complet d'un visa :
+
+<video controls>
+  <source src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/tuto-parametrage-visa.webm" type="video/webm" />
+  <source src="https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/tuto-parametrage-visa.mp4" type="video/mp4" />
+  Votre navigateur ne supporte pas la lecture de vidéos.
+</video>
+
 ## Entités pouvant avoir un visa
 
 Trois types d'entités peuvent disposer d'un visa :
@@ -19,13 +29,7 @@ Trois types d'entités peuvent disposer d'un visa :
 | **Unité de formation** | Unités de formation > [Unité] |
 | **Employeur** | Employeurs > [Employeur] |
 
-<!-- TODO: Screenshot - Carte visa sur la page d'un employeur -->
-![Carte visa](/images/signature/visa/carte-visa.png "800x400")
-
 ## Créer un visa
-
-<!-- TODO: Screenshot - Dialog de création de visa -->
-![Création visa](/images/signature/visa/creation-visa.png "600x500")
 
 1. Accédez à la fiche de l'entité concernée
 2. Dans la carte **Visa**, cliquez sur **Ajouter un visa**
@@ -56,9 +60,6 @@ Un responsable de l'organisation reçoit un email lui demandant de valider l'app
 
 Ce mode est adapté lorsqu'une vérification humaine est requise avant d'engager l'organisation.
 
-<!-- TODO: Screenshot - Email de validation de visa -->
-![Email validation visa](/images/signature/visa/email-validation-visa.png "600x400")
-
 ## Image du tampon
 
 ### Formats acceptés
@@ -78,9 +79,6 @@ Ce mode est adapté lorsqu'une vérification humaine est requise avant d'engager
 - Utilisez une image de bonne qualité (300 DPI minimum pour impression)
 - Privilégiez le format PNG pour les tampons avec fond transparent
 - Dimensions suggérées : 300x300 pixels minimum pour une bonne lisibilité
-
-<!-- TODO: Screenshot - Aperçu du tampon dans la carte visa -->
-![Aperçu tampon](/images/signature/visa/apercu-tampon.png "400x300")
 
 ## Utilisation dans les signatures
 
@@ -105,9 +103,6 @@ Pour le CERFA FA13 (contrat d'apprentissage) :
    - **Validation par courriel** : le responsable reçoit un email pour valider
 
 ## Modifier un visa
-
-<!-- TODO: Screenshot - Dialog de modification de visa -->
-![Modification visa](/images/signature/visa/modification-visa.png "600x500")
 
 1. Accédez à la fiche de l'entité
 2. Dans la carte **Visa**, cliquez sur **Modifier**

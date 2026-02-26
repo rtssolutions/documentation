@@ -79,53 +79,24 @@ Avant d'envoyer une signature électronique, assurez-vous que :
 
 ### Procédure
 
-<!-- TODO: Screenshot - Page détail document avec bouton envoyer en signature -->
-![Envoyer en signature électronique](/images/signature/envoyer-signature-electronique.png "800x450")
-
 1. Accédez au document généré
 2. Cliquez sur **Envoyer en signature**
 3. Vérifiez les informations des signataires
 4. Confirmez l'envoi
 
-<!-- TODO: Screenshot - Dialog confirmation avec liste des signataires -->
-![Confirmation envoi électronique](/images/signature/confirmation-envoi-electronique.png "600x400")
-
 La signature passe à l'état **Envoyée en signature** et les invitations sont envoyées selon le mode d'ordonnancement configuré.
 
 ## Parcours du signataire
 
-Voici ce que voit chaque signataire :
+Chaque signataire :
 
-### Réception de l'invitation
-
-<!-- TODO: Screenshot - Email d'invitation DocuSeal -->
-![Email invitation](/images/signature/email-invitation-docuseal.png "600x400")
-
-Le signataire reçoit un email contenant :
-- Le nom du document à signer
-- Un lien sécurisé vers DocuSeal
-
-### Interface de signature
-
-<!-- TODO: Screenshot - Interface DocuSeal avec document et zone de signature -->
-![Interface DocuSeal](/images/signature/interface-docuseal.png "800x500")
-
-1. Le signataire accède à l'interface DocuSeal
-2. Il consulte le document
-3. Il clique sur les zones de signature prévues
-4. Il appose sa signature (dessin, saisie ou upload)
-5. Il confirme et valide
-
-<!-- TODO: Vidéo - Parcours complet de signature dans DocuSeal -->
-<video controls>
-  <source src="/videos/signature/parcours-signataire-docuseal.webm" type="video/webm" />
-  <source src="/videos/signature/parcours-signataire-docuseal.mp4" type="video/mp4" />
-  Votre navigateur ne supporte pas la lecture de vidéos.
-</video>
-
-### Confirmation
-
-Après signature, le signataire reçoit un email de confirmation.
+1. Reçoit un email contenant un lien sécurisé vers DocuSeal
+2. Accède à l'interface DocuSeal
+3. Consulte le document
+4. Clique sur les zones de signature prévues
+5. Appose sa signature (dessin, saisie ou upload)
+6. Confirme et valide
+7. Reçoit un email de confirmation
 
 ## Visa (personne morale)
 
@@ -142,19 +113,9 @@ Le mode est configuré lors du [paramétrage du visa](04-parametrage-visa) sur l
 
 ## Suivi du processus
 
-### Tableau de bord
-
-Suivez l'avancement de toutes vos signatures depuis la liste des signatures :
-
-<!-- TODO: Screenshot - Liste des signatures avec différents états -->
-![Liste signatures](/images/signature/liste-signatures-electroniques.png "800x500")
-
 ### Détail de la signature
 
-La page de détail affiche l'état de chaque signataire :
-
-<!-- TODO: Screenshot - Détail signature électronique avec statuts signataires -->
-![Détail signature électronique](/images/signature/detail-signature-electronique.png "800x600")
+La page de détail (identique à la signature manuelle) affiche l'état de chaque signataire :
 
 | Colonne | Description |
 |---------|-------------|
@@ -178,9 +139,6 @@ La page de détail affiche l'état de chaque signataire :
 
 Une fois tous les signataires ayant signé, le document signé est **automatiquement récupéré** depuis DocuSeal et stocké dans l'application.
 
-<!-- TODO: Screenshot - Document signé disponible avec bouton télécharger -->
-![Document signé disponible](/images/signature/document-signe-disponible.png "800x450")
-
 Le document signé contient :
 - Toutes les signatures électroniques apposées
 - Le certificat de signature (preuve légale)
@@ -192,9 +150,6 @@ Accédez au document signé via le bouton **Voir les documents** dans le détail
 
 Vous pouvez annuler une signature électronique en cours tant qu'elle n'est pas terminée.
 
-<!-- TODO: Screenshot - Annulation signature électronique -->
-![Annuler signature électronique](/images/signature/annuler-electronique.png "600x350")
-
 1. Accédez au détail de la signature
 2. Cliquez sur **Annuler**
 3. Confirmez l'annulation
@@ -205,7 +160,7 @@ Vous pouvez annuler une signature électronique en cours tant qu'elle n'est pas 
 - Les signataires ayant déjà signé voient leur signature invalidée
 - La demande dans DocuSeal est annulée
 
-> **Annulation impossible si** la signature est déjà Signée, Refusée ou Annulée.
+> **Annulation impossible si** la signature est déjà Signée ou Annulée.
 
 ## Supprimer une signature
 

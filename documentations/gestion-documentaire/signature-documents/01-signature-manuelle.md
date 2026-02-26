@@ -24,8 +24,7 @@ Le processus de signature manuelle se déroule hors de l'application :
 
 ### Accéder à la création
 
-<!-- TODO: Screenshot - Bouton de création de signature sur la page document -->
-![Bouton créer signature](/images/signature/creer-signature-btn.png "800x450")
+![Bouton créer signature](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/creer-signature-btn.png)
 
 1. Accédez au document concerné
 2. Cliquez sur **Créer une signature**
@@ -33,8 +32,7 @@ Le processus de signature manuelle se déroule hors de l'application :
 
 ### Configurer la signature
 
-<!-- TODO: Screenshot - Formulaire de création avec sélection canal Manuelle -->
-![Création signature manuelle](/images/signature/creation-manuelle.png "800x500")
+![Création signature manuelle](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/creation-manuelle.png)
 
 1. **Canal** : Sélectionnez `Manuelle`
 2. **Ordonnancement** : Automatiquement défini sur "Sans ordonnancement"
@@ -48,8 +46,7 @@ Après la création de la signature, ajoutez les signataires requis.
 
 ### Ajouter une personne physique
 
-<!-- TODO: Screenshot - Formulaire ajout signataire personne physique -->
-![Ajout personne physique](/images/signature/ajout-personne-physique.png "600x400")
+![Ajout personne physique](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/ajout-personne-physique.png)
 
 1. Cliquez sur **Ajouter un signataire**
 2. Sélectionnez **Personne physique**
@@ -62,8 +59,7 @@ Après la création de la signature, ajoutez les signataires requis.
 
 ### Ajouter une personne morale (visa)
 
-<!-- TODO: Screenshot - Formulaire ajout signataire personne morale -->
-![Ajout personne morale](/images/signature/ajout-personne-morale.png "600x400")
+![Ajout personne morale](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/ajout-personne-morale.png)
 
 1. Cliquez sur **Ajouter un signataire**
 2. Sélectionnez **Personne morale**
@@ -77,15 +73,13 @@ Après la création de la signature, ajoutez les signataires requis.
 
 Une fois les signataires définis :
 
-<!-- TODO: Screenshot - Bouton envoyer en signature -->
-![Envoyer en signature](/images/signature/envoyer-signature-btn.png "800x400")
+![Envoyer en signature](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/envoyer-signature-btn.png)
 
 1. Vérifiez la liste des signataires
 2. Cliquez sur **Envoyer en signature**
 3. Confirmez l'envoi
 
-<!-- TODO: Screenshot - Dialog confirmation envoi -->
-![Confirmation envoi](/images/signature/confirmation-envoi.png "500x300")
+![Confirmation envoi](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/confirmation-envoi.png)
 
 La signature passe à l'état **Envoyée en signature**.
 
@@ -97,8 +91,7 @@ Une fois le document signé sur papier et numérisé :
 
 ### Téléverser le document signé
 
-<!-- TODO: Screenshot - Interface de validation avec upload -->
-![Validation signature manuelle](/images/signature/validation-manuelle.png "800x500")
+![Validation signature manuelle](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/validation-manuelle.png)
 
 1. Accédez au détail de la signature
 2. Cliquez sur **Valider la signature**
@@ -112,15 +105,13 @@ Après validation :
 - **Tous les signataires** passent au statut "Signé" simultanément
 - Le document signé est accessible depuis le détail de la signature
 
-<!-- TODO: Screenshot - Signature validée avec document signé disponible -->
-![Signature validée](/images/signature/signature-validee.png "800x450")
+![Signature validée](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/signature-validee.png)
 
 ## Annuler une signature
 
 Vous pouvez annuler une signature tant qu'elle n'est pas terminée (signée, refusée).
 
-<!-- TODO: Screenshot - Bouton annuler avec dialog confirmation -->
-![Annuler signature](/images/signature/annuler-signature.png "600x350")
+![Annuler signature](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/annuler-signature.png)
 
 1. Accédez au détail de la signature
 2. Cliquez sur **Annuler**
@@ -138,8 +129,7 @@ La suppression est possible uniquement si la signature est :
 - À l'état **Créée** (jamais envoyée)
 - À l'état **Annulée**
 
-<!-- TODO: Screenshot - Bouton supprimer avec dialog confirmation -->
-![Supprimer signature](/images/signature/supprimer-signature.png "600x350")
+![Supprimer signature](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/supprimer-signature.png)
 
 1. Accédez au détail de la signature
 2. Cliquez sur **Supprimer**
@@ -151,8 +141,7 @@ La suppression est possible uniquement si la signature est :
 
 Depuis le détail de la signature, accédez aux documents :
 
-<!-- TODO: Screenshot - Bouton voir les documents -->
-![Voir documents](/images/signature/voir-documents.png "800x400")
+![Voir documents](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/voir-documents.png)
 
 - **Document original** : Le document à signer (avant signature)
 - **Document signé** : Le scan téléversé lors de la validation (après signature)
@@ -163,8 +152,7 @@ Depuis le détail de la signature, accédez aux documents :
 
 La page de détail affiche :
 
-<!-- TODO: Screenshot - Page détail complète d'une signature manuelle -->
-![Détail signature](/images/signature/detail-signature-manuelle.png "800x600")
+![Détail signature](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/detail-signature-manuelle.png)
 
 | Information | Description |
 |-------------|-------------|
@@ -196,5 +184,4 @@ L'historique retrace toutes les actions effectuées sur la signature :
 - Validation
 - Annulation
 
-<!-- TODO: Screenshot - Historique des actions -->
-![Historique](/images/signature/historique-actions.png "800x400")
+![Historique](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/signature/historique-actions.png)
