@@ -1,5 +1,5 @@
 ---
-title: "06 - Données Contrat"
+title: "7 - Données Contrat"
 description: "Variables de substitution disponibles pour l'entité Contrat"
 date: "2026-03-13"
 version: "1"

@@ -1,5 +1,5 @@
 ---
-title: "04 - Données Apprenant"
+title: "5 - Données Apprenant"
 description: "Variables de substitution disponibles pour l'entité Apprenant"
 date: "2026-03-13"
 version: "1"

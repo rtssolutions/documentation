@@ -1,5 +1,5 @@
 ---
-title: "02 - Créer un template"
+title: "3 - Créer un template"
 description: "Guide pas-à-pas pour créer un template de document personnalisé dans Papaours"
 date: "2026-03-13"
 version: "1"

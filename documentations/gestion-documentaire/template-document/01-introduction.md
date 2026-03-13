@@ -1,5 +1,5 @@
 ---
-title: "Introduction aux templates"
+title: "1 - Introduction aux templates"
 description: "Créer et utiliser des templates de documents dans Papaours"
 date: "2026-03-13"
 version: "1"
