@@ -32,7 +32,7 @@ Papaours propose les entités suivantes :
 
 ## Contenu de chaque entité
 
-### Contrat (`CONTRAT`)
+### Contrat
 
 L'entité Contrat est la plus riche car elle agrège les données de plusieurs sources :
 
@@ -54,7 +54,7 @@ graph TD
 - Données de la formation et de la session
 - Données du CFA
 
-### Apprenant (`APPRENANT`)
+### Apprenant
 
 **Données incluses :**
 - Identité (nom, prénom, date de naissance, NIR)
@@ -62,7 +62,7 @@ graph TD
 - Besoins spécifiques (RQTH, sportif haut niveau)
 - Représentant légal (si mineur)
 
-### Employeur (`EMPLOYEUR`)
+### Employeur
 
 **Données incluses :**
 - Identification (SIRET, dénomination sociale)
@@ -71,7 +71,7 @@ graph TD
 - Convention collective
 - Coordonnées
 
-### Dossier de formation (`DOSSIER_FORMATION`)
+### Dossier de formation
 
 **Données incluses :**
 - Informations du dossier (code, état)
@@ -79,7 +79,7 @@ graph TD
 - Formation (intitulé, RNCP, diplôme)
 - Lieux de formation
 
-### Centre de formation (`CENTRE_DE_FORMATION`)
+### Centre de formation
 
 **Données incluses :**
 - Identification (SIRET, UAI)
