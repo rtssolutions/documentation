@@ -1,5 +1,5 @@
 ---
-title: "4 - Entités liées"
+title: "04 - Entités liées"
 description: "Présentation des entités disponibles pour les templates de documents Papaours"
 date: "2026-03-13"
 version: "1"

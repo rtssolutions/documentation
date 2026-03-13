@@ -1,5 +1,5 @@
 ---
-title: "2 - Types de templates"
+title: "02 - Types de templates"
 description: "Comprendre la différence entre templates réservés et non réservés dans Papaours"
 date: "2026-03-13"
 version: "1"

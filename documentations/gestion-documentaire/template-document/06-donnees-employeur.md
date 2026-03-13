@@ -1,5 +1,5 @@
 ---
-title: "6 - Données Employeur"
+title: "06 - Données Employeur"
 description: "Variables de substitution disponibles pour l'entité Employeur"
 date: "2026-03-13"
 version: "1"
