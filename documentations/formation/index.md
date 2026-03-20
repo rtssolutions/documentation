@@ -1,19 +1,34 @@
 ---
-title: "Formations"
-description: "Gestion du catalogue de formations, actions et sessions"
+title: "Formation"
+description: "Gestion du catalogue de formations : création, consultation, modification et approbation"
 date: "2026-03-20"
 version: "1"
 icon: "AcademicCapIcon"
 ---
 
-# Formations
+# Formation
 
-Le module **Formations** de Papaours permet de gérer l'ensemble de votre offre de formation : le catalogue des formations, les actions de formation par unité, et les sessions de formation.
+Le module **Formation** permet de gérer le catalogue des formations proposées par votre organisme. Chaque formation représente un parcours pédagogique menant à un diplôme ou une certification.
 
-Ce module est structuré en trois espaces accessibles depuis le menu **Formations** :
+## Fonctionnalités principales
 
-- **Unités de formation** : Sites ou UFA qui dispensent les formations
-- **Formations** : Catalogue des formations référencées (diplômes, certifications)
-- **Sessions** : Périodes de formation programmées
+- Création et gestion des fiches formation
+- Consultation des informations détaillées
+- Processus d'approbation réglementaire
+- Liaison avec le référentiel national (RNCP, diplômes)
+- Rattachement aux actions et sessions de formation
 
-Consultez les pages suivantes pour en savoir plus sur chaque fonctionnalité.
+## Documentation
+
+- [Introduction](01-introduction)
+- [Concepts clés](02-definition-concepts-cles)
+- [Gérer les formations](03-gerer-formations)
+- [Gérer les sessions](04-gerer-sessions)
+- [Processus d'approbation](05-processus-approbation)
+
+## Modules associés
+
+Pour une documentation détaillée sur chaque niveau de la hiérarchie pédagogique :
+
+- [Actions de formation](../action-formation/index) - Déclinaison des formations par unité
+- [Sessions de formation](../session-formation/index) - Périodes programmées avec dates et apprenants

@@ -1,6 +1,6 @@
 ---
 title: "03 - Processus d'approbation"
-description: "Comprendre et utiliser le processus d'approbation des formations, unités et actions"
+description: "Vue d'ensemble du processus d'approbation lors de l'onboarding"
 date: "2026-03-20"
 version: "1"
 ---
@@ -9,71 +9,38 @@ version: "1"
 
 ## Principe
 
-Le processus d'approbation garantit que toutes les formations, unités et actions de votre catalogue sont validées avant d'être utilisées dans Papaours. Ce mécanisme assure la qualité et la conformité de vos données.
+Lors de l'onboarding, certains éléments de votre catalogue doivent être approuvés avant d'être utilisables dans Papaours. Ce processus garantit la qualité et la conformité de vos données.
 
-## Éléments soumis à approbation
+## Éléments concernés
 
-### Formations
+Le processus d'approbation s'applique à :
 
-Les formations représentent les parcours pédagogiques proposés par votre organisme :
+| Élément | Description | Documentation détaillée |
+|---------|-------------|------------------------|
+| **Unités de formation** | Sites ou UFA dispensant les formations | [Module Unité de formation](../unite-formation/08-processus-approbation) |
+| **Formations** | Parcours de formation du catalogue | [Module Formation](../formation/05-processus-approbation) |
+| **Actions de formation** | Déclinaisons des formations | [Module Actions de formation](../action-formation/06-processus-approbation) |
+| **Sessions de formation** | Périodes programmées | [Module Sessions de formation](../session-formation/06-processus-approbation) |
 
-- **Intitulé** : nom de la formation
-- **Code RNCP** : référence au répertoire national
-- **Diplôme préparé** : titre ou certification visé
-- **Durée** : durée totale du parcours
+## Statuts
 
-### Unités de formation
+Chaque élément passe par un statut d'approbation :
 
-Les unités de formation correspondent aux organismes dispensateurs :
+- **À approuver** : en attente de validation
+- **Approuvée** : validé et actif dans le système
 
-- **Dénomination** : nom de l'organisme
-- **SIRET** : numéro d'identification
-- **Adresse** : localisation
-- **Contacts** : coordonnées des responsables
+## Pré-alimentation automatique
 
-### Actions de formation
+Lors de l'onboarding, Papaours peut détecter et pré-alimenter automatiquement des éléments depuis le référentiel national. Ces éléments sont placés en statut "À approuver" pour validation.
 
-Les actions de formation sont les déclinaisons concrètes des formations :
+## Pour en savoir plus
 
-- **Période** : dates de début et de fin
-- **Lieu** : site de formation
-- **Modalités** : présentiel, distanciel, mixte
+Consultez la documentation de chaque module pour le détail du processus d'approbation spécifique :
 
-## Statuts d'approbation
-
-Chaque élément dispose d'un statut :
-
-| Statut | Description |
-|--------|-------------|
-| **À approuver** | En attente de validation par un responsable |
-| **Approuvée** | Validé et disponible dans le système |
-| **Refusée** | Non conforme, nécessite des corrections |
-
-## Processus de validation
-
-### Accéder aux éléments à approuver
-
-1. Dans le menu principal, accédez au module concerné (Formations, Unités, etc.)
-2. Utilisez le filtre **"À approuver"** pour afficher les éléments en attente
-3. Cliquez sur un élément pour accéder à son détail
-
-### Approuver un élément
-
-1. Vérifiez les informations de l'élément
-2. Contrôlez la complétude des données obligatoires
-3. Cliquez sur **"Approuver"** pour valider
-
-### Refuser un élément
-
-1. Identifiez les non-conformités
-2. Cliquez sur **"Refuser"**
-3. Indiquez le motif du refus (optionnel mais recommandé)
-
-## Bonnes pratiques
-
-- **Vérifiez régulièrement** les éléments en attente d'approbation
-- **Documentez les refus** pour faciliter les corrections
-- **Validez par lots** si vous avez plusieurs éléments similaires
+- [Approbation des unités de formation](../unite-formation/08-processus-approbation)
+- [Approbation des formations](../formation/05-processus-approbation)
+- [Approbation des actions de formation](../action-formation/06-processus-approbation)
+- [Approbation des sessions de formation](../session-formation/06-processus-approbation)
 
 ---
 
