@@ -43,7 +43,7 @@ Workflow de validation qualité des unités de formation avant leur mise en serv
 Formations dispensées par l'unité de formation. Chaque action est rattachée à une unité de formation et permet ensuite d'accéder aux sessions de formations. *Voir guide dédié aux actions de formation.*
 
 ### Sessions de Formation
-Instances concrètes des actions de formation, planifiées dans le temps avec des apprenants inscrits. *Voir guide dédié aux sessions de formation.*
+Instances concrètes des actions de formation, planifiées dans le temps. Les apprenants sont rattachés aux sessions via le maillage des dossiers de formation. *Voir guide dédié aux sessions de formation.*
 
 ### Organisation Papaours
 Entité organisationnelle créée automatiquement lors de l'enregistrement d'une unité de formation, permettant la gestion des droits d'accès et du périmètre d'intervention.

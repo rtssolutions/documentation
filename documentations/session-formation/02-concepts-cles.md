@@ -11,16 +11,18 @@ version: "1"
 
 ### Session de formation
 
-Une **session de formation** est une période programmée pendant laquelle une action de formation est dispensée à un groupe d'apprenants. Elle est caractérisée par des dates de début et de fin, et une capacité d'accueil.
+Une **session de formation** est une période programmée pendant laquelle une action de formation est dispensée. Elle est caractérisée par des dates de début et de fin.
 
 ### Relation avec les autres entités
 
 ```mermaid "max-w-3xl"
 graph LR
     AF[Action de formation] --> S[Session de formation]
-    S --> DF[Dossiers de formation]
+    S -. maillage .- DF[Dossiers de formation]
     DF --> A[Apprenants]
 ```
+
+La session ne contient pas directement les apprenants. C'est le **maillage** entre la session et les dossiers de formation qui permet de rattacher les apprenants à une session.
 
 ## Éléments constitutifs
 
@@ -31,37 +33,14 @@ Une session de formation comprend :
 | **Action de formation** | L'action dont découle la session |
 | **Date de début** | Premier jour de la formation |
 | **Date de fin** | Dernier jour de la formation |
-| **Capacité** | Nombre maximum d'apprenants |
-| **Apprenants** | Dossiers de formation rattachés |
 
-## Statuts d'une session de formation
+## Maillage avec les dossiers de formation
 
-| Statut | Description |
-|--------|-------------|
-| **À approuver** | En attente de validation |
-| **Approuvée** | Validée et ouverte aux inscriptions |
-| **En cours** | Période de formation démarrée |
-| **Terminée** | Formation achevée |
-| **Annulée** | Session annulée |
+Le lien entre une session et les apprenants se fait via les **dossiers de formation** :
 
-## Capacité et remplissage
-
-### Gestion de la capacité
-
-- **Capacité** : nombre maximum d'apprenants pouvant être inscrits
-- **Inscrits** : nombre de dossiers rattachés à la session
-- **Places disponibles** : capacité - inscrits
-
-### Indicateurs visuels
-
-Le taux de remplissage est affiché pour chaque session :
-
-| Taux | Indicateur |
-|------|------------|
-| < 50% | Faible remplissage |
-| 50-80% | Remplissage modéré |
-| > 80% | Remplissage élevé |
-| 100% | Complet |
+- Un dossier de formation peut être maillé à une session
+- Ce maillage permet de constituer une "promotion"
+- Les apprenants ne sont pas directement dans la session
 
 ## Cas d'usage
 
@@ -71,8 +50,7 @@ Le taux de remplissage est affiché pour chaque session :
 - **Session** : Promotion 2024-2026
   - Date de début : 02/09/2024
   - Date de fin : 30/06/2026
-  - Capacité : 25 apprenants
-  - Inscrits : 22 apprenants
+  - Dossiers maillés : 22 dossiers de formation
 
 ## Périodes de chevauchement
 

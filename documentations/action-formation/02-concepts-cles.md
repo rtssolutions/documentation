@@ -20,7 +20,7 @@ graph LR
     F[Formation] --> AF[Action de formation]
     UF[Unité de formation] --> AF
     AF --> S[Sessions]
-    S --> DF[Dossiers de formation]
+    S -. maillage .- DF[Dossiers de formation]
 ```
 
 ## Éléments constitutifs
@@ -31,16 +31,27 @@ Une action de formation comprend :
 |---------|-------------|
 | **Formation** | La certification ou le diplôme du catalogue |
 | **Unité de formation** | Le site qui dispense la formation |
-| **Paramètres pédagogiques** | Modalités spécifiques au site |
+| **Lieux de formation** | Lieu principal et lieux secondaires |
 | **Sessions** | Les périodes programmées |
 
-## Statuts d'une action de formation
+## Lieux de formation
 
-| Statut | Description |
-|--------|-------------|
-| **À approuver** | En attente de validation par un administrateur |
-| **Approuvée** | Validée et utilisable pour créer des sessions |
-| **Désactivée** | Temporairement inactive |
+### Héritage depuis l'unité de formation
+
+Lors de la création d'une action de formation, les **lieux de formation** sont hérités de l'unité de formation :
+
+- Le **lieu principal** de l'unité devient le lieu principal de l'action
+- Les **lieux secondaires** de l'unité sont également récupérés
+
+### Personnalisation possible
+
+Les lieux de formation peuvent être **modifiés** au niveau de l'action de formation :
+
+- Changer le lieu principal
+- Ajouter ou retirer des lieux secondaires
+- Adapter aux spécificités de la formation dispensée
+
+Cette flexibilité permet d'avoir des lieux différents selon les formations, même au sein d'une même unité.
 
 ## Unicité
 
@@ -53,6 +64,8 @@ Une action de formation est **unique** pour un couple Formation + Unité de form
 - **Formation** : BTS Comptabilité et Gestion (RNCP 38364)
 - **Unité de formation** : CFA Paris Centre
 - **Action de formation** : BTS CG dispensé par le CFA Paris Centre
+  - Lieu principal : 12 rue de la Formation, 75001 Paris
+  - Lieu secondaire : Annexe Bercy, 75012 Paris
 
 Cette action permet ensuite de créer des sessions :
 - Session Septembre 2024 - Juin 2026

@@ -9,30 +9,27 @@ version: "1"
 
 ## Qu'est-ce qu'une session de formation ?
 
-Une **session de formation** est le niveau opérationnel de la hiérarchie pédagogique. Elle représente une période de formation concrète, avec des dates précises et des apprenants inscrits.
+Une **session de formation** est le niveau opérationnel de la hiérarchie pédagogique. Elle représente une période de formation concrète, avec des dates précises.
 
 ## Position dans la hiérarchie
 
 ```mermaid "max-w-2xl"
 graph TD
     F[Formation<br/>Diplôme / Certification] --> AF[Action de formation<br/>Formation + Unité]
-    AF --> S[Session de formation<br/>Dates + Apprenants]
-    S --> DF1[Dossier 1]
-    S --> DF2[Dossier 2]
-    S --> DF3[Dossier N]
+    AF --> S[Session de formation<br/>Dates]
+    S -. maillage .- DF[Dossiers de formation]
 ```
 
-La session de formation est le dernier niveau de la chaîne :
+La session de formation est le dernier niveau de la chaîne pédagogique :
 - Elle dépend d'une **action de formation** (et donc d'une formation et d'une unité)
-- Elle regroupe les **dossiers de formation** des apprenants inscrits
+- Elle est liée aux **dossiers de formation** via un maillage (les apprenants sont rattachés via leur dossier)
 
 ## Pourquoi ce niveau ?
 
 La session de formation permet de :
 
 - **Planifier** des périodes de formation avec des dates précises
-- **Regrouper** les apprenants d'une même promotion
-- **Suivre** le remplissage et la capacité
+- **Regrouper** les dossiers de formation d'une même promotion
 - **Organiser** le calendrier pédagogique
 
 ## Public concerné
@@ -40,18 +37,16 @@ La session de formation permet de :
 Cette documentation s'adresse aux :
 
 - **Responsables pédagogiques** : création et suivi des sessions
-- **Administrateurs de centre** : approbation des sessions
-- **Gestionnaires de formation** : inscription des apprenants
+- **Gestionnaires de formation** : maillage avec les dossiers de formation
 
 ## Fonctionnalités principales
 
 | Fonctionnalité | Description |
 |----------------|-------------|
-| **Création** | Définir une session avec dates et capacité |
-| **Consultation** | Voir le détail et les apprenants inscrits |
+| **Création** | Définir une session avec des dates |
+| **Consultation** | Voir le détail de la session |
 | **Modification** | Mettre à jour les paramètres |
-| **Approbation** | Valider la session avant utilisation |
-| **Inscriptions** | Rattacher des dossiers de formation |
+| **Maillage** | Lier des dossiers de formation à la session |
 
 ---
 

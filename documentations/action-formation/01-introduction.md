@@ -31,7 +31,7 @@ L'action de formation fait le lien entre :
 L'action de formation permet de :
 
 - **Adapter la formation** aux spécificités d'un site
-- **Paramétrer** des modalités pédagogiques propres
+- **Paramétrer** des lieux de formation spécifiques (hérités de l'unité mais modifiables)
 - **Regrouper** les sessions d'une même formation sur un même site
 - **Suivre** les indicateurs par site de formation
 
@@ -40,7 +40,6 @@ L'action de formation permet de :
 Cette documentation s'adresse aux :
 
 - **Responsables pédagogiques** : création et suivi des actions
-- **Administrateurs de centre** : approbation des actions
 - **Gestionnaires de formation** : utilisation quotidienne
 
 ## Fonctionnalités principales
@@ -50,7 +49,7 @@ Cette documentation s'adresse aux :
 | **Création** | Rattacher une formation à une unité |
 | **Consultation** | Voir le détail et les sessions associées |
 | **Modification** | Mettre à jour les paramètres |
-| **Approbation** | Valider l'action avant utilisation |
+| **Lieux de formation** | Définir les lieux principal et secondaires |
 | **Sessions** | Créer des sessions depuis l'action |
 
 ---

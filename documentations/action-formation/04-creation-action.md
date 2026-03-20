@@ -11,8 +11,8 @@ version: "1"
 
 Avant de créer une action de formation, assurez-vous que :
 
-- La **formation** existe dans le catalogue et est approuvée
-- L'**unité de formation** existe et est approuvée
+- La **formation** existe dans le catalogue
+- L'**unité de formation** existe
 - Vous disposez des **droits** nécessaires à la création
 
 ## Accéder à la création
@@ -43,6 +43,15 @@ Avant de créer une action de formation, assurez-vous que :
 | **Formation** | Sélectionnez la formation du catalogue |
 | **Unité de formation** | Sélectionnez le site dispensateur |
 
+### Lieux de formation
+
+Les lieux de formation sont **automatiquement hérités** de l'unité de formation sélectionnée :
+
+- Le lieu principal de l'unité devient le lieu principal de l'action
+- Les lieux secondaires sont également récupérés
+
+Ces lieux peuvent être modifiés après la création de l'action.
+
 ### Informations optionnelles
 
 | Champ | Description |
@@ -54,30 +63,21 @@ Avant de créer une action de formation, assurez-vous que :
 
 1. Vérifiez les informations saisies
 2. Cliquez sur **Créer**
-3. L'action est créée avec le statut **À approuver**
+3. L'action est créée
 
 ## Après la création
 
-L'action de formation créée doit être approuvée avant de pouvoir :
+Une fois l'action de formation créée, vous pouvez :
 
+- Modifier les lieux de formation (principal et secondaires)
 - Créer des sessions de formation
-- Rattacher des dossiers de formation
-
-Consultez [Processus d'approbation](06-processus-approbation) pour plus de détails.
+- Consulter et modifier les paramètres
 
 ## Erreurs courantes
 
 ### "Une action existe déjà pour ce couple"
 
 Une action de formation existe déjà pour cette formation et cette unité. Recherchez l'action existante plutôt que d'en créer une nouvelle.
-
-### "Formation non approuvée"
-
-La formation sélectionnée n'est pas encore approuvée. Approuvez d'abord la formation avant de créer l'action.
-
-### "Unité de formation non approuvée"
-
-L'unité de formation sélectionnée n'est pas encore approuvée. Approuvez d'abord l'unité avant de créer l'action.
 
 ---
 

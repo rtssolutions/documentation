@@ -1,6 +1,6 @@
 ---
 title: "Action de formation"
-description: "Gestion des actions de formation : création, consultation, modification et approbation"
+description: "Gestion des actions de formation : création, consultation et modification"
 date: "2026-03-20"
 version: "1"
 icon: "ClipboardDocumentListIcon"
@@ -14,7 +14,6 @@ Le module **Action de formation** permet de gérer les déclinaisons des formati
 
 - Création d'actions rattachées à une formation et une unité
 - Consultation des informations détaillées
-- Processus d'approbation
 - Rattachement aux sessions de formation
 - Paramétrage pédagogique spécifique au site
 
@@ -25,4 +24,3 @@ Le module **Action de formation** permet de gérer les déclinaisons des formati
 - [Accéder à la gestion des actions](03-acceder-gestion-actions)
 - [Créer une action de formation](04-creation-action)
 - [Consulter et modifier une action](05-consultation-modification)
-- [Processus d'approbation](06-processus-approbation)

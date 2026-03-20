@@ -1,6 +1,6 @@
 ---
 title: "Formation"
-description: "Gestion du catalogue de formations : création, consultation, modification et approbation"
+description: "Gestion du catalogue de formations : création, consultation et modification"
 date: "2026-03-20"
 version: "1"
 icon: "AcademicCapIcon"
@@ -14,7 +14,6 @@ Le module **Formation** permet de gérer le catalogue des formations proposées 
 
 - Création et gestion des fiches formation
 - Consultation des informations détaillées
-- Processus d'approbation réglementaire
 - Liaison avec le référentiel national (RNCP, diplômes)
 - Rattachement aux actions et sessions de formation
 
@@ -24,11 +23,10 @@ Le module **Formation** permet de gérer le catalogue des formations proposées 
 - [Concepts clés](02-definition-concepts-cles)
 - [Gérer les formations](03-gerer-formations)
 - [Gérer les sessions](04-gerer-sessions)
-- [Processus d'approbation](05-processus-approbation)
 
 ## Modules associés
 
 Pour une documentation détaillée sur chaque niveau de la hiérarchie pédagogique :
 
 - [Actions de formation](../action-formation/index) - Déclinaison des formations par unité
-- [Sessions de formation](../session-formation/index) - Périodes programmées avec dates et apprenants
+- [Sessions de formation](../session-formation/index) - Périodes programmées avec dates

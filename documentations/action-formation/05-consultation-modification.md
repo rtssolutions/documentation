@@ -20,8 +20,7 @@ L'en-tête présente les informations principales :
 
 - **Intitulé** de la formation
 - **Unité de formation** associée
-- **Statut** d'approbation
-- **Boutons d'action** (modifier, approuver, etc.)
+- **Boutons d'action** (modifier, etc.)
 
 ### Onglets disponibles
 
@@ -39,7 +38,7 @@ Cet onglet affiche :
 |---------|-------------|
 | **Formation** | Lien vers la fiche formation |
 | **Unité de formation** | Lien vers la fiche unité |
-| **Paramètres** | Modalités pédagogiques spécifiques |
+| **Lieux de formation** | Lieu principal et lieux secondaires |
 | **Dates** | Date de création et dernière modification |
 
 ## Onglet Sessions
@@ -47,8 +46,7 @@ Cet onglet affiche :
 Liste des sessions rattachées à cette action :
 
 - Dates de début et fin
-- Nombre d'apprenants
-- Statut de la session
+- Intitulé de la session
 
 Depuis cet onglet, vous pouvez :
 
@@ -69,8 +67,21 @@ Depuis cet onglet, vous pouvez :
 |-------|------------|----------|
 | **Formation** | Non | Liée définitivement |
 | **Unité de formation** | Non | Liée définitivement |
+| **Lieu principal** | Oui | Peut différer de l'unité |
+| **Lieux secondaires** | Oui | Peuvent être ajoutés/retirés |
 | **Code interne** | Oui | Référence interne |
 | **Commentaires** | Oui | Notes libres |
+
+### Modifier les lieux de formation
+
+Les lieux de formation hérités de l'unité peuvent être personnalisés :
+
+1. Dans le formulaire de modification
+2. Section **Lieux de formation**
+3. Modifiez le lieu principal ou les lieux secondaires
+4. Enregistrez les modifications
+
+Cette personnalisation permet d'adapter les lieux selon les spécificités de chaque formation dispensée.
 
 ### Enregistrer les modifications
 
@@ -90,4 +101,4 @@ Consultez [Module Sessions de formation](../session-formation/index) pour plus d
 
 ## Pour aller plus loin
 
--> [06 - Processus d'approbation](06-processus-approbation)
+-> [01 - Introduction](01-introduction)

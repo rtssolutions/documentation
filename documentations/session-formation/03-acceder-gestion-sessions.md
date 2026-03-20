@@ -35,8 +35,6 @@ La liste des sessions de formation affiche :
 | **Intitulé** | Nom de la session ou de la formation |
 | **Dates** | Période de formation |
 | **Unité** | Site dispensateur |
-| **Capacité** | Places / Inscrits |
-| **Statut** | État de la session |
 
 ## Filtres disponibles
 
@@ -45,8 +43,6 @@ Utilisez les filtres pour affiner votre recherche :
 - **Formation** : filtrer par formation
 - **Unité de formation** : filtrer par site
 - **Période** : sessions en cours, à venir, terminées
-- **Statut** : À approuver, Approuvée, En cours, etc.
-- **Remplissage** : sessions avec places disponibles
 
 ## Recherche
 
@@ -54,30 +50,14 @@ La barre de recherche permet de trouver une session par :
 
 - Nom de la formation
 - Nom de l'unité de formation
-- Nom d'un apprenant inscrit
 
-## Vues disponibles
-
-### Vue liste
-
-Affichage classique en tableau avec tri et filtres.
-
-### Vue calendrier
-
-Visualisation des sessions sur un calendrier :
-
-- Vue mensuelle ou annuelle
-- Code couleur par statut
-- Clic sur une session pour accéder à sa fiche
-
-## Actions rapides
+## Actions depuis la liste
 
 Depuis la liste, vous pouvez :
 
 - **Consulter** : cliquer sur une session pour voir le détail
-- **Créer** : bouton "Nouvelle session de formation"
-- **Filtrer** : affiner selon vos critères
-- **Exporter** : télécharger la liste des sessions
+
+La création de session ne se fait pas depuis la liste mais depuis une action de formation.
 
 ---
 
