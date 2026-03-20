@@ -18,6 +18,8 @@ Avant de valider un brouillon, vous devez accéder à son récapitulatif :
 
 Le récapitulatif présente une vue complète du brouillon avec un indicateur de complétion global et par section.
 
+![Récapitulatif du brouillon de contrat](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/contrats/02-recapitulatif-brouillon.png "800x450")
+
 ### Sections du récapitulatif
 
 Chaque section affiche son pourcentage de complétion et propose un lien pour la modifier :

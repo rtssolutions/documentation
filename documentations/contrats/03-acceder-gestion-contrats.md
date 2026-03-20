@@ -23,6 +23,8 @@ Le module Contrats est accessible depuis la barre de navigation principale de Pa
 
 La page **Liste** affiche tous les contrats d'apprentissage validés auxquels vous avez accès selon vos droits.
 
+![Liste des contrats d'apprentissage](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/contrats/06-liste-contrats.png "800x450")
+
 ### Informations affichées
 
 Le tableau présente les colonnes suivantes :

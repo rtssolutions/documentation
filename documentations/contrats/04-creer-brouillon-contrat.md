@@ -22,11 +22,15 @@ La création d'un brouillon de contrat se fait généralement depuis :
 
 Le brouillon est automatiquement pré-rempli avec les informations disponibles (apprenant, session de formation).
 
+![Bouton Créer un contrat depuis le dossier de formation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/contrats/07-dossier-formation-bouton-contrat.png "800x450")
+
 ---
 
 ## Parcours de création en 3 étapes
 
 La création d'un brouillon de contrat suit un parcours guidé en plusieurs étapes, visualisé par une barre de progression en haut de l'écran.
+
+![Liste des brouillons de contrat](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/contrats/01-liste-brouillons.png "800x450")
 
 ### Étape 1 : Employeur
 
@@ -46,6 +50,8 @@ Cette étape permet de renseigner les informations relatives à l'employeur :
 - Contact entreprise (interlocuteur principal)
 - Maître d'apprentissage (avec ses qualifications)
 - Signataire du contrat
+
+![Étape Employeur du brouillon de contrat](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/contrats/03-etape-employeur.png "800x450")
 
 ### Étape 2 : Contrat
 
@@ -78,6 +84,8 @@ Cette étape permet de saisir les informations contractuelles :
 - Caisse de retraite complémentaire
 - Travail à risques
 
+![Étape Contrat du brouillon](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/contrats/04-etape-contrat.png "800x450")
+
 ### Étape 3 : Situation de l'apprenti
 
 Cette étape concerne le parcours de l'apprenant avant le contrat :
@@ -87,6 +95,8 @@ Cette étape concerne le parcours de l'apprenant avant le contrat :
 - **Diplôme le plus élevé obtenu**
 - **Dernier diplôme ou titre préparé**
 - **Intitulé du dernier diplôme préparé**
+
+![Étape Situation de l'apprenti](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/contrats/05-etape-situation-apprenti.png "800x450")
 
 ---
 
