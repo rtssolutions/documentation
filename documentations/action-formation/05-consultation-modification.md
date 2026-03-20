@@ -9,8 +9,10 @@ version: "1"
 
 ## Accéder à la fiche d'une action
 
-1. Menu **Formations** > **Actions de formation**
-2. Cliquez sur l'action souhaitée dans la liste
+1. Depuis la fiche d'une **formation** ou d'une **unité de formation**
+2. Dans la section **Actions de formation**, cliquez sur l'action souhaitée
+
+![Fiche détaillée d'une action de formation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/action-formation/03-fiche-action-formation.png "800x450")
 
 ## Informations affichées
 
@@ -58,8 +60,10 @@ Depuis cet onglet, vous pouvez :
 ### Accès à la modification
 
 1. Ouvrez la fiche de l'action
-2. Cliquez sur **Modifier**
+2. Cliquez sur **Modifier les informations**
 3. Le formulaire de modification s'affiche
+
+![Formulaire de modification d'une action de formation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/action-formation/09-modification-action.png "800x450")
 
 ### Champs modifiables
 
@@ -76,10 +80,12 @@ Depuis cet onglet, vous pouvez :
 
 Les lieux de formation hérités de l'unité peuvent être personnalisés :
 
-1. Dans le formulaire de modification
-2. Section **Lieux de formation**
+1. Sur la fiche de l'action, cliquez sur **Modifier les lieux de formation**
+2. L'écran de gestion des lieux s'affiche
 3. Modifiez le lieu principal ou les lieux secondaires
-4. Enregistrez les modifications
+4. Cliquez sur **Enregistrer les modifications**
+
+![Modification des lieux de formation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/action-formation/10-modification-lieux.png "800x450")
 
 Cette personnalisation permet d'adapter les lieux selon les spécificités de chaque formation dispensée.
 

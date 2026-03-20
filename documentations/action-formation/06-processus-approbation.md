@@ -45,9 +45,11 @@ Une action de formation en approbation peut avoir les statuts suivants :
 
 Dans le cas où vous avez des actions de formation à approuver, un bandeau d'alerte apparaît sur la liste des actions.
 
+![Bandeau d'alerte d'approbation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/action-formation/06-approbation-formations.png "800x450")
+
 Vous pouvez y accéder depuis :
-- La fiche d'une **formation** → onglet **Actions de formation**
-- La fiche d'une **unité de formation** → onglet **Actions de formation**
+- La fiche d'une **formation** → section **Actions de formation**
+- La fiche d'une **unité de formation** → section **Actions de formation**
 
 Cliquez ensuite sur **"Finaliser l'importation"** présent dans le bandeau.
 

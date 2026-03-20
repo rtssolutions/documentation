@@ -31,6 +31,18 @@ Avant de créer une action de formation, assurez-vous que :
 
 ## Formulaire de création
 
+### Étape 1 : Sélectionner l'unité de formation
+
+La première étape consiste à associer une ou plusieurs unités de formation à la formation sélectionnée.
+
+![Sélection de l'unité de formation](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/action-formation/04-creation-action-etape1.png "800x450")
+
+### Étape 2 : Configurer l'action
+
+Une fois l'unité sélectionnée, configurez les paramètres de l'action :
+
+![Configuration de la durée et du volume d'heures](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/action-formation/05-creation-action-etape2.png "800x450")
+
 ### Informations obligatoires
 
 | Champ | Description |
