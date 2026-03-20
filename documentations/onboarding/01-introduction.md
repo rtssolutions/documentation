@@ -13,11 +13,7 @@ Le module **Onboarding** de Papaours est conçu pour faciliter l'initiation et l
 
 ## Public concerné
 
-Ce module s'adresse principalement aux :
-
-- **Administrateurs de centre de formation** : responsables de la configuration initiale
-- **Nouveaux utilisateurs** : personnes découvrant Papaours pour la première fois
-- **Responsables qualité** : chargés de valider la conformité des données
+Ce module s'adresse exclusivement aux **administrateurs de centre de formation**, responsables de la configuration initiale de leur organisme dans Papaours.
 
 ## Fonctionnalités principales
 

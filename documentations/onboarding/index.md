@@ -8,7 +8,7 @@ icon: "RocketLaunchIcon"
 
 # Onboarding
 
-Le module **Onboarding** de Papaours accompagne les nouveaux utilisateurs dans leur prise en main de la plateforme. Il permet de configurer votre environnement et de valider la qualité de vos données initiales.
+Le module **Onboarding** de Papaours accompagne les administrateurs de centre de formation dans la configuration initiale de leur organisme. Il permet de paramétrer votre environnement et de valider la qualité de vos données avant de commencer à utiliser la plateforme.
 
 ## Fonctionnalités principales
 
