@@ -27,6 +27,11 @@ Le module **Apprenants** permet de gérer l'ensemble des personnes inscrites dan
 - [Modifier un apprenant](06-modification-apprenant)
 - [Supprimer un apprenant](07-supression-apprenant)
 
+### Représentants légaux
+
+- [Introduction aux représentants légaux](representant-legal/01-introduction)
+- [Gérer les représentants légaux](representant-legal/02-gerer-representants)
+
 ### Besoins spécifiques
 
 - [Introduction aux besoins spécifiques](besoins-specifiques/01-introduction)

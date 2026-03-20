@@ -12,7 +12,7 @@ Un apprenant représente une personne physique inscrite ou en cours d'inscriptio
 Sa fiche regroupe l’ensemble des informations nécessaires au suivi administratif, pédagogique et contractuel.
 Un apprenant est caractérisé par :
 - **Code** : Identifiant auto-généré unique pour chaque apprenant (l'unicité est garantie dans le temps, même en cas de suppression)
-- **Identité** : Nom, Prénom, Date de naissance, Lieu de naissance, Nationalité, NIR, Sexe
+- **Identité** : Nom, Prénom, Date de naissance, Lieu de naissance, Nationalité, NIR (protégé), Sexe
 - **Moyens de contact** : Adresse postale, Téléphone, Courriel
 - **Parcours scolaire** : Informations relatives au parcours scolaire que l'apprenant a réalisé
 - **Besoins spécifiques** : Informations relatives aux besoins spécifiques de l'apprenant (RQTH, sportif de haut niveau, etc.)
@@ -25,6 +25,12 @@ Il est caractérisé par :
 - **Moyens de contact** : Adresse postale, Téléphone, Courriel
 - **Lien de parenté** : Nature du lien avec l'apprenant (parent, tuteur, père, mère, etc.)
 Le représentant légal possède sa propre permission, indépendante de celle de l'apprenant.
+
+### NIR (Numéro de sécurité sociale)
+
+Le **NIR** (Numéro d'Inscription au Répertoire) est le numéro de sécurité sociale de l'apprenant. Cette donnée est considérée comme **protégée** en raison de son caractère sensible.
+
+L'accès au NIR est contrôlé par une **permission dédiée**. Sans cette permission, le champ NIR n'est pas visible dans la fiche apprenant. Seuls les utilisateurs disposant de la permission appropriée peuvent consulter et modifier cette information.
 
 ### Besoins spécifiques
 Les besoins spécifiques sont un ensemble d'informations relatives aux besoins particuliers d'un apprenant, tels que la Reconnaissance de la Qualité de Travailleur Handicapé (RQTH), le statut de sportif de haut niveau, ou d'autres besoins nécessitant des aménagements spécifiques dans le cadre de la formation.

@@ -35,33 +35,38 @@ Le CERFA (Centre d'Enregistrement et de Révision des Formulaires Administratifs
 
 ### États du contrat
 
-Un contrat validé peut avoir différents états :
+Un contrat passe par différents états au cours de son cycle de vie :
 
 | État | Description |
 |------|-------------|
-| **En cours** | Le contrat est actif et en cours d'exécution |
-| **Signé** | Le contrat a été signé par toutes les parties |
-| **Rompu** | Le contrat a été résilié avant son terme |
+| **Brouillon** | Contrat en cours de création |
+| **À signer** | Contrat validé, en attente de signature |
+| **Signé** | Contrat signé par toutes les parties |
+| **En cours** | Contrat actif, apprentissage en cours d'exécution |
+| **Terminé** | Contrat achevé normalement à son terme |
+| **Rompu** | Contrat résilié avant son terme (après démarrage) |
+| **Annulé** | Contrat annulé avant son démarrage |
 
 ---
 
 ## Relations avec les autres modules
 
-Le contrat d'apprentissage est au centre de plusieurs modules de Papaours :
+Le contrat d'apprentissage fait le lien entre un **dossier de formation** et un **employeur** :
 
 ```mermaid "max-w-2xl"
 graph TD
-    A[Apprenant] --> C[Contrat]
+    A[Apprenant] --> D[Dossier de formation]
+    S[Session de formation] --> D
+    D --> C[Contrat]
     E[Employeur] --> C
-    S[Session de formation] --> C
-    C --> D[Dossier de formation]
     C --> F[Financement]
 ```
 
-- **Apprenant** : Personne physique bénéficiaire du contrat
+- **Dossier de formation** : Porte l'apprenant et la session de formation
+- **Apprenant** : Personne physique inscrite au dossier de formation
+- **Session de formation** : Période de formation rattachée au dossier
+- **Contrat** : Lie le dossier de formation à l'employeur
 - **Employeur** : Entreprise qui embauche l'apprenti
-- **Session de formation** : Période de formation suivie par l'apprenti
-- **Dossier de formation** : Suivi pédagogique de l'apprenti
 - **Financement** : Prise en charge financière par l'OPCO
 
 ---
