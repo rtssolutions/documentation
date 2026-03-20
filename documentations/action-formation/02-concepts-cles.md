@@ -55,17 +55,45 @@ Cette flexibilité permet d'avoir des lieux différents selon les formations, m�
 
 ## Unicité
 
-Une action de formation est **unique** pour un couple Formation + Unité de formation. Il ne peut pas y avoir deux actions de formation identiques pour le même site et la même formation.
+Une action de formation est **unique** pour le triplet :
+
+> **Formation + Unité de formation + Durée de l'action**
+
+### Durée de l'action de formation
+
+- La **durée de l'action** est un attribut propre à l'action de formation
+- Par défaut, elle est pré-initialisée à partir de la durée théorique de la formation
+- Elle permet de créer plusieurs variantes d'une même formation au sein d'une même unité
+
+### Exemple
+
+Pour une formation **RNCP10000** (durée théorique 36 mois) dans une même unité de formation :
+
+| Action | Durée | Statut |
+|--------|-------|--------|
+| Action A | 36 mois | ✅ Autorisée |
+| Action B | 24 mois | ✅ Autorisée (durée différente) |
+| Action C | 36 mois | ❌ Refusée (même triplet que A) |
+
+### Message d'erreur
+
+Si vous tentez de créer une action avec un triplet déjà existant, le message suivant s'affiche :
+
+> "Une action de formation existe déjà pour cette formation, cette unité de formation et cette durée."
 
 ## Cas d'usage
 
 ### Exemple concret
 
-- **Formation** : BTS Comptabilité et Gestion (RNCP 38364)
-- **Unité de formation** : CFA Paris Centre
-- **Action de formation** : BTS CG dispensé par le CFA Paris Centre
-  - Lieu principal : 12 rue de la Formation, 75001 Paris
-  - Lieu secondaire : Annexe Bercy, 75012 Paris
+**Unité de formation** : Lycée Professionnel Jean Moulin (UAI 0750001A)
+- Lieu principal : 15 avenue de la République, 75011 Paris
+- Lieu secondaire : Annexe Voltaire, 75020 Paris
+
+**Action de formation** : BTS Comptabilité et Gestion dispensé par le Lycée Jean Moulin
+- Lieu principal : Annexe Voltaire, 75020 Paris *(était secondaire au niveau de l'unité)*
+- Lieu secondaire : 15 avenue de la République, 75011 Paris *(était principal au niveau de l'unité)*
+
+Dans cet exemple, les lieux sont les mêmes que ceux de l'unité, mais les catégories ont été inversées car le BTS CG est principalement dispensé à l'annexe Voltaire.
 
 Cette action permet ensuite de créer des sessions :
 - Session Septembre 2024 - Juin 2026

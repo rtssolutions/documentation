@@ -7,12 +7,9 @@ version: "1"
 
 # Accéder à la gestion des actions de formation
 
-## Accès au module
+## Accès aux actions de formation
 
-### Depuis le menu principal
-
-1. Cliquez sur **Formations** dans le menu latéral
-2. Sélectionnez **Actions de formation**
+Les actions de formation sont accessibles depuis les fiches des entités parentes :
 
 ### Depuis une formation
 
@@ -34,32 +31,14 @@ La liste des actions de formation affiche :
 |---------|-------------|
 | **Formation** | Intitulé de la formation |
 | **Unité de formation** | Site dispensateur |
-| **Statut** | État d'approbation |
 | **Sessions** | Nombre de sessions associées |
 
-## Filtres disponibles
-
-Utilisez les filtres pour affiner votre recherche :
-
-- **Formation** : filtrer par formation spécifique
-- **Unité de formation** : filtrer par site
-- **Statut** : À approuver, Approuvée, Désactivée
-
-## Recherche
-
-La barre de recherche permet de trouver une action par :
-
-- Nom de la formation
-- Code RNCP
-- Nom de l'unité de formation
-
-## Actions rapides
+## Actions disponibles
 
 Depuis la liste, vous pouvez :
 
 - **Consulter** : cliquer sur une ligne pour voir le détail
-- **Créer** : bouton "Nouvelle action de formation"
-- **Filtrer** : affiner la liste selon vos critères
+- **Créer** : ajouter une nouvelle action de formation
 
 ---
 

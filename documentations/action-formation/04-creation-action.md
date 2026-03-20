@@ -17,18 +17,13 @@ Avant de créer une action de formation, assurez-vous que :
 
 ## Accéder à la création
 
-### Méthode 1 : Depuis la liste des actions
-
-1. Menu **Formations** > **Actions de formation**
-2. Cliquez sur **Nouvelle action de formation**
-
-### Méthode 2 : Depuis une formation
+### Depuis une formation
 
 1. Accédez à la fiche de la formation
 2. Onglet **Actions de formation**
 3. Cliquez sur **Ajouter une action**
 
-### Méthode 3 : Depuis une unité de formation
+### Depuis une unité de formation
 
 1. Accédez à la fiche de l'unité de formation
 2. Onglet **Actions de formation**
@@ -42,6 +37,7 @@ Avant de créer une action de formation, assurez-vous que :
 |-------|-------------|
 | **Formation** | Sélectionnez la formation du catalogue |
 | **Unité de formation** | Sélectionnez le site dispensateur |
+| **Durée de l'action** | Durée en mois (pré-remplie avec la durée théorique de la formation) |
 
 ### Lieux de formation
 
@@ -75,9 +71,12 @@ Une fois l'action de formation créée, vous pouvez :
 
 ## Erreurs courantes
 
-### "Une action existe déjà pour ce couple"
+### "Une action de formation existe déjà pour cette formation, cette unité de formation et cette durée"
 
-Une action de formation existe déjà pour cette formation et cette unité. Recherchez l'action existante plutôt que d'en créer une nouvelle.
+Une action de formation existe déjà avec le même triplet (formation + unité + durée). Vous pouvez :
+
+- Rechercher l'action existante plutôt que d'en créer une nouvelle
+- Créer une action avec une **durée différente** si vous souhaitez proposer un parcours alternatif
 
 ---
 

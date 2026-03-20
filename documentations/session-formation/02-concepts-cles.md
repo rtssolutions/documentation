@@ -46,7 +46,7 @@ Le lien entre une session et les apprenants se fait via les **dossiers de format
 
 ### Exemple concret
 
-- **Action de formation** : BTS CG dispensé par le CFA Paris Centre
+- **Action de formation** : BTS CG dispensé par le Lycée Jean Moulin
 - **Session** : Promotion 2024-2026
   - Date de début : 02/09/2024
   - Date de fin : 30/06/2026
