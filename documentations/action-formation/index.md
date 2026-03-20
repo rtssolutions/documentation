@@ -24,3 +24,4 @@ Le module **Action de formation** permet de gérer les déclinaisons des formati
 - [Accéder à la gestion des actions](03-acceder-gestion-actions)
 - [Créer une action de formation](04-creation-action)
 - [Consulter et modifier une action](05-consultation-modification)
+- [Processus d'approbation](06-processus-approbation)

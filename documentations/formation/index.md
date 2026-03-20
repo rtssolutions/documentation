@@ -23,6 +23,7 @@ Le module **Formation** permet de gérer le catalogue des formations proposées 
 - [Concepts clés](02-definition-concepts-cles)
 - [Gérer les formations](03-gerer-formations)
 - [Gérer les sessions](04-gerer-sessions)
+- [Processus d'approbation](05-processus-approbation)
 
 ## Modules associés
 
