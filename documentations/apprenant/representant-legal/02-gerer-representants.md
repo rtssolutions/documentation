@@ -15,6 +15,8 @@ version: "1"
 
 La section affiche un tableau avec tous les représentants légaux associés à l'apprenant.
 
+![Section représentants légaux](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/05-section-representants-legaux.png "800x450")
+
 ### Colonnes du tableau
 
 | Colonne | Description |
@@ -37,12 +39,16 @@ La section affiche un tableau avec tous les représentants légaux associés à 
    - Case à cocher "Signataire" si ce représentant doit signer les documents
 3. Validez pour enregistrer
 
+![Formulaire d'ajout d'un représentant légal](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/06-ajout-representant-legal.png "800x450")
+
 ### Modifier un représentant légal
 
 1. Dans le tableau, localisez le représentant à modifier
 2. Cliquez sur le bouton **Modifier**
 3. Effectuez les modifications souhaitées
 4. Validez pour enregistrer
+
+![Formulaire de modification d'un représentant légal](https://papaours.s3.fr-par.scw.cloud/documentations/tutoriel/apprenant/04-representant-legal-modification.png "800x450")
 
 ### Consulter un représentant légal
 
