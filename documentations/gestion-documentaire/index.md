@@ -1,6 +1,6 @@
 ---
 title: "Gestion documentaire"
-description: "Gestion des templates de documents et signatures électroniques"
+description: "Gestion des templates de documents, signatures électroniques et documents associés"
 date: "2026-03-20"
 version: "1"
 icon: "DocumentDuplicateIcon"
@@ -8,9 +8,9 @@ icon: "DocumentDuplicateIcon"
 
 # Gestion documentaire
 
-Le module **Gestion documentaire** de Papaours permet de gérer vos modèles de documents (templates) et les processus de signature.
+Le module **Gestion documentaire** de Papaours permet de gérer vos modèles de documents (templates), les processus de signature, et les documents attachés aux différentes entités.
 
-Ce module est structuré en deux parties principales :
+Ce module est structuré en trois parties principales :
 
 ## Templates de documents
 
@@ -37,3 +37,12 @@ Gérez les processus de signature manuelle et électronique de vos documents.
 - [Signature manuelle](signature-documents/03-signature-manuelle)
 - [Signature électronique](signature-documents/04-signature-electronique)
 - [Paramétrage du visa CFA](signature-documents/05-parametrage-visa)
+
+## Documents associés
+
+Gérez les fichiers et justificatifs attachés aux différentes entités de Papaours (apprenants, employeurs, contrats, dossiers de formation). Chaque fiche dispose d'un encart dédié pour stocker et organiser les documents pertinents.
+
+- [Introduction aux documents associés](documents-associes/01-introduction)
+- [Encarts par entité](documents-associes/02-encarts-par-entite)
+- [Ajouter un document](documents-associes/03-ajouter-document)
+- [Consulter et télécharger](documents-associes/04-consulter-telecharger)
