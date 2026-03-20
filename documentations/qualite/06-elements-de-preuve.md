@@ -1,5 +1,5 @@
 ---
-title: "Configurer les éléments de preuve"
+title: "06 - Configurer les éléments de preuve"
 description: "Lister, créer et consulter les éléments de preuve (documents et données) rattachés aux indicateurs qualité"
 date: "2025-07-29"
 version: "1"

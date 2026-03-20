@@ -26,7 +26,7 @@ Le dossier de formation est caractérisé par :
 L'état du dossier est affiché visuellement dans l'interface sous le libellé **"Situation actuelle"**.
 Cette information cruciale détermine les actions possibles et reflète l'avancement du parcours.
 
-#### Les 5 états possibles
+#### Les 6 états possibles
 
 1. **Inscrit à la formation**
    - État initial après inscription
@@ -36,17 +36,23 @@ Cette information cruciale détermine les actions possibles et reflète l'avance
 2. **SFP avant contrat**
    - Stagiaire de la Formation Professionnelle avant contrat
    - Période transitoire avant signature du contrat d'apprentissage
-   - → [Voir le fonctionnement détaillé des SFP avant contrat](06-fonctionnement-sfp)
+   - → [Voir le fonctionnement détaillé de la SFP](06-fonctionnement-sfp)
 
 3. **Apprenti sous contrat**
    - Contrat d'apprentissage actif
    - Formation en cours
 
-4. **Contrat terminé**
+4. **SFP après contrat**
+   - Stagiaire de la Formation Professionnelle après fin/rupture de contrat
+   - Période transitoire permettant de continuer la formation sans contrat actif
+   - Possibilité de rechercher un nouvel employeur
+   - → [Voir le fonctionnement détaillé de la SFP](06-fonctionnement-sfp)
+
+5. **Contrat terminé**
    - Fin normale ou rupture du contrat
    - Possibilité de nouveau contrat
 
-5. **Inscription annulée**
+6. **Inscription annulée**
    - Annulation de l'inscription
    - Aucune action possible
 

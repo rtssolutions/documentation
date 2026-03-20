@@ -1,11 +1,38 @@
 ---
 title: "Apprenant"
-description: "Suivi des apprenants, informations et parcours"
-date: "2025-07-29"
+description: "Gestion des apprenants, informations personnelles et parcours"
+date: "2026-03-20"
 version: "1"
 icon: "UserGroupIcon"
 ---
 
-# Apprenant
+# Apprenants
 
-Page d’entrée de la documentation pour le module Apprenant.
+Le module **Apprenants** permet de gérer l'ensemble des personnes inscrites dans vos parcours de formation. Il constitue le point d'entrée pour la gestion administrative et pédagogique de vos apprentis.
+
+## Fonctionnalités principales
+
+- Création et gestion des fiches apprenants
+- Suivi des informations personnelles et de contact
+- Gestion des représentants légaux (pour les mineurs)
+- Gestion des besoins spécifiques (RQTH, sportif de haut niveau, etc.)
+
+## Documentation
+
+- [Introduction](01-introduction)
+- [Concepts clés](02-definition-concepts-cles)
+- [Accéder à la gestion des apprenants](03-acceder-gestion-apprenants)
+- [Créer un apprenant](04-creation-apprenant)
+- [Consulter un apprenant](05-consultation-apprenant)
+- [Modifier un apprenant](06-modification-apprenant)
+- [Supprimer un apprenant](07-supression-apprenant)
+
+### Représentants légaux
+
+- [Introduction aux représentants légaux](representant-legal/01-introduction)
+- [Gérer les représentants légaux](representant-legal/02-gerer-representants)
+
+### Besoins spécifiques
+
+- [Introduction aux besoins spécifiques](besoins-specifiques/01-introduction)
+- [Consultation et modification](besoins-specifiques/02-consultation-modification)

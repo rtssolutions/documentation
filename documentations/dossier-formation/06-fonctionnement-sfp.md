@@ -1,11 +1,20 @@
 ---
-title: "06 - Fonctionnement des SFP avant contrat"
-description: "Comment gérer les périodes SFP avant contrat (Stagiaire de la Formation Professionnelle avant contrat) dans les dossiers de formation"
-date: "2025-11-20"
-version: "1"
+title: "06 - Fonctionnement de la SFP"
+description: "Comment gérer les périodes SFP (Stagiaire de la Formation Professionnelle) avant et après contrat dans les dossiers de formation"
+date: "2026-03-20"
+version: "2"
 ---
 
-# Fonctionnement des SFP avant contrat
+# Fonctionnement de la SFP
+
+La **SFP (Situation en Fin de Parcours)** ou **Stagiaire de la Formation Professionnelle** désigne les périodes où un apprenant suit une formation sans avoir de contrat d'apprentissage actif. Il existe deux types de SFP :
+
+- **SFP avant contrat** : Période avant la signature du premier contrat
+- **SFP après contrat** : Période après la fin ou rupture d'un contrat
+
+---
+
+# SFP avant contrat
 
 ## Qu'est-ce qu'une SFP avant contrat ?
 
@@ -373,8 +382,64 @@ Le P2S est un formulaire pré-rempli qui documente la période de stage de forma
 
 ---
 
+---
+
+# SFP après contrat
+
+## Qu'est-ce qu'une SFP après contrat ?
+
+Une **SFP après contrat** est une période durant laquelle un apprenant continue sa formation après la fin ou la rupture de son contrat d'apprentissage, sans avoir de nouveau contrat actif.
+
+Cette période permet à l'apprenant de :
+- Continuer sa formation pendant la recherche d'un nouvel employeur
+- Être couvert administrativement entre deux contrats
+- Préparer son examen ou diplôme malgré l'absence de contrat
+
+**Durée maximale** : Une période SFP après contrat peut durer jusqu'à **6 mois**.
+
+---
+
+## Quand passe-t-on en SFP après contrat ?
+
+Le dossier de formation passe automatiquement en état **"SFP après contrat"** lorsque :
+
+- Un contrat d'apprentissage se **termine** (fin normale) ou est **rompu**
+- L'apprenant souhaite poursuivre sa formation
+- Aucun nouveau contrat n'est immédiatement signé
+
+### Différence avec "Contrat terminé"
+
+| État | Description |
+|------|-------------|
+| **SFP après contrat** | L'apprenant continue activement sa formation sans contrat |
+| **Contrat terminé** | L'apprenant ne poursuit pas sa formation ou a terminé son parcours |
+
+---
+
+## Actions possibles en SFP après contrat
+
+Lorsqu'un dossier est dans l'état **"SFP après contrat"** :
+
+**Actions disponibles** :
+- 📋 **Créer un nouveau contrat** : Préparer un contrat avec un nouvel employeur
+- 📄 **Générer le formulaire CERFA P2S** : Document attestant du statut SFP
+- 🎓 **Poursuivre la formation** : L'apprenant continue à suivre les cours
+- ❌ **Annuler l'inscription** : Si l'apprenant abandonne la formation
+
+---
+
+## Passage à un nouveau contrat
+
+Si l'apprenant trouve un nouvel employeur pendant la période SFP après contrat :
+
+1. Un nouveau brouillon de contrat peut être créé depuis le dossier
+2. À la signature du nouveau contrat, le dossier repasse en état **"Apprenti sous contrat"**
+3. La période SFP après contrat est clôturée avec une date de fin réelle
+
+---
+
 ## Pour aller plus loin
 
-→ [03 - Situation actuelle](03-situation-actuelle) : Comprendre les états des dossiers  
-→ [04 - Inscription d'un apprenant](04-inscription-apprenant) : Créer un nouveau dossier  
-→ [Module Contrats](#) : Gérer les contrats d'apprentissage
+→ [03 - Situation actuelle](03-situation-actuelle) : Comprendre les états des dossiers
+→ [04 - Inscription d'un apprenant](04-inscription-apprenant) : Créer un nouveau dossier
+→ [Module Contrats](../contrats/01-introduction) : Gérer les contrats d'apprentissage

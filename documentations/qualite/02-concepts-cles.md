@@ -1,5 +1,5 @@
 ---
-title: "Concepts clés et définitions"
+title: "02 - Concepts clés et définitions"
 description: "Hiérarchie qualité, codes auto-générés, cycle de vie des statuts, types d'éléments de preuve et règles de dates"
 date: "2025-07-29"
 version: "1"

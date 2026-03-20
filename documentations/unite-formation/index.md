@@ -1,22 +1,29 @@
 ---
 title: "Unité de Formation"
-description: "Gestion complète des unités de formation : création, consultation, modification, suppression et approbation"
-date: "2025-09-01"
+description: "Gestion des unités de formation (UFA) : création, consultation, modification et approbation"
+date: "2026-03-20"
 version: "1"
 icon: "AcademicCapIcon"
 ---
 
 # Unité de Formation
 
-Documentation complète pour la gestion des unités de formation dans Papaours.
+Le module **Unité de Formation** (UFA) permet de gérer les sites ou entités de votre organisme qui dispensent des formations. Chaque unité de formation peut être liée à des sessions de formation et possède son propre processus d'approbation réglementaire.
 
-## Table des matières
+## Fonctionnalités principales
 
-1. [01 - Introduction](01-introduction)
-2. [02 - Définitions des concepts clés](02-definition-concepts-cles)
-3. [03 - Accéder à la gestion des unités de formation](03-acceder-gestion-unites-formation)
-4. [04 - Création d'une unité de formation](04-creation-unite-formation)
-5. [05 - Consultation et lecture d'une unité de formation](05-consultation-unite-formation)
-6. [06 - Modification d'une unité de formation](06-modification-unite-formation)
-7. [07 - Suppression d'une unité de formation](07-suppression-unite-formation)
-8. [08 - Processus d'approbation des unités de formation](08-processus-approbation)
+- Création et gestion des fiches UFA
+- Consultation des informations détaillées
+- Processus d'approbation réglementaire
+- Rattachement aux sessions de formation
+
+## Documentation
+
+- [Introduction](01-introduction)
+- [Concepts clés](02-definition-concepts-cles)
+- [Accéder à la gestion des UFA](03-acceder-gestion-unites-formation)
+- [Créer une unité de formation](04-creation-unite-formation)
+- [Consulter une unité de formation](05-consultation-unite-formation)
+- [Modifier une unité de formation](06-modification-unite-formation)
+- [Supprimer une unité de formation](07-suppression-unite-formation)
+- [Processus d'approbation](08-processus-approbation)

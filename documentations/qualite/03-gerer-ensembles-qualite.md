@@ -1,5 +1,5 @@
 ---
-title: "Gérer les ensembles qualité"
+title: "03 - Gérer les ensembles qualité"
 description: "Créer, visualiser, modifier et supprimer un ensemble qualité dans Papaours"
 date: "2025-07-29"
 version: "1"
