@@ -1,5 +1,5 @@
 ---
-title: "Vue d'ensemble du module Qualité"
+title: "01 - Vue d'ensemble du module Qualité"
 description: "Présentation générale du module Qualité, objectifs, périmètre fonctionnel et prérequis"
 date: "2025-07-29"
 version: "1"

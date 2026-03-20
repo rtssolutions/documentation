@@ -1,5 +1,5 @@
 ---
-title: "Gérer les indicateurs qualité"
+title: "05 - Gérer les indicateurs qualité"
 description: "Créer, modifier et supprimer des indicateurs qualité rattachés à un critère"
 date: "2025-07-29"
 version: "1"

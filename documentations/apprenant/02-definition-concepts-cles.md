@@ -26,9 +26,9 @@ Il est caractérisé par :
 - **Lien de parenté** : Nature du lien avec l'apprenant (parent, tuteur, père, mère, etc.)
 Le représentant légal possède sa propre permission, indépendante de celle de l'apprenant.
 
-### NIR (Numéro de sécurité sociale)
+### NIR (Numéro d'Inscription au Répertoire)
 
-Le **NIR** (Numéro d'Inscription au Répertoire) est le numéro de sécurité sociale de l'apprenant. Cette donnée est considérée comme **protégée** en raison de son caractère sensible.
+Le **NIR** (Numéro d'Inscription au Répertoire) est l'identifiant unique de l'apprenant. Cette donnée est considérée comme **protégée** en raison de son caractère sensible.
 
 L'accès au NIR est contrôlé par une **permission dédiée**. Sans cette permission, le champ NIR n'est pas visible dans la fiche apprenant. Seuls les utilisateurs disposant de la permission appropriée peuvent consulter et modifier cette information.
 

@@ -1,5 +1,5 @@
 ---
-title: "Gérer les critères qualité"
+title: "04 - Gérer les critères qualité"
 description: "Créer, modifier et supprimer des critères qualité rattachés à un ensemble qualité"
 date: "2025-07-29"
 version: "1"
