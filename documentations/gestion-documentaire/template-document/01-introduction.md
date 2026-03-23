@@ -17,7 +17,7 @@ Un **template** est un modèle de document (Word ou HTML) contenant des **balise
 
 ```mermaid "max-w-2xl"
 graph LR
-    T[Template DOCX/HTML] --> M[Moteur Carbone]
+    T[Template DOCX/HTML] --> M[Moteur de templating]
     D[Données JSON] --> M
     M --> P[Document PDF]
 ```
@@ -52,11 +52,11 @@ Cette documentation vous accompagne dans la création de vos propres templates.
 
 ---
 
-## Syntaxe Carbone
+## Syntaxe des templates
 
-Les templates utilisent la syntaxe **Carbone.io** pour les balises de substitution. Consultez la [documentation Carbone](carbone/index) pour apprendre à :
+Les templates utilisent une syntaxe spécifique pour les balises de substitution. Consultez la [documentation de syntaxe](syntaxe-templates/index) pour apprendre à :
 
-- [Insérer des données](carbone/substituer/03-les-bases-des-substitutions) avec les balises `{d.xxx}`
-- [Formater les données](carbone/formater/index) (dates, nombres, texte)
-- [Afficher du contenu conditionnel](carbone/conditionner/index)
-- [Répéter du contenu](carbone/tableau/06-repetitions-with-arrays) avec les boucles
+- [Insérer des données](syntaxe-templates/substituer/03-les-bases-des-substitutions) avec les balises `{d.xxx}`
+- [Formater les données](syntaxe-templates/formater/index) (dates, nombres, texte)
+- [Afficher du contenu conditionnel](syntaxe-templates/conditionner/index)
+- [Répéter du contenu](syntaxe-templates/tableau/06-repetitions-with-arrays) avec les boucles

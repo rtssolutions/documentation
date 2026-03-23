@@ -122,7 +122,7 @@ Vérifiez que :
 
 ## Pour aller plus loin
 
-- [Syntaxe des substitutions](carbone/substituer/03-les-bases-des-substitutions)
-- [Formatters disponibles](carbone/formater/index)
-- [Conditions](carbone/conditionner/index)
-- [Boucles sur tableaux](carbone/tableau/06-repetitions-with-arrays)
+- [Syntaxe des substitutions](syntaxe-templates/substituer/03-les-bases-des-substitutions)
+- [Formatters disponibles](syntaxe-templates/formater/index)
+- [Conditions](syntaxe-templates/conditionner/index)
+- [Boucles sur tableaux](syntaxe-templates/tableau/06-repetitions-with-arrays)

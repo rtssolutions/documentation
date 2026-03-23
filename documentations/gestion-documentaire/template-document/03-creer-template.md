@@ -69,7 +69,7 @@ Sélectionnez les entités dont les données seront accessibles dans le template
 
 ### Balises de substitution
 
-Les balises suivent la syntaxe Carbone :
+Les balises suivent la syntaxe de templating :
 
 ```text
 {d.nomDuChamp}

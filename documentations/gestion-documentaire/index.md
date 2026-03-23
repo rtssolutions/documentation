@@ -20,14 +20,14 @@ Créez et gérez des modèles de documents personnalisés avec des champs dynami
 - [Types de templates](template-document/02-types-templates)
 - [Créer un template](template-document/03-creer-template)
 
-### Documentation technique Carbone
+### Syntaxe des templates
 
 La documentation technique détaille la syntaxe de création de templates :
-- [Démarrer avec les templates](template-document/carbone/demarrer/01-demarrage-templates)
-- [Substitutions](template-document/carbone/substituer/03-les-bases-des-substitutions)
-- [Formatage](template-document/carbone/formater/12-apercu-formatters)
-- [Conditions](template-document/carbone/conditionner/19-conditions)
-- [Tableaux et répétitions](template-document/carbone/tableau/06-repetitions-with-arrays)
+- [Démarrer avec les templates](template-document/syntaxe-templates/demarrer/01-demarrage-templates)
+- [Substitutions](template-document/syntaxe-templates/substituer/03-les-bases-des-substitutions)
+- [Formatage](template-document/syntaxe-templates/formater/12-apercu-formatters)
+- [Conditions](template-document/syntaxe-templates/conditionner/19-conditions)
+- [Tableaux et répétitions](template-document/syntaxe-templates/tableau/06-repetitions-with-arrays)
 
 ## Signature de documents
 

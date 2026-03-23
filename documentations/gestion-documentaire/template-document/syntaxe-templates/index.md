@@ -1,15 +1,15 @@
 ---
-title: "Syntaxe Carbone"
-description: "Documentation de la syntaxe Carbone.io pour la création de templates"
+title: "Syntaxe des templates"
+description: "Documentation de la syntaxe pour la création de templates"
 date: "2026-03-13"
 version: "1"
 ---
 
-# Syntaxe Carbone
+# Syntaxe des templates
 
-Cette section documente la **syntaxe Carbone.io** utilisée par Papaours pour la génération de documents.
+Cette section documente la **syntaxe de templating** utilisée par Papaours pour la génération de documents.
 
-Carbone est le moteur de templating qui permet d'insérer dynamiquement des données dans vos documents.
+Le moteur de templating permet d'insérer dynamiquement des données dans vos documents.
 
 ## Contenu de cette section
 
@@ -18,7 +18,3 @@ Carbone est le moteur de templating qui permet d'insérer dynamiquement des donn
 3. [Formatters](formater/index) - Mettre en forme les données (dates, nombres, texte)
 4. [Conditions](conditionner/index) - Afficher du contenu conditionnel
 5. [Tableaux](tableau/index) - Répéter du contenu avec les boucles
-
-## Ressources externes
-
-- [Documentation officielle Carbone.io](https://carbone.io/documentation.html)
